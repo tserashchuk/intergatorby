@@ -6527,6 +6527,12 @@ div#loading img {
 .brand-logo img {
   max-height: 30px;
 }
+
+.brand-logo-width {
+  max-width: 70px;
+  max-height: auto;
+}
+
 .brand-logo .logo-dark {
   display: none;
 }
