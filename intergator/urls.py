@@ -30,6 +30,7 @@ urlpatterns = [
     path('about/', views.About.as_view(), name='about'),
     path('reviews/', views.Reviews.as_view(), name='reviews'),
     path('cases/', views.Cases.as_view(), name='cases'),
+    path('casecategory/', views.CaseCategory.as_view(), name='casecategory'),
     path('case/', views.Case.as_view(), name='case'),
     path('blog/', views.Blog.as_view(), name='blog'),
     path('articlecategory/', views.ArticleCategory.as_view(), name='articlecategory'),

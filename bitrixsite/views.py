@@ -21,6 +21,10 @@ class Reviews(View):
 class Cases(View):
     def get(self, request):
         return render(request, 'cases.html')
+    
+class CaseCategory(View):
+    def get(self, request):
+        return render(request, 'case.html')
 
 class Case(View):
     def get(self, request):
