@@ -47,10 +47,10 @@
   --cream-rgb:253, 251, 249;
   --offwhite:#FAF9F5;
   --offwhite-rgb:250, 249, 245;
-  --font-family-base:Inter, sans-serif;
-  --font-family-heading:Plus Jakarta Sans, sans-serif;
+  --font-family-base:Geologica, sans-serif;
+  --font-family-heading: Geologica, sans-serif;
   --font-wight-heading:800;
-  --font-dm-sans:DM Sans, sans-serif;
+  --font-dm-sans:Geologica, sans-serif;
 }
 
 * {
@@ -10511,7 +10511,7 @@ div#loading img {
 @media (min-width: 1200px) {
   .home-6_brands-wrapper-inner {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 }
 .home-6_brand-title {
@@ -14412,18 +14412,18 @@ div#loading img {
 /* ========== Brand Section Style ============= */
 .brand-section .brands-wrapper-inner {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 @media (min-width: 576px) {
   .brand-section .brands-wrapper-inner {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 }
 @media (min-width: 992px) {
   .brand-section .brands-wrapper-inner {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 }
 .brand-section .brand-heading {
@@ -16767,4 +16767,50 @@ Common: Spacing Gutters
   .service-divider {
     padding-bottom: 120px;
   }
+}
+
+
+.slidercontainer {
+  overflow: hidden;
+  .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+    .logos {
+      width: 100%;
+      display: inline-block;
+      margin: 0px 0;
+      .fab {
+        width: calc(100% / 5);
+        animation: fade-in 0.5s 
+          cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+      }
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.icon-brand {
+  height: 60px;
+}
+
+
+.mt-10 {
+  margin-top: 25px;
 }
