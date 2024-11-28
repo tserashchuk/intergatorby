@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views import View
 import requests
 
+from bitrixsite.models import *
+
 class HomeView(View):
     def get(self, request):
         return render(request, 'home.html')
@@ -14,19 +16,22 @@ class About(View):
     def get(self, request):
         return render(request, 'about.html')
 
-class Reviews(View):
+class ReviewsView(View):
     def get(self, request):
-        return render(request, 'reviews.html')
+        reviews = Review.objects.all()
+        return render(request, 'reviews.html',{'reviews':reviews})
 
-class Cases(View):
+class CasesView(View):
     def get(self, request):
-        return render(request, 'cases.html')
+        cases = Case.objects.all()
+        casescategorys = CaseCategory.objects.all()
+        return render(request, 'cases.html', {'casescategorys':casescategorys, 'cases':cases})
     
-class CaseCategory(View):
+class CaseCategoryView(View):
     def get(self, request):
         return render(request, 'case.html')
 
-class Case(View):
+class CaseView(View):
     def get(self, request):
         return render(request, 'case.html')
 

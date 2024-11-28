@@ -148,11 +148,12 @@ class Webinar(models.Model):
 
 class Review(models.Model):
     review_name = models.CharField('Название отзыва', max_length=200)
-    rewiew_person = models.CharField('Автор персона', max_length=200)
-    rewiew_job = models.CharField('Автор должность', max_length=200)
-    rewiew_company = models.CharField('Автор компания', max_length=200)
-    rewiew_text = models.TextField('Текст отзыва', blank=True)
-    rewiew_image = models.ImageField('Скан отзыва')
+    review_person = models.CharField('Автор персона', max_length=200)
+    review_job = models.CharField('Автор должность', max_length=200)
+    review_company = models.CharField('Автор компания', max_length=200)
+    review_text = models.TextField('Текст отзыва', blank=True)
+    review_image = models.ImageField('Скан отзыва', blank=True)
+    review_image_video = models.ImageField('Превью видео', blank=True)
     review_video = models.CharField('Ссылка на видео', max_length=200, blank=True)
     pub_date = models.DateTimeField(default=datetime.datetime.now)
 
