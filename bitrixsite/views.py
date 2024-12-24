@@ -32,8 +32,9 @@ class CaseCategoryView(View):
         return render(request, 'case.html')
 
 class CaseView(View):
-    def get(self, request):
-        return render(request, 'case.html')
+    def get(self, request, case_slug):
+        case = Case.objects.get(case_slug=case_slug)
+        return render(request, 'case.html', {'case':case})
 
 class Blog(View):
     def get(self, request):
