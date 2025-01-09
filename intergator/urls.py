@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from bitrixsite import views
 
@@ -33,8 +33,8 @@ urlpatterns = [
     path('casecategory/', views.CaseCategoryView.as_view(), name='casecategory'),
     path('case/<str:case_slug>', views.CaseView.as_view(), name='case'),
     path('blog/', views.Blog.as_view(), name='blog'),
-    path('articlecategory/', views.ArticleCategory.as_view(), name='articlecategory'),
-    path('article/', views.Article.as_view(), name='article'),
+    path('articlecategory/', views.ArticleCategoryView.as_view(), name='articlecategory'),
+    path('article/<str:article_slug>', views.ArticleView.as_view(), name='article'),
     path('webinars/', views.Webinars.as_view(), name='webinars'),
     path('webinar/', views.Webinar.as_view(), name='webinar'),
     path('bitrix/', views.Bitrix.as_view(), name='bitrix'),
@@ -49,6 +49,9 @@ urlpatterns = [
     path('prodlenie/', views.Prodlenie.as_view(), name='prodlenie'),
     path('market/', views.Market.as_view(), name='market'),
     path('contact/', views.Contact.as_view(), name='contact'),
+    path('payment/', views.Payment.as_view(), name='payment'),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 
     
 ]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

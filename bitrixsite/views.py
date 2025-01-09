@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 import requests
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from bitrixsite.models import *
 
@@ -38,15 +39,29 @@ class CaseView(View):
 
 class Blog(View):
     def get(self, request):
-        return render(request, 'blog.html')
+        articles = Article.objects.all()
+        cats = ArticleCategory.objects.all()
 
-class ArticleCategory(View):
+        
+        paginator = Paginator(articles, 5)  
+        page_number = request.GET.get("page")
+        page_obj = paginator.get_page(page_number)
+
+        return render(request, 'blog.html', {'articles':articles,'cats':cats, 'page_obj':page_obj})
+
+class ArticleCategoryView(View):
     def get(self, request):
         return render(request, 'articlecategory.html')
 
-class Article(View):
+class ArticleView(View):
+    def get(self, request, article_slug):
+        article = Article.objects.get(article_slug=article_slug)
+        return render(request, 'article.html', {'article':article})
+    
+
+class Payment(View):
     def get(self, request):
-        return render(request, 'article.html')
+        return render(request, 'payment.html')
 
 class Webinars(View):
     def get(self, request):

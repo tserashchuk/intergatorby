@@ -16814,3 +16814,16 @@ Common: Spacing Gutters
 .mt-10 {
   margin-top: 25px;
 }
+
+.erip-logo {
+  max-height: 60px;
+}
+
+.pl-50 {
+padding-left: 50px;
+}
+
+.clr-gray-regtext {
+ color: rgba(10, 16, 47, 0.8);
+ font-weight: 400 !important;
+}

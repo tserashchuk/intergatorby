@@ -2,6 +2,9 @@ import datetime
 from django.urls import reverse
 from django.db import models
 from django.contrib.auth.models import User
+from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
+
 
 TWEET_CHOICES = (
     ('Вебинар','Вебинар'),
@@ -64,6 +67,7 @@ class Article(models.Model):
     article_slug = models.CharField('URL', max_length=200, default='article' + str(datetime.datetime.now()))
     article_short_desc = models.TextField('Короткое описание для Schema', blank=True)
     article_image = models.ImageField('Изображение статьи')
+    article_text = RichTextUploadingField(blank=True)
     # case_short_desc = models.TextField('Короткое описание для Schema', blank=True) тут сделать поле редактора
     pub_date = models.DateTimeField(default=datetime.datetime.now)
     category_article = models.ManyToManyField(ArticleCategory, blank=True)
@@ -98,10 +102,13 @@ class Case(models.Model):
     case_metadesc = models.CharField('Описание для Open Graph (og:description)', max_length=300)
     case_slug = models.CharField('URL', max_length=200, default='article' + str(datetime.datetime.now()))
     case_short_desc = models.TextField('Короткое описание для Schema', blank=True)
+    case_duration = models.CharField('Временные затраты', blank=True, max_length=200)
+    case_client = models.CharField('Клиент', blank=True, max_length=200)
     case_image = models.ImageField('Изображение кейса')
     # case_short_desc = models.TextField('Короткое описание для Schema', blank=True) тут сделать поле редактора
     pub_date = models.DateTimeField(default=datetime.datetime.now)
     category_case = models.ManyToManyField(CaseCategory, blank=True)
+    case_text = RichTextUploadingField(blank=True)
 
     def __str__(self):
         return self.case_name

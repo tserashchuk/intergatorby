@@ -11,3 +11,4 @@ admin.site.register(Case, admin.ModelAdmin)
 admin.site.register(CategoryWebinar, admin.ModelAdmin)
 admin.site.register(Webinar, admin.ModelAdmin)
 admin.site.register(Review, admin.ModelAdmin)
+
