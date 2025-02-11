@@ -63,13 +63,17 @@ class Payment(View):
     def get(self, request):
         return render(request, 'payment.html')
 
-class Webinars(View):
+class WebinarsView(View):
     def get(self, request):
-        return render(request, 'webinars.html')
+        cwebinars = CategoryWebinar.objects.all()
+        actwebs = Webinar.objects.all().order_by('pub_date')
+        webinars = Webinar.objects.all().order_by('-pub_date')
+        return render(request, 'webinars.html',{'cwebinars':cwebinars,'webinars':webinars,'actwebs':actwebs})
 
-class Webinar(View):
-    def get(self, request):
-        return render(request, 'webinar.html')
+class WebinarView(View):
+    def get(self, request, webinar_slug):
+        webinar = Webinar.objects.get(webinar_slug=webinar_slug)
+        return render(request, 'webinar.html', {'webinar':webinar})
 
 class Bitrix(View):
     def get(self, request):

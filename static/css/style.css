@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* ========== Home 10 : Hero Section Style ============= */
-@import url("https://fonts.cdnfonts.com/css/clash-display");
+
 /* ========== Home 10 : Process Section Style ============= */
-@import url("https://fonts.cdnfonts.com/css/clash-display");
+
 /*======= Base Class ========*/
 :root {
   --bs-primary:#3147FF;
@@ -16816,14 +16816,39 @@ Common: Spacing Gutters
 }
 
 .erip-logo {
-  max-height: 60px;
+  height: 100px;
 }
 
 .pl-50 {
 padding-left: 50px;
 }
 
+.pb-10 {
+  padding-bottom: 10px;
+  }
+
+.pb-100 {
+  padding-bottom: 100px;
+  }
+
+.pt-50 {
+padding-top: 50px;
+}
+
+.mb-20 {
+  padding-bottom: 20px;
+  }
+
 .clr-gray-regtext {
  color: rgba(10, 16, 47, 0.8);
  font-weight: 400 !important;
+}
+
+.bluredbg {
+  backdrop-filter: blur(10px);
+  background-size: cover;
+}
+
+.alininging-items {
+  align-items: flex-start !important;
 }

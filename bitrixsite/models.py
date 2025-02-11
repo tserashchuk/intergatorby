@@ -4,7 +4,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
-
+from django.utils import timezone
 
 TWEET_CHOICES = (
     ('Вебинар','Вебинар'),
@@ -34,6 +34,7 @@ class Person(models.Model):
     person_title = models.CharField('Заголовок для Open Graph (og:title)', max_length=200)
     person_metadesc = models.CharField('Описание для Open Graph (og:description)', max_length=300)
     person_short_desc = models.TextField('Короткое описание', blank=True)
+    person_desc = RichTextUploadingField(blank=True)
     # case_short_desc = models.TextField('Короткое описание для Schema', blank=True) тут сделать поле редактора
     person_image = models.ImageField('Фото')
     pub_date = models.DateTimeField(default=datetime.datetime.now)
@@ -139,11 +140,12 @@ class Webinar(models.Model):
     webinar_title = models.CharField('Заголовок для Open Graph (og:title)', max_length=200)
     webinar_metadesc = models.CharField('Описание для Open Graph (og:description)', max_length=300)
     webinar_slug = models.CharField('URL', max_length=200, default='article' + str(datetime.datetime.now()))
-    # webinar_short_desc = models.TextField('Короткое описание для Schema', blank=True) тут сделать поле редактора
+    webinar_short_desc = models.TextField('Короткое описание для карточки', blank=True)
     webinar_image = models.ImageField('Изображение вебинара')
-    pub_date = models.DateTimeField(default=datetime.datetime.now)
+    pub_date = models.DateTimeField('Дата проведения вебинара',default=datetime.datetime.now)
     category_web = models.ManyToManyField(CategoryWebinar,blank=True)
     persons_web = models.ManyToManyField(Person,blank=True)
+    webinar_desc = RichTextUploadingField(blank=True)
 
 
     def __str__(self):
@@ -151,6 +153,10 @@ class Webinar(models.Model):
 
     def get_absolute_url(self):
         return reverse('web', args=[self.webinar_slug])
+    
+    @property
+    def is_past_due(self):
+        return timezone.now() > self.pub_date
     
 
 class Review(models.Model):
