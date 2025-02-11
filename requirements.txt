@@ -37,7 +37,7 @@ Markdown==3.7
 MarkupSafe==3.0.2
 more-itertools==10.5.0
 multidict==6.1.0
-numpy==2.1.2
+numpy
 pandas==2.2.3
 pillow==10.4.0
 propcache==0.2.0
