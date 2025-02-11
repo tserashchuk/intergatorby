@@ -20,7 +20,7 @@ django-bootstrap-breadcrumbs==0.9.2
 django-ckeditor==6.7.2
 django-editorjs-fields==0.2.7
 django-filter==24.3
-django-js-asset==3.0.1
+django-js-asset
 django-quill==0.1.0
 django-quill-editor==0.1.40
 djangorestframework==3.15.2
