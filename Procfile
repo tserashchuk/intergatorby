@@ -1,1 +1,1 @@
-web: gunicorn integrators.wsgi
+web: gunicorn integrator.wsgi
