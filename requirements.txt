@@ -15,7 +15,7 @@ charset-normalizer==3.4.0
 click==8.1.7
 colorama==0.4.6
 cryptography==44.0.0
-Django==5.x.x
+Django==5.x
 django-bootstrap-breadcrumbs==0.9.2
 django-ckeditor==6.7.2
 django-editorjs-fields==0.2.7
