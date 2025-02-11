@@ -1,1 +1,1 @@
-web: gunicorn integrators.wsgi --log-file
+web: gunicorn integrator.wsgi --log-file
