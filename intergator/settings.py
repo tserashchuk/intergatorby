@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-k6_v+9a*85=b@!i&p@zs16s$x@8c9f#j8hzk)o^3r!v2)o8p=a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -125,14 +125,17 @@ import os.path
 # https://integrators-405444409e47.herokuapp.com/
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+STATIC_URL = "/static/"
 if DEBUG:
     STATICFILES_DIRS=['staticfiles']
     STATIC_ROOT = None
+    print('DBUG')
 else:
     STATICFILES_DIRS=[]
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    print('NDBUG')
 
-STATIC_URL = "static/"
+
 
 
 MEDIA_URL = '/media/'
