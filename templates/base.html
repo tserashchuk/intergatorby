@@ -65,7 +65,7 @@
               <!-- light version logo (logo must be black)-->
               <img class="logo-light brand-logo-width" src="{% static '/image/logo.png' %} " alt="brand logo">
               <!-- Dark version logo (logo must be White)-->
-              <img class="logo-dark" src="./image/logo-light.svg" alt="brand logo">
+              <img class="logo-dark brand-logo-width" src="{% static '/image/logo-white.png' %} " alt="brand logo">
             </a>
           </div>
           <div class="menu-block-wrapper ">
@@ -85,60 +85,26 @@
                   <div class="sub-menu" id="submenu-1">
                     <ul class="sub-menu_list">
                       <li class="sub-menu_item">
-                        <a href="index.html">
-                          <span class="menu-item-text">Digital agency</span>
+                        <a href="{% url 'about' %}">
+                          <span class="menu-item-text">О нас</span>
                         </a>
                       </li>
                       <li class="sub-menu_item">
-                        <a href="index-2.html">
-                          <span class="menu-item-text">Chat software</span>
+                        <a href="{% url 'reviews' %}">
+                          <span class="menu-item-text">Отзывы</span>
                         </a>
                       </li>
                       <li class="sub-menu_item">
-                        <a href="index-3.html">
-                          <span class="menu-item-text">Fitness App</span>
+                        <a href="{% url 'cases' %}">
+                          <span class="menu-item-text">Кейсы</span>
                         </a>
                       </li>
-                      <li class="sub-menu_item">
-                        <a href="index-4.html">
-                          <span class="menu-item-text">Online Courses</span>
-                        </a>
-                      </li>
-                      <li class="sub-menu_item">
-                        <a href="index-5.html">
-                          <span class="menu-item-text">SEO Agency</span>
-                        </a>
-                      </li>
-                      <li class="sub-menu_item">
-                        <a href="index-6.html">
-                          <span class="menu-item-text">Cold Email</span>
-                        </a>
-                      </li>
-                      <li class="sub-menu_item">
-                        <a href="index-7.html">
-                          <span class="menu-item-text">Web Hosting</span>
-                        </a>
-                      </li>
-                      <li class="sub-menu_item">
-                        <a href="index-8.html">
-                          <span class="menu-item-text">Startup</span>
-                        </a>
-                      </li>
-                      <li class="sub-menu_item">
-                        <a href="index-9.html">
-                          <span class="menu-item-text">Tracking Software</span>
-                        </a>
-                      </li>
-                      <li class="sub-menu_item">
-                        <a href="index-10.html">
-                          <span class="menu-item-text">AI Writing Tool</span>
-                        </a>
-                      </li>
+                      
                     </ul>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a href="about.html" class="nav-link-item drop-trigger">Битрикс24</a>
+                  <a href="{% url 'bitrix' %}" class="nav-link-item drop-trigger">Битрикс24</a>
                 </li>
                 <li class="nav-item nav-item-has-children">
                   <a href="#" class="nav-link-item drop-trigger">Услуги<i class="fas fa-angle-down"></i>
@@ -343,28 +309,10 @@
                     </ul>
                   </div>
                 </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger">Вебинары<i class="fas fa-angle-down"></i>
+                <li class="nav-item ">
+                  <a href="{% url 'webinars' %}" class="nav-link-item">Вебинары
                   </a>
-                  <div class="sub-menu" id="submenu-13">
-                    <ul class="sub-menu_list">
-                      <li class="sub-menu_item">
-                        <a href="contact.html">
-                          <span class="menu-item-text">Contact 1</span>
-                        </a>
-                      </li>
-                      <li class="sub-menu_item">
-                        <a href="contact-2.html">
-                          <span class="menu-item-text">Contact 2</span>
-                        </a>
-                      </li>
-                      <li class="sub-menu_item">
-                        <a href="contact-3.html">
-                          <span class="menu-item-text">Contact 3</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                  
                 </li>
               </ul>
             </nav>
@@ -407,7 +355,7 @@
               <div class="footer__content-block">
                 <div class="footer__content-text">
                   <div class="footer-brand">
-                    <img src="./image/logo-white.svg" alt="image alt">
+                    <img src="./image/logo-white.png" alt="image alt">
                   </div>
                   <p>
                     We are strategic & creative digital agency who are focused on user experience, mobile, social, data gathering and promotional offerings.
