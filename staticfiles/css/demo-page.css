@@ -63,7 +63,7 @@
   border-width: 0px;
 }
 .preview-page_hero-section {
-  background-image: url(../image/demo/header.png);
+  /* background-image: url(../image/demo/header.png); */
   width: 100%;
   background-color: #1B1C1D;
   background-blend-mode: multiply;
