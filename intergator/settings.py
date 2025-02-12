@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'bitrixsite',
     'ckeditor', 
@@ -45,7 +44,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -87,12 +85,6 @@ DATABASES = {
 
 
 
-STORAGES = {
-    # ...
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
 
 
 # Password validation
@@ -133,12 +125,15 @@ import os.path
 # https://integrators-405444409e47.herokuapp.com/
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
-STATIC_HOST = "https://d4663kmspf1sqa.cloudfront.net" if not DEBUG else ""
-STATIC_URL = STATIC_HOST + "/static/"
-STATICFILES_DIRS = (
-os.path.join('static'), 
-)
+if DEBUG:
+    STATICFILES_DIRS=['staticfiles']
+    STATIC_ROOT = None
+else:
+    STATICFILES_DIRS=[]
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_URL = "static/"
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = (
