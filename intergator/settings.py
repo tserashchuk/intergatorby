@@ -125,17 +125,12 @@ import os.path
 # https://integrators-405444409e47.herokuapp.com/
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATIC_URL = "/static/"
-if DEBUG:
-    STATICFILES_DIRS=['staticfiles']
-    STATIC_ROOT = None
-    print('DBUG')
-else:
-    STATICFILES_DIRS=[]
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-    print('NDBUG')
-
-
+STATIC_URL = 'static/'
+ 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 
 MEDIA_URL = '/media/'
