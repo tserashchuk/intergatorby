@@ -1,26 +1,246 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<section class="error-section bg-light-2">
+
+
+<div class="home-1_hero-section" id="hero">
+  <div class="home-1_hero-shape-1">
+    <img src="{% static '/image/home-1/hero-shape-1.svg' %}" alt="image alt">
+  </div>
+  <div class="home-1_hero-shape-2">
+    <img src="{% static '/image/home-1/hero-shape-2.svg' %}" alt="image alt">
+  </div>
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xxl-5 col-lg-6 col-sm-7 col-xs-8 col-9">
-        <div class="error-content">
-          <div class="error-content__image">
-            <img src="./image/404.png" alt="image alt">
+    <div class="row row--hero-content">
+      <div class="col-xxl-auto col-lg-6 col-md-7 col-sm-8 col-10 " data-aos-duration="1000" data-aos="fade-left" data-aos-delay="300">
+        <div class="home-1_hero-image-block">
+          <div class="home-1_hero-image">
+            <img src="{% static '/image/bitrix/all.svg' %}" alt="bitrix image">
           </div>
-          <h2 class="heading-md text-black">Битрикс24</h2>
-          <p>The requested URL you are looking for doesn’t exist on this server.</p>
-          <div class="error-content__button">
-            <a href="#" class="btn-masco btn-primary rounded-pill">
-              Back to Homepage
+        </div>
+      </div>
+      <div class="col-xxl-auto col-lg-6 col-md-10" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
+        <div class="home-1_hero-content">
+          <div class="home-1_hero-content-text">
+            <h1 class="hero-content__title heading-xxl">
+              Битрикс24
+              Помогает бизнесу работать
+            </h1>
+            <p>
+              А мы знаем, как Правильно Внедрить Битрикс24 в процессы вашей компании.
+
+            </p>
+          </div>
+          <div class="d-flex gap-3 flex-column flex-sm-row">
+            <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+              <span>Возможности</span>
+            </a>
+            <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+              <span>Тарифы</span>
             </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</div>
+
+<div class="section-padding-120">
+  <div class="container">
+    <h2 class="content-title heading-md text-black text-center">Битрикс24 — это полный набор инструментов</h2>
+    <p class="text-center">для организации работы всей компании
+    </p>
+    <div class="section-padding">
+      <div class="row gy-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card__body">
+            <h3 class="service-card__title">Единое онлайн-пространство для совместной работы</h3>
+            <p>Битрикс24 заменит целый ряд инструментов, необходимых для полноценного взаимодействия внутри команды. Неважно, где работают ваши сотрудники – в офисе или на удалёнке - вы всегда будете на связи.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-8">
+          <img class="w-100" src="{% static '/image/bitrix/bitrix1.png' %}" alt="bitrix image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-padding bg-light-2">
+    <div class="container">
+      <div class="row justify-content-center gy-5 pb-5">
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/video_and_chat.svg' %}" alt="bitrix image">
+          <p class="text-center">Бесплатные видеозвонки до 100 человек</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/chats.svg' %}" alt="bitrix image">
+          <p class="text-center">Чат для совместной работы</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/calendar.svg' %}" alt="bitrix image">
+          <p class="text-center">Общий календарь встреч с коллегами</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/calendar.svg' %}" alt="bitrix image">
+          <p class="text-center">Общий календарь встреч с коллегами</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/files.svg' %}" alt="bitrix image">
+          <p class="text-center">Работа с файлами на общем диске</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/emails.svg' %}" alt="bitrix image">
+          <p class="text-center">Корпоративная почта</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/knowledges.svg' %}" alt="bitrix image">
+          <p class="text-center">База знаний</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/time.svg' %}" alt="bitrix image">
+          <p class="text-center">Учет рабочего времени</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/news.svg' %}" alt="bitrix image">
+          <p class="text-center">Новости компании</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/assistant.svg' %}" alt="bitrix image">
+          <p class="text-center">CoPilot — ваш личный ассистент</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+          <span>Попробовать бесплатно</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-padding-120">
+  <div class="container">
+    <div class="section-padding pt-0">
+      <div class="row gy-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card__body">
+            <h3 class="service-card__title">Продажи и маркетинг</h3>
+            <p>Собирайте заявки из всех каналов, заполняйте документы, выставляйте счета. Подключайте почту, телефонию, соцсети, рекламу, сквозную аналитику. Ни один клиент не будет потерян или забыт! </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-8">
+          <img class="w-100" src="{% static '/image/bitrix/bitrix2.png' %}" alt="bitrix image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-padding bg-light-2">
+    <div class="container">
+      <div class="row justify-content-center gy-5 pb-5">
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/knowledges.svg' %}" alt="bitrix image">
+          <p class="text-center">CRM</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/chats.svg' %}" alt="bitrix image">
+          <p class="text-center">Сбор лидов из всех каналов</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/emails.svg' %}" alt="bitrix image">
+          <p class="text-center">История каждой сделки</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/video_and_chat.svg' %}" alt="bitrix image">
+          <p class="text-center">Автоматизация продаж</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/calendar.svg' %}" alt="bitrix image">
+          <p class="text-center">Планы продаж и отчеты</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/files.svg' %}" alt="bitrix image">
+          <p class="text-center">Интеграция с 1С</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/calendar.svg' %}" alt="bitrix image">
+          <p class="text-center">Сегментация клиентов</p>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+          <img class="w-25" src="{% static '/image/bitrix/news.svg' %}" alt="bitrix image">
+          <p class="text-center">Рассылки</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+          <span>Попробовать бесплатно</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="section-padding-120">
+    <div class="container">
+      <div class="section-padding pt-0">
+        <div class="row gy-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card__body">
+              <h3 class="service-card__title">Задачи и проекты</h3>
+              <p>Управляйте командой, контролируйте проекты, назначайте ответственных, создавайте чек-листы, используйте шаблоны регулярных задач. Успевайте больше и получайте высокую производительность сотрудников.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-8">
+            <img class="w-100" src="{% static '/image/bitrix/bitrix3.png' %}" alt="bitrix image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-padding bg-light-2">
+      <div class="container">
+        <div class="row justify-content-center gy-5 pb-5">
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+            <img class="w-25" src="{% static '/image/bitrix/emails.svg' %}" alt="bitrix image">
+            <p class="text-center">Постановка задач в 2 клика</p>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+            <img class="w-25" src="{% static '/image/bitrix/chats.svg' %}" alt="bitrix image">
+            <p class="text-center">Управление проектами в разных режимах</p>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+            <img class="w-25" src="{% static '/image/bitrix/news.svg' %}" alt="bitrix image">
+            <p class="text-center">Мобильное приложение</p>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+            <img class="w-25" src="{% static '/image/bitrix/video_and_chat.svg' %}" alt="bitrix image">
+            <p class="text-center">Шаблоны задач и роботы</p>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+            <img class="w-25" src="{% static '/image/bitrix/knowledges.svg' %}" alt="bitrix image">
+            <p class="text-center">История каждой задачи</p>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+            <img class="w-25" src="{% static '/image/bitrix/calendar.svg' %}" alt="bitrix image">
+            <p class="text-center">Роли и права доступа</p>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+            <img class="w-25" src="{% static '/image/bitrix/files.svg' %}" alt="bitrix image">
+            <p class="text-center">KPI и отчеты</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+            <span>Попробовать бесплатно</span>
+          </a>
+        </div>
+      </div>
+  </div>
+    
+
+
+
+
+<!-- end -->
 
 <section class="about_fact-section  section-padding-120">
   <div class="container">
