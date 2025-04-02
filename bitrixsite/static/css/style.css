@@ -16947,3 +16947,95 @@ Common: Spacing Gutters
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.plan {
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan__header {
+  border-radius: 14px 14px 0 0;
+  height: 230px;
+}
+
+.plan__content {
+  height: 100%;
+  border-radius: 0 0 14px 14px;
+}
+
+@media screen and (max-width: 1399px) {
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 16px;
+  }
+
+  .plan__header {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .plan__header {
+    height: auto;
+  }
+}
+
+.plan__line {
+  width: 100%;
+  height: 1px;
+}
+
+.plan__subtitle {
+  margin-top: 23px;
+}
+
+.plan--lemon .plan__header,
+.plan--lemon .plan__line {
+  background-color: #e2f3a3;
+}
+
+.plan--lemon .plan__content,
+.plan--lemon {
+  background-color: #f5fdd6;
+}
+
+.plan--cyan .plan__header,
+.plan--cyan .plan__line {
+  background-color: #caf0fb;
+}
+
+.plan--cyan .plan__content,
+.plan--cyan {
+  background-color: #e7f8ff;
+}
+
+.plan--blue .plan__header,
+.plan--blue .plan__line {
+  background-color: #a4f2f2;
+}
+
+.plan--blue .plan__content,
+.plan--blue {
+  background-color: #d6fdfc;
+}
