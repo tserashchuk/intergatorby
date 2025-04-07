@@ -1,41 +1,56 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
-
+{% extends 'base.html' %} {% load static %} {% block content %}
 
 <div class="home-1_hero-section" id="hero">
   <div class="home-1_hero-shape-1">
-    <img src="{% static '/image/home-1/hero-shape-1.svg' %}" alt="image alt">
+    <img src="{% static '/image/home-1/hero-shape-1.svg' %}" alt="image alt" />
   </div>
   <div class="home-1_hero-shape-2">
-    <img src="{% static '/image/home-1/hero-shape-2.svg' %}" alt="image alt">
+    <img src="{% static '/image/home-1/hero-shape-2.svg' %}" alt="image alt" />
   </div>
   <div class="container">
     <div class="row row--hero-content">
-      <div class="col-xxl-auto col-lg-6 col-md-7 col-sm-8 col-10 " data-aos-duration="1000" data-aos="fade-left" data-aos-delay="300">
+      <div
+        class="col-xxl-auto col-lg-6 col-md-7 col-sm-8 col-10"
+        data-aos-duration="1000"
+        data-aos="fade-left"
+        data-aos-delay="300"
+      >
         <div class="home-1_hero-image-block">
           <div class="home-1_hero-image">
-            <img src="{% static '/image/bitrix/all.svg' %}" alt="bitrix image">
+            <img
+              src="{% static '/image/bitrix/all.svg' %}"
+              alt="bitrix image"
+            />
           </div>
         </div>
       </div>
-      <div class="col-xxl-auto col-lg-6 col-md-10" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
+      <div
+        class="col-xxl-auto col-lg-6 col-md-10"
+        data-aos-duration="1000"
+        data-aos="fade-right"
+        data-aos-delay="300"
+      >
         <div class="home-1_hero-content">
           <div class="home-1_hero-content-text">
             <h1 class="hero-content__title heading-xl">
-              Битрикс24
-              помогает бизнесу работать
+              Битрикс24 помогает бизнесу работать
             </h1>
             <p>
-              А мы знаем, как Правильно Внедрить Битрикс24 в процессы вашей компании.
-
+              А мы знаем, как Правильно Внедрить Битрикс24 в процессы вашей
+              компании.
             </p>
           </div>
           <div class="d-flex gap-3 flex-column flex-sm-row">
-            <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+            <a
+              href="#"
+              class="btn-masco btn-masco--header rounded-pill btn-fill--up"
+            >
               <span>Возможности</span>
             </a>
-            <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+            <a
+              href="#"
+              class="btn-masco btn-masco--header rounded-pill btn-fill--up"
+            >
               <span>Тарифы</span>
             </a>
           </div>
@@ -47,19 +62,31 @@
 
 <div class="section-padding-120">
   <div class="container">
-    <h2 class="content-title heading-md text-black text-center">Битрикс24 — это полный набор инструментов</h2>
-    <p class="text-center">для организации работы всей компании
-    </p>
+    <h2 class="content-title heading-md text-black text-center">
+      Битрикс24 — это полный набор инструментов
+    </h2>
+    <p class="text-center">для организации работы всей компании</p>
     <div class="section-padding">
       <div class="row gy-5">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="service-card__body">
-            <h3 class="service-card__title">Единое онлайн-пространство для совместной работы</h3>
-            <p>Битрикс24 заменит целый ряд инструментов, необходимых для полноценного взаимодействия внутри команды. Неважно, где работают ваши сотрудники – в офисе или на удалёнке - вы всегда будете на связи.</p>
+            <h3 class="service-card__title">
+              Единое онлайн-пространство для совместной работы
+            </h3>
+            <p>
+              Битрикс24 заменит целый ряд инструментов, необходимых для
+              полноценного взаимодействия внутри команды. Неважно, где работают
+              ваши сотрудники – в офисе или на удалёнке - вы всегда будете на
+              связи.
+            </p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-8">
-          <img class="w-100" src="{% static '/image/bitrix/bitrix1.png' %}" alt="bitrix image">
+          <img
+            class="w-100"
+            src="{% static '/image/bitrix/bitrix1.png' %}"
+            alt="bitrix image"
+          />
         </div>
       </div>
     </div>
@@ -68,48 +95,91 @@
     <div class="container">
       <div class="grid grid--5 gy-5 pb-5">
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/video_and_chat.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/video_and_chat.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Бесплатные видеозвонки до 100 человек</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/chats.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/chats.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Чат для совместной работы</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/calendar.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/calendar.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Общий календарь встреч с коллегами</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/calendar.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/calendar.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Общий календарь встреч с коллегами</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/files.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/files.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Работа с файлами на общем диске</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/emails.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/emails.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Корпоративная почта</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/knowledges.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/knowledges.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">База знаний</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/time.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/time.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Учет рабочего времени</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/news.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/news.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Новости компании</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/assistant.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/assistant.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">CoPilot — ваш личный ассистент</p>
         </div>
       </div>
       <div class="text-center mt-5">
-        <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+        <a
+          href="#"
+          class="btn-masco btn-masco--header rounded-pill btn-fill--up"
+        >
           <span>Попробовать бесплатно</span>
         </a>
       </div>
@@ -124,11 +194,19 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="service-card__body">
             <h3 class="service-card__title">Продажи и маркетинг</h3>
-            <p>Собирайте заявки из всех каналов, заполняйте документы, выставляйте счета. Подключайте почту, телефонию, соцсети, рекламу, сквозную аналитику. Ни один клиент не будет потерян или забыт! </p>
+            <p>
+              Собирайте заявки из всех каналов, заполняйте документы,
+              выставляйте счета. Подключайте почту, телефонию, соцсети, рекламу,
+              сквозную аналитику. Ни один клиент не будет потерян или забыт!
+            </p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-8">
-          <img class="w-100" src="{% static '/image/bitrix/bitrix2.png' %}" alt="bitrix image">
+          <img
+            class="w-100"
+            src="{% static '/image/bitrix/bitrix2.png' %}"
+            alt="bitrix image"
+          />
         </div>
       </div>
     </div>
@@ -137,40 +215,75 @@
     <div class="container">
       <div class="grid grid--4 gy-5 pb-5">
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/knowledges.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/knowledges.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">CRM</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/chats.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/chats.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Сбор лидов из всех каналов</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/emails.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/emails.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">История каждой сделки</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/video_and_chat.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/video_and_chat.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Автоматизация продаж</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/calendar.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/calendar.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Планы продаж и отчеты</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/files.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/files.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Интеграция с 1С</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/calendar.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/calendar.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Сегментация клиентов</p>
         </div>
         <div class="grid__elem">
-          <img class="w-25" src="{% static '/image/bitrix/news.svg' %}" alt="bitrix image">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/news.svg' %}"
+            alt="bitrix image"
+          />
           <p class="text-center">Рассылки</p>
         </div>
       </div>
       <div class="text-center mt-5">
-        <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+        <a
+          href="#"
+          class="btn-masco btn-masco--header rounded-pill btn-fill--up"
+        >
           <span>Попробовать бесплатно</span>
         </a>
       </div>
@@ -178,609 +291,632 @@
   </div>
 </div>
 
- <div class="section-padding-120">
-    <div class="container">
-      <div class="section-padding pt-0">
-        <div class="row gy-5">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="service-card__body">
-              <h3 class="service-card__title">Задачи и проекты</h3>
-              <p>Управляйте командой, контролируйте проекты, назначайте ответственных, создавайте чек-листы, используйте шаблоны регулярных задач. Успевайте больше и получайте высокую производительность сотрудников.</p>
-            </div>
+<div class="section-padding-120">
+  <div class="container">
+    <div class="section-padding pt-0">
+      <div class="row gy-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card__body">
+            <h3 class="service-card__title">Задачи и проекты</h3>
+            <p>
+              Управляйте командой, контролируйте проекты, назначайте
+              ответственных, создавайте чек-листы, используйте шаблоны
+              регулярных задач. Успевайте больше и получайте высокую
+              производительность сотрудников.
+            </p>
           </div>
-          <div class="col-12 col-md-6 col-lg-8">
-            <img class="w-100" src="{% static '/image/bitrix/bitrix3.png' %}" alt="bitrix image">
-          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-8">
+          <img
+            class="w-100"
+            src="{% static '/image/bitrix/bitrix3.png' %}"
+            alt="bitrix image"
+          />
         </div>
       </div>
     </div>
-    <div class="section-padding bg-light-2">
-      <div class="container">
-        <div class="grid grid--4 gy-5 pb-5">
-          <div class="grid__elem">
-            <img class="w-25" src="{% static '/image/bitrix/emails.svg' %}" alt="bitrix image">
-            <p class="text-center">Постановка задач в 2 клика</p>
-          </div>
-          <div class="grid__elem">
-            <img class="w-25" src="{% static '/image/bitrix/chats.svg' %}" alt="bitrix image">
-            <p class="text-center">Управление проектами в разных режимах</p>
-          </div>
-          <div class="grid__elem">
-            <img class="w-25" src="{% static '/image/bitrix/news.svg' %}" alt="bitrix image">
-            <p class="text-center">Мобильное приложение</p>
-          </div>
-          <div class="grid__elem">
-            <img class="w-25" src="{% static '/image/bitrix/video_and_chat.svg' %}" alt="bitrix image">
-            <p class="text-center">Шаблоны задач и роботы</p>
-          </div>
-          <div class="grid__elem">
-            <img class="w-25" src="{% static '/image/bitrix/knowledges.svg' %}" alt="bitrix image">
-            <p class="text-center">История каждой задачи</p>
-          </div>
-          <div class="grid__elem">
-            <img class="w-25" src="{% static '/image/bitrix/calendar.svg' %}" alt="bitrix image">
-            <p class="text-center">Роли и права доступа</p>
-          </div>
-          <div class="grid__elem">
-            <img class="w-25" src="{% static '/image/bitrix/files.svg' %}" alt="bitrix image">
-            <p class="text-center">KPI и отчеты</p>
-          </div>
-          <div class="grid__elem">
-            <img class="w-25" src="{% static '/image/bitrix/assistant.svg' %}" alt="bitrix image">
-            <p class="text-center">CoPilot — ваш личный ассистент</p>
-          </div>
+  </div>
+  <div class="section-padding bg-light-2">
+    <div class="container">
+      <div class="grid grid--4 gy-5 pb-5">
+        <div class="grid__elem">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/emails.svg' %}"
+            alt="bitrix image"
+          />
+          <p class="text-center">Постановка задач в 2 клика</p>
         </div>
-        <div class="text-center">
-          <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
-            <span>Попробовать бесплатно</span>
-          </a>
+        <div class="grid__elem">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/chats.svg' %}"
+            alt="bitrix image"
+          />
+          <p class="text-center">Управление проектами в разных режимах</p>
+        </div>
+        <div class="grid__elem">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/news.svg' %}"
+            alt="bitrix image"
+          />
+          <p class="text-center">Мобильное приложение</p>
+        </div>
+        <div class="grid__elem">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/video_and_chat.svg' %}"
+            alt="bitrix image"
+          />
+          <p class="text-center">Шаблоны задач и роботы</p>
+        </div>
+        <div class="grid__elem">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/knowledges.svg' %}"
+            alt="bitrix image"
+          />
+          <p class="text-center">История каждой задачи</p>
+        </div>
+        <div class="grid__elem">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/calendar.svg' %}"
+            alt="bitrix image"
+          />
+          <p class="text-center">Роли и права доступа</p>
+        </div>
+        <div class="grid__elem">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/files.svg' %}"
+            alt="bitrix image"
+          />
+          <p class="text-center">KPI и отчеты</p>
+        </div>
+        <div class="grid__elem">
+          <img
+            class="w-25"
+            src="{% static '/image/bitrix/assistant.svg' %}"
+            alt="bitrix image"
+          />
+          <p class="text-center">CoPilot — ваш личный ассистент</p>
         </div>
       </div>
+      <div class="text-center">
+        <a
+          href="#"
+          class="btn-masco btn-masco--header rounded-pill btn-fill--up"
+        >
+          <span>Попробовать бесплатно</span>
+        </a>
+      </div>
+    </div>
   </div>
-    
+
   <div class="section-padding-120">
     <div class="container">
-      <h2 class="content-title heading-md text-black text-center">Битрикс24 — это полный набор инструментов</h2>
+      <h2 class="content-title heading-md text-black text-center">
+        Битрикс24 — это полный набор инструментов
+      </h2>
       <p class="text-center">
         Цены указаны за всю компанию, а не за отдельных пользователей
       </p>
       <div class="text-center mt-5">
-        <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+        <a
+          href="#"
+          class="btn-masco btn-masco--header rounded-pill btn-fill--up"
+        >
           <span>На месяц</span>
         </a>
-        <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
+        <a
+          href="#"
+          class="btn-masco btn-masco--header rounded-pill btn-fill--up"
+        >
           <span>На год</span>
         </a>
       </div>
       <div class="plans mt-5">
         <div class="plan plan--lemon">
           <div class="plan__header p-3 text-center">
-            <div class="service-card__title mt-2">
-                Бесплатный
-            </div>
+            <div class="service-card__title mt-2">Бесплатный</div>
             <p>Начните работать онлайн и продавать больше с CRM</p>
           </div>
-          <div class="plan__content p-4 d-flex flex-column justify-content-between">
+          <div
+            class="plan__content p-4 d-flex flex-column justify-content-between"
+          >
+            <div>
+              <div class="text-center p-2">
                 <div>
-                  <div class="text-center p-2">
-                    <div>
-                      <b>неограниченно <br>пользователей</b>
-                    </div>
-                    <div class="service-card__title mt-2">
-                      Бесплатно
-                    </div>
-                    <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4">
-                      <span>Создать</span>
-                    </a>
-                    <div class="mt-4">
-                      <b>5 ГБ</b>
-                    </div>
+                  <b>неограниченно <br />пользователей</b>
                 </div>
-                <div class="plan__line mt-4"></div>
-                <div class="">
-                  <div class="plan__subtitle">
-                    <b>Совместная работа</b>
-                    <ul class="ms-3">
-                      <li class="pt-2">Календарь</li>
-                      <li class="pt-2">Соцсеть компании</li>
-                      <li class="pt-2">Лента</li>
-                      <li class="pt-2">Доски</li>
-                      <li class="pt-2">База знаний</li>
-                    </ul>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Мессенджер</b>
-                    <ul class="ms-3">
-                      <li class="pt-2">Чат</li>
-                      <li class="pt-2">Каналы</li>
-                      <li class="pt-2">Битрикс24 Синк</li>
-                    </ul>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Коллабы</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Задачи и проекты</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>CRM</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>CoPilot</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Онлайн-подпись</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Диск</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Контакт-центр</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Сайты</b>
-                  </div>
+                <div class="service-card__title mt-2">Бесплатно</div>
+                <a
+                  href="#"
+                  class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4"
+                >
+                  <span>Создать</span>
+                </a>
+                <div class="mt-4">
+                  <b>5 ГБ</b>
                 </div>
               </div>
-              <div></div>
+              <div class="plan__line mt-4"></div>
+              <div class="">
+                <div class="plan__subtitle">
+                  <b>Совместная работа</b>
+                  <ul class="ms-3">
+                    <li class="pt-2">Календарь</li>
+                    <li class="pt-2">Соцсеть компании</li>
+                    <li class="pt-2">Лента</li>
+                    <li class="pt-2">Доски</li>
+                    <li class="pt-2">База знаний</li>
+                  </ul>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Мессенджер</b>
+                  <ul class="ms-3">
+                    <li class="pt-2">Чат</li>
+                    <li class="pt-2">Каналы</li>
+                    <li class="pt-2">Битрикс24 Синк</li>
+                  </ul>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Коллабы</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Задачи и проекты</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>CRM</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>CoPilot</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Онлайн-подпись</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Диск</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Контакт-центр</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Сайты</b>
+                </div>
+              </div>
+            </div>
+            <div></div>
           </div>
         </div>
         <div class="plan plan--cyan">
           <div class="plan__header p-3 text-center">
-            <div class="service-card__title mt-2">
-                Базовый
-            </div>
+            <div class="service-card__title mt-2">Базовый</div>
             <p>CRM для небольших отделов продаж</p>
           </div>
-          <div class="plan__content p-4 d-flex flex-column justify-content-between">
+          <div
+            class="plan__content p-4 d-flex flex-column justify-content-between"
+          >
+            <div>
+              <div class="text-center p-2">
                 <div>
-                  <div class="text-center p-2">
-                    <div>
-                      <b>5 <br> пользователей</b>
-                    </div>
-                    <div class="service-card__title mt-2">
-                      55 BYN/мес
-                    </div>
-                    <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4">
-                      <span>Создать</span>
-                    </a>
-                    <div class="mt-4">
-                      <b>24 ГБ</b>
-                    </div>
+                  <b
+                    >5 <br />
+                    пользователей</b
+                  >
                 </div>
-                <div class="plan__line mt-4"></div>
-                <div class="">
-                  <div class="plan__subtitle">
-                    <b>Совместная работа</b>
-                    <ul class="ms-3">
-                      <li class="pt-2">Календарь</li>
-                      <li class="pt-2">Соцсеть компании</li>
-                      <li class="pt-2">Лента</li>
-                      <li class="pt-2">Доски</li>
-                      <li class="pt-2">База знаний</li>
-                    </ul>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Мессенджер</b>
-                    <ul class="ms-3">
-                      <li class="pt-2">Чат</li>
-                      <li class="pt-2">Каналы</li>
-                      <li class="pt-2">Битрикс24 Синк</li>
-                    </ul>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Коллабы</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Задачи и проекты</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>CRM</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>CoPilot</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Онлайн-подпись</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Диск</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Контакт-центр</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Сайты</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Интернет-магазин</b>
-                  </div>
+                <div class="service-card__title mt-2">55 BYN/мес</div>
+                <a
+                  href="#"
+                  class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4"
+                >
+                  <span>Создать</span>
+                </a>
+                <div class="mt-4">
+                  <b>24 ГБ</b>
                 </div>
               </div>
-              <div>
+              <div class="plan__line mt-4"></div>
+              <div class="">
                 <div class="plan__subtitle">
-                  <b>Поддержка</b>
+                  <b>Совместная работа</b>
+                  <ul class="ms-3">
+                    <li class="pt-2">Календарь</li>
+                    <li class="pt-2">Соцсеть компании</li>
+                    <li class="pt-2">Лента</li>
+                    <li class="pt-2">Доски</li>
+                    <li class="pt-2">База знаний</li>
+                  </ul>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Мессенджер</b>
+                  <ul class="ms-3">
+                    <li class="pt-2">Чат</li>
+                    <li class="pt-2">Каналы</li>
+                    <li class="pt-2">Битрикс24 Синк</li>
+                  </ul>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Коллабы</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Задачи и проекты</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>CRM</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>CoPilot</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Онлайн-подпись</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Диск</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Контакт-центр</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Сайты</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Интернет-магазин</b>
                 </div>
               </div>
+            </div>
+            <div>
+              <div class="plan__subtitle">
+                <b>Поддержка</b>
+              </div>
+            </div>
           </div>
         </div>
         <div class="plan plan--cyan">
           <div class="plan__header p-3 text-center">
-            <div class="service-card__title mt-2">
-                Стандартный
-            </div>
+            <div class="service-card__title mt-2">Стандартный</div>
             <p>Для совместной работы всей компании или рабочих групп</p>
           </div>
-          <div class="plan__content p-4 d-flex flex-column justify-content-between">
+          <div
+            class="plan__content p-4 d-flex flex-column justify-content-between"
+          >
+            <div>
+              <div class="text-center p-2">
                 <div>
-                  <div class="text-center p-2">
-                    <div>
-                      <b>50 <br> пользователей</b>
-                    </div>
-                    <div class="service-card__title mt-2">
-                      143 BYN/мес
-                    </div>
-                    <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4">
-                      <span>Создать</span>
-                    </a>
-                    <div class="mt-4">
-                      <b>100 ГБ</b>
-                    </div>
+                  <b
+                    >50 <br />
+                    пользователей</b
+                  >
                 </div>
-                <div class="plan__line mt-4"></div>
-                <div class="">
-                  <div class="plan__subtitle">
-                    <b>Совместная работа</b>
-                    <ul class="ms-3">
-                      <li class="pt-2">Календарь</li>
-                      <li class="pt-2">Соцсеть компании</li>
-                      <li class="pt-2">Лента</li>
-                      <li class="pt-2">Доски</li>
-                      <li class="pt-2">База знаний</li>
-                    </ul>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Мессенджер</b>
-                    <ul class="ms-3">
-                      <li class="pt-2">Чат</li>
-                      <li class="pt-2">Каналы</li>
-                      <li class="pt-2">Битрикс24 Синк</li>
-                    </ul>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Коллабы</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Задачи и проекты</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>CRM</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>CoPilot</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Онлайн-подпись</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Диск</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Контакт-центр</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Сайты</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Интернет-магазин</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Маркетинг</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Документы Онлайн</b>
-                  </div>
+                <div class="service-card__title mt-2">143 BYN/мес</div>
+                <a
+                  href="#"
+                  class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4"
+                >
+                  <span>Создать</span>
+                </a>
+                <div class="mt-4">
+                  <b>100 ГБ</b>
                 </div>
               </div>
-              <div>
+              <div class="plan__line mt-4"></div>
+              <div class="">
                 <div class="plan__subtitle">
-                  <b>Поддержка</b>
+                  <b>Совместная работа</b>
+                  <ul class="ms-3">
+                    <li class="pt-2">Календарь</li>
+                    <li class="pt-2">Соцсеть компании</li>
+                    <li class="pt-2">Лента</li>
+                    <li class="pt-2">Доски</li>
+                    <li class="pt-2">База знаний</li>
+                  </ul>
                 </div>
                 <div class="plan__subtitle">
-                  <b>Администрирование</b>
+                  <b>Мессенджер</b>
+                  <ul class="ms-3">
+                    <li class="pt-2">Чат</li>
+                    <li class="pt-2">Каналы</li>
+                    <li class="pt-2">Битрикс24 Синк</li>
+                  </ul>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Коллабы</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Задачи и проекты</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>CRM</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>CoPilot</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Онлайн-подпись</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Диск</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Контакт-центр</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Сайты</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Интернет-магазин</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Маркетинг</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Документы Онлайн</b>
                 </div>
               </div>
+            </div>
+            <div>
+              <div class="plan__subtitle">
+                <b>Поддержка</b>
+              </div>
+              <div class="plan__subtitle">
+                <b>Администрирование</b>
+              </div>
+            </div>
           </div>
-          
         </div>
         <div class="plan plan--cyan">
           <div class="plan__header p-3 text-center">
-            <div class="service-card__title mt-2">
-              Профессиональный
-            </div>
+            <div class="service-card__title mt-2">Профессиональный</div>
             <p>Для максимальной автоматизации всех процессов в компании</p>
           </div>
-          <div class="plan__content p-4 d-flex flex-column justify-content-between">
+          <div
+            class="plan__content p-4 d-flex flex-column justify-content-between"
+          >
+            <div>
+              <div class="text-center p-2">
                 <div>
-                  <div class="text-center p-2">
-                    <div>
-                      <b>100 <br> пользователей</b>
-                    </div>
-                    <div class="service-card__title mt-2">
-                      359 BYN/мес
-                    </div>
-                    <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4">
-                      <span>Создать</span>
-                    </a>
-                    <div class="mt-4">
-                      <b>1 024 ГБ</b>
-                    </div>
+                  <b
+                    >100 <br />
+                    пользователей</b
+                  >
                 </div>
-                <div class="plan__line mt-4"></div>
-                <div class="">
-                  <div class="plan__subtitle">
-                    <b>Совместная работа</b>
-                    <ul class="ms-3">
-                      <li class="pt-2">Календарь</li>
-                      <li class="pt-2">Соцсеть компании</li>
-                      <li class="pt-2">Лента</li>
-                      <li class="pt-2">Доски</li>
-                      <li class="pt-2">База знаний</li>
-                    </ul>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Мессенджер</b>
-                    <ul class="ms-3">
-                      <li class="pt-2">Чат</li>
-                      <li class="pt-2">Каналы</li>
-                      <li class="pt-2">Битрикс24 Синк</li>
-                    </ul>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Коллабы</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Задачи и проекты</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>CRM</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>CoPilot</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Онлайн-подпись</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Диск</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Контакт-центр</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Сайты</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Интернет-магазин</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Маркетинг</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Документы Онлайн</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Онлайн-запись</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Сквозная аналитика</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Автоматизация</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>HR: Компания</b>
-                  </div>
+                <div class="service-card__title mt-2">359 BYN/мес</div>
+                <a
+                  href="#"
+                  class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4"
+                >
+                  <span>Создать</span>
+                </a>
+                <div class="mt-4">
+                  <b>1 024 ГБ</b>
                 </div>
               </div>
-              <div>
+              <div class="plan__line mt-4"></div>
+              <div class="">
                 <div class="plan__subtitle">
-                  <b>Поддержка</b>
+                  <b>Совместная работа</b>
+                  <ul class="ms-3">
+                    <li class="pt-2">Календарь</li>
+                    <li class="pt-2">Соцсеть компании</li>
+                    <li class="pt-2">Лента</li>
+                    <li class="pt-2">Доски</li>
+                    <li class="pt-2">База знаний</li>
+                  </ul>
                 </div>
                 <div class="plan__subtitle">
-                  <b>Администрирование</b>
+                  <b>Мессенджер</b>
+                  <ul class="ms-3">
+                    <li class="pt-2">Чат</li>
+                    <li class="pt-2">Каналы</li>
+                    <li class="pt-2">Битрикс24 Синк</li>
+                  </ul>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Коллабы</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Задачи и проекты</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>CRM</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>CoPilot</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Онлайн-подпись</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Диск</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Контакт-центр</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Сайты</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Интернет-магазин</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Маркетинг</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Документы Онлайн</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Онлайн-запись</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Сквозная аналитика</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Автоматизация</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>HR: Компания</b>
                 </div>
               </div>
+            </div>
+            <div>
+              <div class="plan__subtitle">
+                <b>Поддержка</b>
+              </div>
+              <div class="plan__subtitle">
+                <b>Администрирование</b>
+              </div>
+            </div>
           </div>
-          
         </div>
         <div class="plan plan--blue">
           <div class="plan__header p-3 text-center">
-            <div class="service-card__title mt-2">
-              Энтерпрайз
-            </div>
+            <div class="service-card__title mt-2">Энтерпрайз</div>
             <p>Для максимальной автоматизации всех процессов в компании</p>
           </div>
-          <div class="plan__content p-4 d-flex flex-column justify-content-between">
+          <div
+            class="plan__content p-4 d-flex flex-column justify-content-between"
+          >
+            <div>
+              <div class="text-center p-2">
                 <div>
-                  <div class="text-center p-2">
-                    <div>
-                      <b>100 <br> пользователей</b>
-                    </div>
-                    <div class="service-card__title mt-2">
-                      959 BYN/мес
-                    </div>
-                    <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4">
-                      <span>Создать</span>
-                    </a>
-                    <div class="mt-4">
-                      <b>3 ТБ</b>
-                    </div>
+                  <b
+                    >100 <br />
+                    пользователей</b
+                  >
                 </div>
-                <div class="plan__line mt-4"></div>
-                <div class="">
-                  <div class="plan__subtitle">
-                    <b>Совместная работа</b>
-                    <ul class="ms-3">
-                      <li class="pt-2">Календарь</li>
-                      <li class="pt-2">Соцсеть компании</li>
-                      <li class="pt-2">Лента</li>
-                      <li class="pt-2">Доски</li>
-                      <li class="pt-2">База знаний</li>
-                    </ul>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Мессенджер</b>
-                    <ul class="ms-3">
-                      <li class="pt-2">Чат</li>
-                      <li class="pt-2">Каналы</li>
-                      <li class="pt-2">Битрикс24 Синк</li>
-                    </ul>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Коллабы</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Задачи и проекты</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>CRM</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>CoPilot</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Онлайн-подпись</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Диск</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Контакт-центр</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Сайты</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Интернет-магазин</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Маркетинг</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Документы Онлайн</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Онлайн-запись</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Сквозная аналитика</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Автоматизация</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>HR: Компания</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Филиалы</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Энтерпрайз-кластер</b>
-                  </div>
-                  <div class="plan__subtitle">
-                    <b>Энтерпрайз-пакет</b>
-                  </div>
+                <div class="service-card__title mt-2">959 BYN/мес</div>
+                <a
+                  href="#"
+                  class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4"
+                >
+                  <span>Создать</span>
+                </a>
+                <div class="mt-4">
+                  <b>3 ТБ</b>
                 </div>
               </div>
-              <div>
+              <div class="plan__line mt-4"></div>
+              <div class="">
                 <div class="plan__subtitle">
-                  <b>Поддержка</b>
+                  <b>Совместная работа</b>
+                  <ul class="ms-3">
+                    <li class="pt-2">Календарь</li>
+                    <li class="pt-2">Соцсеть компании</li>
+                    <li class="pt-2">Лента</li>
+                    <li class="pt-2">Доски</li>
+                    <li class="pt-2">База знаний</li>
+                  </ul>
                 </div>
                 <div class="plan__subtitle">
-                  <b>Администрирование</b>
+                  <b>Мессенджер</b>
+                  <ul class="ms-3">
+                    <li class="pt-2">Чат</li>
+                    <li class="pt-2">Каналы</li>
+                    <li class="pt-2">Битрикс24 Синк</li>
+                  </ul>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Коллабы</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Задачи и проекты</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>CRM</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>CoPilot</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Онлайн-подпись</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Диск</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Контакт-центр</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Сайты</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Интернет-магазин</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Маркетинг</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Документы Онлайн</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Онлайн-запись</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Сквозная аналитика</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Автоматизация</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>HR: Компания</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Филиалы</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Энтерпрайз-кластер</b>
+                </div>
+                <div class="plan__subtitle">
+                  <b>Энтерпрайз-пакет</b>
                 </div>
               </div>
+            </div>
+            <div>
+              <div class="plan__subtitle">
+                <b>Поддержка</b>
+              </div>
+              <div class="plan__subtitle">
+                <b>Администрирование</b>
+              </div>
+            </div>
           </div>
-          
         </div>
       </div>
     </div>
- 
   </div>
 
-
-
-<!-- end -->
-
-<section class="about_fact-section  section-padding-120">
-  <div class="container">
-
-
-
-    <nav>
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
-          role="tab" aria-controls="nav-home" aria-selected="true">Первый старт</button>
-        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
-          role="tab" aria-controls="nav-profile" aria-selected="false">Продажи в CRM - для РОП</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
-          role="tab" aria-controls="nav-contact" aria-selected="false">Управление маркетингом - для РОМ</button>
-      </div>
-    </nav>
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-        <div class="row pt-50 row--custom ">
-          <div class="col-xxl-auto  col-lg-3 col-md-6 col-sm-8 col-xs-9">
-            <div class="fact-widget">
-
-              <div>
-                <h3 class="fact-widget_title">Цели</h3>
-                <p>
-                <ul>
-                  <li>- Навести порядок в процессах компании</li>
-                  <li>- Заменить несколько сервисов на один универсальный</li>
-                  <li>- Зафиксировать задачи сотрудников</li>
-                  <li>- Контролировать бюджет и выручку</li>
-                  <li>- Снизить затраты на рутину</li>
-                </ul>
-                </p>
-              </div>
-            </div>
+  <div class="section-padding-120">
+    <div class="container">
+      <div class="promo px-3 px-md-5 pt-5 rounded-3">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-7 col-xxl-6 text-center text-lg-start">
+            <h2 class="content-title heading-md text-black">
+              Бесплатный тариф
+            </h2>
+            <p class="pb-4">
+              Прямо сейчас вы можете испытать беспатный Битрикс24 без
+              ограничения по пользователям
+            </p>
+            <a
+              href="#"
+              class="btn-masco btn-masco--header rounded-pill btn-fill--up mb-5"
+            >
+              <span>Хочу попробовать</span>
+            </a>
           </div>
-          <div class="col-xxl-auto col-lg-3 col-md-6 col-sm-8 col-xs-9">
-            <div class="fact-widget">
-
-              <div>
-                <h3 class="fact-widget_title">Как выбрать тариф?</h3>
-                <p>110k+ Active services <br> helping our clients succeed</p>
-              </div>
-            </div>
+          <div class="col-12 col-lg-5 col-xxl-6">
+            <img
+              class="promo__img"
+              src="{% static '/image/bitrix/bitrix_try.png' %}"
+              alt="image alt"
+            />
           </div>
-          <div class="col-xxl-auto  col-lg-3 col-md-6 col-sm-8 col-xs-9">
-            <div class="fact-widget last-child">
-
-              <div>
-                <h3 class="fact-widget_title">С чего начать?</h3>
-                <p>250 Countries/territories where people choose our hosting</p>
-              </div>
-            </div>
-          </div>
-
         </div>
-
       </div>
-      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
     </div>
-
-
   </div>
-</section>
 
-
-
-
-
-
-{% endblock %}
+  {% endblock %}
+</div>

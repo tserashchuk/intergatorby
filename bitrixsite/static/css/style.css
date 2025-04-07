@@ -17039,3 +17039,11 @@ Common: Spacing Gutters
 .plan--blue {
   background-color: #d6fdfc;
 }
+
+.promo {
+  background-color: #f3fdda;
+}
+
+.promo__img {
+  max-width: 100%;
+}
