@@ -3310,7 +3310,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.4s;
 }
 .portfolio-widget_image-block img:hover {
-  transform: scale(1.1) rotate(3deg);
+  /* transform: scale(1.1) rotate(3deg); */
 }
 .portfolio-widget__title {
   font-family: var(--font-family-base);
@@ -3319,6 +3319,58 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.33;
   letter-spacing: -0.0208333333em;
   font-size: 20px;
+}
+
+.portfolio-widget_image-block {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-image {
+  width: 100%;
+  transition: filter 0.5s ease;
+  display: block;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #faf9f5; /* полупрозрачный бежевый */
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.portfolio-thesis-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.portfolio-widget:hover .portfolio-image {
+  filter: sepia(30%) saturate(120%) brightness(105%) hue-rotate(10deg);
+}
+
+.portfolio-widget:hover .portfolio-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.portfolio-widget:hover .portfolio-thesis-list {
+  opacity: 1;
+  transform: translateY(0);
 }
 @media (min-width: 768px) {
   .portfolio-widget__title {
@@ -12055,7 +12107,7 @@ div#loading img {
 }
 @media (min-width: 768px) {
   .cta-home-8 .cta-home-8-wrapper {
-    margin-bottom: -191px;
+    /* margin-bottom: -191px; */
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -12083,7 +12135,7 @@ div#loading img {
   width: 100%;
 }
 .cta-home-8 .cta-content-block {
-  max-width: 560px;
+  max-width: 700px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
