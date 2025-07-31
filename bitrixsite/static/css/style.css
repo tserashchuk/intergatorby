@@ -16471,29 +16471,57 @@ Common: Spacing Gutters
   letter-spacing: -0.0111111111em;
   margin-bottom: 24px;
 }
+
+.heading-l {
+  line-height: 1.11;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: -0.0111111111em;
+  margin-bottom: 24px;
+}
 @media (min-width: 480px) {
   .heading-xl {
     font-size: 42px;
+  }
+
+  .heading-l {
+    font-size: 37px;
   }
 }
 @media (min-width: 576px) {
   .heading-xl {
     font-size: 48px;
   }
+
+  .heading-l {
+    font-size: 45px;
+  }
 }
 @media (min-width: 992px) {
   .heading-xl {
     font-size: 64px;
+  }
+
+  .heading-l {
+    font-size: 60px;
   }
 }
 @media (min-width: 1200px) {
   .heading-xl {
     font-size: 76px;
   }
+
+  .heading-l {
+    font-size: 70px;
+  }
 }
 @media (min-width: 1400px) {
   .heading-xl {
     font-size: 90px;
+  }
+
+  .heading-l {
+    font-size: 85px;
   }
 }
 .heading-xl--general-sans {
