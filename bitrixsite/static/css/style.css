@@ -2593,6 +2593,7 @@ h6 {
   background: #ffffff;
   border: 1px solid #e1e1e1;
   border-radius: 10px;
+  overflow: hidden;
   transition: 0.4s;
 }
 .blog-card-large a {
@@ -2603,6 +2604,8 @@ h6 {
 }
 .blog-card-large__image img {
   width: 100%;
+  max-height: 450px;
+  object-fit: cover;
 }
 .blog-card-large__meta {
   display: flex;

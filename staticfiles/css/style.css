@@ -2573,6 +2573,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF;
   border: 1px solid #E1E1E1;
   border-radius: 10px;
+  overflow: hidden;
   transition: 0.4s;
 }
 .blog-card-large a {
@@ -2583,6 +2584,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-card-large__image img {
   width: 100%;
+  max-height: 450px;
+  object-fit: cover;
 }
 .blog-card-large__meta {
   display: flex;
