@@ -7451,6 +7451,11 @@ div#loading img {
     font-size: 30px;
   }
 }
+
+.ticker-01_content.no-anim {
+  animation: none !important;
+}
+
 .ticker-01_content {
   display: flex;
   column-gap: 24px;
