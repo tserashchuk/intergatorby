@@ -5,7 +5,7 @@
 
 
 <div class="inner_banner-section">
-  <img class="inner_banner-background-image" src= {% static '/image/common/inner-bg.png' %} alt="image alt">
+  <img class="inner_banner-background-image" src="{% static '/image/common/inner-bg.png' %}" alt="image alt">
   <div class="container">
     <div class="inner_banner-content-block">
       <h3 class="inner_banner-title">Кейсы</h3>
@@ -32,15 +32,158 @@
       <li class="active" data-filter="*">
         <button class="btn rounded-pill">Все</button>
       </li>
+      <li data-filter="*">
+        <button class="btn rounded-pill">Внедрение</button>
+      </li>
+      <li data-filter="*">
+        <button class="btn rounded-pill">Интеграция</button>
+      </li>
+      <li data-filter="*">
+        <button class="btn rounded-pill">Оптимизация процессов</button>
+      </li>
+      <li data-filter="*">
+        <button class="btn rounded-pill">Автоматизация маркетинка</button>
+      </li>
+      <li data-filter="*">
+        <button class="btn rounded-pill">Сквозная аналитика</button>
+      </li>
 
-      {% for casecats in casescategorys %}
+      <!-- {% for casecats in casescategorys %}
       <li class="" data-filter=".{{ casecats.cat_slug }}">
         <button class="btn rounded-pill">{{ casecats }}</button>
       </li>
-      {% endfor %}
+      {% endfor %} -->
 
     </ul>
-    <div class="row navigation-active isotope-navigation portfolio-v1" style="position: relative; height: 1832.59px;">
+    <div class="row row--portfolio-gutter pb-5">
+      <div
+        class="col-md-6 col-xs-10"
+        data-aos-duration="1000"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block hover-fill--up">
+            <img
+              src="{% static '/image/home-1/portf1.png' %}"
+              alt="portfolio image"
+              class="portfolio-image"
+            />
+            <div class="hover-fill--up__text">
+              <ul class="portfolio-thesis-list">
+                <li><h3>Снижение отходов на 40%</h3></li>
+                <li><h3>Интеграция ИИ-сортировки</h3></li>
+                <li><h3>Экономия ресурсов</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-widget__title-block">
+            <h3 class="portfolio-widget__title">«РесайклПро»</h3>
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+          </div>
+          <div class="portfolio-widget__link">
+            <span class="btn-link btn-arrow">Подробнее</span>
+          </div>
+        </a>
+      </div>
+
+
+      <div
+        class="col-md-6 col-xs-10"
+        data-aos-duration="1000"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block hover-fill--up">
+            <img
+              src="{% static '/image/home-1/portf2.png' %}"
+              alt="portfolio image"
+              class="portfolio-image"
+            />
+            <div class="hover-fill--up__text">
+              <ul class="portfolio-thesis-list">
+                <li><h3>Снижение отходов на 40%</h3></li>
+                <li><h3>Интеграция ИИ-сортировки</h3></li>
+                <li><h3>Экономия ресурсов</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-widget__title-block">
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+          </div>
+          <div class="portfolio-widget__link">
+            <span class="btn-link btn-arrow">Подробнее</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row row--portfolio-gutter pt-5">
+      <div
+        class="col-md-6 col-xs-10"
+        data-aos-duration="1000"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block hover-fill--up">
+            <img
+              src="{% static '/image/home-1/portf1.png' %}"
+              alt="portfolio image"
+              class="portfolio-image"
+            />
+            <div class="hover-fill--up__text">
+              <ul class="portfolio-thesis-list">
+                <li><h3>Снижение отходов на 40%</h3></li>
+                <li><h3>Интеграция ИИ-сортировки</h3></li>
+                <li><h3>Экономия ресурсов</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-widget__title-block">
+            <h3 class="portfolio-widget__title">«РесайклПро»</h3>
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+          </div>
+          <div class="portfolio-widget__link">
+            <span class="btn-link btn-arrow">Подробнее</span>
+          </div>
+        </a>
+      </div>
+
+
+      <div
+        class="col-md-6 col-xs-10"
+        data-aos-duration="1000"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block hover-fill--up">
+            <img
+              src="{% static '/image/home-1/portf2.png' %}"
+              alt="portfolio image"
+              class="portfolio-image"
+            />
+            <div class="hover-fill--up__text">
+              <ul class="portfolio-thesis-list">
+                <li><h3>Снижение отходов на 40%</h3></li>
+                <li><h3>Интеграция ИИ-сортировки</h3></li>
+                <li><h3>Экономия ресурсов</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-widget__title-block">
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+          </div>
+          <div class="portfolio-widget__link">
+            <span class="btn-link btn-arrow">Подробнее</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- <div class="row navigation-active isotope-navigation portfolio-v1" style="position: relative; height: 1832.59px;">
       {% for case in cases %}
       
       <div class="col-xl-6 grid-item {% for cat in case.category_case.all %} {{cat.cat_slug}} {% endfor %}" style="position: absolute; left: 0px; top: 0px;">
@@ -61,11 +204,57 @@
         </a>
       </div>
 {% endfor %}
-    </div>
-    <div class="section-button">
-      <a href="#" class="btn-masco rounded-pill btn-fill--up"><span>В начало</span></a>
+    </div> -->
+  </div>
+  <div class="pagination" bis_skin_checked="1">
+    <!-- Pagination -->
+    <div class="pagination-wrapper" bis_skin_checked="1">
+      <button class="btn btn--arrow">
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <button class="btn btn-main active">1</button>
+      <button class="btn btn-main">2</button>
+      <button class="btn btn-main">3</button>
+      <button class="btn btn--arrow">
+        <i class="fa fa-angle-right"></i>
+      </button>
     </div>
   </div>
 </section>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~
+     CTA Base 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="cta-base">
+  <div class="container">
+    <div class="cta-base__wrapper border-bottom-dark">
+      <div
+        class="row align-items-center justify-content-center justify-content-md-between gutter-y-20"
+      >
+        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
+          <div class="cta-base__text-block">
+            <h2 class="heading-md text-white">Хотите так же?</h2> 
+          </div>
+        </div>
+        <div class="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
+          <div class="cta-base__button">
+            <a
+              href="./contact.html"
+              class="btn-masco rounded-pill btn-fill--up"
+            >
+              <span>Заполнить заявку</span></a
+            >
+            <div class="cta-base__button-shape">
+              <img
+                src="{% static '/image/home-1/cta-shape.svg' %}"
+                alt="image alt"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
