@@ -83,9 +83,13 @@ class Services(View):
     def get(self, request):
         return render(request, 'services.html')
 
-class Vnedrenie(View):
+class Vnedreniepaket(View):
     def get(self, request):
-        return render(request, 'vnedrenie.html')
+        return render(request, 'vnedreniepaket.html')
+
+class Vnedreniekorobka(View):
+    def get(self, request):
+        return render(request, 'vnedreniekorobka.html')
 
 class Dorabotka(View):
     def get(self, request):
@@ -98,6 +102,14 @@ class Podderzka(View):
 class Audit(View):
     def get(self, request):
         return render(request, 'audit.html')
+
+class Bi(View):
+    def get(self, request):
+        return render(request, 'bi.html')
+        
+class Obuchenie(View):
+    def get(self, request):
+        return render(request, 'obuchenie.html')
 
 class Licence(View):
     def get(self, request):
