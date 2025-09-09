@@ -87,9 +87,9 @@ class Vnedreniepaket(View):
     def get(self, request):
         return render(request, 'vnedreniepaket.html')
 
-class Vnedreniekorobka(View):
+class Vnedrenieproektnoe(View):
     def get(self, request):
-        return render(request, 'vnedreniekorobka.html')
+        return render(request, 'vnedrenieproektnoe.html')
 
 class Dorabotka(View):
     def get(self, request):
@@ -110,6 +110,10 @@ class Bi(View):
 class Obuchenie(View):
     def get(self, request):
         return render(request, 'obuchenie.html')
+
+class Enterprise(View):
+    def get(self, request):
+        return render(request, 'enterprise.html')        
 
 class Licence(View):
     def get(self, request):
