@@ -17078,6 +17078,12 @@ Common: Spacing Gutters
   align-items: center;
 }
 
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 30px 40px;
+}
+
 .grid--5 {
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
