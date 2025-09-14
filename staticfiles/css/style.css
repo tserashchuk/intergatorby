@@ -12844,9 +12844,8 @@ div#loading img {
 .home-9_pricing-control-shape {
   display: none;
   position: absolute;
-  right: 17.8%;
-  bottom: -24%;
-  width: 15%;
+  right: -30%;
+  top: -100%;
 }
 @media (min-width: 992px) {
   .home-9_pricing-control-shape {

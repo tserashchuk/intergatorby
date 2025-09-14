@@ -12921,9 +12921,8 @@ div#loading img {
 .home-9_pricing-control-shape {
   display: none;
   position: absolute;
-  right: 17.8%;
-  bottom: -24%;
-  width: 15%;
+  right: -30%;
+  top: -100%;
 }
 @media (min-width: 992px) {
   .home-9_pricing-control-shape {
@@ -17127,6 +17126,13 @@ Common: Spacing Gutters
   align-items: stretch;
 }
 
+.plans-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
 .plan {
   border-radius: 14px;
   display: flex;
@@ -17156,14 +17162,14 @@ Common: Spacing Gutters
 }
 
 @media screen and (max-width: 991px) {
-  .plans {
+  .plans, .plans-3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 767px) {
-  .plans {
+  .plans, .plans-3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
