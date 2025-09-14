@@ -7849,8 +7849,6 @@ div#loading img {
 }
 
 .pricing-control-3 {
-  max-width: 265px;
-  min-width: 265px;
   display: inline-flex;
   border-radius: 500px;
   height: 35px;
@@ -12918,10 +12916,18 @@ div#loading img {
     margin-bottom: 60px;
   }
 }
+@media(max-width: 768px) {
+  .home-9_pricing-control-block {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .home-9_pricing-control-shape {
   display: none;
   position: absolute;
-  right: -30%;
+  right: -40%;
   top: -100%;
 }
 @media (min-width: 992px) {
@@ -17114,7 +17120,7 @@ Common: Spacing Gutters
 
 @media screen and (max-width: 475px) {
   .grid--5,
-  .grid--4 {
+  .grid--4, .grid--3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
