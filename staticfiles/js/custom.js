@@ -149,10 +149,12 @@ $(document).ready(function () {
   const $boxBtn = $(".blocks");
   const $plansCloud = $(".plans-4");
   const $plansBox = $(".plans-3");
+  const $pricingControl = $(".price");
 
   function showCloudPlans() {
     $plansCloud.show();
     $plansBox.hide();
+    $pricingControl.css("visibility", "visible");
 
     $cloudBtn.addClass("btn-masco--header").removeClass("btn-outline-l08");
     $boxBtn.addClass("btn-outline-l08").removeClass("btn-masco--header");
@@ -161,6 +163,7 @@ $(document).ready(function () {
   function showBoxPlans() {
     $plansCloud.hide();
     $plansBox.show();
+    $pricingControl.css("visibility", "hidden");
 
     $boxBtn.addClass("btn-masco--header").removeClass("btn-outline-l08");
     $cloudBtn.addClass("btn-outline-l08").removeClass("btn-masco--header");
@@ -168,6 +171,7 @@ $(document).ready(function () {
 
   // Скрываем коробочную версию по умолчанию
   $plansBox.hide();
+  // Оставляем переключатель видимым (т.к. по умолчанию облачная версия выбрана)
 
   $cloudBtn.on("click", function (e) {
     e.preventDefault();
