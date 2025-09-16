@@ -143,3 +143,39 @@ $(document).ready(function () {
     });
   });
 });
+
+$(document).ready(function () {
+  const $cloudBtn = $(".cloud");
+  const $boxBtn = $(".blocks");
+  const $plansCloud = $(".plans-4");
+  const $plansBox = $(".plans-3");
+
+  function showCloudPlans() {
+    $plansCloud.show();
+    $plansBox.hide();
+
+    $cloudBtn.addClass("btn-masco--header").removeClass("btn-outline-l08");
+    $boxBtn.addClass("btn-outline-l08").removeClass("btn-masco--header");
+  }
+
+  function showBoxPlans() {
+    $plansCloud.hide();
+    $plansBox.show();
+
+    $boxBtn.addClass("btn-masco--header").removeClass("btn-outline-l08");
+    $cloudBtn.addClass("btn-outline-l08").removeClass("btn-masco--header");
+  }
+
+  // Скрываем коробочную версию по умолчанию
+  $plansBox.hide();
+
+  $cloudBtn.on("click", function (e) {
+    e.preventDefault();
+    showCloudPlans();
+  });
+
+  $boxBtn.on("click", function (e) {
+    e.preventDefault();
+    showBoxPlans();
+  });
+});

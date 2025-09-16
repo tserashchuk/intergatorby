@@ -17132,11 +17132,20 @@ Common: Spacing Gutters
   align-items: stretch;
 }
 
+.plans-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  align-items: stretch;
+  justify-content: center;
+}
+
 .plans-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, 280px);
+  gap: 32px;
   align-items: stretch;
+  justify-content: center;
 }
 
 .plan {
@@ -17168,14 +17177,14 @@ Common: Spacing Gutters
 }
 
 @media screen and (max-width: 991px) {
-  .plans, .plans-3 {
+  .plans, .plans-3, .plans-4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 767px) {
-  .plans, .plans-3 {
+  .plans, .plans-3, .plans-4 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
