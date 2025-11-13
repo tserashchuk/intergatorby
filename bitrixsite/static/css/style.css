@@ -5544,6 +5544,18 @@ h6 {
   background: #faf9f5;
 }
 
+.services-btn {
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .services-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 /* ========== Component   : rating Style ============= */
 .rating-widget {
   display: flex;
