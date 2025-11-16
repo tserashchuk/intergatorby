@@ -183,3 +183,68 @@ $(document).ready(function () {
     showBoxPlans();
   });
 });
+
+
+$(document).ready(function() {
+
+  function applyPackage($btn) {
+
+    // Снять активность со всех
+    $("[data-package]")
+      .removeClass("btn-primary-l08")
+      .addClass("btn-outline-l08")
+      .removeClass("active");
+
+    // Назначить активной нужные классы
+    $btn
+      .removeClass("btn-outline-l08")
+      .addClass("btn-primary-l08")
+      .addClass("active");
+
+    const titles = JSON.parse($btn.attr("data-titles"));
+    const texts = JSON.parse($btn.attr("data-texts"));
+    const ctaTitle = $btn.attr("data-cta-title");
+    const ctaSubTitle = $btn.attr("data-cta-subtitle");
+
+    const $cards = $(".feature-card");
+
+    $cards.each(function(i) {
+      if (titles[i]) {
+        $(this).show();
+
+        $(this).find("[data-title]").text(titles[i]);
+
+        let raw = texts[i] || "";
+        let items = raw
+          .split(".")
+          .map(s => s.trim())
+          .filter(s => s.length > 0);
+
+        let ul = '<ul class="list-style-bullet">' +
+          items.map(t => `<li>${t}</li>`).join("") +
+          '</ul>';
+
+        $(this).find("[data-text]").html(ul);
+
+      } else {
+        $(this).hide();
+      }
+    });
+
+    $(".cta-title").text(ctaTitle);
+    $(".cta-subtitle").text(ctaSubTitle);
+  }
+
+  // Клик
+  $("[data-package]").on("click", function(e) {
+    e.preventDefault();
+    applyPackage($(this));
+  });
+
+  // Активируем "БАЗА" при загрузке
+  applyPackage($('[data-package="base"]'));
+});
+
+
+
+

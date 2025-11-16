@@ -1,140 +1,389 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
-<script>
-  console.log('sdfsdf');
-</script>
-<div class="home-1_hero-section" id="hero">
-  <div class="home-1_hero-shape-1">
-    <img src="{% static '/image/home-1/hero-shape-1.svg' %}" alt="image alt" />
-  </div>
-  <div class="home-1_hero-shape-2">
-    <img src="{% static '/image/home-1/hero-shape-2.svg' %}" alt="image alt" />
-  </div>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="inner_banner-section">
+  <img class="inner_banner-background-image" src={% static '/image/common/inner-bg.png' %} alt="image alt">
   <div class="container">
-    <div class="row row--hero-content">
-      <div
-        class="col-xxl-auto col-lg-6 col-md-7 col-sm-8 col-10"
-        data-aos-duration="1000"
-        data-aos="fade-left"
-        data-aos-delay="300"
-      >
-        <div class="home-1_hero-image-block">
-          <div class="home-1_hero-image">
-            <img
-              src="{% static '/image/home-1/hero-image.png' %}"
-              alt="hero image"
-            />
-            <a
-              href="https://www.youtube.com/watch?v=zo9dJFo8H8g"
-              data-fancybox
-              class="btn-play btn-play absolute-center"
-            >
-              <i class="fa-solid fa-play"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-xxl-auto col-lg-6 col-md-10"
-        data-aos-duration="1000"
-        data-aos="fade-right"
-        data-aos-delay="300"
-      >
-        <div class="home-1_hero-content">
-          <div class="home-1_hero-content-text">
-            <h1 class="hero-content__title heading-xxl">
-              Планируете внедрить Битрикс24?
-            </h1>
-            <p>
-              Привет! Мы компания Правильные Интеграторы, занимаемся Правильным
-              Внедрением Битрикс24.
-            </p>
-          </div>
-          <div class="home-1_hero-newsletter">
-            <form action="#" class="newsletter-form-1">
-              <input type="email" placeholder="Телефон" class="form-control" />
-              <button class="btn-masco rounded-pill">
-                Получить консультацию
-              </button>
-            </form>
-            <span class="home-1_hero-newsletter__bottom-text"
-              ><img
-                src="{% static '/image/icons/icon-check-blue.svg' %}"
-                alt=""
-              />
-              Мы свяжемся с Вами и ответим на все вопросы</span
-            >
-          </div>
-        </div>
-      </div>
+    <div class="inner_banner-content-block">
+      <h3 class="inner_banner-title">Пакетное внедрение Битрикс24</h3>
+      <ul class="banner__page-navigator">
+        <li>
+          <a href="/">Главная</a>
+        </li>
+        <li class="active">
+          <a href="/about">
+            Услуги
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
+
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~
     Home 1 : Brand Section
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="brand-section">
   <div class="container">
-    <div class="brands-wrapper-inner">
-      <div class="brand-heading">
-        <h3 class="brand-heading__title">
-          Более 100 компаний выбрали Правильных интеграторов
-        </h3>
-      </div>
-      <div class="brands-wrapper">
-        <div
-          class="single-brand"
-          data-aos-duration="1000"
-          data-aos="fade-left"
-          data-aos-delay="800"
-        >
-          <img src="./image/home/brand-1.png" alt="brand-logo" />
-        </div>
-        <div
-          class="single-brand"
-          data-aos-duration="1000"
-          data-aos="fade-left"
-          data-aos-delay="700"
-        >
-          <img src="./image/home/brand-2.png" alt="brand-logo" />
-        </div>
-        <div
-          class="single-brand"
-          data-aos-duration="1000"
-          data-aos="fade-left"
-          data-aos-delay="600"
-        >
-          <img src="./image/home/brand-3.png" alt="brand-logo" />
-        </div>
-        <div
-          class="single-brand"
-          data-aos-duration="1000"
-          data-aos="fade-left"
-          data-aos-delay="500"
-        >
-          <img src="./image/home/brand-4.png" alt="brand-logo" />
-        </div>
-        <div
-          class="single-brand"
-          data-aos-duration="1000"
-          data-aos="fade-left"
-          data-aos-delay="400"
-        >
-          <img src="./image/home/brand-5.png" alt="brand-logo" />
+    <div class="home-6_brands-wrapper-inner">
+      <div class="slidercontainer h-100">
+        <div class="row align-items-center h-100">
+          <div class="slidercontainer rounded">
+            <div class="brand-heading">
+              <h3 class="brand-heading__title">
+                Более 100 компаний выбрали Правильных интеграторов
+              </h3>
+            </div>
+            <div class="slider">
+              <div class="logos brands-wrapper">
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/1.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/2.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/3.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/4.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/5.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/6.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/7.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/8.png' %} alt="brand-logo">
+                </div>
+                <!-- <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                      <img class="icon-brand" src={% static '/image/home/9.png'%} alt="brand-logo">
+                    </div> -->
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/10.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/11.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/12.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/13.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/14.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/15.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/16.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/17.png' %} alt="brand-logo">
+                </div>
+                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+                  <img class="icon-brand" src={% static '/image/home/18.png' %} alt="brand-logo">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Home 1  : Content Section 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="home-1_content-section-1 section-padding-120" id="about">
+  <div class="container">
+    <div class="row row--custom">
+      <div class="offset-xl-1 col-lg-5 col-auto" data-aos-duration="1000" data-aos="fade-left">
+        <div class="home-1_content-image-1 content-image--mobile-width">
+          <img src="{% static '/image/home-1/discount.jpg' %}" alt="alternative text" />
+          <div class="home-1_content-image-1-shape">
+            <img src="{% static '/image/home-1/content-image-1-shape.svg' %}" alt="alternative text" />
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-7 col-md-10 col-auto" data-aos-duration="1000" data-aos="fade-right">
+        <div class="content">
+          <div class="content-text-block">
+            <h2 class="content-title heading-md text-black">
+              Пакетное внедрение Битрикс24 — быстрый старт без лишних хлопот
+            </h2>
+            <p>
+              Вам нужно быстро запустить Битрикс24 и начать работу? Пакетное внедрение — это оптимальный способ внедрить
+              систему за короткое время, с минимальными затратами и готовыми решениями для типовых задач бизнеса.
+            </p>
+            <p>
+              Мы поможем вам пройти путь от регистрации до полноценной работы в системе в кратчайшие сроки.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="about_feature-section section-padding-120 bg-light-2">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8 col-sm-10 col-xs-10">
+        <div class="section-heading">
+          <h2 class="section-heading__title heading-md text-black">
+            Пакетное внедрение<br />Битрикс24 для вас, если:
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row feature-widget-7-row">
+      <div class="col-lg-4 col-md-6 col-xs-8 col-9">
+        <div class="feature-widget-7">
+          <div class="feature-widget-7__icon-wrapper">
+            <img src={% static '/image/about/feature-icon-1.svg' %} alt="feature
+            icon">
+          </div>
+          <div class="feature-widget-7__body">
+            <h4 class="feature-widget-7__title">У компании никогда<br />не было CRM-системы</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-xs-8 col-9">
+        <div class="feature-widget-7">
+          <div class="feature-widget-7__icon-wrapper">
+            <img src={% static '/image/about/feature-icon-2.svg' %} alt="feature
+            icon">
+          </div>
+          <div class="feature-widget-7__body">
+            <h4 class="feature-widget-7__title">
+              Нет четкого понимая,<br />для чего нужна<br />CRM-система
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-xs-8 col-9">
+        <div class="feature-widget-7">
+          <div class="feature-widget-7__icon-wrapper">
+            <img src={% static '/image/about/feature-icon-3.svg' %} alt="feature
+            icon">
+          </div>
+          <div class="feature-widget-7__body">
+            <h4 class="feature-widget-7__title">CRM-система есть,<br />но не используется</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Home 2 : Feature Section 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div class="home-2_feature-section section-padding">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-xxl-6 col-lg-7 col-md-9">
+        <div class="section-heading">
+          <h2 class="section-heading__title heading-md text-black">Что входит в пакетное
+            внедрение Битрикс24</h2>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex gap-3 flex-column flex-sm-row mb-5 justify-content-center package-switcher">
+      <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up active" data-package="base"
+        data-titles='["Анализ и подготовка","Организационная структура","Информационная безопасность","CRM","Коммуникация","Аналитика/Настройка штатных отчетов:","База данных","Обучение"]'
+        data-texts='["Проведение брифинга для сбора требований и описания процессов.Формирование технического задания.","Настройка организационной структуры.Приглашение сотрудников.","Настройка прав доступа к разделам CRM.Настройка ограничений на удаление, экспорт и импорт данных.","Настройка стадий, полей и карточки Лида.Настройка стадий, полей и карточки Сделок.Настройка полей и карточек Контактов и Компаний.","Подключение общего корпоративного E-mail.Настройка и установка на сайт виджета онлайн-консультанта.","По лидам - 9 отчетов.По сделкам - 20 отчетов.Для анализа клиентской базы - 4 отчета.Для анализа активности менеджеров - 4 отчета.","Импорт текущей базы компаний.Импорт текущей базы контактов.Импорт товарной номенклатуры.","Базовое обучение менеджеров - 1 час.Обучение менеджеров в формате вопрос-ответ - 1 час.Обучение руководителей - 1 час.Оформление Базы знаний в вашем Битрикс24 с нашим базовым курсом и записями ваших обучений."]'
+        data-cta-title="1800 BYN" data-cta-subtitle="до 20 рабочих дней">
+        <span>Пакет База</span>
+      </a>
+
+      <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up" data-package="cc"
+        data-titles='["Анализ и подготовка","Телефония","Сайт","Месседжеры","Уведомление клиентов","Аналитика/Настройка штатных отчетов:","Обучение"]'
+        data-texts='["Проведение брифинга для сбора требований.","Помощь в выборе телефонии.Настройка интеграции телефонии с Битрикс24.","Правильная интеграция всех форм сайта с Битрикс24.При необходимости - формирование технического задания на интеграцию форм для действующих подрядчиков.","Настройка штатных интеграций мессенджеров с Битрикс24 (Instagram, FB, VK, OK, Telegram-bot, Viber Public).Настройка интеграций с номерными аккаунтами мессенджеров.Настройка рабочего времени и автоматических ответов в чатах.","Подключение SMS/Viber-провайдера и интеграция с Битрикс24.Подключение корпоративного E-mail для уведомлений.Подключение и настройка почтового сервера для E-mail рассылок.","По работе в чатах - 1 дашборд с 10 графиками.По эффективность рассылок - 1 отчет.По звонкам - 8 отчетов.","Обучение работе с модулем CRM-маркетинг.Обучение работе с аналитикой.Ответы на вопросы в процессе использования.Оформление обучающих материалов в Базе знаний."]'
+        data-cta-title="от 1750 BYN" data-cta-subtitle="от 10 рабочих дней">
+        <span>Пакет Контакт-центр</span>
+      </a>
+
+      <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up" data-package="auto"
+        data-titles='["Анализ и подготовка","Роботы в лидах - Автоматические действия на стадиях:","Роботы в сделках - Автоматические действия на стадиях:","Документы - Автоматическое создание документов на основании данных клиента:","Обучение"]'
+        data-texts='["Проведение брифинга для сбора требований и описания процессов.Формирование технического задания.","Назначение ответственных по условиям.Уведомления, дела и задачи для сотрудников.Заполнение полей по условиям.Уведомления клиентов.Контроль длительности нахождения лида на стадии.Возврат лидов из отложенного спроса.","Назначение ответственных по условиям.Уведомления, дела и задачи для сотрудников.Заполнение полей по условиям.Уведомления клиентов.Контроль длительности нахождения сделки на стадии.Возврат сделок из отложенного спроса.Уведомление РОП-а о проигранных сделках, соответствующих условиям.Создание повторной сделки с клиентом по условиям.","Генерация формы договора.Генерация формы счета/спецификации.Генерация формы акта.","Как редактировать текстовое содержание и параметры роботов.Как работать с генерацией документов.Как вносить правки в шаблоны документов.Оформление обучающих материалов в Базе знаний."]'
+        data-cta-title="от 1250 BYN" data-cta-subtitle="от 10 рабочих дней">
+        <span>Пакет Автоматизация</span>
+      </a>
+
+    </div>
+
+    <div class="row justify-content-center gutter-y-default">
+      <div class="col-lg-3 col-md-6 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left"
+        data-aos-delay="700">
+        <div class="feature-card h-100">
+          <div class="feature-card__body">
+            <h3 class="feature-card__title" data-title>Анализ и подготовка</h3>
+            <div data-text>
+            <ul class="list-style-bullet">
+              <li>Проведение брифинга для сбора требований и описания процессов</li>
+              <li>Формирование технического задания</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left"
+        data-aos-delay="700">
+        <div class="feature-card h-100">
+          <div class="feature-card__body">
+            <h3 class="feature-card__title" data-title>Организационная структура</h3>
+            <div data-text>
+            <ul class="list-style-bullet">
+              <li>Настройка организационной структуры</li>
+              <li>Приглашение сотрудников</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left"
+        data-aos-delay="700">
+        <div class="feature-card h-100">
+          <div class="feature-card__body">
+            <h3 class="feature-card__title" data-title>Информационная безопасность</h3>
+            <div data-text>
+            <ul class="list-style-bullet">
+              <li>Настройка прав доступа к разделам CRM</li>
+              <li>Настройка ограничений на удаление, экспорт и импорт данных</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left"
+        data-aos-delay="700">
+        <div class="feature-card h-100">
+          <div class="feature-card__body">
+            <h3 class="feature-card__title" data-title>CRM</h3>
+            <div data-text>
+            <ul class="list-style-bullet">
+              <li>Настройка стадий, полей и карточки Лида</li>
+              <li>Настройка стадий, полей и карточки Сделок</li>
+              <li>Настройка полей и карточек Контактов и Компаний</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center gutter-y-default mt-5">
+      <div class="col-lg-3 col-md-6 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left"
+        data-aos-delay="700">
+        <div class="feature-card h-100">
+          <div class="feature-card__body">
+            <h3 class="feature-card__title" data-title>Коммуникация</h3>
+            <div data-text>
+            <ul class="list-style-bullet">
+              <li>Подключение общего корпоративного E-mail</li>
+              <li>Настройка и установка на сайт виджета онлайн-консультанта</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left"
+        data-aos-delay="700">
+        <div class="feature-card h-100">
+          <div class="feature-card__body">
+            <h3 class="feature-card__title" data-title>Аналитика</h3>
+            <div data-text>
+            <ul class="list-style-bullet">
+              <li>По лидам - 9 отчетов</li>
+              <li>По сделкам - 20 отчетов</li>
+              <li>Для анализа клиентской базы - 4 отчета</li>
+              <li>Для анализа активности менеджеров - 4 отчета</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left"
+        data-aos-delay="700">
+        <div class="feature-card h-100">
+          <div class="feature-card__body">
+            <h3 class="feature-card__title" data-title>База данных</h3>
+            <div data-text>
+            <ul class="list-style-bullet">
+              <li>Импорт текущей базы компаний</li>
+              <li>Импорт текущей базы контактов</li>
+              <li>Импорт товарной номенклатуры</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left"
+        data-aos-delay="700">
+        <div class="feature-card h-100">
+          <div class="feature-card__body">
+            <h3 class="feature-card__title" data-title>Обучение</h3>
+            <div data-text>
+            <ul class="list-style-bullet">
+              <li>Базовое обучение менеджеров - 1 час</li>
+              <li>Обучение менеджеров в формате вопрос-ответ - 1 час</li>
+              <li>Обучение руководителей - 1 час</li>
+              <li>Оформление Базы знаний в вашем Битрикс24 с нашим базовым курсом и записями ваших обучений</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~
+     CTA Base 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="cta-base">
+  <div class="container">
+    <div class="cta-base__wrapper border-bottom-dark">
+      <div class="row align-items-center justify-content-center justify-content-md-between gutter-y-20">
+        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
+          <div class="cta-base__text-block">
+            <h2 class="heading-md text-white cta-title">1800 BYN</h2>
+            <p class="text-white cta-subtitle">до 20 рабочих дней</p>
+          </div>
+        </div>
+        <div class="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
+          <div class="cta-base__button">
+            <a href="./contact.html" class="btn-masco rounded-pill btn-fill--up">
+              <span>Заказать внедрение</span></a>
+            <div class="cta-base__button-shape">
+              <img src="{% static '/image/home-1/cta-shape.svg' %}" alt="image alt" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Home 1 : Service Section
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <div class="home-1_service-section padding-bottom-120" id="feature">
   <div class="home-1_service-section-shape">
-    <img
-      src="{% static '/image/home-1/service-section-shape.svg' %}"
-      alt="image alt"
-    />
+    <img src="{% static '/image/home-1/service-section-shape.svg' %}" alt="image alt" />
   </div>
   <div class="container">
     <div class="home-1_service-section-wrapper">
@@ -148,204 +397,132 @@
         </div>
       </div>
       <div class="row gutter-y-default justify-content-center">
-        <div class="col-xl-6 col-lg-6 col-md-10">
-          <a
-            href="service-details.html"
-            class="service-card hvr-fill"
-            data-aos-duration="1000"
-            data-aos="fade-right"
-          >
-            <div class="service-card__icon">
-              <img
-                src="{% static '/image/icons/icon-service-1.svg' %}"
-                alt="image alt"
-                class="inline-svg"
-              />
-            </div>
+        <div class="col-xl-4 col-lg-4 col-md-10">
+          <div class="service-card hvr-fill" data-aos-duration="1000" data-aos="fade-right" style="height: 100%;">
             <div class="service-card__body">
               <h3 class="service-card__title">
-                Внедрение и настройка Битрикс24
+                Оставьте заявку
               </h3>
               <p>
-                Если у вас нет четкого и однозначного понимания, для чего вы
-                хотите внедрить Битрикс24 и нет времени на написание ТЗ - у нас
-                есть готовые оптимальные пакетные решения для быстрого
-                внедрения.
+                Вы оставляете заявку на нашем сайте. Мы связываемся с вами для более детального обсуждения и выявления
+                проблем, которые мы поможем решить с помощью внедрения CRM Битрикс24.
               </p>
-              <span class="service-card__link btn-link btn-arrow"
-                >Подробнее</span
-              >
             </div>
-          </a>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-10">
-          <a
-            href="service-details.html"
-            class="service-card hvr-fill"
-            data-aos-duration="1000"
-            data-aos="fade-left"
-          >
-            <div class="service-card__icon">
-              <img
-                src="{% static '/image/icons/icon-service-2.svg' %}"
-                alt="image alt"
-                class="inline-svg"
-              />
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">Проектное внедрение</h3>
-              <p>
-                Если нужно внедрение CRM сразу во все процессы компании, есть
-                готовое ТЗ, которое нужно реализовать, или нужно решить одну
-                конкретную задачу в рамках проектного внедрения.
-              </p>
-              <span class="service-card__link btn-link btn-arrow"
-                >Подробнее</span
-              >
-            </div>
-          </a>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-10">
-          <a
-            href="service-details.html"
-            class="service-card hvr-fill"
-            data-aos-duration="1000"
-            data-aos="fade-right"
-          >
-            <div class="service-card__icon">
-              <img
-                src="{% static '/image/icons/icon-service-3.svg' %}"
-                alt="image alt"
-                class="inline-svg"
-              />
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">
-                Поддержка и Сопровождение битрикс24
-              </h3>
-              <p>
-                Непрерывная поддержка вашей компании в использовании CRM,
-                включающая консультации и помощь в поиске решения задач/проблем,
-                донастройка Битрикс24, обучение.
-              </p>
-              <span class="service-card__link btn-link btn-arrow"
-                >Подробнее</span
-              >
-            </div>
-          </a>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-10">
-          <a
-            href="service-details.html"
-            class="service-card hvr-fill"
-            data-aos-duration="1000"
-            data-aos="fade-left"
-          >
-            <div class="service-card__icon">
-              <img
-                src="{% static '/image/icons/icon-service-4.svg' %}"
-                alt="image alt"
-                class="inline-svg"
-              />
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">Аудит вашей CRM</h3>
-              <p>
-                Проверим корректность настроек прав доступа, воронок, отчетов,
-                открытых линий и автоматизации. В виде отчета дадим заключение с
-                советами по улучшению.
-              </p>
-              <span class="service-card__link btn-link btn-arrow"
-                >Подробнее</span
-              >
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1  : Content Section 1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="home-1_content-section-1 section-padding-120" id="about">
-  <div class="container">
-    <div class="row row--custom">
-      <div
-        class="offset-xl-1 col-lg-5 col-auto"
-        data-aos-duration="1000"
-        data-aos="fade-left"
-      >
-        <div class="home-1_content-image-1 content-image--mobile-width">
-          <img
-            src="{% static '/image/home-1/discount.jpg' %}"
-            alt="alternative text"
-          />
-          <div class="home-1_content-image-1-shape">
-            <img
-              src="{% static '/image/home-1/content-image-1-shape.svg' %}"
-              alt="alternative text"
-            />
           </div>
         </div>
-      </div>
-      <div
-        class="col-xl-6 col-lg-7 col-md-10 col-auto"
-        data-aos-duration="1000"
-        data-aos="fade-right"
-      >
-        <div class="content">
-          <div class="content-text-block">
-            <h2 class="content-title heading-md text-black">
-              Ваши бизнес-процессы в надежных руках
-            </h2>
-            <p>
-              Мы знаем все тонкости CRM Битрикс24 и поможем вам настроить ее под
-              уникальные потребности вашего бизнеса.
-            </p>
-            <p>
-              Мы возьмем на себя все этапы внедрения Битрикс24: от анализа ваших
-              бизнес-процессов до обучения сотрудников.
-            </p>
+        <div class="col-xl-4 col-lg-4 col-md-10">
+          <div class="service-card hvr-fill" data-aos-duration="1000" data-aos="fade-left" style="height: 100%;">
+            <div class="service-card__body">
+              <h3 class="service-card__title">Брифинг</h3>
+              <p>
+                Мы проводим брифинг с вами продолжительностью 3-4 часа. На этом этапе мы вместе с вами описываем
+                ключевые процессы в вашем отделе продаж и подробно обсуждаем проект.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-10">
+          <div class="service-card hvr-fill" data-aos-duration="1000" data-aos="fade-right" style="height: 100%;">
+            <div class="service-card__body">
+              <h3 class="service-card__title">Составление ТЗ</h3>
+              <p>
+                Мы разрабатываем предметную документацию (техническое задание). Это важный этап для четкого понимания
+                объема работ и задач проекта. Согласовываем все с вами, вносим правки. Запускаем проект в работу.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-10">
+          <div class="service-card hvr-fill" data-aos-duration="1000" data-aos="fade-left" style="height: 100%;">
+            <div class="service-card__body">
+              <h3 class="service-card__title">Техническая настройка</h3>
+              <p>
+                Мы приступаем к техническому внедрению Битрикс24 с учетом ваших потребностей и требований, совместно
+                сформированных в техническом задании.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-10">
+          <div class="service-card hvr-fill" data-aos-duration="1000" data-aos="fade-right" style="height: 100%;">
+            <div class="service-card__body">
+              <h3 class="service-card__title">Демонстрация, правки</h3>
+              <p>
+                Мы проводим презентацию ответственному лицу в формате демонстрационного созвона (или офлайн). По
+                результатам этой презентации собираем технические правки и реализуем их перед первым обучением.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-10">
+          <div class="service-card hvr-fill" data-aos-duration="1000" data-aos="fade-left" style="height: 100%;">
+            <div class="service-card__body">
+              <h3 class="service-card__title">Обучение</h3>
+              <p>
+                Мы проводим первый цикл обучения ваших сотрудников и руководителей. На данном этапе происходит
+                пользовательская корректировка, учитывая ваш опыт использования CRM Битрикс24.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-10">
+          <div class="service-card hvr-fill" data-aos-duration="1000" data-aos="fade-right" style="height: 100%;">
+            <div class="service-card__body">
+              <h3 class="service-card__title">Повторное обучение</h3>
+              <p>
+                Второй цикл обучения проводится с учетом вашего уже более глубокого понимания платформы. Гарантируется,
+                что вы используете Битрикс24 наиболее эффективно.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-10">
+          <div class="service-card hvr-fill" data-aos-duration="1000" data-aos="fade-left" style="height: 100%;">
+            <div class="service-card__body">
+              <h3 class="service-card__title">Контроль процессов</h3>
+              <p>
+                Мы остаемся на связи, чтобы отвечать на ваши вопросы и обеспечивать контроль над работой сотрудников в
+                Битрикс24. Помогаем вам внедрять систему в повседневные процессы.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-10">
+          <div class="service-card hvr-fill" data-aos-duration="1000" data-aos="fade-right" style="height: 100%;">
+            <div class="service-card__body">
+              <h3 class="service-card__title">Гарантийный период</h3>
+              <p>
+                Мы предоставляем гарантийное обслуживание на протяжении 14 дней после завершения проекта. В течении
+                этого времени мы вносим правки, возникшие в результате использования Битрикс24.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Home 1  : Content Section 2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <div class="home-1_content-section-2 padding-bottom-120">
   <div class="container">
     <div class="row row--custom">
-      <div
-        class="col-xl-5 col-lg-5 col-auto"
-        data-aos-duration="1000"
-        data-aos="fade-right"
-      >
+      <div class="col-xl-5 col-lg-5 col-auto" data-aos-duration="1000" data-aos="fade-right">
         <div class="home-1_content-image-2 content-image--mobile-width">
-          <img
-            src="{% static '/image/home-1/sert.jpg' %}"
-            alt="alternative text"
-          />
+          <img src="{% static '/image/home-1/sert.jpg' %}" alt="alternative text" />
           <div class="home-1_content-image-2-shape">
-            <img
-              src="{% static '/image/home-1/content-image-2-shape.svg' %}"
-              alt="alternative text"
-            />
+            <img src="{% static '/image/home-1/content-image-2-shape.svg' %}" alt="alternative text" />
           </div>
         </div>
       </div>
-      <div
-        class="offset-xl-1 col-xl-6 col-lg-7 col-md-11"
-        data-aos-duration="1000"
-        data-aos="fade-left"
-      >
+      <div class="offset-xl-1 col-xl-6 col-lg-7 col-md-11" data-aos-duration="1000" data-aos="fade-left">
         <div class="content">
           <div class="content-text-block">
             <h2 class="content-title heading-md text-black">
-              «Правильные интеграторы» - опыт, которому можно доверять
+              Правильные интеграторы - опыт, которому можно доверять
             </h2>
             <p>
               Компания “Правильные интеграторы” входит в ТОП-10 интеграторов CRM
@@ -355,177 +532,138 @@
           <div class="content-list-block">
             <ul class="content-list">
               <li class="content-list-item">
-                <img
-                  src="{% static '/image/icons/icon-check-blue.svg' %}"
-                  alt="alternative text"
-                />
-                Золотой сертифицированный партнер Битрикс24.
+                <img src="{% static '/image/icons/icon-check-blue.svg' %}" alt="alternative text" />
+                <div class="">
+                  2 недели гарантийного обслуживания
+                  <p>После завершения всех циклов правок, будет проведено обучение сотрудников и руководителей. Далее у
+                    вас будет 2 недели для того, чтобы задать вопросы, а также предложить правки в рамках согласованного
+                    списка работ.</p>
+                </div>
               </li>
               <li class="content-list-item">
-                <img
-                  src="{% static '/image/icons/icon-check-blue.svg' %}"
-                  alt="alternative text"
-                />
-                20 000+ часов опыта внедрения.
+                <img src="{% static '/image/icons/icon-check-blue.svg' %}" alt="alternative text" />
+                <div class="">
+                  Оформленная База знаний в Битрикс24
+                  <p>Все проводимые обучения будут записаны и оформлены в базу знаний в вашем Битрикс24. Вы с легкостью
+                    сможете при необходимости восстановить что-то в памяти, а также демонстрировать видео новым
+                    сотрудникам. Кроме того мы бесплатно загрузим вам наши базовые обучающие материалы по работе с CRM
+                    Битрикс24.</p>
+                </div>
               </li>
               <li class="content-list-item">
-                <img
-                  src="{% static '/image/icons/icon-check-blue.svg' %}"
-                  alt="alternative text"
-                />
-                Более 150 успешно реализованных проектов.
+                <img src="{% static '/image/icons/icon-check-blue.svg' %}" alt="alternative text" />
+                <div class="">
+                  Дальнейшую техническую и консалтинговую поддержку
+                  <p>После завершения гарантийного периода мы предложим вам различные форматы дальнейшего сотрудничества
+                    для развития вашей компании с помощью инструментов Битрикс24.</p>
+                </div>
               </li>
             </ul>
+            <div class="text-center mt-5">
+              <a href="./contact.html" class="btn-masco rounded-pill btn-fill--up">
+                <span>Заказать внедрение</span></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1 : Portfolio Section
+    Home 4 : Testimonial Section
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="home-1_portfolio-section section-padding-120" id="portfolio">
-  <div class="portfolio-shape">
-    <img
-      src="{% static '/image/home-1/portfolio-shape.png' %}"
-      alt="image alt"
-    />
-  </div>
-  <div class="container">
-    <div
-      class="section-heading section-heading--row text-center text-md-initial"
-    >
-      <div class="row">
+
+<div class="home-4_testimonial-section padding-top-120 padding-bottom-120 bg-cream" bis_skin_checked="1">
+  <div class="container" bis_skin_checked="1">
+    <div class="section-heading">
+      <div class="row justify-content-md-between">
         <div class="col-xl-6 col-md-8">
-          <h2 class="section-heading__title heading-md text-black">
-            Наши кейсы
+          <h2 class="section-heading__title heading-md text-black text-start">
+            Отзывы наших клиентов
           </h2>
         </div>
         <div class="col-xl-3 col-md-4">
-          <div class="section-heading__button">
-            <a
-              href="portfolio.html"
-              class="btn-masco btn-masco rounded-pill btn-fill--up"
-            >
-              <span>Все кейсы</span></a
-            >
+          <div class="section-heading__button text-end">
+            <a href="testimonial.html" class="btn-masco btn-masco rounded-pill btn-fill--up">
+              <span>Все отзывы</span></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="row row--portfolio-gutter">
-      <div
-        class="col-md-6 col-xs-10"
-        data-aos-duration="1000"
-        data-aos="fade-up"
-        data-aos-delay="300"
-      >
-        <a href="portfolio-details.html" class="portfolio-widget">
-          <div class="portfolio-widget_image-block">
-            <img
-              src="{% static '/image/home-1/portf1.png' %}"
-              alt="portfolio image"
-            />
+
+    <div class="row gutter-y-30 justify-content-center" bis_skin_checked="1">
+      <div class="col-lg-6 col-md-10 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100"
+        bis_skin_checked="1">
+        <div class="testimonial-widget-2" bis_skin_checked="1">
+          <div class="testimonial-widget-2__body" bis_skin_checked="1">
+            <p>
+              Сотрудничество с этой компанией стало для нас настоящим открытием! Их профессионализм и внимание к деталям
+              впечатляют. </p>
+            <div class="testimonial-widget-2__user-block" bis_skin_checked="1">
+              <img src="{% static '/image/icons/h03-feature-2.svg' %}" alt="image alt">
+              <div class="author-info" bis_skin_checked="1">
+                <h4 class="testimonial-widget-2__user-name">Анна Смирнова</h4>
+                <span class="testimonial-widget-2__user-position">Менеджер, Компания Б</span>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-widget__title-block">
-            <h3 class="portfolio-widget__title">
-              App — The power of communication
-            </h3>
-            <span class="portfolio-widget__category">UI/UX Design</span>
-          </div>
-          <div class="portfolio-widget__link">
-            <span class="btn-link btn-arrow">View work </span>
-          </div>
-        </a>
+        </div>
       </div>
-      <div
-        class="col-md-6 col-xs-10"
-        data-aos-duration="1000"
-        data-aos="fade-down"
-        data-aos-delay="300"
-      >
-        <a href="portfolio-details.html" class="portfolio-widget">
-          <div class="portfolio-widget_image-block">
-            <img
-              src="{% static '/image/home-1/portf2.png' %}"
-              alt="portfolio image"
-            />
+      <div class="col-lg-6 col-md-10 aos-init aos-animate" data-aos="fade-left" data-aos-delay="200"
+        bis_skin_checked="1">
+        <div class="testimonial-widget-2" bis_skin_checked="1">
+          <div class="testimonial-widget-2__body" bis_skin_checked="1">
+            <p>
+              Мы получили отличный результат благодаря их команде. Рекомендуем всем, кто ищет надежного партнера! </p>
+            <div class="testimonial-widget-2__user-block" bis_skin_checked="1">
+              <img src="{% static '/image/icons/h03-feature-1.svg' %}" alt="image alt">
+              <div class="author-info" bis_skin_checked="1">
+                <h4 class="testimonial-widget-2__user-name">Иван Петров</h4>
+                <span class="testimonial-widget-2__user-position">Директор, Компания А</span>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-widget__title-block">
-            <h3 class="portfolio-widget__title">
-              Website — The future lifestyle platform.
-            </h3>
-            <span class="portfolio-widget__category">Branding</span>
-          </div>
-          <div class="portfolio-widget__link">
-            <span class="btn-link btn-arrow">View work </span>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Home 1 : Testimonial Section 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div
-  class="home-1_testimonial-section section-padding-120 bg-light-2"
-  id="testimonial"
->
+<div class="home-1_testimonial-section section-padding-120 bg-light-2" id="testimonial">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
-        <div class="section-heading text-center">
-          <h2 class="section-heading__title heading-md text-black">
-            Most of our satisfied clients leave their feedback
-          </h2>
-        </div>
-      </div>
-    </div>
     <div class="testimonial-widget-large">
       <div class="row row--custom">
-        <div
-          class="col-lg-6 col-md-8 col-sm-10 col-xs-10"
-          data-aos-duration="1000"
-          data-aos="fade-right"
-        >
+        <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10" data-aos-duration="1000" data-aos="fade-right">
           <div class="testimonial-widget-large__image">
-            <img
-              src="{% static '/image/home-1/testimonial-image.png' %}"
-              alt="handsome-smiling-bearded-man-glasses-working-laptop"
-            />
+            <img src="{% static '/image/1R1A0289.jpg' %}" alt="handsome-smiling-bearded-man-glasses-working-laptop" />
           </div>
         </div>
-        <div
-          class="col-lg-6 col-md-10 col-auto"
-          data-aos-duration="1000"
-          data-aos="fade-left"
-        >
+        <div class="col-lg-6 col-md-10 col-auto" data-aos-duration="1000" data-aos="fade-left">
           <div class="testimonial-widget-large__body">
             <div class="testimonial-widget-large__icon">
-              <img
-                src="{% static '/image/home-1/testimonial-icon.svg' %}"
-                alt="testimonial icon"
-              />
+              <img src="{% static '/image/home-1/testimonial-icon.svg' %}" alt="testimonial icon" />
             </div>
             <p class="testimonial-widget-large__review-text">
-              Это профессионалы с богатым опытом в маркетинге, продажах и
-              автоматизации бизнес-процессов. Мы не просто интегрируем CRM
-              Битрикс24, а проводим глубокий бизнес-анализ, вникаем в каждый
-              процесс и создаем решения, которые максимизируют эффективность
-              вашего бизнеса. Мы не останавливаемся на внедрении Битрикс24. Мы
-              обучаем ваших сотрудников и сопровождаем вас на протяжении многих
-              лет, чтобы вы максимально использовали возможности этой CRM. Мы
-              выстраиваем партнерские отношения и помогаем вам достичь
-              долгосрочных целей.
+              Мы не останавливаемся на внедрении Битрикс24. Мы обучаем ваших
+              сотрудников и сопровождаем вас на протяжении многих лет, чтобы вы
+              максимально использовали возможности этой CRM. Мы выстраиваем
+              партнерские отношения и помогаем вам достичь долгосрочных целей.
             </p>
-            <h4 class="testimonial-widget-large__user-name">Роман Сытько</h4>
+
+            <h4 class="testimonial-widget-large__user-name mt-10">
+              Роман Сытько
+            </h4>
             <span class="testimonial-widget-large__user-position">
               CEO Правильные Интеграторы
             </span>
             <div class="testimonial-widget-large__link">
-              <a href="#" class="btn-link btn-arrow">Read more reviews</a>
+              <a href="#" class="btn-link btn-arrow">Подробнее</a>
             </div>
           </div>
         </div>
@@ -533,239 +671,58 @@
     </div>
   </div>
 </div>
+
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1  : FAQ Section 
+    Home 8  : Contact Section 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="home-1_faq-section section-padding-120">
-  <div class="home-1_faq-shape-1">
-    <img src="{% static '/image/home-1/faq-shape-1.svg' %}" alt="image alt" />
-  </div>
-  <div class="home-1_faq-shape-2">
-    <img src="{% static '/image/home-1/faq-shape-2.svg' %}" alt="image alt" />
-  </div>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xxl-6 col-lg-8 col-md-9">
-        <div class="section-heading section-heading text-center">
-          <h2 class="section-heading__title heading-md text-black">
-            Часто задаваемые вопросы
-          </h2>
+
+<div class="cta-home-8 pt-5 pb-5" bis_skin_checked="1">
+  <div class="container" bis_skin_checked="1">
+    <div class="cta-home-8-wrapper" bis_skin_checked="1">
+      <div class="cta-home-8-shape-wrapper" bis_skin_checked="1">
+        <div class="cta-home-8-shape" bis_skin_checked="1">
+          <img src="{% static '/image/cta/cta-8-shape.png' %}" alt="image alt">
         </div>
       </div>
-    </div>
-    <div class="row row--custom">
-      <div class="col-lg-10">
-        <div class="accordion-style-1" id="home-1-faq">
-          <div class="accordion-item">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#home-1-faq-item"
-              aria-expanded="true"
-              aria-controls="home-1-faq-item"
-            >
-              Сколько времени потребуется на внедрение Битрикс24?
-            </button>
-            <div
-              id="home-1-faq-item"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#home-1-faq"
-            >
-              <div class="accordion-item__body">
-                Пакетные (стартовые) внедрения занимают 2-3 месяца. Первые 2
-                недели занимает формирование технического задания и его
-                реализация. А остальное время занимает ввод CRM в эксплуатацию:
-                обучение, ответы на вопросы, внесение правок, формирование
-                привычки у сотрудников компании. При проектном формате работы
-                внедрение Битрикс24 может занимать от 1 дня до 6 месяцев.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#home-1-faq-item-2"
-              aria-expanded="false"
-              aria-controls="home-1-faq-item-2"
-            >
-              Какие проблемы могут возникнуть в процессе внедрения?
-            </button>
-            <div
-              id="home-1-faq-item-2"
-              class="accordion-collapse collapse"
-              data-bs-parent="#home-1-faq"
-            >
-              <div class="accordion-item__body">
-                - Изменения в бизнес-процессах. Внедрение новой платформы с
-                большой вероятностью потребует изменений в текущих
-                бизнес-процессах. Это может вызвать некоторое сопротивление (в
-                том числе саботаж) и временную нестабильность. Мы поможем вам
-                донести до ваших сотрудников цели внедрения и возможную пользу,
-                которую они сами могут получить - это уменьшит вероятность
-                возникновения данной проблемы. - Недостаток ресурсов. Внедрение
-                Битрикс24 может потребовать дополнительных (выделенных)
-                человеческих ресурсов, т.е. необходим ответственный сотрудник с
-                вашей стороны. Он будет заниматься внедрением вместе с нами,
-                выступать первой линией поддержки для ваших сотрудников. Если
-                такого нет - мы постараемся выполнить сами эту функцию. Но с ним
-                точно будет лучше. - Отсутствие оперативной поддержки. Если
-                возникают проблемы или вопросы, даже небольшие, крайне важно
-                оперативно получить ответ от компетентного специалиста. В
-                противном случае начнет формироваться "снежный ком", из-за
-                которого в конечном счете внедренной CRM могут перестать
-                пользоваться. Мы окажем вам такую поддержку при любых форматах
-                работы.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#home-1-faq-item-3"
-              aria-expanded="false"
-              aria-controls="home-1-faq-item-3"
-            >
-              Оказываете ли вы поддержку после внедрения?
-            </button>
-            <div
-              id="home-1-faq-item-3"
-              class="accordion-collapse collapse"
-              data-bs-parent="#home-1-faq"
-            >
-              <div class="accordion-item__body">
-                Да, после внедрения Битрикс24 мы оказываем консультационную
-                поддержку. Также у нас есть услуга по сопровождению, в рамках
-                которой мы всегда готовы помочь с решением ваших задач,
-                обучением сотрудников, донастройкой Битрикс24.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#home-1-faq-item-6"
-              aria-expanded="false"
-              aria-controls="home-1-faq-item-4"
-            >
-              Предоставляете ли гарантию на свои услуги?
-            </button>
-            <div
-              id="home-1-faq-item-6"
-              class="accordion-collapse collapse"
-              data-bs-parent="#home-1-faq"
-            >
-              <div class="accordion-item__body">
-                Да, мы предоставляем гарантию. Если речь идет о проектной
-                работе, то в течении 14 дней после ввода в эксплуатацию мы можем
-                внести любые правки в рамках технического задания. Если по
-                истечению 14 дней возникают проблемы в эксплуатации настроек, и
-                эти проблемы возникли не из-за того, что обновился функционал
-                или кто-то что-то сломал - мы также внесем все необходимые
-                правки.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#home-1-faq-item-4"
-              aria-expanded="false"
-              aria-controls="home-1-faq-item-4"
-            >
-              Как обеспечивается безопасность данных в Битрикс24?
-            </button>
-            <div
-              id="home-1-faq-item-4"
-              class="accordion-collapse collapse"
-              data-bs-parent="#home-1-faq"
-            >
-              <div class="accordion-item__body">
-                Для облачных Битрикс24: Для обеспечения бесперебойной работы
-                сервиса используются два независимых датацентра в Республике
-                Беларусь. Включена автоматическая и полуавтоматическая реакция
-                на аварийные ситуации. Все соединения с «Битрикс24» производятся
-                через шифрованный обмен данными 256bit. Максимальная защита от
-                самых разнообразных угроз безопасности обеспечивается
-                проактивным фильтром (WAF - Web Application Firewal). Подробнее
-                можно почитать здесь: Безопасность Битрикс24 Для коробочных
-                Битрикс24: Все зависит от вас и ваших решений. Со своей стороны
-                мы предлагаем размещение на сертифицированном Битриксом
-                хостинге, предлагаем качественную и регулярную техническую
-                поддержку от наших партнеров.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#home-1-faq-item-5"
-              aria-expanded="false"
-              aria-controls="home-1-faq-item-5"
-            >
-              Какие интеграции с другими системами можно реализовать?
-            </button>
-            <div
-              id="home-1-faq-item-5"
-              class="accordion-collapse collapse"
-              data-bs-parent="#home-1-faq"
-            >
-              <div class="accordion-item__body">
-                Любые. С большим количеством сервисов есть готовые интеграции с
-                помощью приложений из маркетплейса Битрикс24. А там, где готовых
-                решений нет - можно разработать свою, т.к. у Битрикс24 есть
-                открытый API. Но прежде мы все таки постараемся найти готовое
-                решение.
-              </div>
-            </div>
-          </div>
+      <div class="cta-content-block" bis_skin_checked="1">
+        <div class="cta-text-block" bis_skin_checked="1">
+          <h2 class="cta-title heading-md text-cream">Опишите свою проблему, и мы найдем для нее решение</h2>
+          <p>
+            Заполните форму и мы свяжемся с вами для проведения бесплатной консультации
+          </p>
+        </div>
+        <div class="cta-button-group" bis_skin_checked="1">
+          <a class="btn-masco btn-primary-l08 btn-fill--up rounded-pill" href="#">
+            <span>Оставить завку</span>
+          </a>
+          <a class="btn-masco btn-outline-l08 btn-fill--up rounded-pill" href="#">
+            <span>Посмотреть услуги</span>
+          </a>
         </div>
       </div>
-    </div>
-    <div class="section-button">
-      <a href="#" class="btn-masco rounded-pill btn-fill--up"
-        ><span>Остались вопросы? Напишите нам</span></a
-      >
     </div>
   </div>
 </div>
+
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~
      CTA Base 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="cta-base">
   <div class="container">
     <div class="cta-base__wrapper border-bottom-dark">
-      <div
-        class="row align-items-center justify-content-center justify-content-md-between gutter-y-20"
-      >
+      <div class="row align-items-center justify-content-center justify-content-md-between gutter-y-20">
         <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
           <div class="cta-base__text-block">
-            <h2 class="heading-md text-white">Хотите узнать больше про нас?</h2>
+            <h2 class="heading-md text-white">Приступим к работе?</h2>
           </div>
         </div>
         <div class="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
           <div class="cta-base__button">
-            <a
-              href="./contact.html"
-              class="btn-masco rounded-pill btn-fill--up"
-            >
-              <span>Наш телеграм</span></a
-            >
+            <a href="./contact.html" class="btn-masco rounded-pill btn-fill--up">
+              <span>Заполнить заявку</span></a>
             <div class="cta-base__button-shape">
-              <img
-                src="{% static '/image/home-1/cta-shape.svg' %}"
-                alt="image alt"
-              />
+              <img src="{% static '/image/home-1/cta-shape.svg' %}" alt="image alt" />
             </div>
           </div>
         </div>
@@ -773,5 +730,6 @@
     </div>
   </div>
 </div>
+
 
 {% endblock %}
