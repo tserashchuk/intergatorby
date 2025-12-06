@@ -4913,6 +4913,16 @@ h6 {
   row-gap: 15px;
   flex-direction: column;
   padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-widget-5__body {
+  text-align: center;
+}
+
+.feature-widget-5__body>img {
+  margin: 0 auto;
 }
 
 @media (min-width: 480px) {
@@ -4952,7 +4962,8 @@ h6 {
   letter-spacing: 0.04166666em;
   font-size: 20px;
   font-family: 'Clash Display', sans-serif;
-  margin-bottom: 15px;
+  margin: 15px 0;
+  color: #0d6efd;
 }
 
 @media (min-width: 768px) {
@@ -17259,25 +17270,7 @@ div#loading img {
 .contact_main-content {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
-}
-
-@media (min-width: 992px) {
-  .contact_main-content {
-    row-gap: 40px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .contact_main-content {
-    row-gap: 60px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .contact_main-content {
-    row-gap: 100px;
-  }
+  row-gap: 20px;
 }
 
 .contact-2_form-section .form-box-style {
