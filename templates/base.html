@@ -88,6 +88,11 @@
                         </a>
                       </li>
                       <li class="sub-menu_item">
+                        <a href="{% url 'company' %}">
+                          <span class="menu-item-text">Наша команда</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu_item">
                         <a href="{% url 'reviews' %}">
                           <span class="menu-item-text">Отзывы</span>
                         </a>
@@ -97,208 +102,49 @@
                           <span class="menu-item-text">Кейсы</span>
                         </a>
                       </li>
-
+                      <li class="sub-menu_item">
+                          <a href="{% url 'blog' %}">
+                            <span class="menu-item-text">Блог</span>
+                          </a>
+                        </li>
                     </ul>
                   </div>
                 </li>
-                <li class="nav-item">
-                  <a href="{% url 'bitrix' %}" class="nav-link-item drop-trigger">Битрикс24</a>
-                </li>
                 <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger">Услуги<i class="fas fa-angle-down"></i>
+                  <a href="{% url 'bitrix' %}" class="nav-link-item drop-trigger">Битрикс24<i class="fas fa-angle-down"></i>
                   </a>
                   <div class="sub-menu" id="submenu-3">
                     <ul class="sub-menu_list">
                       <li class="sub-menu_item nav-item-has-children child-item">
-                        <a href="#" class="sub-menu__item-link">
-                          <span class="menu-item-text">Services</span>
-                          <i class="fas fa-angle-right"></i>
-                        </a>
-                        <div class="sub-menu child-sub" id="submenu-22">
-                          <ul class="sub-menu_list">
-                            <li class="sub-menu_item">
-                              <a href="service.html">
-                                <span class="menu-item-text">Service</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="service-details.html">
-                                <span class="menu-item-text">Service Details</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="sub-menu_item">
-                        <a href="team.html">
-                          <span class="menu-item-text">Team</span>
+                        <a href="{% url 'bitrix' %}" class="sub-menu__item-link">
+                          <span class="menu-item-text">Возможности Битрикс24</span>
                         </a>
                       </li>
                       <li class="sub-menu_item nav-item-has-children child-item">
-                        <a class="sub-menu__item-link">
-                          <span class="menu-item-text">Pricing</span>
+                        <a class="sub-menu__item-link" href="{% url 'licence' %}">
+                          <span class="menu-item-text">Лицензии</span>
                           <i class="fas fa-angle-right"></i>
                         </a>
                         <div class="sub-menu child-sub" id="submenu-11">
                           <ul class="sub-menu_list">
                             <li class="sub-menu_item">
-                              <a href="pricing.html">
-                                <span class="menu-item-text">Pricing 1</span>
+                              <a href="{% url 'oblako' %}">
+                                <span class="menu-item-text">Облачные лицензии Битрикс24</span>
                               </a>
                             </li>
                             <li class="sub-menu_item">
-                              <a href="pricing-2.html">
-                                <span class="menu-item-text">Pricing 2</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="sub-menu_item nav-item-has-children child-item">
-                        <a class="sub-menu__item-link">
-                          <span class="menu-item-text">Career</span>
-                          <i class="fas fa-angle-right"></i>
-                        </a>
-                        <div class="sub-menu child-sub" id="submenu-4">
-                          <ul class="sub-menu_list">
-                            <li class="sub-menu_item">
-                              <a href="career.html">
-                                <span class="menu-item-text">Career</span>
+                              <a href="{% url 'korobka' %}">
+                                <span class="menu-item-text">Коробочные лицензии Битрикс24</span>
                               </a>
                             </li>
                             <li class="sub-menu_item">
-                              <a href="career-details.html">
-                                <span class="menu-item-text">Career Details</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="sub-menu_item nav-item-has-children child-item">
-                        <a class="sub-menu__item-link">
-                          <span class="menu-item-text">Portfolio</span>
-                          <i class="fas fa-angle-right"></i>
-                        </a>
-                        <div class="sub-menu child-sub" id="submenu-7">
-                          <ul class="sub-menu_list">
-                            <li class="sub-menu_item">
-                              <a href="portfolio.html">
-                                <span class="menu-item-text">Portfolio 1 Classic</span>
+                              <a href="{% url 'prodlenie' %}">
+                                <span class="menu-item-text">Продление Битрикс24</span>
                               </a>
                             </li>
                             <li class="sub-menu_item">
-                              <a href="portfolio-2.html">
-                                <span class="menu-item-text">Portfolio 2 Masonry</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="portfolio-3.html">
-                                <span class="menu-item-text">Portfolio 3 Modern</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="portfolio-4.html">
-                                <span class="menu-item-text">Portfolio 4 Minimal</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="portfolio-details.html">
-                                <span class="menu-item-text">Portfolio Details</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="sub-menu_item nav-item-has-children child-item">
-                        <a class="sub-menu__item-link">
-                          <span class="menu-item-text">Blog</span>
-                          <i class="fas fa-angle-right"></i>
-                        </a>
-                        <div class="sub-menu child-sub" id="submenu-12">
-                          <ul class="sub-menu_list">
-                            <li class="sub-menu_item">
-                              <a href="blog.html">
-                                <span class="menu-item-text">Blog</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="blog-details.html">
-                                <span class="menu-item-text">Blog Details</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="sub-menu_item nav-item-has-children child-item">
-                        <a class="sub-menu__item-link">
-                          <span class="menu-item-text">Faq</span>
-                          <i class="fas fa-angle-right"></i>
-                        </a>
-                        <div class="sub-menu child-sub" id="submenu-8">
-                          <ul class="sub-menu_list">
-                            <li class="sub-menu_item">
-                              <a href="faq.html">
-                                <span class="menu-item-text">FAQ 1</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="faq-2.html">
-                                <span class="menu-item-text">FAQ 2</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="faq-3.html">
-                                <span class="menu-item-text">FAQ 3</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="faq-4.html">
-                                <span class="menu-item-text">FAQ 4</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="sub-menu_item nav-item-has-children child-item">
-                        <a class="sub-menu__item-link">
-                          <span class="menu-item-text">Utility</span>
-                          <i class="fas fa-angle-right"></i>
-                        </a>
-                        <div class="sub-menu child-sub" id="submenu-9">
-                          <ul class="sub-menu_list">
-                            <li class="sub-menu_item">
-                              <a href="404.html">
-                                <span class="menu-item-text">404</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="coming-soon.html">
-                                <span class="menu-item-text">Coming Soon</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="sub-menu_item nav-item-has-children child-item">
-                        <a class="sub-menu__item-link">
-                          <span class="menu-item-text">Account</span>
-                          <i class="fas fa-angle-right"></i>
-                        </a>
-                        <div class="sub-menu child-sub" id="submenu-10">
-                          <ul class="sub-menu_list">
-                            <li class="sub-menu_item">
-                              <a href="sign-in.html">
-                                <span class="menu-item-text">Sign In</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="sign-up.html">
-                                <span class="menu-item-text">Sign Up</span>
-                              </a>
-                            </li>
-                            <li class="sub-menu_item">
-                              <a href="reset-password.html">
-                                <span class="menu-item-text">Reset Password</span>
+                              <a href="{% url 'market' %}">
+                                <span class="menu-item-text">Подписка на маркетплейс Битрикс24</span>
                               </a>
                             </li>
                           </ul>
@@ -307,8 +153,51 @@
                     </ul>
                   </div>
                 </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="{% url 'services' %}" class="nav-link-item drop-trigger">Услуги<i class="fas fa-angle-down"></i>
+                  </a>
+                  <div class="sub-menu" id="submenu-3">
+                    <ul class="sub-menu_list">
+                      <li class="sub-menu_item nav-item-has-children child-item">
+                        <a href="/vnedrenie-paketnoe" class="sub-menu__item-link">
+                          <span class="menu-item-text">Пакетное внедрение Битрикс24</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu_item nav-item-has-children child-item">
+                        <a href="/vnedrenie-proektnoe" class="sub-menu__item-link">
+                          <span class="menu-item-text">Проектное внедрение Битрикс24</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu_item nav-item-has-children child-item">
+                        <a href="{% url 'audit' %}" class="sub-menu__item-link">
+                          <span class="menu-item-text">Аудит Битрикс24</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu_item nav-item-has-children child-item">
+                        <a href="{% url 'podderzka' %}" class="sub-menu__item-link">
+                          <span class="menu-item-text">Поддержка коробочных Битрикс24</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu_item nav-item-has-children child-item">
+                        <a href="{% url 'dorabotka' %}" class="sub-menu__item-link">
+                          <span class="menu-item-text">Разработка и настройка интеграций с Битрикс24</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu_item nav-item-has-children child-item">
+                        <a href="/vnedrenie-bi" class="sub-menu__item-link">
+                          <span class="menu-item-text">Настройка BI-отчетов (дашбордов)</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu_item nav-item-has-children child-item">
+                        <a href="/obuchenie-bitrix" class="sub-menu__item-link">
+                          <span class="menu-item-text">Обучение битрикс24</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
                 <li class="nav-item ">
-                  <a href="{% url 'webinars' %}" class="nav-link-item">Вебинары
+                  <a href="{% url 'contact' %}" class="nav-link-item">Контакты
                   </a>
 
                 </li>
