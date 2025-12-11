@@ -89,7 +89,7 @@ class Vnedreniepaket(View):
 
 class Vnedrenieproektnoe(View):
     def get(self, request):
-        return render(request, 'vnedrenieproektnoe.html')
+        return render(request, 'Vnedrenieproektnoe.html')
 
 class Dorabotka(View):
     def get(self, request):
