@@ -249,27 +249,44 @@
                   gathering and promotional offerings.
                 </p>
               </div>
-              <a href="#" class="footer-link">mascoexample@gmail.com</a>
+              <p>Минск, Мельникайте, 8 (2 подъезд, 10 этаж)</p>
+              <p><a href="tel:375339015703">+375-33-901-57-03</a></p>
+              <a href="mailto:info@integrators.by" class="footer-link">info@integrators.by</a>
               <br>
               <ul class="list-social">
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/integrators.by">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i class="fa-brands fa-twitter"></i>
+                  <a href="https://www.linkedin.com/company/integrators-by/">
+                    <i class="fa-brands fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/integrators.by">
                     <i class="fa-brands fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i class="fa-brands fa-github"></i>
+                  <a href="https://www.youtube.com/@integrators-by">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.tiktok.com/@integrators.by">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://web.telegram.org/k/#@integratorsby">
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vk.com/integratorsby">
+                    <i class="fa-brands fa-vk"></i>
                   </a>
                 </li>
               </ul>
@@ -277,63 +294,103 @@
           </div>
           <div class=" col-lg-7 col-xl-6 col-xxl-7 offset-xl-1">
             <div class="row row--list-block">
-              <div class="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-auto">
-                <h3 class="footer-title">Primary Pages</h3>
+              <div class="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-3">
+                <h3 class="footer-title">Компания</h3>
                 <ul class="footer-list">
                   <li>
-                    <a href="#">Demos</a>
+                    <a href="{% url 'about' %}">
+                      О нас
+                    </a>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <a href="{% url 'company' %}">
+                      Наша команда
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <a href="{% url 'reviews' %}">
+                      Отзывы
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Pages</a>
+                    <a href="{% url 'cases' %}">
+                      Кейсы
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                      <a href="{% url 'blog' %}">
+                        Блог
+                      </a>
+                    </li>
+                </ul>
+              </div>
+              <div class="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-4">
+                <h3 class="footer-title">Битрикс24</h3>
+                <ul class="footer-list">
+                  <li>
+                    <a href="{% url 'licence' %}">
+                      Лицензии
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'oblako' %}">
+                      Облачные лицензии Битрикс24
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'korobka' %}">
+                      Коробочные лицензии Битрикс24
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'prodlenie' %}">
+                      Продление Битрикс24
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'market' %}">
+                      Подписка на маркетплейс Битрикс24
+                    </a>
                   </li>
                 </ul>
               </div>
-              <div class="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-auto">
-                <h3 class="footer-title">Utility pages</h3>
+              <div class="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-4">
+                <h3 class="footer-title">Услуги</h3>
                 <ul class="footer-list">
                   <li>
-                    <a href="#">Instructions</a>
+                    <a href="/vnedrenie-paketnoe">
+                      Пакетное внедрение Битрикс24
+                    </a>
                   </li>
                   <li>
-                    <a href="#"> Style guide</a>
+                    <a href="/vnedrenie-proektnoe">
+                      Проектное внедрение Битрикс24
+                    </a>
                   </li>
                   <li>
-                    <a href="#"> Licenses</a>
+                    <a href="{% url 'audit' %}">
+                      Аудит Битрикс24
+                    </a>
                   </li>
                   <li>
-                    <a href="#"> 404 Not found</a>
+                    <a href="{% url 'podderzka' %}">
+                      Поддержка коробочных Битрикс24
+                    </a>
                   </li>
                   <li>
-                    <a href="#"> Password protected</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-auto">
-                <h3 class="footer-title">Resources</h3>
-                <ul class="footer-list">
-                  <li>
-                    <a href="#">Support</a>
+                    <a href="{% url 'dorabotka' %}">
+                      Разработка и настройка интеграций с Битрикс24
+                    </a>
                   </li>
                   <li>
-                    <a href="#"> Privacy policy</a>
+                    <a href="/vnedrenie-bi">
+                      Настройка BI-отчетов (дашбордов)
+                    </a>
                   </li>
                   <li>
-                    <a href="#"> Terms & Conditions</a>
-                  </li>
-                  <li>
-                    <a href="#"> Strategic finance</a>
-                  </li>
-                  <li>
-                    <a href="#"> Video guide</a>
+                    <a href="/obuchenie-bitrix">
+                      Обучение битрикс24
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -344,7 +401,8 @@
       <div class="copyright-block">
         <div class="container">
           <div class="copyright-inner text-center  copyright-border">
-            <p>© Copyright 2023, All Rights Reserved by Mthemeus</p>
+            <p>© 2025 Все права защищены.</p>
+            <p>ООО «Правильные Интеграторы Групп», УНП 192512915</p>
           </div>
         </div>
       </div>
