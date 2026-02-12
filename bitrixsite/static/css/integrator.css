@@ -110,6 +110,48 @@
 }
 
 
+/*CTA*/
+
+.integrator-cta-base {
+    position: relative;
+    background-color: #A8BBFF;
+
+  /* Радиальный градиент */
+  background-image: radial-gradient(
+    circle at center, 
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.6) 29%,
+    rgba(255, 255, 255, 0.35) 69%,
+    rgba(255, 255, 255, 0.3) 79%,
+    rgba(255, 255, 255, 0.2) 90%,
+    rgba(255, 255, 255, 0.25) 100%
+  );
+}
+
+.integrator-cta-base_over {
+    position: absolute;
+    right: 0;
+    left: auto;
+    bottom: 0;
+}
+
+.integrator-cta-base__wrapper {
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.integrator-cta-base__text-block h2 {
+    color: var(--btn-hover-primary) !important;
+    max-width: 1070px;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.integrator-cta-base__text-block h2 span {
+    color: var(--btn-dark-primary) !important;
+}
+
+
 /*FOOTER*/
 
 
