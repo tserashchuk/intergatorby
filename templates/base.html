@@ -22,6 +22,7 @@
   <link rel="stylesheet" type="text/css" href={% static "/plugins/bootstrap/dist/css/bootstrap.min.css" %}>
   <link rel="stylesheet" type="text/css" href={% static "/css/style.css" %}>
   <link rel="stylesheet" type="text/css" href={% static "./css/demo.css" %}>
+  <link rel="stylesheet" type="text/css" href={% static "./css/integrator.css" %}>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700&display=swap');
@@ -52,31 +53,31 @@
     <!--~~~~~~~~~~~~~~~~~~~~~~~~
      Header Area
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <header class="site-header site-header--transparent site-header--sticky bg--primary">
+    <header class="site-header integrator-site-header site-header--transparent site-header--sticky bg--primary">
       <div class="container">
-        <nav class="navbar site-navbar">
+        <nav class="navbar site-navbar integrator-site-navbar">
           <!--~~~~~~~~~~~~~~~~~~~~~~~~
             Brand Logo
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <div class="brand-logo">
             <a href="#">
               <!-- light version logo (logo must be black)-->
-              <img class="logo-light brand-logo-width" src="{% static '/image/logo.png' %} " alt="brand logo">
-              <!-- Dark version logo (logo must be White)-->
-              <img class="logo-dark brand-logo-width" src="{% static '/image/logo-white.png' %} " alt="brand logo">
+              <img class="logo-light brand-logo-width" src="{% static '/image/brand-logo/Logo-dark.png' %} "
+                alt="brand logo">
             </a>
           </div>
-          <div class="menu-block-wrapper ">
+          <div class="menu-block-wrapper">
             <div class="menu-overlay"></div>
             <nav class="menu-block" id="append-menu-header">
               <div class="mobile-menu-head">
                 <a href="index.html">
-                  <img src="./image/icons/logo-whites.svg" alt="brand logo">
+                  <img class="logo-light brand-logo-width" src="{% static '/image/brand-logo/Logo-dark.png' %} "
+                    alt="brand logo">
                 </a>
                 <div class="current-menu-title"></div>
                 <div class="mobile-menu-close">&times;</div>
               </div>
-              <ul class="site-menu-main">
+              <ul class="integrator-menu-main site-menu-main">
                 <li class="nav-item nav-item-has-children">
                   <a href="#" class="nav-link-item drop-trigger">Компания<i class="fas fa-angle-down"></i>
                   </a>
@@ -103,15 +104,16 @@
                         </a>
                       </li>
                       <li class="sub-menu_item">
-                          <a href="{% url 'blog' %}">
-                            <span class="menu-item-text">Блог</span>
-                          </a>
-                        </li>
+                        <a href="{% url 'blog' %}">
+                          <span class="menu-item-text">Блог</span>
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </li>
                 <li class="nav-item nav-item-has-children">
-                  <a href="{% url 'bitrix' %}" class="nav-link-item drop-trigger">Битрикс24<i class="fas fa-angle-down"></i>
+                  <a href="{% url 'bitrix' %}" class="nav-link-item drop-trigger">Битрикс24<i
+                      class="fas fa-angle-down"></i>
                   </a>
                   <div class="sub-menu" id="submenu-3">
                     <ul class="sub-menu_list">
@@ -154,7 +156,8 @@
                   </div>
                 </li>
                 <li class="nav-item nav-item-has-children">
-                  <a href="{% url 'services' %}" class="nav-link-item drop-trigger">Услуги<i class="fas fa-angle-down"></i>
+                  <a href="{% url 'services' %}" class="nav-link-item drop-trigger">Услуги<i
+                      class="fas fa-angle-down"></i>
                   </a>
                   <div class="sub-menu" id="submenu-3">
                     <ul class="sub-menu_list">
@@ -213,12 +216,14 @@
           <!--~~~~~~~~~~~~~~~~~~~~~~~~
             Mobile Menu Hamburger Ends
           ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-          <div class="header-cta-btn-wrapper">
-            <a href="#" class="btn-masco btn-masco--header btn-masco--header-secondary">
+          <div class="integrator-header-cta-btn-wrapper header-cta-btn-wrapper">
+            <a href="#" class="integrator-btn integrator-btn-secondary">
               <span>+375-33-683-00-21</span>
             </a>
-            <a href="#" class="btn-masco btn-masco--header rounded-pill btn-fill--up">
-              <span>Личный кабинет</span></a>
+            <a href="#" class="integrator-btn integrator-btn-light btn-fill--up">
+              <span>Войти</span></a>
+            <a href="#" class="integrator-btn btn-fill--up">
+              <span>Попробовать бесплатно</span></a>
           </div>
         </nav>
       </div>
@@ -235,26 +240,24 @@
 
 
 
-    <div class="footer  footer-padding-default footer--dark-v1">
+    <div class="footer integrator-footer footer-padding-default footer--dark-v1">
       <div class="container">
-        <div class="row row--footer-main">
-          <div class="col-md-8 col-lg-5 col-xl-5 col-xxl-4">
+        <div class="integrator-footer-main">
+          <div class="integrator-footer-branding">
             <div class="footer__content-block">
               <div class="footer__content-text">
                 <div class="footer-brand">
-                  <img src="./image/logo-white.png" alt="image alt">
+                  <img class="logo-light brand-logo-width" src="{% static '/image/brand-logo/Logo-white.png' %} "
+                    alt="brand logo">
                 </div>
-                <p>
-                  We are strategic & creative digital agency who are focused on user experience, mobile, social, data
-                  gathering and promotional offerings.
-                </p>
               </div>
-              <p>Минск, Мельникайте, 8 (2 подъезд, 10 этаж)</p>
-              <p><a href="tel:375339015703">+375-33-901-57-03</a></p>
-              <a href="mailto:info@integrators.by" class="footer-link">info@integrators.by</a>
-              <br>
-              <ul class="list-social">
-                <li>
+              <div class="integrator-footer__content-text">
+                <a href="tel:375339015703">+375-33-901-57-03</a>
+                <a href="mailto:info@integrators.by">info@integrators.by</a>
+                <p>Минск, Мельникайте, 8 (2 подъезд, 10 этаж)</p>
+              </div>
+              <ul class="integrator-list-social list-social">
+                <!-- <li>
                   <a href="https://www.facebook.com/integrators.by">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
@@ -263,7 +266,7 @@
                   <a href="https://www.linkedin.com/company/integrators-by/">
                     <i class="fa-brands fa-linkedin"></i>
                   </a>
-                </li>
+                </li> -->
                 <li>
                   <a href="https://www.instagram.com/integrators.by">
                     <i class="fa-brands fa-instagram"></i>
@@ -274,11 +277,11 @@
                     <i class="fa-brands fa-youtube"></i>
                   </a>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="https://www.tiktok.com/@integrators.by">
                     <i class="fa-brands fa-tiktok"></i>
                   </a>
-                </li>
+                </li> -->
                 <li>
                   <a href="https://web.telegram.org/k/#@integratorsby">
                     <i class="fa-brands fa-telegram"></i>
@@ -290,145 +293,141 @@
                   </a>
                 </li>
               </ul>
-            </div>
-          </div>
-          <div class=" col-lg-7 col-xl-6 col-xxl-7 offset-xl-1">
-            <div class="row row--list-block">
-              <div class="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-3">
-                <h3 class="footer-title">Компания</h3>
-                <ul class="footer-list">
-                  <li>
-                    <a href="{% url 'about' %}">
-                      О нас
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'company' %}">
-                      Наша команда
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'reviews' %}">
-                      Отзывы
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'cases' %}">
-                      Кейсы
-                    </a>
-                  </li>
-                  <li>
-                      <a href="{% url 'blog' %}">
-                        Блог
-                      </a>
-                    </li>
-                </ul>
-              </div>
-              <div class="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-4">
-                <h3 class="footer-title">Битрикс24</h3>
-                <ul class="footer-list">
-                  <li>
-                    <a href="{% url 'licence' %}">
-                      Лицензии
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'oblako' %}">
-                      Облачные лицензии Битрикс24
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'korobka' %}">
-                      Коробочные лицензии Битрикс24
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'prodlenie' %}">
-                      Продление Битрикс24
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'market' %}">
-                      Подписка на маркетплейс Битрикс24
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-4">
-                <h3 class="footer-title">Услуги</h3>
-                <ul class="footer-list">
-                  <li>
-                    <a href="/vnedrenie-paketnoe">
-                      Пакетное внедрение Битрикс24
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/vnedrenie-proektnoe">
-                      Проектное внедрение Битрикс24
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'audit' %}">
-                      Аудит Битрикс24
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'podderzka' %}">
-                      Поддержка коробочных Битрикс24
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'dorabotka' %}">
-                      Разработка и настройка интеграций с Битрикс24
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/vnedrenie-bi">
-                      Настройка BI-отчетов (дашбордов)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/obuchenie-bitrix">
-                      Обучение битрикс24
-                    </a>
-                  </li>
-                </ul>
+              <div class="integrator-list-pay">
+                <a href="#" style="width: fit-content;"><img src="{% static '/image/epos.svg' %} " alt="epos"
+                    width="113px"></a>
+                <a href="#" style="width: fit-content;"><img src="{% static '/image/erip.svg' %} " alt="erip"
+                    width="113px"></a>
               </div>
             </div>
           </div>
+          <div class="integrator-footer-menu">
+            <div>
+              <h3 class="footer-title">Компания</h3>
+              <ul class="footer-list">
+                <li>
+                  <a href="{% url 'about' %}">
+                    О нас
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'company' %}">
+                    Наша команда
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'reviews' %}">
+                    Отзывы
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'cases' %}">
+                    Кейсы
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'blog' %}">
+                    Блог
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer-title">Битрикс24</h3>
+              <ul class="footer-list">
+                <li>
+                  <a href="{% url 'licence' %}">
+                    Лицензии
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'oblako' %}">
+                    Облачные лицензии Битрикс24
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'korobka' %}">
+                    Коробочные лицензии Битрикс24
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'prodlenie' %}">
+                    Продление Битрикс24
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'market' %}">
+                    Подписка на маркетплейс Битрикс24
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer-title">Услуги</h3>
+              <ul class="footer-list">
+                <li>
+                  <a href="/vnedrenie-paketnoe">
+                    Пакетное внедрение Битрикс24
+                  </a>
+                </li>
+                <li>
+                  <a href="/vnedrenie-proektnoe">
+                    Проектное внедрение Битрикс24
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'audit' %}">
+                    Аудит Битрикс24
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'podderzka' %}">
+                    Поддержка коробочных Битрикс24
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'dorabotka' %}">
+                    Разработка и настройка интеграций с Битрикс24
+                  </a>
+                </li>
+                <li>
+                  <a href="/vnedrenie-bi">
+                    Настройка BI-отчетов (дашбордов)
+                  </a>
+                </li>
+                <li>
+                  <a href="/obuchenie-bitrix">
+                    Обучение битрикс24
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="row row--footer-main" style="display: flex; justify-content: center; gap: 20px;">
-            <a href="#" style="width: fit-content;"><img src="{% static '/image/epos.svg' %} " alt="epos" width="200px"></a>
-            <a href="#" style="width: fit-content;"><img src="{% static '/image/erip.svg' %} " alt="erip" width="200px"></a>
-        </div>
-      </div>
-      <div class="copyright-block">
-        <div class="container">
-          <div class="copyright-inner text-center  copyright-border">
+        <div class="integrator-copyright-block">
             <p>© 2025 Все права защищены.</p>
             <p>ООО «Правильные Интеграторы Групп», УНП 192512915</p>
+            <p><a href="">Политика обработки персональных данных</a></p>
           </div>
-        </div>
       </div>
     </div>
-  </div>
-  <!-- Vendor Scripts -->
-  <script src={% static "/plugins/jquery/jquery.min.js" %}></script>
-  <script src={% static "/plugins/jquery/jquery-migrate.min.js" %}></script>
-  <script src={% static "/plugins/bootstrap/dist/js/bootstrap.bundle.min.js" %}></script>
-  <!-- Plugin's Scripts -->
-  <script src={% static "/plugins/inlineSvg/inlineSvg.min.js" %}></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src={% static "plugins/fancybox/jquery.fancybox.min.js" %}></script>
-  <script src={% static "plugins/aos/aos.min.js" %}></script>
-  <script src={% static "./plugins/isotope/isotope.pkgd.min.js" %}></script>
-  <script src={% static "./plugins/isotope/packery.pkgd.min.js" %}></script>
-  <script src={% static "./plugins/isotope/image.loaded.js" %}></script>
-  <script src={% static "plugins/slick/slick.min.js" %}></script>
-  <script src={% static "./plugins/countdown/jquery.countdown.js" %} defer></script>
-  <script src={% static "js/menu.js" %}></script>
-  <script src={% static "js/custom.js" %}></script>
-  <!-- Activation Script -->
+    <!-- Vendor Scripts -->
+    <script src={% static "/plugins/jquery/jquery.min.js" %}></script>
+    <script src={% static "/plugins/jquery/jquery-migrate.min.js" %}></script>
+    <script src={% static "/plugins/bootstrap/dist/js/bootstrap.bundle.min.js" %}></script>
+    <!-- Plugin's Scripts -->
+    <script src={% static "/plugins/inlineSvg/inlineSvg.min.js" %}></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src={% static "plugins/fancybox/jquery.fancybox.min.js" %}></script>
+    <script src={% static "plugins/aos/aos.min.js" %}></script>
+    <script src={% static "./plugins/isotope/isotope.pkgd.min.js" %}></script>
+    <script src={% static "./plugins/isotope/packery.pkgd.min.js" %}></script>
+    <script src={% static "./plugins/isotope/image.loaded.js" %}></script>
+    <script src={% static "plugins/slick/slick.min.js" %}></script>
+    <script src={% static "./plugins/countdown/jquery.countdown.js" %} defer></script>
+    <script src={% static "js/menu.js" %}></script>
+    <script src={% static "js/custom.js" %}></script>
+    <!-- Activation Script -->
 </body>
 
 </html>

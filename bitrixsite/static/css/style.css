@@ -6919,20 +6919,6 @@ h6 {
 }
 
 @media (min-width: 992px) {
-  .site-menu-main .sub-menu:not(.child-sub)::before {
-    content: '';
-    position: absolute;
-    top: 0%;
-    left: 22px;
-    height: 15px;
-    width: 15px;
-    background-color: white;
-    transform: rotate(45deg) translateY(-11px);
-    z-index: 999;
-  }
-}
-
-@media (min-width: 992px) {
   .site-menu-main .sub-menu .sub-menu {
     top: 0 !important;
     left: 100%;
@@ -7535,21 +7521,8 @@ div#loading img {
     z-index: 1000;
     background-color: #fff;
   }
-
-  .site-header--sticky:not(.mobile-sticky-enable).reveal-header .brand-logo .logo-dark {
-    display: block;
-  }
-
-  .site-header--sticky:not(.mobile-sticky-enable).reveal-header .brand-logo .logo-light {
-    display: none;
-  }
-
   .site-header--sticky:not(.mobile-sticky-enable).reveal-header.bg--primary {
     background-color: var(--bs-primary);
-  }
-
-  .site-header--sticky:not(.mobile-sticky-enable).reveal-header.bg--primary .nav-link-item {
-    color: #fff !important;
   }
 
   .site-header--sticky:not(.mobile-sticky-enable).reveal-header.bg--primary .btn-masco--header-secondary {
@@ -7750,10 +7723,6 @@ div#loading img {
 .brand-logo-width {
   max-width: 70px;
   max-height: auto;
-}
-
-.brand-logo .logo-dark {
-  display: none;
 }
 
 .dynamic-sticky-bg.reveal-header {
@@ -16676,7 +16645,7 @@ div#loading img {
 }
 
 .footer__content-block {
-  max-width: 416px;
+  max-width: 420px;
 }
 
 .footer__content-block .footer-brand {

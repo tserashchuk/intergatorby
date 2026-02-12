@@ -111,16 +111,6 @@ div#loading img {
                     z-index: 1000;
                     background-color: #fff;
 
-                    & .brand-logo {
-                        .logo-dark {
-                            display: block;
-                        }
-
-                        .logo-light {
-                            display: none;
-                        }
-                    }
-
                     &.bg--primary {
                         background-color: $primary;
 
@@ -338,10 +328,6 @@ div#loading img {
 
     img {
         max-height: 30px;
-    }
-
-    .logo-dark {
-        display: none;
     }
 }
 

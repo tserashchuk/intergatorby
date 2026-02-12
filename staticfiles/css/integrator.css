@@ -1,0 +1,19 @@
+/*======= Base Class ========*/
+:root {
+  --btn-dark-primary: #202FA9;
+  --btn-light-primary: #E9EDF9;
+  --bg-fon-text : #FBFBFD;
+}
+
+
+.integrator-site-header.scrolling,
+.integrator-site-header.reveal-header {
+    background-color: var(--bg-fon-text) !important;
+}
+
+
+.integrator-btn {
+    background-color: var(--btn-dark-primary);
+    color: var(--bg-fon-text) ;
+}
+

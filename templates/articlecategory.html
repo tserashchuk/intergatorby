@@ -13,6 +13,7 @@
   </title>
   <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href={% static "./css/integrator.css" %}>
   <!-- Plugin'stylesheets  -->
   <link rel="stylesheet" type="text/css" href={% static "/fonts/typography/fonts.css" %}>
   <link rel="stylesheet" href={% static "/fonts/fontawesome/css/all.min.css" %}>
@@ -47,7 +48,7 @@
     <!--~~~~~~~~~~~~~~~~~~~~~~~~
      Header Area
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <header class="site-header site-header--transparent site-header--sticky bg--primary">
+    <header class="site-header integrator-site-header site-header--transparent site-header--sticky bg--primary">
       <div class="container">
         <nav class="navbar site-navbar">
           <!--~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,7 +57,7 @@
           <div class="brand-logo">
             <a href="#">
               <!-- light version logo (logo must be black)-->
-              <img class="logo-light brand-logo-width" src="{% static '/image/logo.png' %} " alt="brand logo">
+              <img class="logo-light brand-logo-width" src="{% static '/image/brand-logo/Logo-dark.png' %} " alt="brand logo">
               <!-- Dark version logo (logo must be White)-->
               <img class="logo-dark" src="./image/logo-light.svg" alt="brand logo">
             </a>
