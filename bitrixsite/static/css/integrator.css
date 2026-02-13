@@ -234,6 +234,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .integrator-header-cta-btn-wrapper {
+        display: none !important;
+    }
+
     .integrator-footer-main {
         flex-direction: column;
     }
