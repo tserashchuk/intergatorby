@@ -1,91 +1,69 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="inner_banner-section">
-  <img class="inner_banner-background-image" src={% static '/image/common/inner-bg.png' %} alt="image alt">
+<div class="integrator-section integrator-header__plus">
   <div class="container">
-    <div class="inner_banner-content-block">
-      <h3 class="inner_banner-title">Контакты</h3>
-      <ul class="banner__page-navigator">
-        <li>
-          <a href="/">Главная</a>
-        </li>
-        <li class="active">
-          <a href="/about">
-            О нас
-          </a>
-        </li>
-      </ul>
-    </div>
+      <div class="integrator-row row--custom">
+        <div class="integrator-contact">
+            <div class="content">
+              <div class="content-text-block">
+                <h1 class="integrator-heading heading-xxl">Связаться с нами</h1>
+              </div>
+            </div>
+            <div class="integrator-content_main-info">
+              <div class="row integrator-widget">
+                <div class="integrator-widget-item aos-animate" data-aos="fade-up" data-aos-delay="100">
+                  <h4 class="integrator-widget__title">Телефон</h4>
+                  <p>+375339015703</p>
+                </div>
+                <div class="integrator-widget-item aos-animate" data-aos="fade-up" data-aos-delay="200">
+                  <h4 class="integrator-widget__title">E-mail</h4>
+                        <p>info@integrators.by</p>
+                </div>
+                <div class="integrator-widget-item aos-animate" data-aos="fade-up" data-aos-delay="200">
+                  <h4 class="integrator-widget__title">Адрес</h4>
+                      <p>Минск, Мельникайте, 8 (2 подъезд, 10 этаж)
+                      </p>
+                </div>
+
+                <div class="integrator-widget-item aos-animate" data-aos="fade-up" data-aos-delay="200">
+                      <p class="integrator-contact-adress">Пн-Пт: 09:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="integrator-widget-item widget-item__last aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+              <h4 class="integrator-widget__title">Узнать больше про нас</h4>
+                  <p>telegram
+                  </p>
+            </div>
+        </div>
+        <div class="integrator-contact__image">
+          <div>
+            <img class="contact__img"
+              src="{% static '/image/team/contact-team.png' %}"
+              alt="image alt">
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Conatct : Main Section 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="contact_main-section section-padding-120">
+<div class="integrator-section contact_main-section">
   <div class="container">
-    <div class="row row--cuatom">
-      <div class="col-xl-5 col-lg-6 col-md-8 col-sm-11">
+    <div class="integrator-row row--custom">
+      <div class="integrator-contact">
         <div class="contact_main-content">
-          <div class="content">
-            <div class="content-text-block">
-              <h2 class="heading-md">Опишите свою проблему, и мы найдем для нее решение</h2>
-              <p>
-                Заполните форму, мы свяжемся для бесплатной консультации и обсудим ваши задачи
+              <h2 class="integrator-subheading heading-md">Напишите нам</h2>
+              <p class="integrator-text">
+                Заполните форму, мы свяжемся для бесплатной консультации и обсудим ваши задачи.
               </p>
-              <div class="content-divider"></div>
-            </div>
-          </div>
-          <div class="content_main-testimonial">
-            <div class="row feature-widget-5-divider">
-              <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-widget-5">
-                  <a href="tel:375339015703">
-                    <div class="feature-widget-5__body">
-                      <img src="{% static '/image/home-10/feature-icon-1.svg' %}" alt="feature icon">
-                      <h4 class="feature-widget-5__title">Телефон</h4>
-                      <p>+375339015703</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-widget-5">
-                  <a href="mailto:info@integrators.by">
-                    <div class="feature-widget-5__body">
-                      <img src="{% static '/image/home-10/feature-icon-2.svg' %}" alt="feature icon">
-                      <h4 class="feature-widget-5__title">E-mail</h4>
-                      <p>info@integrators.by</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-widget-5">
-                  <div class="feature-widget-5__body">
-                    <img src="{% static '/image/home-10/feature-icon-3.svg' %}" alt="feature icon">
-                    <h4 class="feature-widget-5__title">Адрес</h4>
-                    <p>Минск, Мельникайте, 8 (2 подъезд, 10 этаж)
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-widget-5">
-                  <div class="feature-widget-5__body">
-                    <img src="{% static '/image/home-10/feature-icon-6.svg' %}" alt="feature icon">
-                    <h4 class="feature-widget-5__title">Работаем</h4>
-                    <p>Пн-Пт: 09:00 - 18:00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="offset-xl-1 col-lg-6 col-md-10">
-        <div class="form-box-style__form-wrapper bg-light-2">
+      <div class="integrator-contact__form">
+        <div class="form-box-style__form-wrapper">
           <form class="form-box-style">
             <div class="form-box-style__form-inner">
               <div class="form-box-style__form-input">
@@ -114,42 +92,7 @@
           <p>Боль, проблема, задача, запрос, желание, фантазия - если что-то из этого есть, опишите это тут. Если ничего нет или пока не готовы - поставьте прочерк.</p>
           <span>Нажимая кнопку «Отправить», я принимаю условия пользовательского соглашения и даю согласие на обработку моих персональных данных на условиях и для целей, определенных в Согласии на обработку персональных данных. *</span>
           <div class="form-box-style__form-input-button">
-            <button type="submit" class="btn-masco rounded-pill w-100">Отправить</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="contact_location-section">
-  <div class="contact_location-main">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1685850318529!5m2!1sen!2sbd"
-      height="600" style="border:0;width:100%" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-</div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~
-     CTA Base 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="cta-base">
-  <div class="container">
-    <div class="cta-base__wrapper border-bottom-dark">
-      <div class="row align-items-center justify-content-center justify-content-md-between gutter-y-20">
-        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
-          <div class="cta-base__text-block">
-            <h2 class="heading-md text-white">Хотите узнать больше про нас?</h2>
-          </div>
-        </div>
-        <div class="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
-          <div class="cta-base__button">
-            <a href="./contact.html" class="btn-masco rounded-pill btn-fill--up">
-              <span>Наш телеграм</span></a>
-            <div class="cta-base__button-shape">
-              <img src="{% static '/image/home-1/cta-shape.svg' %}" alt="image alt" />
-            </div>
+            <button type="submit" class="integrator-btn btn-fill--up w-100">Отправить</button>
           </div>
         </div>
       </div>

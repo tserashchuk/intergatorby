@@ -26,6 +26,7 @@
     z-index: 0;
     position: relative;
     transition: all 0.3s;
+    border: none;
 }
 
 .integrator-btn-light {
@@ -156,6 +157,111 @@
 }
 
 
+/*BASE*/
+
+.integrator-section {
+    padding: 80px 0;
+}
+
+.integrator-header__plus {
+    padding-top: 170px;
+}
+
+.integrator-heading {
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--btn-hover-primary);
+    margin-bottom: 0;
+}
+
+.integrator-subheading {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--btn-hover-primary);
+    margin-bottom: 0;
+}
+
+.integrator-row {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.integrator-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7;
+}
+
+
+
+/*CONTACT*/
+
+.integrator-contact {
+    max-width: 737px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.integrator-contact__image {
+    max-width: 530px;
+}
+
+.integrator-contact__form {
+    max-width: 620px;
+}
+
+.integrator-content_main-info {
+    margin-top: 30px;
+}
+
+.integrator-widget {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.integrator-widget-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.integrator-widget__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7;
+}
+
+.integrator-widget-item p {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
+}
+
+.integrator-widget-item p.integrator-contact-adress {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.widget-item__last {
+    position: relative;
+    bottom: 0;
+    top: auto;
+}
+
+.integrator-contact__form .form-box-style__form-wrapper {
+    background-color: var(--bg-fon-gray);
+    border: none;
+}
+
+
 /*FOOTER*/
 
 
@@ -268,6 +374,14 @@
 
     .integrator-menu-main>li .sub-menu.active {
         padding-top: 0;
+    }
+
+    .integrator-row {
+        flex-direction: column;
+    }
+
+    .integrator-contact__image {
+        display: none;
     }
 }
 
