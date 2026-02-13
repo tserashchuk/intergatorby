@@ -114,6 +114,7 @@
 
 .integrator-cta-base {
     position: relative;
+    overflow: hidden;
     background-color: #A8BBFF;
 
   /* Радиальный градиент */
@@ -133,11 +134,14 @@
     right: 0;
     left: auto;
     bottom: 0;
+    z-index: 1;
 }
 
 .integrator-cta-base__wrapper {
     margin: 0 auto;
     padding: 150px 0;
+    position: relative;
+    z-index: 10;
 }
 
 .integrator-cta-base__text-block h2 {
@@ -211,6 +215,7 @@
     display: flex;
     justify-content: space-between;
     padding: 60px 0 11px;
+    text-align: center;
 }
 
 .integrator-copyright-block p {
@@ -226,4 +231,45 @@
     justify-content: space-between;
     gap: 60px;
     width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .integrator-footer-main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .integrator-site-header .menu-block,
+    .integrator-site-header .menu-block .mobile-menu-head {
+        background-color: var(--bg-line-text);
+    }
+
+    .integrator-site-header .menu-block .mobile-menu-head .mobile-menu-close {
+        border-left: none;
+        color: var(--btn-hover-primary);
+    }
+
+    .integrator-menu-main>li {
+        border-bottom: none;
+    }
+
+    .integrator-menu-main>li>a i {
+        top: 0;
+    }
+
+    .integrator-menu-main .sub-menu {
+        background-color: transparent;
+    }
+
+    .integrator-menu-main>li .sub-menu.active {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .integrator-footer-menu, 
+    .integrator-copyright-block {
+        flex-direction: column;
+    }
 }
