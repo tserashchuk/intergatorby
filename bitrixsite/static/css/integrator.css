@@ -6,7 +6,7 @@
   --bg-fon-text: #FBFBFD;
   --bg-line-text: #D5DDFB;
   --bg-fon-gray: #F3F4FA;
-
+  --bg-fon-light: #F7F9FD;
 }
 
 
@@ -197,6 +197,154 @@
     opacity: 0.7;
 }
 
+.integrator-quote {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
+    opacity: 0.7;
+}
+
+.integrator-line {
+    border: 1px solid var(--bg-line-text);
+    height: 1px;
+    width: 100%;
+}
+
+/*ABOUT*/
+
+.integrator-about {
+    background: linear-gradient(
+    180deg, 
+    rgba(213, 221, 251, 1) 0%, 
+    rgba(247, 247, 247, 1) 100%
+    );
+}
+
+.integrator-about .integrator-heading {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.integrator-about .integrator-quote {
+    padding-top: 200px;
+    max-width: 696px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.integrator-numbers {
+    background-color: var(--bg-fon-gray);
+    border-radius: 20px;
+    display: flex;
+    gap: 80px;
+    padding: 20px;
+    width: 100%;
+}
+
+.integrator-numbers-section .integrator-row {
+    gap: 20px;
+}
+
+.integrator-numbers  .integrator-line {
+    margin: 60px 0;
+}
+
+.integrator-numbers .integrator-widget-item {
+    padding: 20px 40px;
+    width: 100%;
+}
+
+
+.integrator-numbers__sigle-block {
+    margin-bottom: 20px;
+}
+
+.integrator-numbers__sigle-block .integrator-numbers__image {
+    max-width: 264px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.integrator-numbers__double-block .integrator-numbers__image {
+    max-width: 187px;
+    width: 100%;
+    height: 210px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.integrator-numbers__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*PORTFOLIO*/
+
+.integrator-portfolio-section {
+    background-color: var(--bg-fon-light);
+}
+
+.integrator-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.integrator-portfolio-item {
+    background-color: var(--bg-fon-gray);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.integrator-portfolio-item .portfolio-widget_image-block {
+    width: 100%;
+    height: 203px;
+    margin: 0;
+}
+
+.integrator-portfolio-item .portfolio-widget__title-block {
+    padding: 30px;
+    display:  flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+}
+
+.integrator-portfolio-item .portfolio-widget__category {
+    padding: 4px 10px;
+    border-radius: 8px;
+    background-color: var(--bg-fon-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7;
+    width: fit-content;
+}
+
+.integrator-portfolio-item .portfolio-widget__title {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
+}
+
+.integrator-portfolio-item .portfolio-widget__info {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7; 
+}
+
+.integrator-portfolio-more {
+    margin: 60px auto 0;
+}
+
 
 
 /*CONTACT*/
@@ -238,6 +386,13 @@
     line-height: 1.5;
     color: var(--btn-hover-primary);
     opacity: 0.7;
+}
+
+.integrator-widget-item span {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+    color: var(--btn-dark-primary);
 }
 
 .integrator-widget-item p {
@@ -392,6 +547,16 @@
     .integrator-footer-main {
         flex-direction: column;
     }
+
+    .integrator-numbers-section .integrator-row {
+        flex-direction: column;
+    }
+
+    .integrator-numbers__double-block .integrator-numbers__image {
+        max-width: 264px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -424,6 +589,10 @@
     .integrator-row {
         flex-direction: column;
     }
+    
+    .integrator-portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
 
     .integrator-contact__image {
         display: none;
@@ -438,5 +607,13 @@
     .integrator-footer-menu, 
     .integrator-copyright-block {
         flex-direction: column;
+    }
+    
+    .integrator-numbers__image {
+        display: none;
+    }
+
+    .integrator-portfolio {
+        grid-template-columns: 1fr;
     }
 }
