@@ -282,6 +282,53 @@
     object-fit: cover;
 }
 
+/*TECHNOLOGIES*/
+.integrator-technologies-section {
+    padding: 50px 0 150px;
+}
+
+.integrator-technologies-section .integrator-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.integrator-technologies-title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
+    margin-bottom: 60px;
+}
+
+.integrator-technologies-item {
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid var(--bg-line-text);
+    display: flex;
+}
+
+.integrator-technologies__title {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--btn-dark-primary);
+    width: 40%;
+}
+
+.integrator-technologies-list {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    border-left: 1px solid var(--bg-line-text);
+}
+
+.integrator-technologies-list p {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7; 
+}
+
 /*PORTFOLIO*/
 
 .integrator-portfolio-section {
@@ -611,6 +658,15 @@
     
     .integrator-numbers__image {
         display: none;
+    }
+
+    .integrator-technologies__title {
+        width: 60%;
+        font-size: 18px;
+    }
+    
+    .integrator-technologies-list {
+        flex-direction: column;
     }
 
     .integrator-portfolio {
