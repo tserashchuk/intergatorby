@@ -159,26 +159,28 @@
 
 /*BASE*/
 
+@media (min-width: 1200px) {
+    .integrator-heading {
+        font-size: 70px;
+        font-weight: 700;
+        color: var(--btn-hover-primary);
+        margin-bottom: 0;
+    }
+
+    .integrator-subheading {
+        font-size: 60px;
+        font-weight: 700;
+        color: var(--btn-hover-primary);
+        margin-bottom: 0;
+    }
+}
+
 .integrator-section {
     padding: 80px 0;
 }
 
 .integrator-header__plus {
     padding-top: 170px;
-}
-
-.integrator-heading {
-    font-size: 70px;
-    font-weight: 700;
-    color: var(--btn-hover-primary);
-    margin-bottom: 0;
-}
-
-.integrator-subheading {
-    font-size: 60px;
-    font-weight: 700;
-    color: var(--btn-hover-primary);
-    margin-bottom: 0;
 }
 
 .integrator-row {
@@ -261,6 +263,49 @@
     border: none;
 }
 
+.integrator-contact__form input,
+.integrator-contact__form textarea  {
+    border: 1px solid var(--bg-line-text) !important;
+    border-radius: 12px !important;
+    color: var(--bg-fon-text) !important;
+    background-color: var(--bg-fon-text) !important;
+    padding: 16px 24px !important;
+}
+
+.integrator-contact__form input label,
+.integrator-contact__form textarea label,
+.integrator-checkbox label  {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7; 
+}
+
+.integrator-contact__form input::placeholder,
+.integrator-contact__form textarea::placeholder  {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7;
+}
+
+.integrator-checkbox input[type="checkbox"] {
+    accent-color: var(--btn-hover-primary);
+    width: 20px;
+    height: 20px;
+    margin: 2px 4px;
+}
+
+.integrator-checkbox {
+    display: flex;
+    gap: 8px;
+}
+
+.integrator-checkbox label a {
+    text-decoration: underline !important;
+}
 
 /*FOOTER*/
 
@@ -382,6 +427,10 @@
 
     .integrator-contact__image {
         display: none;
+    }
+
+    .integrator-contact__form {
+        max-width: 100%;
     }
 }
 
