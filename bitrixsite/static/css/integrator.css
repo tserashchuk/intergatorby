@@ -53,6 +53,21 @@
   background: var(--btn-hover-primary) !important;
 }
 
+.integrator-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-dark-primary);
+}
+
+.integrator-link span {
+    text-decoration: underline !important;
+}
+
+.integrator-link:hover {
+    color: var(--btn-hover-primary);
+}
+
 /*HEADER*/
 
 .integrator-site-header.scrolling,
@@ -672,7 +687,11 @@ span.primary {
     text-align: right;
 }
 
+/*MATERIALS*/
 
+.integrator-materials-section .integrator-row {
+    align-items: end;
+}
 
 /*CONTACT*/
 
