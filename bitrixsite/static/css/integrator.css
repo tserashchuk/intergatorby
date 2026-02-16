@@ -488,6 +488,66 @@ span.primary {
     object-fit: cover;
 }
 
+/*FEATURE*/
+
+.integrator-feature-section .integrator-row {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+}
+
+.integrator-feature-title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
+    margin-bottom: 60px;
+}
+
+.integrator-feature-item {
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid var(--bg-line-text);
+    display: flex;
+}
+
+.integrator-feature__title {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--btn-dark-primary);
+    padding-right: 20px;
+}
+
+.integrator-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    border-left: 1px solid var(--bg-line-text);
+}
+.integrator-feature-list h5 {
+    font-weight: 500 !important;
+    font-size: 25px !important;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
+}
+
+.integrator-feature-list p {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7; 
+}
+
+.integrator-feature-section .cta-base__button {
+    margin-top: 20px;
+}
+
+.integrator-feature-section .cta-base__button a {
+    width: 100%;
+}
+
 /*PORTFOLIO*/
 
 .integrator-portfolio-section {
@@ -549,6 +609,67 @@ span.primary {
 
 .integrator-portfolio-more {
     margin: 60px auto 0;
+}
+
+/*TEAM*/
+
+.integrator-team {
+    margin-top: 60px;
+}
+
+.integrator-team .integrator-row {
+    gap: 20px;
+}
+
+.integrator-team__images {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.integrator-team__image {
+    width: 310px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.integrator-team__image img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.integrator-team__info {
+    max-width: 640px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.integrator-team-quote {
+    padding: 62px 40px;
+    border-radius: 12px;
+    background-color: var(--bg-fon-gray);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.integrator-team-quote p.quote-text {
+    margin-bottom: 0;
+}
+
+.integrator-team__image .qoute-autor {
+    margin-top: 10px;
+    padding-left: 0;
+    border-left: 0;
+}
+
+.integrator-team-button {
+    text-align: right;
 }
 
 
@@ -851,6 +972,10 @@ span.primary {
     
     .integrator-technologies-list {
         flex-direction: column;
+    }
+    
+    .integrator-feature-section .integrator-row {
+        padding: 0;
     }
 
     .integrator-portfolio {

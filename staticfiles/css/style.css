@@ -16231,6 +16231,28 @@ div#loading img {
   }
 }
 
+.padding-top-150 {
+  padding-top: 60px;
+}
+
+@media (min-width: 576px) {
+  .padding-top-150 {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  .padding-top-150 {
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .padding-top-150 {
+    padding-top: 150px;
+  }
+}
+
 /* ----------------------------
 Common: Spacing Utilities
 -------------------------------*/
