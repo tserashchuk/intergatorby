@@ -569,10 +569,61 @@ span.primary {
     background-color: var(--bg-fon-light);
 }
 
+.integrator-portfolio-page .integrator-portfolio:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.integrator-portfolio-page .navigation-list {
+    width: fit-content;
+    background-color: var(--bg-fon-gray);
+    border-radius: 12px;
+    padding: 5px;
+    display: flex;
+    gap: 0;
+}
+
+.integrator-portfolio-page .navigation-list--inline li.active {
+    background-color: var(--btn-hover-primary);
+    color: var(--bg-fon-text);
+    border-radius: 12px;
+}
+
+.integrator-portfolio-page .navigation-list .btn {
+    padding: 15px 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    background-color: transparent;
+    border-radius: 12px;
+}
+
 .integrator-portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+}
+
+.integrator-portfolio-large {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.integrator-portfolio-large .integrator-portfolio-item .portfolio-widget {
+    display: flex;
+    gap: 50px;
+    height: 257px;
+}
+
+.integrator-portfolio-large .portfolio-widget_image-block {
+    max-width: 530px;
+    height: 100% !important;
+    margin: 0;
+}
+
+.portfolio-widget__category-list {
+    display: flex;
+    gap: 10px;
 }
 
 .integrator-portfolio-item {
@@ -1075,6 +1126,18 @@ span.hash {
         grid-template-columns: 1fr 1fr;
     }
 
+    .integrator-portfolio-large .integrator-portfolio-item .portfolio-widget {
+        flex-direction: column;
+        gap: 0;
+        height: auto;
+    }
+
+    .integrator-portfolio-large .portfolio-widget_image-block {
+        max-width: 100%;
+        min-height: 200px;
+        height: 257px !important;
+    }
+
     .integrator-contact__image {
         display: none;
     }
@@ -1138,6 +1201,10 @@ span.hash {
     
     .integrator-technologies-list {
         flex-direction: column;
+    }
+
+    .integrator-portfolio-large .portfolio-widget_image-block {
+        height: 203px !important;
     }
     
     .integrator-feature-section .integrator-row {

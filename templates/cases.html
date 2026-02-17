@@ -3,21 +3,12 @@
 {% block content %}
 
 
-<div class="inner_banner-section">
-  <img class="inner_banner-background-image" src="{% static '/image/common/inner-bg.png' %}" alt="image alt">
+<div class="integrator-section integrator-header__plus">
   <div class="container">
-    <div class="inner_banner-content-block">
-      <h3 class="inner_banner-title">Кейсы</h3>
-      <ul class="banner__page-navigator">
-        <li>
-          <a href="/">Главная</a>
-        </li>
-        <li class="active">
-          <a href="/portfolio">
-            Кейсы
-          </a>
-        </li>
-      </ul>
+    <div class="content">
+      <div class="content-text-block">
+        <h1 class="integrator-heading heading-xxl">Кейсы</h1>
+      </div>
     </div>
   </div>
 </div>
@@ -25,26 +16,26 @@
 
 
 
-<section class="portfolio-classic_main-section section-padding-120">
+<section class="integrator-portfolio-page padding-bottom-150">
   <div class="container">
     <ul class="navigation-list navigation-list--inline">
       <li class="active" data-filter="*">
-        <button class="btn rounded-pill">Все</button>
+        <button class="btn">Все</button>
       </li>
       <li data-filter="*">
-        <button class="btn rounded-pill">Внедрение</button>
+        <button class="btn">Внедрение</button>
       </li>
       <li data-filter="*">
-        <button class="btn rounded-pill">Интеграция</button>
+        <button class="btn">Интеграция</button>
       </li>
       <li data-filter="*">
-        <button class="btn rounded-pill">Оптимизация процессов</button>
+        <button class="btn">Оптимизация процессов</button>
       </li>
       <li data-filter="*">
-        <button class="btn rounded-pill">Автоматизация маркетинка</button>
+        <button class="btn">Автоматизация маркетинка</button>
       </li>
       <li data-filter="*">
-        <button class="btn rounded-pill">Сквозная аналитика</button>
+        <button class="btn">Сквозная аналитика</button>
       </li>
 
       <!-- {% for casecats in casescategorys %}
@@ -54,118 +45,246 @@
       {% endfor %} -->
 
     </ul>
-    <div class="row row--portfolio-gutter pb-5">
-      <div class="col-md-6 col-xs-10" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
-        <a href="portfolio-details.html" class="portfolio-widget">
-          <div class="portfolio-widget_image-block hover-fill--up">
-            <img src="{% static '/image/home-1/portf1.png' %}" alt="portfolio image" class="portfolio-image" />
-            <div class="hover-fill--up__text">
-              <ul class="portfolio-thesis-list">
-                <li>
-                  <h3>Снижение отходов на 40%</h3>
-                </li>
-                <li>
-                  <h3>Интеграция ИИ-сортировки</h3>
-                </li>
-                <li>
-                  <h3>Экономия ресурсов</h3>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="portfolio-widget__title-block">
-            <h3 class="portfolio-widget__title">«РесайклПро»</h3>
-            <span class="portfolio-widget__category">Комплексное внедрение</span>
-          </div>
-          <div class="portfolio-widget__link">
-            <span class="btn-link btn-arrow">Подробнее</span>
-          </div>
-        </a>
-      </div>
+    <div class="integrator-portfolio-large row--portfolio-gutter">
 
-
-      <div class="col-md-6 col-xs-10" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
         <a href="portfolio-details.html" class="portfolio-widget">
-          <div class="portfolio-widget_image-block hover-fill--up">
+          <div class="portfolio-widget_image-block">
             <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
-            <div class="hover-fill--up__text">
-              <ul class="portfolio-thesis-list">
-                <li>
-                  <h3>Снижение отходов на 40%</h3>
-                </li>
-                <li>
-                  <h3>Интеграция ИИ-сортировки</h3>
-                </li>
-                <li>
-                  <h3>Экономия ресурсов</h3>
-                </li>
-              </ul>
-            </div>
           </div>
           <div class="portfolio-widget__title-block">
-            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
-            <span class="portfolio-widget__category">Комплексное внедрение</span>
-          </div>
-          <div class="portfolio-widget__link">
-            <span class="btn-link btn-arrow">Подробнее</span>
+            <div class="portfolio-widget__category-list">
+              <span class="portfolio-widget__category">Комплексное внедрение</span>
+              <span class="portfolio-widget__category">Bнедрение</span>
+            </div>
+            <h3 class="portfolio-widget__title">Самый выдающий результат»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
           </div>
         </a>
       </div>
     </div>
-    <div class="row row--portfolio-gutter pt-5">
-      <div class="col-md-6 col-xs-10" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+    <div class="integrator-portfolio row--portfolio-gutter">
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
         <a href="portfolio-details.html" class="portfolio-widget">
-          <div class="portfolio-widget_image-block hover-fill--up">
-            <img src="{% static '/image/home-1/portf1.png' %}" alt="portfolio image" class="portfolio-image" />
-            <div class="hover-fill--up__text">
-              <ul class="portfolio-thesis-list">
-                <li>
-                  <h3>Снижение отходов на 40%</h3>
-                </li>
-                <li>
-                  <h3>Интеграция ИИ-сортировки</h3>
-                </li>
-                <li>
-                  <h3>Экономия ресурсов</h3>
-                </li>
-              </ul>
-            </div>
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
           </div>
           <div class="portfolio-widget__title-block">
-            <h3 class="portfolio-widget__title">«РесайклПро»</h3>
             <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
           </div>
-          <div class="portfolio-widget__link">
-            <span class="btn-link btn-arrow">Подробнее</span>
+        </a>
+      </div>
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
           </div>
         </a>
       </div>
 
 
-      <div class="col-md-6 col-xs-10" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
         <a href="portfolio-details.html" class="portfolio-widget">
-          <div class="portfolio-widget_image-block hover-fill--up">
+          <div class="portfolio-widget_image-block">
             <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
-            <div class="hover-fill--up__text">
-              <ul class="portfolio-thesis-list">
-                <li>
-                  <h3>Снижение отходов на 40%</h3>
-                </li>
-                <li>
-                  <h3>Интеграция ИИ-сортировки</h3>
-                </li>
-                <li>
-                  <h3>Экономия ресурсов</h3>
-                </li>
-              </ul>
-            </div>
           </div>
           <div class="portfolio-widget__title-block">
-            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
             <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
           </div>
-          <div class="portfolio-widget__link">
-            <span class="btn-link btn-arrow">Подробнее</span>
+        </a>
+      </div>
+    </div>
+    <div class="integrator-portfolio row--portfolio-gutter">
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="integrator-portfolio row--portfolio-gutter">
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="integrator-portfolio row--portfolio-gutter">
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="integrator-portfolio row--portfolio-gutter">
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
           </div>
         </a>
       </div>
@@ -193,45 +312,26 @@
 {% endfor %}
     </div> -->
   </div>
-  <div class="pagination" bis_skin_checked="1">
-    <!-- Pagination -->
-    <div class="pagination-wrapper" bis_skin_checked="1">
-      <button class="btn btn--arrow">
-        <i class="fa fa-angle-left"></i>
-      </button>
-      <button class="btn btn-main active">1</button>
-      <button class="btn btn-main">2</button>
-      <button class="btn btn-main">3</button>
-      <button class="btn btn--arrow">
-        <i class="fa fa-angle-right"></i>
-      </button>
-    </div>
-  </div>
 </section>
+
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~
      CTA Base 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="cta-base">
+<div class="integrator-cta-base">
   <div class="container">
-    <div class="cta-base__wrapper border-bottom-dark">
-      <div class="row align-items-center justify-content-center justify-content-md-between gutter-y-20">
-        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
-          <div class="cta-base__text-block">
-            <h2 class="heading-md text-white">Хотите так же?</h2>
-          </div>
-        </div>
-        <div class="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
-          <div class="cta-base__button">
-            <a href="./contact.html" class="btn-masco rounded-pill btn-fill--up">
-              <span>Заполнить заявку</span></a>
-            <div class="cta-base__button-shape">
-              <img src="{% static '/image/home-1/cta-shape.svg' %}" alt="image alt" />
-            </div>
-          </div>
-        </div>
+    <div class="integrator-cta-base__wrapper">
+      <div class="integrator-cta-base__text-block">
+        <h2 class="heading-md">Готовы к таким же результатам?</h2>
+      </div>
+      <div class="cta-base__button">
+        <a href="#" class="integrator-btn btn-fill--up">
+          <span>Начать внедрение</span></a>
       </div>
     </div>
+  </div>
+  <div class="integrator-cta-base_over">
+    <img src="{% static '/image/cta/bubble.png' %}" alt="Bubbles" />
   </div>
 </div>
 
