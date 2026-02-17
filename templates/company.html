@@ -1,228 +1,85 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="inner_banner-section">
-  <img class="inner_banner-background-image" src={% static '/image/common/inner-bg.png' %} alt="image alt">
+<div class="integrator-section integrator-header__plus">
   <div class="container">
-    <div class="inner_banner-content-block">
-      <h3 class="inner_banner-title">Наша команда</h3>
-      <ul class="banner__page-navigator">
-        <li>
-          <a href="/">Главная</a>
-        </li>
-        <li>
-          <a href="/">Компания</a>
-        </li>
-        <li class="active">
-          <a href="/company">
-            Наша команнда
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1 : Testimonial Section 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="home-1_testimonial-section section-padding-120 bg-light-2" id="testimonial">
-  <div class="container">
-    <div class="testimonial-widget-large">
-      <div class="row row--custom">
-        <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10" data-aos-duration="1000" data-aos="fade-right">
-          <div class="testimonial-widget-large__image">
-            <img src="{% static '/image/1R1A0289.jpg' %}" alt="handsome-smiling-bearded-man-glasses-working-laptop" />
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-10 col-auto" data-aos-duration="1000" data-aos="fade-left">
-          <div class="testimonial-widget-large__body">
-            <div class="testimonial-widget-large__icon">
-              <img src="{% static '/image/home-1/testimonial-icon.svg' %}" alt="testimonial icon" />
-            </div>
-            <p class="testimonial-widget-large__review-text">
-              Мы — команда, где каждый специалист на своём месте и в то же время часть дружного, поддерживающего
-              коллектива. У нас ценятся инициативность, стремление к росту и любовь к технологиям.
-              <br /><br />
-              Мы развиваемся вместе: участвуем в обучениях, прокачиваем скиллы и делимся опытом. Здесь ценят идеи,
-              уважают личность и радуются общим победам. У нас интересно, стабильно и просто по-человечески классно
-              работать.
-            </p>
-
-            <h4 class="testimonial-widget-large__user-name mt-10">
-              Роман Сытько
-            </h4>
-            <span class="testimonial-widget-large__user-position">
-              CEO Правильные Интеграторы
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1  : Content Section 1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="home-1_content-section-1 section-padding-120" id="about">
-  <div class="container">
-    <div class="row row--custom">
-      <div class="offset-xl-1 col-lg-5 col-auto" data-aos-duration="1000" data-aos="fade-left">
-        <div class="home-1_content-image-1 content-image--mobile-width">
-          <img src="{% static '/image/home-1/discount.jpg' %}" alt="alternative text" />
-          <div class="home-1_content-image-1-shape">
-            <img src="{% static '/image/home-1/content-image-1-shape.svg' %}" alt="alternative text" />
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-6 col-lg-7 col-md-10 col-auto" data-aos-duration="1000" data-aos="fade-right">
-        <div class="content">
-          <div class="content-text-block">
-            <h2 class="content-title heading-md text-black">
-              Ваши бизнес-процессы в надежных руках
-            </h2>
-            <p>
-              Команда Правильных интеграторов — это эксперты с реальным опытом внедрения Битрикс24 под задачи бизнеса
-              любого масштаба. Мы не просто настраиваем CRM Битрикс24 — мы погружаемся в процессы, находим слабые места
-              и предлагаем оптимальные решения.
-            </p>
-          </div>
-        </div>
+    <div class="content">
+      <div class="content-text-block">
+        <h1 class="integrator-heading heading-xxl">Наша команда</h1>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1  : Content Section 2
+    Team Section 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="home-1_content-section-2 padding-bottom-120">
-  <div class="container">
-    <div class="row row--custom">
-      <div class="col-xl-5 col-lg-5 col-auto" data-aos-duration="1000" data-aos="fade-right">
-        <div class="home-1_content-image-2 content-image--mobile-width">
-          <img src="{% static '/image/home-1/sert.jpg' %}" alt="alternative text" />
-          <div class="home-1_content-image-2-shape">
-            <img src="{% static '/image/home-1/content-image-2-shape.svg' %}" alt="alternative text" />
-          </div>
-        </div>
-      </div>
-      <div class="offset-xl-1 col-xl-6 col-lg-7 col-md-11" data-aos-duration="1000" data-aos="fade-left">
-        <div class="content">
-          <div class="content-text-block">
-            <h2 class="content-title heading-md text-black">
-              Правильные интеграторы - это:
-            </h2>
-          </div>
-          <div class="content-list-block">
-            <ul class="content-list">
-              <li class="content-list-item">
-                <img src="{% static '/image/icons/icon-check-blue.svg' %}" alt="alternative text" />
-                Высокая квалификация сотрудников
-              </li>
-              <li class="content-list-item">
-                <img src="{% static '/image/icons/icon-check-blue.svg' %}" alt="alternative text" />
-                Официально подтвержденные компетенции
-              </li>
-              <li class="content-list-item">
-                <img src="{% static '/image/icons/icon-check-blue.svg' %}" alt="alternative text" />
-                Непрерывное обучение и развитие
-              </li>
-              <li class="content-list-item">
-                <img src="{% static '/image/icons/icon-check-blue.svg' %}" alt="alternative text" />
-                Участие в бизнес-встречах и конференциях
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 8  : Team Section 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="home-8_team-section padding-bottom-150 bg-cream" bis_skin_checked="1">
+<div class="integrator-team-section padding-bottom-150" bis_skin_checked="1">
   <div class="container" bis_skin_checked="1">
-    <div class="row row--custom" bis_skin_checked="1">
-      <div class="col-xl-5 col-lg-6 col-md-8 col-10" bis_skin_checked="1">
-        <div class="content" bis_skin_checked="1">
-          <div class="content-text-block" bis_skin_checked="1">
-            <h2 class="content-title text-black-2 heading-lg">Наша команда Правильных интеграторов</h2>
-            <p>
-              Мы делаем большую ставку на нашу команду. Именно так мы становимся лучше, а внедрение Битрикс24 с нашей
-              командой - успешнее.
-            </p>
-            <ul class="content-list">
-              <li class="content-list-item"><img src="{% static '/image/icons/icon-check-purple.svg' %}"
-                  alt="icon check purple">Ценим опыт каждого сотрудника</li>
-              <li class="content-list-item"><img src="{% static '/image/icons/icon-check-purple.svg' %}"
-                  alt="icon check purple">Всегда стремимся к лучшему</li>
-            </ul>
+    <div class="integrator-team">
+      <div class="integrator-row">
+        <div class="integrator-team__images">
+          <div class="integrator-team__image">
+            <img src="{% static '/image/team/Roman.png' %}" alt="Roman">
+            <div class="qoute-autor">
+              <p class="name">Роман Сытько</p>
+              <p class="business-name">Руководитель компании</p>
+            </div>
           </div>
-          <div class="content-button-block" bis_skin_checked="1">
-            <a href="" class="btn-masco btn-outline-l08 btn-fill--up rounded-pill"><span>Присоединиться к нашей
-                команде</span></a>
+          <div class="integrator-team__image">
+            <img src="{% static '/image/team/Inna.png' %}" alt="Inna">
+            <div class="qoute-autor">
+              <p class="name">Инна Литвин</p>
+              <p class="business-name">Руководитель отдела продаж</p>
+            </div>
+          </div>
+        </div>
+        <div class="integrator-team__info">
+          <div class="integrator-team-quote">
+            <div class="quote-revert">
+              <img src="{% static '/image/quote.svg' %}" alt="quote">
+            </div>
+            <p class="quote-text">Мы — команда, где каждый специалист на своём месте и в то же время часть дружного,
+              поддерживающего коллектива. У нас ценятся инициативность, стремление к росту и любовь к технологиям.</p>
+            <p class="quote-text">Мы развиваемся вместе: участвуем в обучениях, прокачиваем скиллы и делимся опытом.
+              Здесь ценят идеи, уважают личность и радуются общим победам. У нас интересно, стабильно и просто
+              по‑человечески классно работать.</p>
+            <div class="quote">
+              <img src="{% static '/image/quote.svg' %}" alt="quote">
+            </div>
           </div>
         </div>
       </div>
-      <div class="offset-xl-1 col-lg-6 col-md-12 col-xs-10 col-5" bis_skin_checked="1">
-        <div class="row gutter-y-default team-widget-row" bis_skin_checked="1">
-          <div class=" col-lg-4 col-md-4 col-xs-6 col-auto" bis_skin_checked="1">
-            <div class="team-widget" bis_skin_checked="1">
-              <div class="team-widget__image-block" bis_skin_checked="1">
-                <img src="{% static '/image/home-8/team-image-1.png' %}" alt="alternative text">
-              </div>
-              <h4 class="team-widget__user-name">Arlene McCoy</h4>
-              <span class="team-widget__user-position">UI/UX Designer</span>
+      <div class="integrator-row integrator-team-list">
+        <div class="integrator-team__images">
+          <div class="integrator-team__image">
+            <img src="{% static '/image/team/alina.png' %}" alt="Roman">
+            <div class="qoute-autor">
+              <p class="name">Алина Сытько</p>
+              <p class="business-name">Специалист по настройке Битрикс24</p>
             </div>
           </div>
-          <div class=" col-lg-4 col-md-4 col-xs-6 col-auto" bis_skin_checked="1">
-            <div class="team-widget" bis_skin_checked="1">
-              <div class="team-widget__image-block" bis_skin_checked="1">
-                <img src="{% static '/image/home-8/team-image-2.png' %}" alt="alternative text">
-              </div>
-              <h4 class="team-widget__user-name">Theresa Webb</h4>
-              <span class="team-widget__user-position">Project Manager</span>
+          <div class="integrator-team__image">
+            <img src="" alt="Ekatetyna">
+            <div class="qoute-autor">
+              <p class="name">Екатерина Ребковец</p>
+              <p class="business-name">Проектный менеджер</p>
             </div>
           </div>
-          <div class=" col-lg-4 col-md-4 col-xs-6 col-auto" bis_skin_checked="1">
-            <div class="team-widget" bis_skin_checked="1">
-              <div class="team-widget__image-block" bis_skin_checked="1">
-                <img src="{% static '/image/home-8/team-image-3.png' %}" alt="alternative text">
-              </div>
-              <h4 class="team-widget__user-name">Floyd Miles</h4>
-              <span class="team-widget__user-position">Marketing Expert</span>
+        </div>
+        <div class="integrator-team__images">
+          <div class="integrator-team__image">
+            <img src="" alt="Anastasija">
+            <div class="qoute-autor">
+              <p class="name">Анастасия Оксенюк</p>
+              <p class="business-name">Бизнес-аналитик</p>
             </div>
           </div>
-          <div class=" col-lg-4 col-md-4 col-xs-6 col-auto" bis_skin_checked="1">
-            <div class="team-widget" bis_skin_checked="1">
-              <div class="team-widget__image-block" bis_skin_checked="1">
-                <img src="{% static '/image/home-8/team-image-4.png' %}" alt="alternative text">
-              </div>
-              <h4 class="team-widget__user-name">Darlene Robertson</h4>
-              <span class="team-widget__user-position">Web Developer</span>
-            </div>
-          </div>
-          <div class=" col-lg-4 col-md-4 col-xs-6 col-auto" bis_skin_checked="1">
-            <div class="team-widget" bis_skin_checked="1">
-              <div class="team-widget__image-block" bis_skin_checked="1">
-                <img src="{% static '/image/home-8/team-image-5.png' %}" alt="alternative text">
-              </div>
-              <h4 class="team-widget__user-name">Bessie Cooper</h4>
-              <span class="team-widget__user-position">Product Designer</span>
-            </div>
-          </div>
-          <div class=" col-lg-4 col-md-4 col-xs-6 col-auto" bis_skin_checked="1">
-            <div class="team-widget" bis_skin_checked="1">
-              <div class="team-widget__image-block" bis_skin_checked="1">
-                <img src="{% static '/image/home-8/team-image-6.png' %}" alt="alternative text">
-              </div>
-              <h4 class="team-widget__user-name">Jerome Bell</h4>
-              <span class="team-widget__user-position">HTML Developer</span>
+          <div class="integrator-team__image">
+            <img src="" alt="Maxim">
+            <div class="qoute-autor">
+              <p class="name">Максим Лютиков</p>
+              <p class="business-name">Разработчик</p>
             </div>
           </div>
         </div>
@@ -232,84 +89,138 @@
 </div>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 10  : Integration Section
+    Technologies Section
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="home-10_integration-section padding-bottom-120 bg-offwhite-2 " id="integration" bis_skin_checked="1">
+<div class="integrator-technologies-section padding-bottom-150" bis_skin_checked="1">
   <div class="container" bis_skin_checked="1">
-    <div class="row row--custom " bis_skin_checked="1">
-      <div class="col-xl-5 col-lg-5 col-auto aos-init aos-animate" data-aos-duration="1000" data-aos="fade-right"
-        bis_skin_checked="1">
-        <div class="home-10_integration-image content-image--mobile-width" bis_skin_checked="1">
-          <img src="{% static '/image/home-10/integration-image-1.png' %}" alt="alternative text">
+    <h3 class="integrator-technologies-title text-center">Используем проверенные технологии для эффективной работы
+      с Битрикс24. Наши критерии выбора инструментов — безопасность, стабильность и адаптивность под задачи бизнеса.
+    </h3>
+    <div class="integrator-row row--custom" bis_skin_checked="1">
+      <div class="integrator-technologies-item" bis_skin_checked="1">
+        <h4 class="integrator-technologies__title">Программирование</h4>
+        <div class="integrator-technologies-list">
+          <p>python</p>
+          <p>js</p>
+          <p>php</p>
         </div>
       </div>
-      <div class="offset-lg-1 col-xl-6 col-lg-6 col-md-9 col-auto aos-init aos-animate" data-aos-duration="1000"
-        data-aos="fade-left" bis_skin_checked="1">
-        <div class="content" bis_skin_checked="1">
-          <div class="content_text-block" bis_skin_checked="1">
-            <h2 class="content-title text-black-2 heading-lg">
-              Стек технологий
-            </h2>
-            <p>
-              Наша команда использует проверенные технологии для эффективной работы с Битрикс24. Наши критерии выбора
-              инструментов -- безопасность, стабильность и адаптивность под задачи бизнеса.
-            </p>
-          </div>
+      <div class="integrator-technologies-item" bis_skin_checked="1">
+        <h4 class="integrator-technologies__title">Базы данных</h4>
+        <div class="integrator-technologies-list">
+          <p>mysql</p>
+          <p>postgres</p>
+          <p>sqlite</p>
+        </div>
+      </div>
+      <div class="integrator-technologies-item" bis_skin_checked="1">
+        <h4 class="integrator-technologies__title">Bi системы</h4>
+        <div class="integrator-technologies-list">
+          <p>powerBI</p>
+          <p>lookerStudio</p>
+        </div>
+      </div>
+      <div class="integrator-technologies-item" bis_skin_checked="1">
+        <h4 class="integrator-technologies__title">Телефония</h4>
+        <div class="integrator-technologies-list">
+          <p>Asterisk</p>
+        </div>
+      </div>
+      <div class="integrator-technologies-item" bis_skin_checked="1">
+        <h4 class="integrator-technologies__title">Фреймворки управления</h4>
+        <div class="integrator-technologies-list">
+          <p>OMIMO</p>
+        </div>
+      </div>
+      <div class="integrator-technologies-item" bis_skin_checked="1">
+        <h4 class="integrator-technologies__title">Управление процессами</h4>
+        <div class="integrator-technologies-list">
+          <p>BPM</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1 : Testimonial Section 
+    TOP Section
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="about_content-section bg-light-2 section-padding-120">
+
+<div class="integrator-top-section padding-bottom-150 padding-top-150">
   <div class="container">
-    <div class="row row--custom">
-      <div class="col-xxl-6 col-lg-5 col-md-6 col-7">
-        <div class="about_content-image-block">
-          <div class="about_content-image content-image--mobile-width">
-            <img src="{% static '/image/about/video-image.png' %}""
-            alt=" alternative text">
-          </div>
-          <a href="https://www.youtube.com/watch?v=zo9dJFo8H8g" data-fancybox=""
-            class="btn-play absolute-center btn-play">
-            <i class="fa-solid fa-play"></i>
-          </a>
+    <div class="content">
+      <div class="content-text-block">
+        <h2 class="integrator-subheading heading-md text-center">
+          Входим в <span class="primary">ТОП-10</span> интеграторов CRM Битрикс24 в Беларуси
+        </h2>
+        <p class="text-center">
+          Правильные интеграторы — это команда профессионалов, которые помогут вам превратить Битрикс24 в мощный
+          инструмент для развития вашего бизнеса.
+        </p>
+      </div>
+    </div>
+    <div class="integrator-check-points">
+      <div class="integrator-row">
+        <div class="integrator-check-point">
+          <span class="poin-number">
+            01
+          </span>
+          <h4 class="point-title">Высокая квалификация сотрудников</h4>
+        </div>
+        <div class="integrator-check-point">
+          <span class="poin-number">
+            02
+          </span>
+          <h4 class="point-title">Официально подтвержденные компетенции</h4>
+        </div>
+        <div class="integrator-check-point">
+          <span class="poin-number">
+            03
+          </span>
+          <h4 class="point-title">Непрерывное обучение и развитие</h4>
+        </div>
+        <div class="integrator-check-point">
+          <span class="poin-number">
+            04
+          </span>
+          <h4 class="point-title">Участие в бизнес-встречах и конференциях</h4>
         </div>
       </div>
-      <div class="col-xxl-6 col-lg-7 col-md-10 col-auto aos-init aos-animate" data-aos-duration="1000"
-        data-aos="fade-left">
-        <div class="content">
-          <div class="content-text-block">
-            <h2 class="content-title heading-md text-black">
-              Мы в ТОП-5 интеграторов Битрикс24 в Беларуси
-            </h2>
-            <p>
-              Правильные интеграторы – это команда профессионалов, которые
-              помогут вам превратить Битрикс24 в мощный инструмент для развития
-              вашего бизнеса.
-            </p>
-            <div class="content-divider"></div>
-          </div>
-          <div class="content-testimonial">
-            <div class="content-testimonial__text">
-              <p>
-                «Мы не просто внедряем Битрикс24, мы проводим глубокий
-                бизнес-анализ, вникаем в каждый процесс и создаем решения,
-                которые максимизируют эффективность вашего бизнеса»
-              </p>
+    </div>
+    <div class="integrator-top">
+      <div class="integrator-row">
+        <div class="integrator-top__image">
+          <img src="{% static '/image/about/top.png' %}" alt="Roman">
+        </div>
+        <div class="integrator-top__info">
+          <div class="integrator-top-qoute">
+            <div class="quote-revert">
+              <img src="{% static '/image/quote.svg' %}" alt="quote">
             </div>
-            <div class="content-testimonial__user-metadata">
-              <div class="content-testimonial__user">
-                <img src={% static '/image/about/user-image.png' %} alt="alternative text">
-              </div>
-              <div class="content-testimonial__body">
-                <h4 class="content-testimonial__user-name">Роман Сытько</h4>
-                <span>руководитель компании «Правильные интеграторы»</span>
-              </div>
+            <p class="quote-text">«Мы не просто внедряем Битрикс24, мы проводим глубокий бизнес-анализ, вникаем в каждый
+              процесс и создаем решения, которые максимизируют эффективность вашего бизнеса»</p>
+            <div class="qoute-autor">
+              <p class="name">Роман Сытько</p>
+              <p class="business-name">Руководитель компании</p>
+            </div>
+            <div class="quote">
+              <img src="{% static '/image/quote.svg' %}" alt="quote">
+            </div>
+          </div>
+          <div class="integrator-top__certificats">
+            <div class="integrator-top__certificat">
+              <img src="{% static '/image/about/cert1.png' %}" alt="certificat">
+            </div>
+            <div class="integrator-top__certificat">
+              <img src="{% static '/image/about/cert2.png' %}" alt="certificat">
+            </div>
+            <div class="integrator-top__certificat">
+              <img src="{% static '/image/about/cert3.png' %}" alt="certificat">
+            </div>
+          </div>
+          <div class="integrator-top__certificats-large">
+            <div class="integrator-top__certificat">
+              <img src="{% static '/image/about/cert4.png' %}" alt="certificat">
             </div>
           </div>
         </div>
@@ -318,116 +229,47 @@
   </div>
 </div>
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~
- Career Page : main section
-~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="career_main-section section-padding-120" bis_skin_checked="1">
-  <div class="container" bis_skin_checked="1">
-    <div class="section-heading career-main__section-heading" bis_skin_checked="1">
-      <div class="row justify-content-center" bis_skin_checked="1">
-        <div class="col-xl-6 col-lg-7 col-md-9" bis_skin_checked="1">
-          <h2 class="heading-md text-black career_main-title">Открытые ваканнсии</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row career-card-row navigation-active isotope-navigation" style="position: relative; height: 981.234px;"
-      bis_skin_checked="1">
-      <div class="col-lg-6 grid-item  portfolio-1 portfolio-3" style="position: absolute; left: 0px; top: 0px;"
-        bis_skin_checked="1">
-        <div class="career-card" bis_skin_checked="1">
-          <div class="career-card__body" bis_skin_checked="1">
-            <h3 class="career-card__title">UI/UX and product designer</h3>
-            <p>Specify the job position you are applying for &amp; Introduce yourself and highlight your skills and
-              qualifications. Tailor your resume</p>
-          </div>
-          <div class="career-card__job-info" bis_skin_checked="1">
-            <span><img src="{% static '/image/icons/clock.svg' %}" alt="clock">Full Time</span>
-            <span><img src="{% static '/image/icons/location.svg' %}" alt="location">London, UK</span>
-            <span><img src="{% static '/image/icons/cash.svg' %}" alt="cash">$25k-$40k</span>
-          </div>
-          <a class="btn-link btn-arrow career-card__link" href="/career-details">Apply now</a>
-        </div>
-      </div>
-      <div class="col-lg-6 grid-item  portfolio-3 portfolio-2" style="position: absolute; left: 660px; top: 0px;"
-        bis_skin_checked="1">
-        <div class="career-card" bis_skin_checked="1">
-          <div class="career-card__body" bis_skin_checked="1">
-            <h3 class="career-card__title">Junior content writer</h3>
-            <p>Specify the job position you are applying for &amp; Introduce yourself and highlight your skills and
-              qualifications. Tailor your resume</p>
-          </div>
-          <div class="career-card__job-info" bis_skin_checked="1">
-            <span><img src="{% static '/image/icons/clock.svg' %}" alt="clock">Full Time</span>
-            <span><img src="{% static '/image/icons/location.svg' %}" alt="location">London, UK</span>
-            <span><img src="{% static '/image/icons/cash.svg' %}" alt="cash">$25k-$40k</span>
-          </div>
-          <a class="btn-link btn-arrow career-card__link" href="/career-details">Apply now</a>
-        </div>
-      </div>
-      <div class="col-lg-6 grid-item  portfolio-2 portfolio-3" style="position: absolute; left: 0px; top: 327.078px;"
-        bis_skin_checked="1">
-        <div class="career-card" bis_skin_checked="1">
-          <div class="career-card__body" bis_skin_checked="1">
-            <h3 class="career-card__title">Junior video editor</h3>
-            <p>Specify the job position you are applying for &amp; Introduce yourself and highlight your skills and
-              qualifications. Tailor your resume</p>
-          </div>
-          <div class="career-card__job-info" bis_skin_checked="1">
-            <span><img src="{% static '/image/icons/clock.svg' %}" alt="clock">Full Time</span>
-            <span><img src="{% static '/image/icons/location.svg' %}" alt="location">London, UK</span>
-            <span><img src="{% static '/image/icons/cash.svg' %}" alt="cash">$25k-$40k</span>
-          </div>
-          <a class="btn-link btn-arrow career-card__link" href="/career-details">Apply now</a>
-        </div>
-      </div>
-      <div class="col-lg-6 grid-item  portfolio-2 portfolio-1" style="position: absolute; left: 660px; top: 327.078px;"
-        bis_skin_checked="1">
-        <div class="career-card" bis_skin_checked="1">
-          <div class="career-card__body" bis_skin_checked="1">
-            <h3 class="career-card__title">Graphic designer</h3>
-            <p>Specify the job position you are applying for &amp; Introduce yourself and highlight your skills and
-              qualifications. Tailor your resume</p>
-          </div>
-          <div class="career-card__job-info" bis_skin_checked="1">
-            <span><img src="{% static '/image/icons/clock.svg' %}" alt="clock">Full Time</span>
-            <span><img src="{% static '/image/icons/location.svg' %}" alt="location">London, UK</span>
-            <span><img src="{% static '/image/icons/cash.svg' %}" alt="cash">$25k-$40k</span>
-          </div>
-          <a class="btn-link btn-arrow career-card__link" href="/career-details">Apply now</a>
-        </div>
-      </div>
-    </div>
-    <div class="section-button" bis_skin_checked="1">
-      <a href="#" class="btn-masco rounded-pill btn-fill--up"><span>Нет подходящей вакансии? Свяжитесь с нами</span></a>
-    </div>
-  </div>
-</div>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    TEAM-2 Section
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~
-     CTA Base 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="cta-base">
+<div class="integrator-team-second-section padding-bottom-150 padding-top-150">
   <div class="container">
-    <div class="cta-base__wrapper border-bottom-dark">
-      <div class="row align-items-center justify-content-center justify-content-md-between gutter-y-20">
-        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
-          <div class="cta-base__text-block">
-            <h2 class="heading-md text-white">Хотите узнать больше про нас?</h2>
-          </div>
+    <div class="content">
+      <div class="content-text-block">
+        <h2 class="integrator-subheading heading-md text-center">
+          Ваши бизнес-процессы в надёжных руках
+        </h2>
+        <p class="text-center">
+          Команда Правильных интеграторов — это эксперты с реальным опытом внедрения Битрикс24 под задачи бизнеса любого
+          масштаба. Мы не просто настраиваем CRM Битрикс24 — мы погружаемся в процессы, находим слабые места
+          и предлагаем оптимальные решения.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="integrator-team-slider slidercontainer">
+    <div class="slider">
+      <div class="teams">
+        <div class="integrator-team-slide fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img src="{% static '/image/team/contact-team.png' %}" alt="team">
         </div>
-        <div class="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
-          <div class="cta-base__button">
-            <a href="./contact.html" class="btn-masco rounded-pill btn-fill--up">
-              <span>Наш телеграм</span></a>
-            <div class="cta-base__button-shape">
-              <img src="{% static '/image/home-1/cta-shape.svg' %}" alt="image alt" />
-            </div>
-          </div>
+        <div class="integrator-team-slide fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img src="{% static '/image/team/team-2.png' %}" alt="team">
+        </div>
+        <div class="integrator-team-slide fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img src="{% static '/image/team/team-3.png' %}" alt="team">
+        </div>
+        <div class="integrator-team-slide fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img src="{% static '/image/team/team-4.png' %}" alt="team">
+        </div>
+        <div class="integrator-team-slide fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img src="{% static '/image/team/contact-team.png' %}" alt="team">
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 {% endblock %}

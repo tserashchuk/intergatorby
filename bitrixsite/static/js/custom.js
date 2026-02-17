@@ -185,6 +185,7 @@ $(document).ready(function () {
 });
 
 
+
 $(document).ready(function() {
 
   function applyPackage($btn) {
@@ -244,7 +245,5 @@ $(document).ready(function() {
   // Активируем "БАЗА" при загрузке
   applyPackage($('[data-package="base"]'));
 });
-
-
 
 

@@ -19630,7 +19630,7 @@ Common: Spacing Gutters
   overflow: hidden;
 
   .slider {
-    /* animation: slidein 30s linear infinite; */
+    animation: slidein 30s linear infinite;
     white-space: nowrap;
 
     .logos {
@@ -19640,7 +19640,19 @@ Common: Spacing Gutters
 
       .fab {
         width: calc(100% / 6);
-        /* animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards; */
+        animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+      }
+    }
+
+    .teams {
+      width: 100%;
+      display: inline-block;
+      margin: 0px 0;
+
+      .fab {
+        width: 540px;
+        margin-left: 10px;
+        animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
       }
     }
   }

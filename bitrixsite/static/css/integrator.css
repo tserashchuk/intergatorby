@@ -636,6 +636,10 @@ span.primary {
     gap: 20px;
 }
 
+.integrator-team-list {
+    margin-top: 40px;
+}
+
 .integrator-team__images {
     width: 100%;
     display: flex;
@@ -652,6 +656,7 @@ span.primary {
     object-fit: cover;
     border-radius: 12px;
     overflow: hidden;
+    background-color: var(--bg-fon-gray);
 }
 
 .integrator-team__info {
@@ -685,6 +690,37 @@ span.primary {
 
 .integrator-team-button {
     text-align: right;
+}
+
+.integrator-team-second-section .content-text-block {
+    max-width: 818px;
+    margin: 0 auto;
+}
+
+.integrator-team-slider {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.integrator-team-slider .slider {
+    display: flex;
+    gap: 20px;
+}
+
+.integrator-team-slide {
+    width: 540px;
+    height: 366px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.integrator-team-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 /*MATERIALS*/
@@ -1144,5 +1180,20 @@ span.hash {
     .integrator-team__image img {
         height: 300px;
         object-position: top;
+    }
+
+    .integrator-team-slide {
+        width: 310px;
+        height: 200px;
+    }
+
+    .slidercontainer {
+        & .slider {
+            & .teams {
+                .fab {
+                    width: 310px;
+                }
+            }
+        }
     }
 }
