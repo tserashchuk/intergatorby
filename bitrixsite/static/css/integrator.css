@@ -780,6 +780,71 @@ span.primary {
     align-items: end;
 }
 
+.integrator-materials-page .integrator-materials {
+    margin-top: 0;
+}
+
+.integrator-blog-list-social {
+    margin-top: 20px;
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.integrator-materials-page .integrator-row {
+    gap: 60px;
+}
+
+.integrator-blog-list-social a {
+    background-color: var(--bg-fon-gray);
+    border-radius: 500px;
+    margin: 0;
+    padding: 10px 15px;
+    color: var(--btn-dark-primary);
+}
+
+.integrator-materials-page .sidebar-single {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    width: 270px;
+}
+
+.integrator-materials-page .sidebar-category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.integrator-materials-page .sidebar-category-list li {
+    padding: 10px 20px;
+    border-bottom: 0;
+}
+
+.integrator-materials-page .sidebar-category-list .sidebar-category {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7;
+}
+
+.integrator-materials-page .sidebar-category-list li:hover,
+.integrator-materials-page .sidebar-category-list li:focus {
+    border-radius: 12px;
+    background-color: var(--btn-light-primary);
+}
+
+.integrator-materials-page .sidebar-category-list .sidebar-category.active,
+.integrator-materials-page .sidebar-category-list .sidebar-category:hover,
+.integrator-materials-page .sidebar-category-list .sidebar-category:focus,
+.integrator-materials-page .sidebar-category-list li:hover .sidebar-category,
+.integrator-materials-page .sidebar-category-list li:focus .sidebar-category {
+    color: var(--btn-dark-primary);
+    opacity: 1;
+}
+
 .integrator-materials {
     margin-top: 60px;
     width: 100%;
@@ -1062,6 +1127,11 @@ span.hash {
 }
 
 @media screen and (max-width: 1188px) {
+    .integrator-materials-page .integrator-row {
+        flex-direction: column;
+        gap: 60px;
+    }
+
     .integrator-team .integrator-row {
         flex-direction: column;
     }
@@ -1240,6 +1310,12 @@ span.hash {
 
 
 @media screen and (max-width: 620px) {
+
+    .integrator-blog-list-social {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .integrator-team__images {
         flex-direction: column;
     }

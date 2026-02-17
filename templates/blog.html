@@ -2,18 +2,31 @@
 {% load static %}
 {% block content %}
 
-<div class="inner_banner-section">
-  <img class="inner_banner-background-image" src="{% static '/image/common/inner-bg.png' %}" alt="image alt">
+<div class="integrator-section integrator-header__plus">
   <div class="container">
-    <div class="inner_banner-content-block">
-      <h3 class="inner_banner-title"> Статьи, новости и полезная информация о Битрикс24</h3>
-      <ul class="banner__page-navigator">
+    <div class="content">
+      <div class="content-text-block">
+        <h1 class="integrator-heading heading-xxl">Статьи, новости и полезная информация о Битрикс24</h1>
+      </div>
+      <ul class="integrator-blog-list-social integrator-list-social">
         <li>
-          <a href="/">Главная</a>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
         </li>
-        <li class="active">
-          <a href="/blog">
-            Блог
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-telegram"></i>
           </a>
         </li>
       </ul>
@@ -27,177 +40,123 @@
 
 
 
-<div class="blog_main-section section-padding-120">
+<div class="integrator-materials-page padding-bottom-150">
   <div class="container">
-    <div class="row">
-      <div class="col-xl-8">
-        <div class="blog_content">
-          <div class="blog-card-large-row">
+    <div class="integrator-row">
+      <aside class="sidebar-wrapper">
 
+        <div class="sidebar-single">
+          <div class="sidebar-list">
+            <ul class="sidebar-category-list">
 
-
-            {% for article in page_obj %}
-            <div class="blog-card-large" style="padding-bottom:30px;">
-              <div class="blog-card-large__image">
-                <img src={{ article.article_image.url }} alt="blog image">
-              </div>
-              <div class="blog-card-large__body">
-                <div class="blog-card-large__meta">
-
-                  <a href="#">
-                    <span class="blog-card-large__time">{{ article.pub_date |date:'d-m-Y H:i' }}</span></a>
-
-                  {% for cat in article.category_article.all %}
-                  <a href="#">
-                    <span class="blog-card-large__category">{{cat}}</span></a>
-                  {% endfor %}
-
-                </div>
-                <a href="/blog-details">
-                  <h2 class="blog-card-large__title">{{article.article_name}}</h2>
+              <li class="sidebar-category-list-item">
+                <a href="#" class="sidebar-category">
+                  — Новости
                 </a>
-                <p>{{ article.article_short_desc }}</p>
-                <a class="blog-card-large__link" href="/blog-details">
-                  <span>Подробнее</span>
-                  <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="sidebar-category-list-item">
+                <a href="#" class="sidebar-category">
+                  — Вебинары
                 </a>
-              </div>
-            </div>
-            {% endfor %}
+              </li>
+              <li class="sidebar-category-list-item">
+                <a href="#" class="sidebar-category">
+                  — Мероприятия
+                </a>
+              </li>
+              <li class="sidebar-category-list-item">
+                <a href="#" class="sidebar-category">
+                  — Полезная информация
+                </a>
+              </li>
 
-
-
+              <!-- {% for cat in cats %}
+              <li class="sidebar-category-list-item">
+                <a href="#" class="sidebar-category">
+                  {{ cat }}
+                </a>
+              </li>
+              {% endfor %} -->
+            </ul>
           </div>
         </div>
-        <div class="pagination" bis_skin_checked="1">
-          <!-- Pagination -->
-          <div class="pagination-wrapper" bis_skin_checked="1">
-            <button class="btn btn--arrow">
-              <i class="fa fa-angle-left"></i>
-            </button>
-            <button class="btn btn-main active">1</button>
-            <button class="btn btn-main">2</button>
-            <button class="btn btn-main">3</button>
-            <button class="btn btn--arrow">
-              <i class="fa fa-angle-right"></i>
-            </button>
-          </div>
+      </aside>
+      <div class="integrator-materials">
+      <div class="integrator-material">
+        <div class="integrator-material__image">
+          <img src="{% static '/image/blog/material.png' %}" alt="">
         </div>
-        <!-- <div class="pagination">
-          Pagination 
-          <div class="pagination-wrapper">
-            {% if page_obj.has_previous %}
-           
-             <a href="?page={{ page_obj.previous_page_number }}">  <button class="btn btn--arrow"><i class="fa fa-angle-left"></i></button></a>
-           
-            {% endif %}
-
-            <button class="btn btn-main active">{{ page_obj.number }}</button>
-
-
-            {% if page_obj.has_next %}
-            
-              <a href="?page={{ page_obj.next_page_number }}"> <button class="btn btn--arrow"><i class="fa fa-angle-right"></i></button></a>
-            
-            {% endif %}
+        <div class="integrator-material__info">
+          <div class="integrator-material__text">
+            <span class="date">25.01.2026</span>
+            <h3 class="integrator-material__title">если "Упал, поднялся" — значит будет выдумка, нытьё и привирание</h3>
+            <p class="integrator-material__description">Мы начали бизнес на картинах по номерам в Covid-19. Предложений
+              было мало, поэтому люди покупали картины по цене x5-6 от закупочной. Потом пришли конкуренты, обрушили
+              цены, и я понял, что нужно было делать свои картины, с оригинальными сюжетами</p>
           </div>
-        </div> -->
+          <span class="hash">#Битрикс24</span>
+        </div>
       </div>
-      <div class="col-xl-4">
-        <aside class="sidebar-wrapper">
-
-          <div class="sidebar-single">
-            <div class="sidebar-list">
-              <div class="sidebar-title-block">
-                <h3 class="sidebar-title">Категории</h3>
-              </div>
-              <ul class="sidebar-category-list">
-
-                <li class="sidebar-category-list-item">
-                  <a href="#" class="sidebar-category">
-                    Новости
-                  </a>
-                </li>
-                <li class="sidebar-category-list-item">
-                  <a href="#" class="sidebar-category">
-                    Вебинары
-                  </a>
-                </li>
-                <li class="sidebar-category-list-item">
-                  <a href="#" class="sidebar-category">
-                    Мероприятия
-                  </a>
-                </li>
-                <li class="sidebar-category-list-item">
-                  <a href="#" class="sidebar-category">
-                    Полезная информация
-                  </a>
-                </li>
-
-                <!-- {% for cat in cats %}
-                <li class="sidebar-category-list-item">
-                  <a href="#" class="sidebar-category">
-                    {{ cat }}
-                  </a>
-                </li>
-                {% endfor %} -->
-              </ul>
-            </div>
+      <div class="integrator-material">
+        <div class="integrator-material__image">
+          <img src="{% static '/image/blog/material.png' %}" alt="">
+        </div>
+        <div class="integrator-material__info">
+          <div class="integrator-material__text">
+            <span class="date">25.01.2026</span>
+            <h3 class="integrator-material__title">Новый Битрикс24 Космос: обзор новинок</h3>
+            <p class="integrator-material__description">Битрикс24 обновился: работать стало ещё проще, удобнее и продуктивнее. Какие новинки вас ждут?</p>
           </div>
-
-
-          <div class="sidebar-single">
-            <div class="sidebar-title-block">
-              <h3 class="sidebar-title">Рассылка</h3>
-            </div>
-            <div class="sidebar-newsletter">
-              <p>
-                Подпишитесь на рассылку и будьте в курсе важных новостей
-              </p>
-              <form action="#" class="input-wrapper">
-                <input class="form-control" type="text" placeholder="Введите свою почту">
-              </form>
-              <div class="sidebar-button">
-                <a href="#" class="btn-masco btn-primary rounded-pill w-100">Подписаться на на рассылку</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="sidebar-single">
-            <div class="sidebar-title-block">
-              <h3 class="sidebar-title">Социальные сети</h3>
-            </div>
-            <div class="sidebar-newsletter">
-              <p>
-                Присоединяйтесь к Правильным Интеграторам в социальных сетях, там много интересного!
-              </p>
-
-              <ul class="list-social">
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-tiktok"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-telegram"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </aside>
+          <span class="hash">#Битрикс24</span>
+        </div>
       </div>
+      <div class="integrator-material">
+        <div class="integrator-material__image">
+          <img src="{% static '/image/blog/material.png' %}" alt="">
+        </div>
+        <div class="integrator-material__info">
+          <div class="integrator-material__text">
+            <span class="date">25.01.2026</span>
+            <h3 class="integrator-material__title">если "Упал, поднялся" — значит будет выдумка, нытьё и привирание</h3>
+            <p class="integrator-material__description">Мы начали бизнес на картинах по номерам в Covid-19. Предложений
+              было мало, поэтому люди покупали картины по цене x5-6 от закупочной. Потом пришли конкуренты, обрушили
+              цены, и я понял, что нужно было делать свои картины, с оригинальными сюжетами</p>
+          </div>
+          <span class="hash">#Битрикс24</span>
+        </div>
+      </div>
+      <div class="integrator-material">
+        <div class="integrator-material__image">
+          <img src="{% static '/image/blog/material.png' %}" alt="">
+        </div>
+        <div class="integrator-material__info">
+          <div class="integrator-material__text">
+            <span class="date">25.01.2026</span>
+            <h3 class="integrator-material__title">если "Упал, поднялся" — значит будет выдумка, нытьё и привирание</h3>
+            <p class="integrator-material__description">Мы начали бизнес на картинах по номерам в Covid-19. Предложений
+              было мало, поэтому люди покупали картины по цене x5-6 от закупочной. Потом пришли конкуренты, обрушили
+              цены, и я понял, что нужно было делать свои картины, с оригинальными сюжетами</p>
+          </div>
+          <span class="hash">#Битрикс24</span>
+        </div>
+      </div>
+      <div class="integrator-material">
+        <div class="integrator-material__image">
+          <img src="{% static '/image/blog/material.png' %}" alt="">
+        </div>
+        <div class="integrator-material__info">
+          <div class="integrator-material__text">
+            <span class="date">25.01.2026</span>
+            <h3 class="integrator-material__title">если "Упал, поднялся" — значит будет выдумка, нытьё и привирание</h3>
+            <p class="integrator-material__description">Мы начали бизнес на картинах по номерам в Covid-19. Предложений
+              было мало, поэтому люди покупали картины по цене x5-6 от закупочной. Потом пришли конкуренты, обрушили
+              цены, и я понял, что нужно было делать свои картины, с оригинальными сюжетами</p>
+          </div>
+          <span class="hash">#Битрикс24</span>
+        </div>
+      </div>
+    </div>
+
     </div>
   </div>
 </div>
@@ -205,26 +164,20 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~
      CTA Base 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="cta-base">
+<div class="integrator-cta-base">
   <div class="container">
-    <div class="cta-base__wrapper border-bottom-dark">
-      <div class="row align-items-center justify-content-center justify-content-md-between gutter-y-20">
-        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
-          <div class="cta-base__text-block">
-            <h2 class="heading-md text-white">Информация - это хорошо, но может стоит применить ее на практике?</h2>
-          </div>
-        </div>
-        <div class="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
-          <div class="cta-base__button">
-            <a href="./contact.html" class="btn-masco rounded-pill btn-fill--up">
-              <span>Давайте приступим!</span></a>
-            <div class="cta-base__button-shape">
-              <img src="{% static '/image/home-1/cta-shape.svg' %}" alt="image alt" />
-            </div>
-          </div>
-        </div>
+    <div class="integrator-cta-base__wrapper">
+      <div class="integrator-cta-base__text-block">
+        <h2 class="heading-md">Информация - это хорошо, но может стоит применить ее на практике?</h2>
+      </div>
+      <div class="cta-base__button">
+        <a href="#" class="integrator-btn btn-fill--up">
+          <span>Начать использовать Битрикс24</span></a>
       </div>
     </div>
+  </div>
+  <div class="integrator-cta-base_over">
+    <img src="{% static '/image/cta/bubble.png' %}" alt="Bubbles" />
   </div>
 </div>
 {% endblock %}
