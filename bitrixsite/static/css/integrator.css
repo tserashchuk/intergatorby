@@ -187,11 +187,12 @@
         font-weight: 700;
         color: var(--btn-hover-primary);
         margin-bottom: 0;
+        letter-spacing: -1.5px;
     }
 }
 
 .integrator-section {
-    padding: 80px 0;
+    padding: 170px 0;
 }
 
 .integrator-header__plus {
@@ -202,6 +203,14 @@
     display: flex;
     gap: 40px;
     justify-content: space-between;
+}
+
+.integrator-section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .integrator-text {
@@ -228,6 +237,54 @@
 
 span.primary {
     color: var(--btn-dark-primary) !important;
+}
+
+/*HOME*/
+
+.integrator-page {
+    background: linear-gradient(
+    360deg, 
+    rgba(34, 70, 206, 0.3) 0%, 
+    #F7F7F7 100%
+    );
+    padding-bottom: 0;
+}
+
+.integrator-page .integrator-text {
+    margin: 40px auto;
+}
+
+.integrator-page .integrator-row {
+    justify-content: center;
+    gap: 15px;
+}
+
+.integrator-banner {
+    margin-top: 110px;
+}
+
+.integrator-banner__image {
+    width: 100%;
+    border: 20px solid var(--btn-hover-primary);
+    border-radius: 20px 20px 0 0;
+    border-bottom: 0;
+    height: 520px;
+    overflow: hidden;
+}
+
+.integrator-banner__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--bg-fon-gray);
+}
+
+.integrator-brand-section {
+    padding: 44px 0;
+}
+
+.integrator-brand-section p.integrator-text  {
+    font-family: Geologica, sans-serif !important;
 }
 
 /*ABOUT*/
@@ -300,6 +357,85 @@ span.primary {
     height: 100%;
     object-fit: cover;
 }
+
+/*DESCRIPTION*/
+
+.integrator-desctiption {
+    margin-top: 60px; 
+    background-color: var(--bg-fon-gray);
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.integrator-desctiption-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.integrator-desctiption-item {
+    display: flex;
+    gap: 15px;
+    padding: 20px 30px;
+    border: 1px solid #ECEFF9;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.integrator-desctiption-item:hover {
+    border: 1px solid #D5DDFB;
+    background-color: var(--btn-light-primary);
+    cursor: pointer;
+}
+
+.integrator-desctiption-item h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+}
+
+.integrator-desctiption-item:hover h3 {
+    color: var(--btn-dark-primary);
+}
+
+.integrator-desctiption-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.integrator-desctiption-large {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+    background-color: var(--bg-fon-light);
+    border-radius: 12px;
+}
+
+.integrator-desctiption__image {
+    max-width: 560px;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.integrator-desctiption__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.integrator-desctiption__info {
+    max-width: 620px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+}
+
 
 /*TECHNOLOGIES*/
 .integrator-technologies-section {
@@ -1191,6 +1327,24 @@ span.hash {
     .integrator-row {
         flex-direction: column;
     }
+
+    .integrator-desctiption-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .integrator-desctiption-large {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .integrator-desctiption__image {
+        max-width: 100%;
+    }
+
+    .integrator-desctiption__info {
+        max-width: 100%;
+    }
     
     .integrator-portfolio {
         grid-template-columns: 1fr 1fr;
@@ -1237,6 +1391,14 @@ span.hash {
     .integrator-footer-menu, 
     .integrator-copyright-block {
         flex-direction: column;
+    }
+
+    .integrator-banner {
+        margin-top: 60px;
+    }
+
+    .integrator-banner__image {
+        height: 250px;
     }
     
     .integrator-numbers__image {
@@ -1310,6 +1472,10 @@ span.hash {
 
 
 @media screen and (max-width: 620px) {
+
+    .integrator-desctiption-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     .integrator-blog-list-social {
         margin-right: auto;
