@@ -16333,7 +16333,7 @@ Common: Spacing Gutters
 }
 @media (min-width: 992px) {
   .section-heading {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 }
 .section-heading--white .section-heading__title {
