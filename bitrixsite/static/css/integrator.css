@@ -1049,6 +1049,80 @@ span.hash {
     opacity: 0.5;
 }
 
+/*FAQ*/ 
+
+.integrator-faq {
+    max-width: 855px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.integrator-faq-accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.integrator-faq .accordion-item {
+    padding: 10px 20px;
+    width: 100%;
+    border-bottom: 1px solid var(--bg-line-text);
+}
+
+.integrator-faq .accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.accordion-button h3 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: var(--btn-hover-primary);
+}
+
+.accordion-button__icon {
+    flex-grow: 1;
+}
+
+.accordion-button__icon img {
+    transform: rotate(360deg);
+    padding: 9px 6px;
+    margin-left: auto;
+}
+
+.accordion-button.collapsed .accordion-button__icon img {
+    transform: rotate(180deg);
+}
+
+.accordion-item__body {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.5;
+    padding-right: 32px;
+}
+
+.accordion-item__body b {
+    opacity: 1;
+}
+
+.accordion-item__body a {
+    color: var(--btn-hover-primary);
+    text-decoration: underline !important;
+}
+
+.accordion-item__body a:hover {
+    opacity: 1;
+}
+
 
 /*CONTACT*/
 
