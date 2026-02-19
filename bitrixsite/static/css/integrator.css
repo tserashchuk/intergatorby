@@ -440,6 +440,49 @@ span.primary {
     color: var(--btn-hover-primary);
 }
 
+/*MARKETING*/
+
+.integrator-marketing-section .integrator-section-heading {
+    max-width: 818px;
+    margin: 0 auto;
+}
+
+.integrator-marketing-section .integrator-section-heading p {
+    padding: 0 72px;
+}
+
+.integrator-marketing-section .point-title {
+    color: var(--btn-hover-primary);
+}
+
+.integrator-marketing-section .integrator-row {
+    flex-wrap: wrap;
+}
+
+.integrator-check-point-large {
+    width: 50%;
+    display: flex;
+    margin-top: 10px;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.check-point-large__image {
+    width: 426px;
+    height: 225px;
+    border-radius: 14px 0;
+    overflow: hidden;
+    position: relative;
+    bottom: -30px;
+    right: -30px;
+}
+
+.check-point-large__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+}
 
 /*TECHNOLOGIES*/
 .integrator-technologies-section {
@@ -1461,6 +1504,15 @@ span.hash {
     .integrator-row {
         flex-direction: column;
     }
+    
+    .integrator-check-point-large {
+        width: 100%;
+    }
+
+    .check-point-large__image {
+        bottom: -60px;
+        right: -60px;
+    }
 
     .integrator-desctiption-list {
         grid-template-columns: repeat(2, 1fr);
@@ -1617,6 +1669,15 @@ span.hash {
 
     .integrator-desctiption-list {
         grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .integrator-check-point-large {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .check-point-large__image {
+        right: -50px;
     }
 
     .integrator-blog-list-social {
