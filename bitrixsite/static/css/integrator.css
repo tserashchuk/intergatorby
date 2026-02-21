@@ -484,6 +484,134 @@ span.primary {
     object-position: top left;
 }
 
+/*TASK*/
+.integrator-task-section {
+    background-color: var(--bg-fon-gray);
+}
+
+.integrator-task-section .integrator-btn {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.integrator-task {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.integrator-task-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.integrator-task-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.integrator-task-two .integrator-task-item {
+    border-radius: 16px;
+    padding: 30px 30px 0 30px;
+    height: auto;
+}
+
+.integrator-task-item {
+    border-radius: 16px;
+    padding: 30px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+    align-items: start;
+    height: 346px;
+}
+
+.task-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.task-white {
+    background-color: var(--bg-fon-text);
+}
+
+.task-blue {
+    background-color: var(--btn-light-primary);
+}
+
+.task-point h4.point-title {
+    color: var(--btn-hover-primary);
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 25px !important;
+    line-height: 1.2;
+}
+
+.task-point__image {
+    width: 447px;
+    height: 239px;
+    border-radius: 14px 0;
+    overflow: hidden;
+    position: relative;
+    bottom: -30px;
+    right: -30px;
+}
+
+.integrator-task-two .task-point__image {
+    bottom: -30px;
+    right: auto;
+    left: 0;
+}
+
+.task-point__image-small {
+    right: 0;
+    bottom: -15px;
+    height: 446px;
+}
+
+.task-point__image-right {
+    width: 447px;
+    height: 239px;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    bottom: -30px;
+    padding-right: 30px;
+    left: -60px;
+}
+
+.task-point__image-full {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+}
+
+.task-point__image-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top left;
+}
+
+.task-point__image img,
+.task-point__image-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+}
+
+.task-point__image-right img {
+    border-radius: 14px;
+    object-position: top right;
+}
+
 /*TECHNOLOGIES*/
 .integrator-technologies-section {
     padding: 50px 0 150px;
