@@ -27,6 +27,7 @@ $(document).ready(function () {
       }
 
     })
+    
     $('[data-pricing-trigger]').on('click', function (e) {
       var id = $(e.target).attr('data-pricing-trigger');
       var target = $(e.target).attr('data-target');

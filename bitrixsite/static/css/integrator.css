@@ -612,6 +612,64 @@ span.primary {
     object-position: top right;
 }
 
+/*PRICE*/ 
+
+.integrator-price {
+    margin: 60px auto 0;
+}
+
+.integrator_pricing-control-block {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.integrator_pricing-control-block .pricing-control {
+    border-radius: 12px;
+    background-color: var(--btn-light-primary);
+    padding: 5px;
+    max-width: 445px;
+    min-width: 378px;
+    height: auto;
+}
+
+.integrator_pricing-control-block .pricing-control span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: var(--btn-light-primary);
+    color: var(--btn-dark-primary);
+    padding: 15px 25px;
+    border-radius: 12px;
+    text-wrap: nowrap;
+} 
+
+.pricing-control>*:first-of-type::before {
+    display: none !important;
+}
+
+.integrator_pricing-control-block .pricing-control span.active {
+    background-color: var(--btn-hover-primary);
+    color: var(--bg-fon-text);
+    border-radius: 12px;
+}
+
+.integrator-price .plan-base {
+    background-color: var(--bg-fon-gray);
+}
+
+.integrator-price .plan-blue {
+    background-color: var(--btn-light-primary);
+}
+
+.integrator-price .plan-purple {
+    background: linear-gradient(
+    360deg, 
+    #F2F2FC 36%, 
+    rgba(94, 90, 219, 0.3) 100%
+    );
+}
+
 /*TECHNOLOGIES*/
 .integrator-technologies-section {
     padding: 50px 0 150px;
