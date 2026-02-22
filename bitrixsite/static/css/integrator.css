@@ -3,6 +3,7 @@
   --btn-dark-primary: #202FA9;
   --btn-light-primary: #E9EDF9;
   --btn-hover-primary: #0A102F;
+  --btn-purple-primary: #8A38F5;
   --bg-fon-text: #FBFBFD;
   --bg-line-text: #D5DDFB;
   --bg-fon-gray: #F3F4FA;
@@ -20,7 +21,7 @@
     justify-content: center;
     column-gap: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
     z-index: 0;
@@ -32,6 +33,10 @@
 .integrator-btn-light {
     background-color: var(--btn-light-primary);
     color: var(--btn-dark-primary);
+}
+
+.integrator-btn-purple {
+    background-color: var(--btn-purple-primary);
 }
 
 .integrator-btn-secondary {
@@ -54,7 +59,7 @@
 }
 
 .integrator-link {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: var(--btn-dark-primary);
@@ -218,7 +223,7 @@
 }
 
 .integrator-text {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
@@ -393,7 +398,7 @@ span.primary {
 }
 
 .integrator-desctiption-item h3 {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
@@ -434,7 +439,7 @@ span.primary {
 .integrator-desctiption__info {
     max-width: 620px;
     width: 100%;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
@@ -555,7 +560,7 @@ span.primary {
 .task-point__image {
     width: 447px;
     height: 239px;
-    border-radius: 14px 0;
+    border-radius: 14px 14px 0 0;
     overflow: hidden;
     position: relative;
     bottom: -30px;
@@ -631,10 +636,19 @@ span.primary {
     max-width: 445px;
     min-width: 378px;
     height: auto;
+    position: relative;
+}
+
+.sale-image {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    width: 57px;
+    height: 36px;
 }
 
 .integrator_pricing-control-block .pricing-control span {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     background-color: var(--btn-light-primary);
@@ -666,9 +680,120 @@ span.primary {
     background: linear-gradient(
     360deg, 
     #F2F2FC 36%, 
-    rgba(94, 90, 219, 0.3) 100%
+    rgba(94, 90, 219, 0.2) 100%
     );
 }
+
+.integrator-price .plans-4 {
+    gap: 20px !important;
+}
+
+.integrator-price .plan {
+    border-radius: 12px;
+    padding: 30px 20px;
+}
+
+.integrator-price .plan .plan__header {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--bg-line-text);
+    height: 132px;
+}
+
+.integrator-price .plan-purple .plan__header{
+    border-bottom: 1px solid rgba(5, 32, 128, 0.3);
+}
+
+.integrator-price  .plan-purple .plan__info .plan__subtitle:first-child {
+    border-top: 1px solid rgba(5, 32, 128, 0.3);
+}
+
+.integrator-price .plan .plan__header .service-card__title {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
+    margin-bottom: 20px;
+}
+
+.integrator-price .plan-blue .plan__header .service-card__title {
+    color: var(--btn-dark-primary);
+}
+
+.integrator-price .plan-purple .plan__header .service-card__title {
+    color: var(--btn-purple-primary);
+}
+
+.integrator-price .plan .plan__header p,
+.integrator-price .plan-description p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7;
+}
+
+.integrator-price .plan-description {
+    padding: 30px 0;
+}
+
+.integrator-price .plan-description a {
+    margin: 20px auto 0;
+    width: 100%;
+}
+
+.integrator-price .plan__title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
+    margin-bottom: 20px;
+}
+
+.integrator-price .plan__info .plan__subtitle,
+.integrator-price .plan__info .plan__subtitle h3 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    padding: 10px 0;
+    border-top: 1px solid var(--bg-line-text);
+    margin-top: 0;
+}
+
+.plan__subtitle.plan__subtitle-bold {
+    font-weight: 600 !important;
+}
+
+.plan__subtitle.plan__subtitle-blue {
+    color: var(--btn-dark-primary) !important;
+}
+
+.integrator-price .plan__info .plan__subtitle h3 {
+    border-top: 0;
+    padding: 0;
+}
+
+.integrator-price .plan__info .plan__subtitle ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0 15px 15px;
+    margin: 0;
+}
+
+.integrator-price .plan__info .plan__subtitle .accordion-item__body {
+    margin: 0;
+    padding: 0;
+}
+
+.integrator-price .plan__info .plan__subtitle ul li {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7;
+}
+
 
 /*TECHNOLOGIES*/
 .integrator-technologies-section {
@@ -959,7 +1084,7 @@ span.primary {
 
 .integrator-portfolio-page .navigation-list .btn {
     padding: 15px 25px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
@@ -1019,7 +1144,7 @@ span.primary {
     padding: 4px 10px;
     border-radius: 8px;
     background-color: var(--bg-fon-text);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
@@ -1187,7 +1312,7 @@ span.primary {
 }
 
 .interesting-more {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: var(--btn-dark-primary);
@@ -1248,7 +1373,7 @@ span.primary {
 }
 
 .integrator-materials-page .sidebar-category-list .sidebar-category {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
@@ -1316,14 +1441,14 @@ span.primary {
 }
 
 .integrator-material__description {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
 }
 
 span.date {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
@@ -1331,7 +1456,7 @@ span.date {
 }
 
 span.hash {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
@@ -1391,7 +1516,7 @@ span.hash {
 
 .accordion-item__body {
     margin-top: 20px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
@@ -1447,7 +1572,7 @@ span.hash {
 }
 
 .integrator-widget__title {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: var(--btn-hover-primary);
@@ -1750,6 +1875,28 @@ span.hash {
         max-width: 100%;
     }
 
+    .integrator-task-three {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .integrator-task-two {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .task-point__image-right {
+        left: 0;
+    }
+
+    .task-point__image {
+        bottom: -20px;
+        right: 0;
+        left: 40%;
+    }
+
+    .task-point__image-full {
+        height: auto;
+    }
+
     .integrator-materials-section .integrator-row {
         align-items: center;
     }
@@ -1800,6 +1947,17 @@ span.hash {
     .integrator-quote {
         padding-top: 50px;
         font-size: 18px;
+    }
+
+    .integrator_pricing-control-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task-point__image {
+        bottom: -20px;
+        right: 0;
+        left: 0;
     }
 
     .integrator-technologies__title {
@@ -1864,6 +2022,15 @@ span.hash {
 
     .check-point-large__image {
         right: -50px;
+    }
+
+    .integrator_pricing-control-block .pricing-control {
+        min-width: 300px;
+    }
+
+    .integrator_pricing-control-block .pricing-control span {
+        font-size: 14px;
+        padding: 10px 5px;
     }
 
     .integrator-blog-list-social {

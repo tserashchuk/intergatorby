@@ -19792,7 +19792,7 @@ Common: Spacing Gutters
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
-  align-items: stretch;
+  align-items: start;
   justify-content: center;
 }
 
