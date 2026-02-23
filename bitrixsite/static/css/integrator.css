@@ -222,6 +222,15 @@
     margin: 0 auto;
 }
 
+.integrator-section-heading.price-plus {
+    max-width: 1290px;
+}
+
+.integrator-section-heading.price-plus .integrator-text {
+    max-width: 675px;
+    margin: 0 auto;
+}
+
 .integrator-text {
     font-weight: 300;
     font-size: 18px;

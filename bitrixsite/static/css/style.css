@@ -19799,8 +19799,8 @@ Common: Spacing Gutters
 .plans-3,
 .plans-3m {
   display: grid;
-  grid-template-columns: repeat(3, 280px);
-  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   align-items: stretch;
   justify-content: center;
 }
