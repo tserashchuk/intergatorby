@@ -494,6 +494,14 @@ span.primary {
     background-color: var(--bg-fon-gray);
 }
 
+.integrator-task-section-invert {
+    background-color: transparent !important;
+}
+
+.integrator-task-section-invert .interesting-point {
+    background-color: var(--bg-fon-gray) !important;
+}
+
 .integrator-task-section .integrator-btn {
     width: fit-content;
     margin: 0 auto;

@@ -503,6 +503,14 @@ span.primary {
     background-color: var(--bg-fon-gray);
 }
 
+.integrator-task-section-invert {
+    background-color: transparent !important;
+}
+
+.integrator-task-section-invert .interesting-point {
+    background-color: var(--bg-fon-gray) !important;
+}
+
 .integrator-task-section .integrator-btn {
     width: fit-content;
     margin: 0 auto;
@@ -1304,6 +1312,33 @@ span.primary {
     padding: 20px 30px;
 }
 
+.point-color {
+    background: linear-gradient(
+    180deg, 
+    #E7EBFB 0%, 
+    #E7F3E9 33%, 
+    #DEE3F8 66%, 
+    #E7EBFB 100%
+  );
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.point-color .point-color__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 576px;
+}
+
+.point-color .point-color__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+
 .interesting-point .poin-number {
     margin-bottom: 70px;
 }
@@ -1763,6 +1798,10 @@ span.hash {
     .integrator-materials-page .integrator-row {
         flex-direction: column;
         gap: 60px;
+    }
+
+    .point-color .point-color__image {
+        width: 376px;
     }
 
     .integrator-team .integrator-row {
