@@ -39,6 +39,17 @@
     background-color: var(--btn-purple-primary);
 }
 
+.integrator-btn-white {
+    background-color: var(--bg-fon-text);
+    color: var(--btn-hover-primary);
+    padding: 8px 36px;
+    border-radius: 6px;
+}
+
+.integrator-btn-white.white-active {
+    background-color: var(--bg-line-text);
+}
+
 .integrator-btn-secondary {
     background-color: transparent;
     border-radius: 0;
@@ -716,6 +727,10 @@ span.primary {
     height: 132px;
 }
 
+.plan-short .plan__header {
+    height: auto !important;
+}
+
 .integrator-price .plan-purple .plan__header{
     border-bottom: 1px solid rgba(5, 32, 128, 0.3);
 }
@@ -724,12 +739,20 @@ span.primary {
     border-top: 1px solid rgba(5, 32, 128, 0.3);
 }
 
+.plan-short .plan-content {
+    height: auto;
+}
+
 .integrator-price .plan .plan__header .service-card__title {
     font-weight: 500;
     font-size: 25px;
     line-height: 1.2;
     color: var(--btn-hover-primary);
     margin-bottom: 20px;
+}
+
+.plan-short .service-card__title {
+    margin-bottom: 0 !important;
 }
 
 .integrator-price .plan-blue .plan__header .service-card__title {
@@ -753,7 +776,17 @@ span.primary {
     padding: 30px 0;
 }
 
-.integrator-price .plan-description a {
+.plan-short .plan-description {
+    padding: 30px 0 0;
+}
+
+.price__counts {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.integrator-price .plan-description a:not(.integrator-btn-white) {
     margin: 20px auto 0;
     width: 100%;
 }
