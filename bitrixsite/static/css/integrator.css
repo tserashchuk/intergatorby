@@ -1401,6 +1401,38 @@ span.primary {
     margin-top: 20px;
 }
 
+/*EXTENTION*/
+
+.integrator-extention-section .integrator-section-heading {
+    max-width: 818px;
+}
+
+.integrator-extention-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.extention-point {
+    padding: 60px 40px;
+    background-color: var(--bg-fon-gray);
+    border-radius: 12px;
+    position: relative;
+}
+
+.extention-title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
+    margin-bottom: 30px;
+}
+
+.extention-point a {
+    margin-top: 20px;
+}
+
 /*MATERIALS*/
 
 .integrator-materials-section .integrator-row {
@@ -1942,6 +1974,11 @@ span.hash {
 
     .interesting-point .poin-number {
         margin-bottom: 20px;
+    }
+
+    .integrator-extention-points, 
+    .integrator-interesting-points {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .integrator-contact__image {
