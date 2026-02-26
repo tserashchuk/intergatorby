@@ -4,10 +4,15 @@
   --btn-light-primary: #E9EDF9;
   --btn-hover-primary: #0A102F;
   --btn-purple-primary: #8A38F5;
+  --btn-green-primary: #08A75D;
+  --btn-yellow-primary: #E4D448;
   --bg-fon-text: #FBFBFD;
   --bg-line-text: #D5DDFB;
   --bg-fon-gray: #F3F4FA;
   --bg-fon-light: #F7F9FD;
+  --bg-fon-purple: #E9E9F9;
+  --bg-fon-yellow: #F9F8EF;
+  --bg-fon-green: #EAFBEE;
 }
 
 
@@ -670,6 +675,57 @@ span.primary {
     row-gap: 40px;
 }
 
+/*FLEX*/
+
+.integrator-felx-section .container {
+    display: flex;
+    gap: 60px;
+}
+
+.integrator-felx-section .integrator-section-heading {
+    max-width: 500px;
+    margin: 0;
+    text-align: left;
+}
+
+.integrator-felx-section .integrator-section-heading a {
+    width: fit-content;
+}
+
+.integrator-felx-section .integrator-check-points {
+    margin-top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.integrator-felx-section .integrator-check-point {
+    background-color: var(--bg-fon-gray);
+}
+
+.check-point-green {
+    background-color: var(--bg-fon-green) !important;
+}
+
+.check-point-green .poin-number {
+    color: var(--btn-green-primary) !important;
+    opacity: 0.2 !important;
+}
+
+.check-point-purple {
+    background-color: var(--bg-fon-purple) !important;
+}
+
+.check-point-yellow {
+    background-color: var(--bg-fon-yellow) !important;
+}
+
+.check-point-yellow .poin-number {
+    color: var(--btn-yellow-primary) !important;
+    opacity: 0.2 !important;
+}
+
 /*PRICE*/ 
 
 .integrator-price {
@@ -966,6 +1022,14 @@ span.primary {
     font-size: 18px !important;
     line-height: 1.5;
     color: var(--btn-dark-primary);
+    margin-top: 80px;
+}
+
+.point-descr {
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
     margin-top: 80px;
 }
 
@@ -1890,6 +1954,20 @@ span.hash {
         gap: 60px;
     }
 
+    .integrator-felx-section .container {
+        flex-direction: column;
+    }
+
+    .integrator-felx-section .integrator-section-heading {
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .integrator-felx-section .integrator-section-heading a {
+        margin: 0 auto;
+    }
+
     .point-color .point-color__image {
         width: 376px;
     }
@@ -2121,7 +2199,8 @@ span.hash {
         padding: 0;
     }
 
-    .integrator-portfolio {
+    .integrator-portfolio,
+    .integrator-felx-section .integrator-check-points {
         grid-template-columns: 1fr;
     }
 
