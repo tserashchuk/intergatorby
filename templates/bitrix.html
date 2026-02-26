@@ -1,884 +1,734 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-
-<div class="home-1_hero-section" id="hero">
-  <div class="home-1_hero-shape-1">
-    <img src="{% static '/image/home-1/hero-shape-1.svg' %}" alt="image alt" />
-  </div>
-  <div class="home-1_hero-shape-2">
-    <img src="{% static '/image/home-1/hero-shape-2.svg' %}" alt="image alt" />
-  </div>
-  <div class="container">
-    <div class="row row--hero-content">
-      <div
-        class="col-xxl-auto col-lg-6 col-md-7 col-sm-8 col-10"
-        data-aos-duration="1000"
-        data-aos="fade-left"
-        data-aos-delay="300"
-      >
-        <div class="home-1_hero-image-block">
-          <div class="home-1_hero-image">
-            <img
-              src="{% static '/image/bitrix/all.svg' %}"
-              alt="bitrix image"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-xxl-auto col-lg-6 col-md-10"
-        data-aos-duration="1000"
-        data-aos="fade-right"
-        data-aos-delay="300"
-      >
-        <div class="home-1_hero-content">
-          <div class="home-1_hero-content-text">
-            <h1 class="hero-content__title heading-xl">
-              Битрикс24 помогает бизнесу работать
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Home 8  : Hero Section 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="integrator-page integrator-section integrator-header__plus" id="hero" bis_skin_checked="1">
+  <div class="container" bis_skin_checked="1">
+    <div class="row row--custom" bis_skin_checked="1">
+      <div class="col-lg-12 col-md-12" bis_skin_checked="1">
+        <div class="home-8_hero-content-block" bis_skin_checked="1">
+          <div class="home-8_hero-text-block" bis_skin_checked="1">
+            <h1 class="integrator-heading heading-l hero-content__title text-center">
+              Возможности Битрикс24
             </h1>
-            <p>
-              А мы знаем, как Правильно Внедрить Битрикс24 в процессы вашей
-              компании.
-            </p>
+            <p class="integrator-text text-center">У Битрикс24 есть преложения для бизнеса любого
+              масштаба. А с Правильными Интеграторами вы получите самый подходящий вариант.</p>
           </div>
-          <div class="d-flex gap-3 flex-column flex-sm-row">
-            <a
-              href="#"
-              class="btn-masco btn-masco--header rounded-pill btn-fill--up"
-            >
-              <span>Возможности</span>
+          <div class="integrator-row">
+            <a href="#" class="integrator-btn btn-fill--up">
+              <span>Получить консультацию</span>
             </a>
-            <a
-              href="#"
-              class="btn-masco btn-masco--header rounded-pill btn-fill--up"
-            >
-              <span>Тарифы</span>
+            <a href="#" class="integrator-btn integrator-btn-light btn-fill--up">
+              <span>Попробовать бесплатно</span>
             </a>
           </div>
+          <div class="integrator-banner">
+            <div class="integrator-banner__image">
+              <img src="{% static '/image/home/home-banner.png' %}" alt="Banner">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="section-padding-120">
-  <div class="container">
-    <h2 class="content-title heading-md text-black text-center">
-      Битрикс24 — это полный набор инструментов
-    </h2>
-    <p class="text-center">для организации работы всей компании</p>
-    <div class="section-padding">
-      <div class="row gy-5">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="service-card__body">
-            <h3 class="service-card__title">
-              Единое онлайн-пространство для совместной работы
-            </h3>
-            <p>
-              Битрикс24 заменит целый ряд инструментов, необходимых для
-              полноценного взаимодействия внутри команды. Неважно, где работают
-              ваши сотрудники – в офисе или на удалёнке - вы всегда будете на
-              связи.
-            </p>
-          </div>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    BRAND Section 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div class="integrator-brand-section">
+  <div class="slidercontainer rounded">
+    <div class="slider">
+      <div class="logos brands-wrapper">
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Корпоративная социальная сеть</p>
         </div>
-        <div class="col-12 col-md-6 col-lg-8">
-          <img
-            class="w-100"
-            src="{% static '/image/bitrix/bitrix1.png' %}"
-            alt="bitrix image"
-          />
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Таск-менеджер</p>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="section-padding bg-light-2">
-    <div class="container">
-      <div class="grid grid--5 gy-5 pb-5">
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/video_and_chat.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Бесплатные видеозвонки до 100 человек</p>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Работа по скрам</p>
         </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/chats.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Чат для совместной работы</p>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Видеозвонки</p>
         </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/calendar.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Общий календарь встреч с коллегами</p>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Мессенджер</p>
         </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/calendar.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Общий календарь встреч с коллегами</p>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">CRM</p>
         </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/files.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Работа с файлами на общем диске</p>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Диск</p>
         </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/emails.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Корпоративная почта</p>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Календарь</p>
         </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/knowledges.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">База знаний</p>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">База знаний</p>
         </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/time.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Учет рабочего времени</p>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Корпоративная социальная сеть</p>
         </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/news.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Новости компании</p>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Таск-менеджер</p>
         </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/assistant.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">CoPilot — ваш личный ассистент</p>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Работа по скрам</p>
         </div>
-      </div>
-      <div class="text-center mt-5">
-        <a
-          href="#"
-          class="btn-masco btn-masco--header rounded-pill btn-fill--up"
-        >
-          <span>Попробовать бесплатно</span>
-        </a>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Видеозвонки</p>
+        </div>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Мессенджер</p>
+        </div>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">CRM</p>
+        </div>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Диск</p>
+        </div>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">Календарь</p>
+        </div>
+        <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <p class="integrator-text">База знаний</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="section-padding-120">
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Description Section
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="integrator-desctiption-section padding-bottom-150 padding-top-150">
   <div class="container">
-    <div class="section-padding pt-0">
-      <div class="row gy-5">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="service-card__body">
-            <h3 class="service-card__title">Продажи и маркетинг</h3>
-            <p>
-              Собирайте заявки из всех каналов, заполняйте документы,
-              выставляйте счета. Подключайте почту, телефонию, соцсети, рекламу,
-              сквозную аналитику. Ни один клиент не будет потерян или забыт!
-            </p>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-8">
-          <img
-            class="w-100"
-            src="{% static '/image/bitrix/bitrix2.png' %}"
-            alt="bitrix image"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section-padding bg-light-2">
-    <div class="container">
-      <div class="grid grid--4 gy-5 pb-5">
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/knowledges.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">CRM</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/chats.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Сбор лидов из всех каналов</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/emails.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">История каждой сделки</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/video_and_chat.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Автоматизация продаж</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/calendar.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Планы продаж и отчеты</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/files.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Интеграция с 1С</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/calendar.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Сегментация клиентов</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/news.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Рассылки</p>
-        </div>
-      </div>
-      <div class="text-center mt-5">
-        <a
-          href="#"
-          class="btn-masco btn-masco--header rounded-pill btn-fill--up"
-        >
-          <span>Попробовать бесплатно</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section-padding-120">
-  <div class="container">
-    <div class="section-padding pt-0">
-      <div class="row gy-5">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="service-card__body">
-            <h3 class="service-card__title">Задачи и проекты</h3>
-            <p>
-              Управляйте командой, контролируйте проекты, назначайте
-              ответственных, создавайте чек-листы, используйте шаблоны
-              регулярных задач. Успевайте больше и получайте высокую
-              производительность сотрудников.
-            </p>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-8">
-          <img
-            class="w-100"
-            src="{% static '/image/bitrix/bitrix3.png' %}"
-            alt="bitrix image"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section-padding bg-light-2">
-    <div class="container">
-      <div class="grid grid--4 gy-5 pb-5">
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/emails.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Постановка задач в 2 клика</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/chats.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Управление проектами в разных режимах</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/news.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Мобильное приложение</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/video_and_chat.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Шаблоны задач и роботы</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/knowledges.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">История каждой задачи</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/calendar.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">Роли и права доступа</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/files.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">KPI и отчеты</p>
-        </div>
-        <div class="grid__elem">
-          <img
-            class="w-25"
-            src="{% static '/image/bitrix/assistant.svg' %}"
-            alt="bitrix image"
-          />
-          <p class="text-center">CoPilot — ваш личный ассистент</p>
-        </div>
-      </div>
-      <div class="text-center">
-        <a
-          href="#"
-          class="btn-masco btn-masco--header rounded-pill btn-fill--up"
-        >
-          <span>Попробовать бесплатно</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-padding-120">
-    <div class="container">
-      <h2 class="content-title heading-md text-black text-center">
-        Битрикс24 — это полный набор инструментов
+    <div class="integrator-section-heading">
+      <h2 class="integrator-subheading heading-md text-center">
+        Единое онлайн-пространство для совместной работы
       </h2>
-      <p class="text-center">
-        Цены указаны за всю компанию, а не за отдельных пользователей
-      </p>
-      <div class="text-center mt-5">
-        <a
-          href="#"
-          class="btn-masco btn-masco--header rounded-pill btn-fill--up"
-        >
-          <span>На месяц</span>
-        </a>
-        <a
-          href="#"
-          class="btn-masco btn-masco--header rounded-pill btn-fill--up"
-        >
-          <span>На год</span>
-        </a>
+      <p class="integrator-text text-center">Битрикс24 заменит целый ряд инструментов, необходимых для полноценного
+        взаимодействия внутри команды. Неважно, где работают ваши сотрудники — в офисе или на удалёнке — вы всегда
+        будете на связи.</p>
+    </div>
+    <div class="integrator-desctiption" bis_skin_checked="1">
+      <div class="integrator-desctiption-list">
+        <div class="integrator-desctiption-item" bis_skin_checked="1">
+          <div class="integrator-desctiption__icon">
+            <img src="{% static '/image/icons/descr-icon-2.svg' %}" alt="">
+          </div>
+          <h3 class="integrator-desctiption__title">Бесплатные видеозвонки
+            до 100 человек</h3>
+        </div>
+        <div class="integrator-desctiption-item" bis_skin_checked="1">
+          <div class="integrator-desctiption__icon">
+            <img src="{% static '/image/icons/descr-icon-1.svg' %}" alt="">
+          </div>
+          <h3 class="integrator-desctiption__title">Чат для совместной работы</h3>
+        </div>
+        <div class="integrator-desctiption-item" bis_skin_checked="1">
+          <div class="integrator-desctiption__icon">
+            <img src="{% static '/image/icons/descr-icon-3.svg' %}" alt="">
+          </div>
+          <h3 class="integrator-desctiption__title">Общий календарь встреч с коллегами</h3>
+        </div>
+        <div class="integrator-desctiption-item" bis_skin_checked="1">
+          <div class="integrator-desctiption__icon">
+            <img src="{% static '/image/icons/descr-icon-4.svg' %}" alt="">
+          </div>
+          <h3 class="integrator-desctiption__title">Работа с файлами на общем диске</h3>
+        </div>
+        <div class="integrator-desctiption-item" bis_skin_checked="1">
+          <div class="integrator-desctiption__icon">
+            <img src="{% static '/image/icons/descr-icon-5.svg' %}" alt="">
+          </div>
+          <h3 class="integrator-desctiption__title">Корпоративная почта</h3>
+        </div>
+        <div class="integrator-desctiption-item" bis_skin_checked="1">
+          <div class="integrator-desctiption__icon">
+            <img src="{% static '/image/icons/descr-icon-6.svg' %}" alt="">
+          </div>
+          <h3 class="integrator-desctiption__title">База знаний</h3>
+        </div>
+        <div class="integrator-desctiption-item" bis_skin_checked="1">
+          <div class="integrator-desctiption__icon">
+            <img src="{% static '/image/icons/descr-icon-7.svg' %}" alt="">
+          </div>
+          <h3 class="integrator-desctiption__title">Учёт рабочего времени</h3>
+        </div>
+        <div class="integrator-desctiption-item" bis_skin_checked="1">
+          <div class="integrator-desctiption__icon">
+            <img src="{% static '/image/icons/descr-icon-8.svg' %}" alt="">
+          </div>
+          <h3 class="integrator-desctiption__title">Новости компании</h3>
+        </div>
+        <div class="integrator-desctiption-item" bis_skin_checked="1">
+          <div class="integrator-desctiption__icon">
+            <img src="{% static '/image/icons/descr-icon-9.svg' %}" alt="">
+          </div>
+          <h3 class="integrator-desctiption__title">CoPilot — ваш личный ассистент</h3>
+        </div>
       </div>
-      <div class="plans mt-5">
-        <div class="plan plan--lemon">
-          <div class="plan__header p-3 text-center">
-            <div class="service-card__title mt-2">Бесплатный</div>
+      <div class="integrator-desctiption-large" bis_skin_checked="1">
+        <div class="integrator-desctiption__image">
+          <img src="{% static '/image/home/descr.png' %}" alt="Call">
+        </div>
+        <p class="integrator-desctiption__info">Проводите онлайн-встречи, планёрки и совещания без ограничений
+          по времени и дополнительных сервисов. Видеозвонки в Битрикс24 работают прямо в браузере и мобильном
+          приложении, поддерживают демонстрацию экрана и подключение до 100 участников. Удобный формат для командной
+          работы и общения с клиентами.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Marketing Section
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="integrator-marketing-section padding-bottom-150 integrator-subsection">
+  <div class="container">
+    <div class="integrator-section-heading">
+      <h2 class="integrator-subheading heading-md text-center">
+        Продажи и маркетинг
+      </h2>
+      <p class="integrator-text text-center">Собирайте заявки из всех каналов, заполняйте документы, выставляйте счета.
+        Подключайте почту, телефонию, соцсети, рекламу, сквозную аналитику. Ни один клиент не будет потерян или забыт!
+      </p>
+    </div>
+    <div class="integrator-check-points">
+      <div class="integrator-row">
+        <div class="integrator-check-point">
+          <span class="poin-number">
+            01
+          </span>
+          <h4 class="point-title">Сегментация клиентов</h4>
+        </div>
+        <div class="integrator-check-point">
+          <span class="poin-number">
+            02
+          </span>
+          <h4 class="point-title">Интеграция с 1С</h4>
+        </div>
+        <div class="integrator-check-point">
+          <span class="poin-number">
+            03
+          </span>
+          <h4 class="point-title">Автоматизация продаж</h4>
+        </div>
+        <div class="integrator-check-point">
+          <span class="poin-number">
+            04
+          </span>
+          <h4 class="point-title">Планы продаж и отчёты</h4>
+        </div>
+        <div class="integrator-check-point">
+          <span class="poin-number">
+            05
+          </span>
+          <h4 class="point-title">Рассылки</h4>
+        </div>
+        <div class="integrator-check-point">
+          <span class="poin-number">
+            06
+          </span>
+          <h4 class="point-title">CRM</h4>
+        </div>
+      </div>
+      <div class="integrator-row">
+        <div class="integrator-check-point integrator-check-point-large">
+          <div class="check-point-large">
+            <span class="poin-number">
+              07
+            </span>
+            <h4 class="point-title">История каждой сделки</h4>
+          </div>
+          <div class="check-point-large__image"><img src="{% static '/image/service/marketing-1.png' %}" alt=""></div>
+        </div>
+        <div class="integrator-check-point integrator-check-point-large">
+          <div class="check-point-large">
+            <span class="poin-number">
+              08
+            </span>
+            <h4 class="point-title">Сбор лидов из всех каналов</h4>
+          </div>
+          <div class="check-point-large__image"><img src="{% static '/image/service/marketing-2.png' %}" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Task Section
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<div class="integrator-task-section padding-bottom-150 padding-top-150" id="feature">
+  <div class="container">
+    <div class="integrator-section-heading">
+      <h2 class="integrator-subheading heading-md text-center">
+        Задачи и проекты
+      </h2>
+      <p class="integrator-text text-center">Управляйте командой, контролируйте проекты, назначайте ответственных,
+        создавайте чек-листы, используйте шаблоны регулярных задач. Успевайте больше и получайте высокую
+        производительность сотрудников.</p>
+      <a href="#" class="integrator-btn btn-fill--up">
+        <span>Начать использовать Битрикс24</span>
+      </a>
+    </div>
+    <div class="integrator-task">
+      <div class="integrator-task-three">
+        <div class="integrator-task-item task-blue task-flex">
+          <div class="task-point">
+            <h4 class="point-title">Мобильное приложение</h4>
+          </div>
+          <div class="task-point__image task-point__image-small"><img src="{% static '/image/home/task-1.png' %}"
+              alt=""></div>
+        </div>
+        <div class="integrator-task-item task-white">
+          <div class="task-point">
+            <h4 class="point-title">Управление проектами в разных режимах</h4>
+          </div>
+          <div class="task-point__image"><img src="{% static '/image/home/task-2.png' %}" alt=""></div>
+        </div>
+        <div class="integrator-task-item task-white">
+          <div class="task-point">
+            <h4 class="point-title">CoPilot — ваш личный ассистент</h4>
+          </div>
+          <div class="task-point__image"><img src="{% static '/image/home/task-3.png' %}" alt=""></div>
+        </div>
+      </div>
+      <div class="integrator-task-three">
+        <div class="integrator-task-item task-white">
+          <div class="task-point">
+            <h4 class="point-title">Роли и права доступа</h4>
+          </div>
+          <div class="task-point__image-right"><img src="{% static '/image/home/task-4.png' %}" alt=""></div>
+        </div>
+        <div class="integrator-task-item task-blue">
+          <div class="task-point">
+            <h4 class="point-title">Шаблоны задач и роботы</h4>
+          </div>
+          <div class="task-point__image-right"><img src="{% static '/image/home/task-5.png' %}" alt=""></div>
+        </div>
+        <div class="integrator-task-item task-white">
+          <div class="task-point">
+            <h4 class="point-title">История каждой задачи</h4>
+          </div>
+          <div class="task-point__image"><img src="{% static '/image/home/task-6.png' %}" alt=""></div>
+        </div>
+      </div>
+      <div class="integrator-task-two">
+        <div class="integrator-task-item task-white">
+          <div class="task-point">
+            <h4 class="point-title">Постановка задач в 2 клика</h4>
+          </div>
+          <div class="task-point__image-full"><img src="{% static '/image/home/task-7.png' %}" alt=""></div>
+        </div>
+        <div class="integrator-task-item task-white">
+          <div class="task-point">
+            <h4 class="point-title">KPI и отчёты</h4>
+          </div>
+          <div class="task-point__image-full"><img src="{% static '/image/home/task-8.png' %}" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Price Section
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<div class="integrator-price-section padding-bottom-150 integrator-subsection">
+  <div class="container">
+    <div class="integrator-section-heading">
+      <h2 class="integrator-subheading heading-md text-center">
+        Битрикс24 — это полный набор инструментов для работы вашего бизнеса
+      </h2>
+      <p class="integrator-text text-center">Цены указаны за всю компанию, а не за отдельных пользователей</p>
+    </div>
+    <div class="integrator-price">
+      <div class="integrator_pricing-control-block price">
+        <div class="pricing-control">
+          <span data-pricing-trigger="pricing-1" data-target="oblako" class="active">Облачная версия</span>
+          <span data-pricing-trigger="pricing-1" data-target="korobka">Коробочная версия</span>
+        </div>
+        <div class="pricing-control">
+          <span data-pricing-trigger="pricing-1" data-target="monthly" class="active">Купить на месяц</span>
+          <span data-pricing-trigger="pricing-1" data-target="yearly">Купить на год</span>
+        </div>
+      </div>
+      <div class="plans-4 mt-5" data-plan-id="pricing-1" data-plan-active="monthly" data-plan-active="oblako">
+        <div class="plan plan-base">
+          <div class="plan__header">
+            <div class="service-card__title">Бесплатный</div>
             <p>Начните работать онлайн и продавать больше с CRM</p>
           </div>
-          <div
-            class="plan__content p-4 d-flex flex-column justify-content-between"
-          >
-            <div>
-              <div class="text-center p-2">
-                <div>
-                  <b>неограниченно <br />пользователей</b>
-                </div>
-                <div class="service-card__title mt-2">Бесплатно</div>
-                <a
-                  href="#"
-                  class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4"
-                >
-                  <span>Создать</span>
-                </a>
-                <div class="mt-4">
-                  <b>5 ГБ</b>
+          <div class="plan__content">
+            <div class="plan-description">
+              <h3 class="plan__title">Бесплатно</h3>
+              <p><b>5 ГБ</b> диск</p>
+              <p>неограниченно пользователей</p>
+              <a href="#" class="integrator-btn btn-fill--up">
+                <span>Создать</span>
+              </a>
+            </div>
+            <div class="plan__info">
+              <div class="accordion-item plan__subtitle">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#home-1-faq-item-14" aria-expanded="false" aria-controls="home-1-faq-item-14">
+                  <h3>Совместная работа</h3>
+                  <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon">
+                  </div>
+                </button>
+                <div id="home-1-faq-item-14" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+                  <div class="accordion-item__body">
+                    <ul>
+                      <li>Календарь</li>
+                      <li>Соцсеть компании</li>
+                      <li>Лента</li>
+                      <li>Доски</li>
+                      <li>База знаний</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="plan__line mt-4"></div>
-              <div class="">
-                <div class="plan__subtitle">
-                  <b>Совместная работа</b>
-                  <ul class="ms-3">
-                    <li class="pt-2">Календарь</li>
-                    <li class="pt-2">Соцсеть компании</li>
-                    <li class="pt-2">Лента</li>
-                    <li class="pt-2">Доски</li>
-                    <li class="pt-2">База знаний</li>
-                  </ul>
+              <div class="accordion-item plan__subtitle">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#home-1-faq-item-15" aria-expanded="false" aria-controls="home-1-faq-item-15">
+                  <h3>Мессенджер</h3>
+                  <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon">
+                  </div>
+                </button>
+                <div id="home-1-faq-item-15" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+                  <div class="accordion-item__body">
+                    <ul>
+                      <li>Чат</li>
+                      <li>Каналы</li>
+                      <li>Битрикс24 Синк</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="plan__subtitle">
-                  <b>Мессенджер</b>
-                  <ul class="ms-3">
-                    <li class="pt-2">Чат</li>
-                    <li class="pt-2">Каналы</li>
-                    <li class="pt-2">Битрикс24 Синк</li>
-                  </ul>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Коллабы</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Задачи и проекты</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>CRM</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>CoPilot</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Онлайн-подпись</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Диск</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Контакт-центр</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Сайты</b>
-                </div>
+              </div>
+              <div class="plan__subtitle">
+                Коллабы
+              </div>
+              <div class="plan__subtitle">
+                Задачи и проекты
+              </div>
+              <div class="plan__subtitle">
+                CRM
+              </div>
+              <div class="plan__subtitle">
+                CoPilot
+              </div>
+              <div class="plan__subtitle">
+                Онлайн-подпись
+              </div>
+              <div class="plan__subtitle">
+                Диск
+              </div>
+              <div class="plan__subtitle">
+                Контакт-центр
+              </div>
+              <div class="plan__subtitle">
+                Сайты
               </div>
             </div>
-            <div></div>
           </div>
         </div>
-        <div class="plan plan--cyan">
-          <div class="plan__header p-3 text-center">
-            <div class="service-card__title mt-2">Базовый</div>
+        <div class="plan plan-base">
+          <div class="plan__header">
+            <div class="service-card__title">Базовый</div>
             <p>CRM для небольших отделов продаж</p>
           </div>
-          <div
-            class="plan__content p-4 d-flex flex-column justify-content-between"
-          >
-            <div>
-              <div class="text-center p-2">
-                <div>
-                  <b
-                    >5 <br />
-                    пользователей</b
-                  >
-                </div>
-                <div class="service-card__title mt-2">55 BYN/мес</div>
-                <a
-                  href="#"
-                  class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4"
-                >
-                  <span>Создать</span>
-                </a>
-                <div class="mt-4">
-                  <b>24 ГБ</b>
-                </div>
-              </div>
-              <div class="plan__line mt-4"></div>
-              <div class="">
-                <div class="plan__subtitle">
-                  <b>Совместная работа</b>
-                  <ul class="ms-3">
-                    <li class="pt-2">Календарь</li>
-                    <li class="pt-2">Соцсеть компании</li>
-                    <li class="pt-2">Лента</li>
-                    <li class="pt-2">Доски</li>
-                    <li class="pt-2">База знаний</li>
-                  </ul>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Мессенджер</b>
-                  <ul class="ms-3">
-                    <li class="pt-2">Чат</li>
-                    <li class="pt-2">Каналы</li>
-                    <li class="pt-2">Битрикс24 Синк</li>
-                  </ul>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Коллабы</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Задачи и проекты</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>CRM</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>CoPilot</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Онлайн-подпись</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Диск</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Контакт-центр</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Сайты</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Интернет-магазин</b>
-                </div>
-              </div>
+          <div class="plan__content">
+            <div class="plan-description">
+              <h3 class="plan__title dynamic-value"
+            data-monthly-oblako="80 byn"
+            data-yearly-oblako="64 byn"
+            data-monthly-korobka="100 byn"
+            data-yearly-korobka="85 byn">80 byn</h3>
+              <p><b>24 ГБ</b> диск</p>
+              <p>5 пользователей</p>
+              <a href="#" class="integrator-btn btn-fill--up">
+                <span>Создать</span>
+              </a>
             </div>
-            <div>
+            <div class="plan__info">
+              <div class="accordion-item plan__subtitle">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#home-1-faq-item-12" aria-expanded="false" aria-controls="home-1-faq-item-12">
+                  <h3>Совместная работа</h3>
+                  <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon">
+                  </div>
+                </button>
+                <div id="home-1-faq-item-12" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+                  <div class="accordion-item__body">
+                    <ul>
+                      <li>Календарь</li>
+                      <li>Соцсеть компании</li>
+                      <li>Лента</li>
+                      <li>Доски</li>
+                      <li>База знаний</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item plan__subtitle">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#home-1-faq-item-13" aria-expanded="false" aria-controls="home-1-faq-item-13">
+                  <h3>Мессенджер</h3>
+                  <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon">
+                  </div>
+                </button>
+                <div id="home-1-faq-item-13" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+                  <div class="accordion-item__body">
+                    <ul>
+                      <li>Чат</li>
+                      <li>Каналы</li>
+                      <li>Битрикс24 Синк</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <div class="plan__subtitle">
-                <b>Поддержка</b>
+                Коллабы
+              </div>
+              <div class="plan__subtitle">
+                Задачи и проекты
+              </div>
+              <div class="plan__subtitle">
+                CRM
+              </div>
+              <div class="plan__subtitle">
+                CoPilot
+              </div>
+              <div class="plan__subtitle">
+                Онлайн-подпись
+              </div>
+              <div class="plan__subtitle">
+                Диск
+              </div>
+              <div class="plan__subtitle">
+                Контакт-центр
+              </div>
+              <div class="plan__subtitle">
+                Сайты
+              </div>
+              <div class="plan__subtitle plan__subtitle-bold">
+                Интернет-магазин
+              </div>
+              <div class="plan__subtitle plan__subtitle-blue">
+                Поддержка
               </div>
             </div>
           </div>
         </div>
-        <div class="plan plan--cyan">
-          <div class="plan__header p-3 text-center">
-            <div class="service-card__title mt-2">Стандартный</div>
+        <div class="plan plan-blue">
+          <div class="plan__header">
+            <div class="service-card__title">Стандартный</div>
             <p>Для совместной работы всей компании или рабочих групп</p>
           </div>
-          <div
-            class="plan__content p-4 d-flex flex-column justify-content-between"
-          >
-            <div>
-              <div class="text-center p-2">
-                <div>
-                  <b
-                    >50 <br />
-                    пользователей</b
-                  >
-                </div>
-                <div class="service-card__title mt-2">143 BYN/мес</div>
-                <a
-                  href="#"
-                  class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4"
-                >
-                  <span>Создать</span>
-                </a>
-                <div class="mt-4">
-                  <b>100 ГБ</b>
-                </div>
-              </div>
-              <div class="plan__line mt-4"></div>
-              <div class="">
-                <div class="plan__subtitle">
-                  <b>Совместная работа</b>
-                  <ul class="ms-3">
-                    <li class="pt-2">Календарь</li>
-                    <li class="pt-2">Соцсеть компании</li>
-                    <li class="pt-2">Лента</li>
-                    <li class="pt-2">Доски</li>
-                    <li class="pt-2">База знаний</li>
-                  </ul>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Мессенджер</b>
-                  <ul class="ms-3">
-                    <li class="pt-2">Чат</li>
-                    <li class="pt-2">Каналы</li>
-                    <li class="pt-2">Битрикс24 Синк</li>
-                  </ul>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Коллабы</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Задачи и проекты</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>CRM</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>CoPilot</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Онлайн-подпись</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Диск</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Контакт-центр</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Сайты</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Интернет-магазин</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Маркетинг</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Документы Онлайн</b>
-                </div>
-              </div>
+          <div class="plan__content">
+            <div class="plan-description">
+                      <h3 class="plan__title dynamic-value"
+            data-monthly-oblako="219 byn"
+            data-yearly-oblako="176 byn"
+            data-monthly-korobka="250 byn"
+            data-yearly-korobka="200 byn">219 byn</h3>
+              <p><b>100 ГБ</b> диск</p>
+              <p>50 пользователей</p>
+              <a href="#" class="integrator-btn btn-fill--up">
+                <span>Создать</span>
+              </a>
             </div>
-            <div>
-              <div class="plan__subtitle">
-                <b>Поддержка</b>
+            <div class="plan__info">
+              <div class="accordion-item plan__subtitle">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#home-1-faq-item-16" aria-expanded="false" aria-controls="home-1-faq-item-16">
+                  <h3>Совместная работа</h3>
+                  <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon">
+                  </div>
+                </button>
+                <div id="home-1-faq-item-16" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+                  <div class="accordion-item__body">
+                    <ul>
+                      <li>Календарь</li>
+                      <li>Соцсеть компании</li>
+                      <li>Лента</li>
+                      <li>Доски</li>
+                      <li>База знаний</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item plan__subtitle">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#home-1-faq-item-17" aria-expanded="false" aria-controls="home-1-faq-item-17">
+                  <h3>Мессенджер</h3>
+                  <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon">
+                  </div>
+                </button>
+                <div id="home-1-faq-item-17" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+                  <div class="accordion-item__body">
+                    <ul>
+                      <li>Чат</li>
+                      <li>Каналы</li>
+                      <li>Битрикс24 Синк</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div class="plan__subtitle">
-                <b>Администрирование</b>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="plan plan--cyan">
-          <div class="plan__header p-3 text-center">
-            <div class="service-card__title mt-2">Профессиональный</div>
-            <p>Для максимальной автоматизации всех процессов в компании</p>
-          </div>
-          <div
-            class="plan__content p-4 d-flex flex-column justify-content-between"
-          >
-            <div>
-              <div class="text-center p-2">
-                <div>
-                  <b
-                    >100 <br />
-                    пользователей</b
-                  >
-                </div>
-                <div class="service-card__title mt-2">359 BYN/мес</div>
-                <a
-                  href="#"
-                  class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4"
-                >
-                  <span>Создать</span>
-                </a>
-                <div class="mt-4">
-                  <b>1 024 ГБ</b>
-                </div>
-              </div>
-              <div class="plan__line mt-4"></div>
-              <div class="">
-                <div class="plan__subtitle">
-                  <b>Совместная работа</b>
-                  <ul class="ms-3">
-                    <li class="pt-2">Календарь</li>
-                    <li class="pt-2">Соцсеть компании</li>
-                    <li class="pt-2">Лента</li>
-                    <li class="pt-2">Доски</li>
-                    <li class="pt-2">База знаний</li>
-                  </ul>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Мессенджер</b>
-                  <ul class="ms-3">
-                    <li class="pt-2">Чат</li>
-                    <li class="pt-2">Каналы</li>
-                    <li class="pt-2">Битрикс24 Синк</li>
-                  </ul>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Коллабы</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Задачи и проекты</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>CRM</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>CoPilot</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Онлайн-подпись</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Диск</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Контакт-центр</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Сайты</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Интернет-магазин</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Маркетинг</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Документы Онлайн</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Онлайн-запись</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Сквозная аналитика</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Автоматизация</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>HR: Компания</b>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="plan__subtitle">
-                <b>Поддержка</b>
+                Коллабы
               </div>
               <div class="plan__subtitle">
-                <b>Администрирование</b>
+                Задачи и проекты
+              </div>
+              <div class="plan__subtitle">
+                CRM
+              </div>
+              <div class="plan__subtitle">
+                CoPilot
+              </div>
+              <div class="plan__subtitle">
+                Онлайн-подпись
+              </div>
+              <div class="plan__subtitle">
+                Диск
+              </div>
+              <div class="plan__subtitle">
+                Контакт-центр
+              </div>
+              <div class="plan__subtitle">
+                Сайты
+              </div>
+              <div class="plan__subtitle">
+                Интернет-магазин
+              </div>
+              <div class="plan__subtitle plan__subtitle-bold">
+                Маркетинг
+              </div>
+              <div class="plan__subtitle plan__subtitle-bold">
+                Документы онлайн
+              </div>
+              <div class="plan__subtitle plan__subtitle-blue">
+                Поддержка
+              </div>
+              <div class="plan__subtitle plan__subtitle-blue">
+                Администрирование
               </div>
             </div>
           </div>
         </div>
-        <div class="plan plan--blue">
-          <div class="plan__header p-3 text-center">
-            <div class="service-card__title mt-2">Энтерпрайз</div>
+        <div class="plan plan-purple">
+          <div class="plan__header">
+            <div class="service-card__title">Профессиональный</div>
             <p>Для максимальной автоматизации всех процессов в компании</p>
           </div>
-          <div
-            class="plan__content p-4 d-flex flex-column justify-content-between"
-          >
-            <div>
-              <div class="text-center p-2">
-                <div>
-                  <b
-                    >100 <br />
-                    пользователей</b
-                  >
-                </div>
-                <div class="service-card__title mt-2">959 BYN/мес</div>
-                <a
-                  href="#"
-                  class="btn-masco btn-masco--header rounded-pill btn-fill--up mt-4"
-                >
-                  <span>Создать</span>
-                </a>
-                <div class="mt-4">
-                  <b>3 ТБ</b>
-                </div>
-              </div>
-              <div class="plan__line mt-4"></div>
-              <div class="">
-                <div class="plan__subtitle">
-                  <b>Совместная работа</b>
-                  <ul class="ms-3">
-                    <li class="pt-2">Календарь</li>
-                    <li class="pt-2">Соцсеть компании</li>
-                    <li class="pt-2">Лента</li>
-                    <li class="pt-2">Доски</li>
-                    <li class="pt-2">База знаний</li>
-                  </ul>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Мессенджер</b>
-                  <ul class="ms-3">
-                    <li class="pt-2">Чат</li>
-                    <li class="pt-2">Каналы</li>
-                    <li class="pt-2">Битрикс24 Синк</li>
-                  </ul>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Коллабы</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Задачи и проекты</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>CRM</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>CoPilot</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Онлайн-подпись</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Диск</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Контакт-центр</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Сайты</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Интернет-магазин</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Маркетинг</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Документы Онлайн</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Онлайн-запись</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Сквозная аналитика</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Автоматизация</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>HR: Компания</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Филиалы</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Энтерпрайз-кластер</b>
-                </div>
-                <div class="plan__subtitle">
-                  <b>Энтерпрайз-пакет</b>
-                </div>
-              </div>
+          <div class="plan__content">
+            <div class="plan-description">
+                      <h3 class="plan__title dynamic-value"
+            data-monthly-oblako="439 byn"
+            data-yearly-oblako="352 byn"
+            data-monthly-korobka="500 byn"
+            data-yearly-korobka="400 byn">439 byn</h3>
+              <p><b>1024 ГБ</b> диск</p>
+              <p>100 пользователей</p>
+              <a href="#" class="integrator-btn integrator-btn-purple btn-fill--up">
+                <span>Создать</span>
+              </a>
             </div>
-            <div>
-              <div class="plan__subtitle">
-                <b>Поддержка</b>
+            <div class="plan__info">
+              <div class="accordion-item plan__subtitle">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#home-1-faq-item-18" aria-expanded="false" aria-controls="home-1-faq-item-18">
+                  <h3>Совместная работа</h3>
+                  <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon">
+                  </div>
+                </button>
+                <div id="home-1-faq-item-18" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+                  <div class="accordion-item__body">
+                    <ul>
+                      <li>Календарь</li>
+                      <li>Соцсеть компании</li>
+                      <li>Лента</li>
+                      <li>Доски</li>
+                      <li>База знаний</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item plan__subtitle">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#home-1-faq-item-19" aria-expanded="false" aria-controls="home-1-faq-item-19">
+                  <h3>Мессенджер</h3>
+                  <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon">
+                  </div>
+                </button>
+                <div id="home-1-faq-item-19" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+                  <div class="accordion-item__body">
+                    <ul>
+                      <li>Чат</li>
+                      <li>Каналы</li>
+                      <li>Битрикс24 Синк</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div class="plan__subtitle">
-                <b>Администрирование</b>
+                Коллабы
+              </div>
+              <div class="plan__subtitle">
+                Задачи и проекты
+              </div>
+              <div class="plan__subtitle">
+                CRM
+              </div>
+              <div class="plan__subtitle">
+                CoPilot
+              </div>
+              <div class="plan__subtitle">
+                Онлайн-подпись
+              </div>
+              <div class="plan__subtitle">
+                Диск
+              </div>
+              <div class="plan__subtitle">
+                Контакт-центр
+              </div>
+              <div class="plan__subtitle">
+                Сайты
+              </div>
+              <div class="plan__subtitle">
+                Интернет-магазин
+              </div>
+              <div class="plan__subtitle">
+                Маркетинг
+              </div>
+              <div class="plan__subtitle">
+                Документы онлайн
+              </div>
+              <div class="plan__subtitle plan__subtitle-bold">
+                Онлайн-запись
+              </div>
+              <div class="plan__subtitle plan__subtitle-bold">
+                Сквозная аналитика
+              </div>
+              <div class="plan__subtitle plan__subtitle-bold">
+                Автоматизация
+              </div>
+              <div class="plan__subtitle plan__subtitle-bold">
+                HR: Компания
+              </div>
+              <div class="plan__subtitle plan__subtitle-blue">
+                Поддержка
+              </div>
+              <div class="plan__subtitle plan__subtitle-blue">
+                Администрирование
               </div>
             </div>
           </div>
@@ -886,36 +736,297 @@
       </div>
     </div>
   </div>
+</div>
 
-  <div class="section-padding-120">
-    <div class="container">
-      <div class="promo px-3 px-md-5 pt-5 rounded-3">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-7 col-xxl-6 text-center text-lg-start">
-            <h2 class="content-title heading-md text-black">
-              Бесплатный тариф
-            </h2>
-            <p class="pb-4">
-              Прямо сейчас вы можете испытать беспатный Битрикс24 без
-              ограничения по пользователям
-            </p>
-            <a
-              href="#"
-              class="btn-masco btn-masco--header rounded-pill btn-fill--up mb-5"
-            >
-              <span>Хочу попробовать</span>
-            </a>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Interesting Section
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<div class="integrator-interesting-section padding-bottom-150 padding-top-150" id="feature">
+  <div class="container">
+    <div class="section-heading">
+      <h2 class="integrator-subheading heading-md text-center">
+        Уже используете Битрикс24?
+      </h2>
+      <p class="integrator-text text-center">Тогда вам может быть интересно это</p>
+    </div>
+    <div class="integrator-interesting-points">
+      <div class="interesting-point">
+        <span class="poin-number">
+          01
+        </span>
+        <div class="interesting-image"><img src="{% static '/image/icons/interesting-icon-1.png' %}" alt="image alt"
+            class="inline-svg" /></div>
+        <h3 class="interesting-title">Продление лицензии Битрикс24</h3>
+        <p class="integrator-text">Продлевайте лицензию с Правильными Интеграторами, чтобы продолжать пользоваться
+          привычными преимуществами Битрикс24.</p>
+        <a href="" class="interesting-more">Узнать больше</a>
+      </div>
+      <div class="interesting-point">
+        <span class="poin-number">
+          02
+        </span>
+        <div class="interesting-image"><img src="{% static '/image/icons/interesting-icon-2.png' %}" alt="image alt"
+            class="inline-svg" /></div>
+        <h3 class="interesting-title">Подписка на Маркет Битрикс24</h3>
+        <p class="integrator-text">Расширьте функционал Битрикс24 с подпиской на Маркет. Вы получите дополнительные
+          интеграции с сервисами и увеличение функционала основных инструментов.</p>
+        <a href="" class="interesting-more">Узнать больше</a>
+      </div>
+      <div class="interesting-point">
+        <span class="poin-number">
+          03
+        </span>
+        <div class="interesting-image"><img src="{% static '/image/icons/interesting-icon-3.png' %}" alt="image alt"
+            class="inline-svg" /></div>
+        <h3 class="interesting-title">1C-Битрикс24: Enterprise</h3>
+        <p class="integrator-text">Enterprise — решение для крупного бизнеса от Битрикс24. Интеграция в вашу
+          IT-инфраструктуру, для непрерывной работы портала 24/7.</p>
+        <a href="" class="interesting-more">Узнать больше</a>
+      </div>
+      <div class="interesting-point">
+        <span class="poin-number">
+          04
+        </span>
+        <div class="interesting-image"><img src="{% static '/image/icons/interesting-icon-4.png' %}" alt="image alt"
+            class="inline-svg" /></div>
+        <h3 class="interesting-title">Посмотреть все услуги</h3>
+        <p class="integrator-text">Пакетное и проектное внедрение Битрикс24, поддержка коробочной версии, разработкаи
+          настройка интеграций с Битрикс24 и многое другое для работы вашего Бизнеса.</p>
+        <a href="" class="interesting-more">Узнать больше</a>
+      </div>
+    </div>
+  </div>
+  <div class="integrator-cta-base_over">
+    <img src="{% static '/image/home/three-bubles.png' %}" alt="Bubbles" />
+  </div>
+</div>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Feature Section
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="integrator-feature-section padding-bottom-150 padding-top-150">
+  <div class="container">
+    <div class="section-heading">
+      <h2 class="integrator-subheading heading-md text-center">
+        <span class="primary">Правильный</span> Битрикс24 — который работает на ваш бизнес и <span
+          class="primary">приносит результаты</span> вашему <span class="primary">бизнесу</span>
+      </h2>
+    </div>
+    <div class="integrator-row row--custom" bis_skin_checked="1">
+      <div class="integrator-feature-item" bis_skin_checked="1">
+        <h4 class="integrator-feature__title">01</h4>
+        <div class="integrator-feature-list">
+          <h5>Увеличение продаж</h5>
+          <p>Результат правильного внедрения Битрикс24 — увеличение выручки и прибыли компании</p>
+        </div>
+      </div>
+      <div class="integrator-feature-item" bis_skin_checked="1">
+        <h4 class="integrator-feature__title">02</h4>
+        <div class="integrator-feature-list">
+          <h5>Эффективное управление бизнесом</h5>
+          <p>Аналитика и отчётность позволяет принимать управленческие решения, опираясь на данные</p>
+        </div>
+      </div>
+      <div class="integrator-feature-item" bis_skin_checked="1">
+        <h4 class="integrator-feature__title">03</h4>
+        <div class="integrator-feature-list">
+          <h5>Сокращение издержек</h5>
+          <p>Автоматизация бизнес-процессов, эффективная коммуникация между отделами помогает эффективно использовать
+            рабочее время</p>
+        </div>
+      </div>
+      <div class="integrator-feature-item" bis_skin_checked="1">
+        <h4 class="integrator-feature__title">04</h4>
+        <div class="integrator-feature-list">
+          <h5>Оптимизация расходов на маркетинг</h5>
+          <p>Сквозная аналитика и отчёты помогут оптимизировать рекламные расходы</p>
+        </div>
+      </div>
+      <div class="integrator-feature-item" bis_skin_checked="1">
+        <h4 class="integrator-feature__title">05</h4>
+        <div class="integrator-feature-list">
+          <h5>Повышение лояльности клиентов</h5>
+          <p>Хранение и анализ данных о клиентах позволяет настроить персонализированную коммуникацию с клиентами</p>
+        </div>
+      </div>
+      <div class="integrator-feature-item" bis_skin_checked="1">
+        <h4 class="integrator-feature__title">06</h4>
+        <div class="integrator-feature-list">
+          <h5>Защита персональных данных</h5>
+          <p>Битрикс24 предлагает все необходимые инструменты для соблюдения законодательства о защите персональных
+            данных</p>
+        </div>
+      </div>
+      <div class="cta-base__button">
+        <a href="#" class="integrator-btn btn-fill--up">
+          <span>Начать использовать Битрикс24</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    FAQ Section 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div class="integrator-faq-section padding-bottom-150 integrator-subsection">
+  <div class="container">
+    <div class="section-heading">
+      <h2 class="integrator-subheading heading-md text-center">
+        Частые вопросы
+      </h2>
+    </div>
+    <div class="integrator-faq row row--custom">
+      <div class="integrator-faq-accordion" id="home-1-faq">
+        <div class="accordion-item">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#home-1-faq-item" aria-expanded="true" aria-controls="home-1-faq-item">
+            <h3>Сколько времени потребуется на внедрение Битрикс24?</h3>
+            <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon"></div>
+          </button>
+          <div id="home-1-faq-item" class="accordion-collapse collapse show" data-bs-parent="#home-1-faq">
+            <div class="accordion-item__body">
+              <b>Пакетные (стартовые) внедрения</b> занимают 2-3 месяца. Первые 2
+              недели занимает формирование технического задания и его
+              реализация. А остальное время занимает ввод CRM в эксплуатацию:
+              обучение, ответы на вопросы, внесение правок, формирование
+              привычки у сотрудников компании. При <b>проектном формате работы</b>
+              <a href="#">внедрение Битрикс24</a> может занимать от 1 дня до 6 месяцев.
+            </div>
           </div>
-          <div class="col-12 col-lg-5 col-xxl-6">
-            <img
-              class="promo__img"
-              src="{% static '/image/bitrix/bitrix_try.png' %}"
-              alt="image alt"
-            />
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#home-1-faq-item-2" aria-expanded="false" aria-controls="home-1-faq-item-2">
+            <h3>Какие проблемы могут возникнуть в процессе внедрения?</h3>
+            <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon"></div>
+          </button>
+          <div id="home-1-faq-item-2" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+            <div class="accordion-item__body">
+              - <b>Изменения в бизнес-процессах.</b> Внедрение новой платформы с
+              большой вероятностью потребует изменений в текущих
+              бизнес-процессах. Это может вызвать некоторое сопротивление (в
+              том числе саботаж) и временную нестабильность. Мы поможем вам
+              донести до ваших сотрудников цели внедрения и возможную пользу,
+              которую они сами могут получить - это уменьшит вероятность
+              возникновения данной проблемы.<br /> <br />
+              - <b>Недостаток ресурсов.</b> Внедрение
+              Битрикс24 может потребовать дополнительных (выделенных)
+              человеческих ресурсов, т.е. необходим ответственный сотрудник с
+              вашей стороны. Он будет заниматься внедрением вместе с нами,
+              выступать первой линией поддержки для ваших сотрудников. Если
+              такого нет - мы постараемся выполнить сами эту функцию. Но с ним
+              точно будет лучше.<br /><br />
+              - <b>Отсутствие оперативной поддержки.</b> Если
+              возникают проблемы или вопросы, даже небольшие, крайне важно
+              оперативно получить ответ от компетентного специалиста. В
+              противном случае начнет формироваться "снежный ком", из-за
+              которого в конечном счете внедренной CRM могут перестать
+              пользоваться. Мы окажем вам такую поддержку при любых форматах
+              работы.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#home-1-faq-item-3" aria-expanded="false" aria-controls="home-1-faq-item-3">
+            <h3>Оказываете ли вы поддержку после внедрения?</h3>
+            <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon"></div>
+          </button>
+          <div id="home-1-faq-item-3" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+            <div class="accordion-item__body">
+              Да, после внедрения Битрикс24 <b>мы оказываем консультационную
+                поддержку</b>. Также у нас <b>есть услуга по сопровождению</b>, в рамках
+              которой мы всегда готовы помочь с решением ваших задач,
+              обучением сотрудников, донастройкой Битрикс24.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#home-1-faq-item-6" aria-expanded="false" aria-controls="home-1-faq-item-4">
+            <h3>Предоставляете ли гарантию на свои услуги?</h3>
+            <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon"></div>
+          </button>
+          <div id="home-1-faq-item-6" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+            <div class="accordion-item__body">
+              Да, <b>мы предоставляем гарантию</b>. Если речь идет о проектной
+              работе, то в течении 14 дней после ввода в эксплуатацию мы можем
+              внести любые правки в рамках технического задания. Если по
+              истечению 14 дней возникают проблемы в эксплуатации настроек, и
+              эти проблемы возникли не из-за того, что обновился функционал
+              или кто-то что-то сломал - мы также внесем все необходимые
+              правки.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#home-1-faq-item-5" aria-expanded="false" aria-controls="home-1-faq-item-5">
+            <h3>Какие интеграции с другими системами можно реализовать?</h3>
+            <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon"></div>
+          </button>
+          <div id="home-1-faq-item-5" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+            <div class="accordion-item__body">
+              <b>Любые</b>. С большим количеством сервисов <b>есть готовые интеграци</b>и с
+              помощью приложений из маркетплейса Битрикс24. А там, где готовых
+              решений нет - можно разработать свою, т.к. у Битрикс24 <b>есть
+                открытый API</b>. Но прежде мы все таки постараемся найти готовое
+              решение.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#home-1-faq-item-4" aria-expanded="false" aria-controls="home-1-faq-item-4">
+            <h3>Как обеспечивается безопасность данных в Битрикс24?</h3>
+            <div class="accordion-button__icon"><img src="{% static '/image/icons/arrow-icon.png' %}" alt="icon"></div>
+          </button>
+          <div id="home-1-faq-item-4" class="accordion-collapse collapse" data-bs-parent="#home-1-faq">
+            <div class="accordion-item__body">
+              <b>Для облачных Битрикс24:</b> <br />
+              Для обеспечения бесперебойной работы
+              сервиса используются два независимых датацентра в Республике
+              Беларусь. Включена автоматическая и полуавтоматическая реакция
+              на аварийные ситуации. Все соединения с «Битрикс24» производятся
+              через шифрованный обмен данными 256bit. Максимальная защита от
+              самых разнообразных угроз безопасности обеспечивается
+              проактивным фильтром (WAF - Web Application Firewal).<br />
+              Подробнее можно почитать здесь: <a href="#">Безопасность Битрикс24</a> <br />
+              <b>Для коробочных Битрикс24:</b> <br /><br />
+              Все зависит от вас и ваших решений. Со своей стороны
+              мы предлагаем размещение на сертифицированном Битриксом
+              хостинге, предлагаем качественную и регулярную техническую
+              поддержку от наших партнеров.
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~
+     CTA Base 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="integrator-cta-base">
+  <div class="container">
+    <div class="integrator-cta-base__wrapper">
+      <div class="integrator-cta-base__text-block">
+        <h2 class="heading-md">Попробуйте Битрикс24 <span class="primary">бесплатно</span>, а мы поможем с внедрением
+        </h2>
+      </div>
+      <div class="cta-base__button">
+        <a href="#" class="integrator-btn btn-fill--up">
+          <span>Попробовать бесплатно</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="integrator-cta-base_over">
+    <img src="{% static '/image/cta/bubble.png' %}" alt="Bubbles" />
   </div>
 </div>
 
