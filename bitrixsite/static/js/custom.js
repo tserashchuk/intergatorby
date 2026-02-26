@@ -1,60 +1,49 @@
 $(document).ready(function () {
-  // Nice Select Initialization
-  // $('select').niceSelect();
   AOS.init({
     once: true,
     duration: 1000,
-    disable: function () {
-      var maxWidth = 991;
-      return window.innerWidth < maxWidth;
-    }
+    disable: function () { return window.innerWidth < 991; }
   });
-  // Pricing Plan Change Trigger
-  function pricingTrigger() {
-    $("[data-plan-active]").each(function () {
-      var id = $(this).attr("data-plan-id");
-      var plan = $(this).attr("data-plan-active");
-      if (plan == "monthly") {
-        $("[data-pricing-trigger='" + id + "'][data-target='monthly']")?.addClass("active");
-        $("[data-pricing-trigger='" + id + "'][data-target='yearly']")?.removeClass("active");
-        $("[data-pricing-trigger='" + id + "'].toggle")?.attr("data-target", "yearly");
-        $("[data-pricing-trigger='" + id + "'].toggle")?.removeClass("active");
-      } else if (plan == "yearly") {
-        $("[data-pricing-trigger='" + id + "'][data-target='monthly']")?.removeClass("active");
-        $("[data-pricing-trigger='" + id + "'][data-target='yearly']")?.addClass("active");
-        $("[data-pricing-trigger='" + id + "'].toggle")?.addClass("active");
-        $("[data-pricing-trigger='" + id + "'].toggle")?.attr("data-target", "monthly");
-      }
 
-    })
-    $('[data-pricing-trigger]').on('click', function (e) {
-      var id = $(e.target).attr('data-pricing-trigger');
-      var target = $(e.target).attr('data-target');
-      // $(e.target).addClass('active').siblings().removeClass('active');
-      // $("[data-pricing-trigger][data-target='yearly'].active").removeClass("active");
-      $("[data-plan-id='" + id + "'] .dynamic-value").each(function () {
-        let yearPrice = $(this).attr('data-yearly');
-        let monthPrice = $(this).attr('data-monthly');
+  function updatePricing(planBlock) {
+    var period = planBlock.attr('data-plan-active');          // monthly / yearly
+    var planType = planBlock.attr('data-plan-active-obl');    // oblako / korobka
 
-        if (target == 'monthly') {
-          $(this).text(monthPrice);
-          $("[data-pricing-trigger][data-target='monthly']:not(.toggle)").addClass("active");
-          $("[data-pricing-trigger][data-target='yearly']:not(.toggle)").removeClass("active");
-          $("[data-pricing-trigger].toggle")?.removeClass("active");
-          $("[data-pricing-trigger].toggle").attr("data-target", "yearly");
-        }
-        if (target == 'yearly') {
-          $(this).text(yearPrice);
-          $("[data-pricing-trigger][data-target='monthly']:not(.toggle)").removeClass("active");
-          $("[data-pricing-trigger][data-target='yearly']:not(.toggle)").addClass("active");
-          $("[data-pricing-trigger].toggle")?.removeClass("active");
-          $("[data-pricing-trigger].toggle")?.addClass("active")
-          $("[data-pricing-trigger].toggle").attr("data-target", "monthly");
-        }
-      });
+    planBlock.find('.dynamic-value').each(function () {
+      var dataAttr = 'data-' + period + '-' + planType;
+      var value = $(this).attr(dataAttr);
+
+      // fallback на облако, если коробка не задана
+      if (!value) value = $(this).attr('data-' + period + '-oblako');
+
+      if (value) $(this).text(value);
     });
   }
-  pricingTrigger();
+
+  // Инициализация всех планов
+  $('[data-plan-id]').each(function () {
+    var $plan = $(this);
+    if (!$plan.attr('data-plan-active')) $plan.attr('data-plan-active', 'monthly');
+    if (!$plan.attr('data-plan-active-obl')) $plan.attr('data-plan-active-obl', 'oblako');
+    updatePricing($plan);
+  });
+
+  // Клик по переключателям
+  $('[data-pricing-trigger]').on('click', function () {
+    var trigger = $(this).attr('data-pricing-trigger');
+    var target = $(this).attr('data-target');
+    var planBlock = $('[data-plan-id="' + trigger + '"]');
+
+    if (target === 'monthly' || target === 'yearly') {
+      planBlock.attr('data-plan-active', target);
+      $(this).addClass('active').siblings().removeClass('active');
+    } else if (target === 'oblako' || target === 'korobka') {
+      planBlock.attr('data-plan-active-obl', target);
+      $(this).addClass('active').siblings().removeClass('active');
+    }
+
+    updatePricing(planBlock);
+  });
 
   inlineSVG.init({
     svgSelector: '.inline-svg', // the class attached to all images that should be inlined
@@ -110,6 +99,60 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function() {
+  // Функция обновления цены
+  function updatePrice(planBlock) {
+    var planType = planBlock.attr('data-plan-active-obl'); // oblako / korobka
+
+    planBlock.find('.plan').each(function() {
+      var $plan = $(this);
+      var $dynamic = $plan.find('.dynamic-value, .plan__title'); // ищем все цены
+      var $activeUser = $plan.find('.price__counts a.white-active');
+
+      if ($activeUser.length) {
+        var users = $activeUser.data('users'); // получаем выбранное количество пользователей
+        var attrName = 'data-' + planType + '-' + users; // формируем атрибут
+        var value = $dynamic.attr(attrName);
+
+        if (!value) value = $dynamic.text(); // fallback на существующую цену
+        $dynamic.text(value);
+      }
+    });
+  }
+
+  // Инициализация блоков при загрузке
+  $('[data-plan-id]').each(function() {
+    var $planBlock = $(this);
+    if (!$planBlock.attr('data-plan-active-obl')) $planBlock.attr('data-plan-active-obl','oblako');
+    updatePrice($planBlock);
+  });
+
+  // Переключатель Облако / Коробка
+  $('[data-pricing-trigger]').on('click', function() {
+    var target = $(this).attr('data-target'); // oblako / korobka
+    var planBlock = $('[data-plan-id="' + $(this).attr('data-pricing-trigger') + '"]');
+    planBlock.attr('data-plan-active-obl', target);
+
+    // меняем активный класс на переключателе
+    $(this).addClass('active').siblings().removeClass('active');
+
+    updatePrice(planBlock);
+  });
+
+  // Переключение количества пользователей
+  $('.price__counts a').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var planBlock = $this.closest('[data-plan-id]');
+
+    // меняем активный класс у кнопок
+    $this.addClass('white-active').siblings().removeClass('white-active');
+
+    updatePrice(planBlock);
+  });
+});
+
+
 $(window).on('load', function () {
   $('#clock').countdown('2024/10/10', function (event) {
     var $this = $(this).html(event.strftime(''
@@ -144,106 +187,65 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function () {
-//   const $cloudBtn = $(".cloud");
-//   const $boxBtn = $(".blocks");
-//   const $plansCloud = $(".plans-4");
-//   const $plansBox = $(".plans-3");
-//   const $pricingControl = $(".price");
 
-//   function showCloudPlans() {
-//     $plansCloud.show();
-//     $plansBox.hide();
-//     $pricingControl.css("visibility", "visible");
+// $(document).ready(function() {
 
-//     $cloudBtn.addClass("btn-masco--header").removeClass("btn-outline-l08");
-//     $boxBtn.addClass("btn-outline-l08").removeClass("btn-masco--header");
+//   function applyPackage($btn) {
+
+//     // Снять активность со всех
+//     $("[data-package]")
+//       .removeClass("btn-primary-l08")
+//       .addClass("btn-outline-l08")
+//       .removeClass("active");
+
+//     // Назначить активной нужные классы
+//     $btn
+//       .removeClass("btn-outline-l08")
+//       .addClass("btn-primary-l08")
+//       .addClass("active");
+
+//     const titles = JSON.parse($btn.attr("data-titles"));
+//     const texts = JSON.parse($btn.attr("data-texts"));
+//     const ctaTitle = $btn.attr("data-cta-title");
+//     const ctaSubTitle = $btn.attr("data-cta-subtitle");
+
+//     const $cards = $(".feature-card");
+
+//     $cards.each(function(i) {
+//       if (titles[i]) {
+//         $(this).show();
+
+//         $(this).find("[data-title]").text(titles[i]);
+
+//         let raw = texts[i] || "";
+//         let items = raw
+//           .split(".")
+//           .map(s => s.trim())
+//           .filter(s => s.length > 0);
+
+//         let ul = '<ul class="list-style-bullet">' +
+//           items.map(t => `<li>${t}</li>`).join("") +
+//           '</ul>';
+
+//         $(this).find("[data-text]").html(ul);
+
+//       } else {
+//         $(this).hide();
+//       }
+//     });
+
+//     $(".cta-title").text(ctaTitle);
+//     $(".cta-subtitle").text(ctaSubTitle);
 //   }
 
-//   function showBoxPlans() {
-//     $plansCloud.hide();
-//     $plansBox.show();
-//     $pricingControl.css("visibility", "hidden");
-
-//     $boxBtn.addClass("btn-masco--header").removeClass("btn-outline-l08");
-//     $cloudBtn.addClass("btn-outline-l08").removeClass("btn-masco--header");
-//   }
-
-//   // Скрываем коробочную версию по умолчанию
-//   $plansBox.hide();
-//   // Оставляем переключатель видимым (т.к. по умолчанию облачная версия выбрана)
-
-//   $cloudBtn.on("click", function (e) {
+//   // Клик
+//   $("[data-package]").on("click", function(e) {
 //     e.preventDefault();
-//     showCloudPlans();
+//     applyPackage($(this));
 //   });
 
-//   $boxBtn.on("click", function (e) {
-//     e.preventDefault();
-//     showBoxPlans();
-//   });
+//   // Активируем "БАЗА" при загрузке
+//   applyPackage($('[data-package="base"]'));
 // });
-
-
-
-$(document).ready(function() {
-
-  function applyPackage($btn) {
-
-    // Снять активность со всех
-    $("[data-package]")
-      .removeClass("btn-primary-l08")
-      .addClass("btn-outline-l08")
-      .removeClass("active");
-
-    // Назначить активной нужные классы
-    $btn
-      .removeClass("btn-outline-l08")
-      .addClass("btn-primary-l08")
-      .addClass("active");
-
-    const titles = JSON.parse($btn.attr("data-titles"));
-    const texts = JSON.parse($btn.attr("data-texts"));
-    const ctaTitle = $btn.attr("data-cta-title");
-    const ctaSubTitle = $btn.attr("data-cta-subtitle");
-
-    const $cards = $(".feature-card");
-
-    $cards.each(function(i) {
-      if (titles[i]) {
-        $(this).show();
-
-        $(this).find("[data-title]").text(titles[i]);
-
-        let raw = texts[i] || "";
-        let items = raw
-          .split(".")
-          .map(s => s.trim())
-          .filter(s => s.length > 0);
-
-        let ul = '<ul class="list-style-bullet">' +
-          items.map(t => `<li>${t}</li>`).join("") +
-          '</ul>';
-
-        $(this).find("[data-text]").html(ul);
-
-      } else {
-        $(this).hide();
-      }
-    });
-
-    $(".cta-title").text(ctaTitle);
-    $(".cta-subtitle").text(ctaSubTitle);
-  }
-
-  // Клик
-  $("[data-package]").on("click", function(e) {
-    e.preventDefault();
-    applyPackage($(this));
-  });
-
-  // Активируем "БАЗА" при загрузке
-  applyPackage($('[data-package="base"]'));
-});
 
 

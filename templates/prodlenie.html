@@ -137,7 +137,7 @@
     Price Section
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<div class="integrator-price-section padding-bottom-150 padding-top-150">
+<div class="integrator-price-section padding-bottom-150 integrator-subsection">
   <div class="container">
     <div class="integrator-section-heading">
       <h2 class="integrator-subheading heading-md text-center">
@@ -146,15 +146,14 @@
       <p class="integrator-text text-center">Цены указаны за всю компанию, а не за отдельных пользователей</p>
     </div>
     <div class="integrator-price">
-      <div class="integrator_pricing-control-block price" bis_skin_checked="1">
-        <div class="pricing-control" bis_skin_checked="0">
-          <span data-pricing-trigger="pricing-0" data-target="oblako" class="active">Облачная версия</span>
-          <span data-pricing-trigger="pricing-0" data-target="korobka" class="">Коробочная версия</span>
+      <div class="integrator_pricing-control-block price">
+        <div class="pricing-control">
+          <span data-pricing-trigger="pricing-1" data-target="oblako" class="active">Облачная версия</span>
+          <span data-pricing-trigger="pricing-1" data-target="korobka">Коробочная версия</span>
         </div>
-        <div class="pricing-control" bis_skin_checked="1">
-          <span data-pricing-trigger="pricing-1" data-target="monthly" class="active">Купить на месяц</span>
-          <span data-pricing-trigger="pricing-1" data-target="yearly" class="">Купить на год</span>
-          <div class="sale-image"><img src="{% static '/image/sale.png' %}" alt="sale"></div>
+        <div class="pricing-control">
+          <span data-pricing-trigger="pricing-1" data-target="monthly" class="active">Купить на месяц</span>
+          <span data-pricing-trigger="pricing-1" data-target="yearly">Купить на год</span>
         </div>
       </div>
       <div class="plans-4 mt-5" data-plan-id="pricing-1" data-plan-active="monthly" data-plan-active="oblako">
@@ -243,7 +242,11 @@
           </div>
           <div class="plan__content">
             <div class="plan-description">
-              <h3 class="plan__title dynamic-value" data-yearly="64 byn" data-monthly="80 byn">80 byn</h3>
+              <h3 class="plan__title dynamic-value"
+            data-monthly-oblako="80 byn"
+            data-yearly-oblako="64 byn"
+            data-monthly-korobka="100 byn"
+            data-yearly-korobka="85 byn">80 byn</h3>
               <p><b>24 ГБ</b> диск</p>
               <p>5 пользователей</p>
               <a href="#" class="integrator-btn btn-fill--up">
@@ -327,7 +330,11 @@
           </div>
           <div class="plan__content">
             <div class="plan-description">
-              <h3 class="plan__title dynamic-value" data-yearly="176 byn" data-monthly="219 byn">219 byn</h3>
+                      <h3 class="plan__title dynamic-value"
+            data-monthly-oblako="219 byn"
+            data-yearly-oblako="176 byn"
+            data-monthly-korobka="250 byn"
+            data-yearly-korobka="200 byn">219 byn</h3>
               <p><b>100 ГБ</b> диск</p>
               <p>50 пользователей</p>
               <a href="#" class="integrator-btn btn-fill--up">
@@ -420,7 +427,11 @@
           </div>
           <div class="plan__content">
             <div class="plan-description">
-              <h3 class="plan__title dynamic-value" data-yearly="352 byn" data-monthly="439 byn">439 byn</h3>
+                      <h3 class="plan__title dynamic-value"
+            data-monthly-oblako="439 byn"
+            data-yearly-oblako="352 byn"
+            data-monthly-korobka="500 byn"
+            data-yearly-korobka="400 byn">439 byn</h3>
               <p><b>1024 ГБ</b> диск</p>
               <p>100 пользователей</p>
               <a href="#" class="integrator-btn integrator-btn-purple btn-fill--up">
