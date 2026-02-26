@@ -645,6 +645,31 @@ span.primary {
     object-position: top right;
 }
 
+/*CAPACITY*/
+
+.integrator-capacity-section {
+    background-color: var(--bg-fon-gray);
+    position: relative;
+}
+
+.integrator-capacity-section a {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.integrator-capacity-section .container {
+    position: relative;
+    z-index: 10;
+}
+
+.integrator-capacity {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    row-gap: 40px;
+}
+
 /*PRICE*/ 
 
 .integrator-price {
@@ -1977,7 +2002,8 @@ span.hash {
     }
 
     .integrator-extention-points, 
-    .integrator-interesting-points {
+    .integrator-interesting-points,
+    .integrator-capacity {
         grid-template-columns: repeat(1, 1fr);
     }
 
