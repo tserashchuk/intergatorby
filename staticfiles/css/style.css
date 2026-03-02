@@ -16940,6 +16940,19 @@ Common: Spacing Gutters
   }
 }
 
+.integrator-brand-section__logo .slidercontainer {
+    & .slider {
+        & .logos {
+            .fab {
+                width: fit-content;
+                animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+                margin-left: 80px;
+                filter: grayscale(1);
+            }
+        }
+    }
+}
+
 @keyframes slidein {
   from {
     transform: translate3d(0, 0, 0);

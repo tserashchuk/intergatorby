@@ -99,12 +99,12 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Функция обновления цены
   function updatePrice(planBlock) {
     var planType = planBlock.attr('data-plan-active-obl'); // oblako / korobka
 
-    planBlock.find('.plan').each(function() {
+    planBlock.find('.plan').each(function () {
       var $plan = $(this);
       var $dynamic = $plan.find('.dynamic-value, .plan__title'); // ищем все цены
       var $activeUser = $plan.find('.price__counts a.white-active');
@@ -121,14 +121,14 @@ $(document).ready(function() {
   }
 
   // Инициализация блоков при загрузке
-  $('[data-plan-id]').each(function() {
+  $('[data-plan-id]').each(function () {
     var $planBlock = $(this);
-    if (!$planBlock.attr('data-plan-active-obl')) $planBlock.attr('data-plan-active-obl','oblako');
+    if (!$planBlock.attr('data-plan-active-obl')) $planBlock.attr('data-plan-active-obl', 'oblako');
     updatePrice($planBlock);
   });
 
   // Переключатель Облако / Коробка
-  $('[data-pricing-trigger]').on('click', function() {
+  $('[data-pricing-trigger]').on('click', function () {
     var target = $(this).attr('data-target'); // oblako / korobka
     var planBlock = $('[data-plan-id="' + $(this).attr('data-pricing-trigger') + '"]');
     planBlock.attr('data-plan-active-obl', target);
@@ -140,7 +140,7 @@ $(document).ready(function() {
   });
 
   // Переключение количества пользователей
-  $('.price__counts a').on('click', function(e) {
+  $('.price__counts a').on('click', function (e) {
     e.preventDefault();
     var $this = $(this);
     var planBlock = $this.closest('[data-plan-id]');
@@ -149,6 +149,50 @@ $(document).ready(function() {
     $this.addClass('white-active').siblings().removeClass('white-active');
 
     updatePrice(planBlock);
+  });
+});
+
+$(document).ready(function () {
+  function updateFeatures(container) {
+    var activePackage = container.attr('data-active-package');
+
+    container.find('.integrator-feature-item').each(function () {
+      var $item = $(this);
+
+      // Проверяем есть ли нужный data-атрибут
+      if ($item.is('[data-' + activePackage + ']')) {
+        $item.show();
+      } else {
+        $item.hide();
+      }
+    });
+  }
+
+  // Инициализация
+  var $featureContainer = $('.integrator-row');
+
+  if (!$featureContainer.attr('data-active-package')) {
+    $featureContainer.attr('data-active-package', 'base');
+  }
+
+  updateFeatures($featureContainer);
+
+  // Клик по кнопкам
+  $('.navigation-list .btn').on('click', function () {
+
+    var selectedPackage = $(this).attr('data-package');
+
+    // Меняем активный класс
+    $(this).closest('li')
+      .addClass('active')
+      .siblings()
+      .removeClass('active');
+
+    // Обновляем атрибут контейнера
+    $featureContainer.attr('data-active-package', selectedPackage);
+
+    // Обновляем список
+    updateFeatures($featureContainer);
   });
 });
 
