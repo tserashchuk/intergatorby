@@ -805,6 +805,7 @@ span.primary-yellow {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 750px;
 }
 
 .integrator-help__collage-img {
@@ -1788,6 +1789,51 @@ img.img-top-large {
     position: relative;
 }
 
+.point-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.point-obuch {
+    gap: 40px;
+}
+
+.point-obuch .poin-number {
+    margin-bottom: 0 !important;
+}
+
+.point-flex div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.point-flex .interesting-point-img {
+    max-width: 585px;
+    position: relative;
+    bottom: -60px;
+}
+
+.interesting-point-img {
+    width: 100%;
+    max-height: 311px;
+    border: 6px solid var(--bg-line-text);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.interesting-point-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
 .point-color {
     background: linear-gradient(180deg,
             #E7EBFB 0%,
@@ -1852,6 +1898,21 @@ img.img-top-large {
 
 .integrator-extention-section .integrator-section-heading {
     max-width: 818px;
+}
+
+.integrator-choise-list {
+    margin: 60px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: fit-content;
+}
+
+.integrator-choise-list h3 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--btn-dark-primary);
 }
 
 .integrator-extention-points {
@@ -2490,6 +2551,20 @@ span.hash {
     .interesting-point .poin-number {
         margin-bottom: 20px;
     }
+    
+    .point-flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .point-flex div {
+        gap: 40px;
+    }
+
+    .point-flex .interesting-point-img {
+        max-width: 100%;
+        bottom: 0;
+    }
 
     .integrator-extention-points,
     .integrator-interesting-points,
@@ -2503,7 +2578,8 @@ span.hash {
         align-items: center;
     }
     
-    .integrator-help__collage-img {
+    .integrator-help__collage-img,
+    .integrator-help__collage {
         max-width: 100%;
     }
 
