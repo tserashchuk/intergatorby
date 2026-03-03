@@ -204,6 +204,8 @@
 
 .integrator-cta-inner .cta-base__button {
     margin-top: 40px;
+    display: flex;
+    gap: 15px;
 }
 
 .integrator-cta-base__wrapper {
@@ -413,6 +415,24 @@ span.primary {
 
 .integrator-numbers__sigle-block {
     margin-bottom: 20px;
+}
+
+.integrator-numbers__four-block {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 34px;
+}
+
+.integrator-numbers__four-block  .integrator-top__certificat {
+    height: auto;
+}
+
+.integrator-numbers__four-block  .integrator-top__certificat img {
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+    object-position: top;
 }
 
 .integrator-numbers__sigle-block .integrator-numbers__image {
@@ -2353,7 +2373,8 @@ span.hash {
     }
 
     .integrator-desctiption-list,
-    .integrator-help-points {
+    .integrator-help-points,
+    .integrator-numbers__four-block {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -2533,7 +2554,8 @@ span.hash {
         margin-top: 20px;
     }
 
-    .integrator-interesting-points {
+    .integrator-interesting-points,
+    .integrator-numbers__four-block {
         grid-template-columns: repeat(1, 1fr);
     }
 
