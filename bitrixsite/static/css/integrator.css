@@ -797,6 +797,29 @@ span.primary-yellow {
 
 /*HELP*/
 
+.integrator-help .integrator-row {
+    gap: 10px;
+}
+
+.integrator-help__collage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.integrator-help__collage-img {
+    max-width: 530px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.integrator-help__collage-img img {
+    width: 100%;
+    height: 100%;
+    object-position: top;
+}
+
 .help-section-descr {
     font-weight: 500;
     font-size: 25px;
@@ -827,6 +850,17 @@ span.primary-yellow {
 .integrator-help-points-full {
     width: 100%;
     margin: 20px 0;
+}
+
+.integrator-help__collage .integrator-help-points-full {
+    width: 100%;
+    margin: 0;
+}
+
+.integrator-help-points-full .integrator-cta-base_over {
+    top: 0;
+    right: 0;
+    bottom: auto;
 }
 
 .integrator-help-points-full .interesting-point {
@@ -1751,6 +1785,7 @@ img.img-top-large {
     background-color: var(--bg-fon-text);
     border-radius: 12px;
     padding: 20px 30px;
+    position: relative;
 }
 
 .point-color {
@@ -1780,6 +1815,10 @@ img.img-top-large {
 
 .interesting-point .poin-number {
     margin-bottom: 70px;
+}
+
+.integrator-help .interesting-point .poin-number {
+    margin-bottom: 80px;
 }
 
 .interesting-title {
@@ -2462,6 +2501,10 @@ span.hash {
     
     .integrator-help-points-full .interesting-point {
         align-items: center;
+    }
+    
+    .integrator-help__collage-img {
+        max-width: 100%;
     }
 
     .extention-points-three {
