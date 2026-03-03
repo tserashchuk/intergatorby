@@ -1,45 +1,51 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="inner_banner-section">
-  <img class="inner_banner-background-image" src={% static '/image/common/inner-bg.png' %} alt="image alt">
+
+<div class="integrator-section integrator-header__plus">
   <div class="container">
-    <div class="inner_banner-content-block">
-      <h3 class="inner_banner-title">Отзывы наших клиентов</h3>
-      <ul class="banner__page-navigator">
-        <li>
-          <a href="/">Главная</a>
-        </li>
-        <li class="active">
-          <a href="/about">
-            Отзывы
-          </a>
-        </li>
-      </ul>
+    <div class="content">
+      <div class="content-text-block">
+        <h1 class="integrator-heading heading-xxl">Доверие, подтвержденное результатами</h1>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="about_banner-section">
-  <div class="container">
-    <div class="row justify-content-center row--custom">
-      <div class="col-12">
-        <div class="row banner_image-row padding-top-100">
-          <div class="col-xs-4 col-7">
-            <div class="single-image-1">
-              <img src={% static '/image/about/banner-image-1.png' %} alt="alternative text">
-            </div>
-          </div>
-          <div class="col-xs-4 col-7">
-            <div class="single-image-2">
-              <img src={% static '/image/about/banner-image-2.png' %} alt="alternative text">
-            </div>
-          </div>
-          <div class="col-xs-4 col-7">
-            <div class="single-image-3">
-              <img src={% static '/image/about/banner-image-3.png' %} alt="alternative text">
-            </div>
-          </div>
+    <div class="review-logo-subsection">
+      <div class="review-logo-descr">
+        <div class="integrator-widget-item">
+          <h4 class="integrator-widget__title">Более</h4>
+          <span>100</span>
+          <p>компаний выбрали Правильных интеграторов</p>
+        </div>
+        <div class="integrator-widget-item">
+          <span>91%</span>
+          <p>успешного внедрения Битрикс24</p>
+        </div>
+      </div>
+      <div class="review-logo">
+        <div class="review-logo-item" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img class="icon-brand" src={% static '/image/home/2.png' %} alt="brand-logo">
+        </div>
+        <div class="review-logo-item" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img class="icon-brand" src={% static '/image/home/3.png' %} alt="brand-logo">
+        </div>
+        <div class="review-logo-item" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img class="icon-brand" src={% static '/image/home/4.png' %} alt="brand-logo">
+        </div>
+        <div class="review-logo-item" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img class="icon-brand" src={% static '/image/home/5.png' %} alt="brand-logo">
+        </div>
+        <div class="review-logo-item" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img class="icon-brand" src={% static '/image/home/6.png' %} alt="brand-logo">
+        </div>
+        <div class="review-logo-item" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img class="icon-brand" src={% static '/image/home/7.png' %} alt="brand-logo">
+        </div>
+        <div class="review-logo-item" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img class="icon-brand" src={% static '/image/home/6.png' %} alt="brand-logo">
+        </div>
+        <div class="review-logo-item" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
+          <img class="icon-brand" src={% static '/image/home/7.png' %} alt="brand-logo">
         </div>
       </div>
     </div>
@@ -47,79 +53,30 @@
 </div>
 
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1 : Brand Section
-~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="brand-section">
-  <div class="container">
-    <div class="home-6_brands-wrapper-inner">
-      <div class="slidercontainer h-100">
-        <div class="row align-items-center h-100">
-          <div class="slidercontainer rounded">
-            <div class="brand-heading">
-              <h3 class="brand-heading__title">
-                Более 100 компаний выбрали Правильных интеграторов
-              </h3>
-            </div>
-            <div class="slider">
-              <div class="logos brands-wrapper">
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/1.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/2.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/3.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/4.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/5.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/6.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/7.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/8.png' %} alt="brand-logo">
-                </div>
-                <!-- <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                      <img class="icon-brand" src={% static '/image/home/9.png'%} alt="brand-logo">
-                    </div> -->
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/10.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/11.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/12.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/13.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/14.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/15.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/16.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/17.png' %} alt="brand-logo">
-                </div>
-                <div class="single-brand fab" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="800">
-                  <img class="icon-brand" src={% static '/image/home/18.png' %} alt="brand-logo">
-                </div>
-              </div>
-            </div>
-          </div>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Team Section 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="integrator-team-section padding-bottom-150" bis_skin_checked="1">
+  <div class="container" bis_skin_checked="1">
+    <div class="content" bis_skin_checked="1">
+      <div class="content-text-block" bis_skin_checked="1">
+        <h2 class="integrator-subheading integrator-review-heading heading-md">Что говорят о работе с нами наши клиенты
+        </h2>
+      </div>
+    </div>
+    <div class="integrator-reviews">
+      <div class="integrator-review-point">
+        <img src="" alt="Roman">
+        <div class="qoute-autor">
+          <p class="name">Дмитрий Постников</p>
+          <p class="business-name">CEO, Founder Производственной компании МагКомпозит</p>
+        </div>
+      </div>
+      <div class="integrator-review-point">
+        <img src="" alt="Inna">
+        <div class="qoute-autor">
+          <p class="name">Вера</p>
+          <p class="business-name">Заместитель директора агентства коммерческой недвижимости "Авеню"</p>
         </div>
       </div>
     </div>
@@ -127,102 +84,93 @@
 </div>
 
 
-
-<div class="about_content-section bg-light-2 section-padding-120 ">
-
-  {% for review in reviews %}
-  <div class="container section-padding-bottom">
-    <div class="row row--custom ">
-      <div class="col-xxl-6 col-lg-5 col-md-6 col-7">
-        <div class="about_content-image-block ">
-          {% if review.review_video == '' %}
-          <div class="about_content-image content-image--mobile-width">
-            <img src={{ review.review_image.url }} alt="alternative text">
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Review Section 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="integrator-review-section padding-bottom-150" bis_skin_checked="1">
+  <div class="container" bis_skin_checked="1">
+    <div class="content" bis_skin_checked="1">
+      <div class="content-text-block">
+        <h2 class="integrator-subheading heading-md">
+          Нам говорят «Спасибо»
+        </h2>
+      </div>
+    </div>
+    <div class="integrator-reviews">
+      <div class="integrator-review-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <div class="review-item__info">
+          <div class="review__image-block">
+            <img class="icon-brand" src={% static '/image/home/1.png' %} alt="brand-logo">
+            <a href="#"><img src="{% static '/image/about/pdf.png' %}" alt="pdf" class="pdf" /></a>
           </div>
-          {% endif %}
-          {% if review.review_video and review.review_image_video %}
-
-          <div class="about_content-image content-image--mobile-width">
-            <img src={{ review.review_image_video.url }} alt="alternative text">
+          <div class="review__text-block">
+            <p class="integrator-text">Сотрудничество с этой компанией стало для нас настоящим открытием!
+              Их профессионализм
+              и внимание к деталям впечатляют.</p>
           </div>
-          <a href="{{review.review_video}}" data-fancybox="" class="btn-play absolute-center btn-play">
-            <i class="fa-solid fa-play"></i>
-          </a>
-          {% endif %}
+        </div>
+        <div class="qoute-autor">
+          <p class="name">А.Ф. Смирнова</p>
+          <p class="business-name">Менеджер, Компания Б</p>
         </div>
       </div>
-      <div class="col-xxl-6 col-lg-7 col-md-10 col-auto aos-init aos-animate" data-aos-duration="1000"
-        data-aos="fade-left">
-        <div class="content">
-          <div class="testimonial-widget-2__user-block gap-3" bis_skin_checked="1">
-            <img src="{% static '/image/icons/h03-feature-2.svg' %}" alt="image alt">
-            <div class="author-info" bis_skin_checked="1">
-              <h2 class="content-title heading-md text-black">{{ review.review_name }}</h2>
-            </div>
+
+      <div class="integrator-review-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <div class="review-item__info">
+          <div class="review__image-block">
+            <img class="icon-brand" src={% static '/image/home/1.png' %} alt="brand-logo">
+            <a href="#"><img src="{% static '/image/about/pdf.png' %}" alt="pdf" class="pdf" /></a>
           </div>
-          <div class="content-testimonial">
-            <div class="content-testimonial__text">
-              <p>
-                «{{ review.review_text}}»
-              </p>
-            </div>
-            <div class="content-testimonial__user-metadata">
-              <!-- <div class="content-testimonial__user">
-                <img src={% static '/image/about/user-image.png' %} alt="alternative text">
-              </div> -->
-              <div class="content-testimonial__body">
-                <h4 class="content-testimonial__user-name">{{ review.review_person}}</h4>
-                <span>{{ review.review_company}}</span>
-              </div>
-            </div>
+          <div class="review__text-block">
+            <p class="integrator-text">Сотрудничество с этой компанией стало для нас настоящим открытием!
+              Их профессионализм
+              и внимание к деталям впечатляют.</p>
+            <p class="integrator-text">Сотрудничество с этой компанией стало для нас настоящим открытием!</p>
           </div>
+        </div>
+        <div class="qoute-autor">
+          <p class="name">А.Ф. Смирнова</p>
+          <p class="business-name">Менеджер, Компания Б</p>
+        </div>
+      </div>
+
+      <div class="integrator-review-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <div class="review-item__info">
+          <div class="review__image-block">
+            <img class="icon-brand" src={% static '/image/home/1.png' %} alt="brand-logo">
+          </div>
+          <div class="review__text-block">
+            <p class="integrator-text">Сотрудничество с этой компанией стало для нас настоящим открытием!
+              Их профессионализм
+              и внимание к деталям впечатляют.</p>
+          </div>
+        </div>
+        <div class="qoute-autor">
+          <p class="name">А.Ф. Смирнова</p>
+          <p class="business-name">Менеджер, Компания Б</p>
         </div>
       </div>
     </div>
   </div>
-  {% endfor %}
-
-  <div class="pagination" bis_skin_checked="1">
-    <!-- Pagination -->
-    <div class="pagination-wrapper" bis_skin_checked="1">
-      <button class="btn btn--arrow">
-        <i class="fa fa-angle-left"></i>
-      </button>
-      <button class="btn btn-main active">1</button>
-      <button class="btn btn-main">2</button>
-      <button class="btn btn-main">3</button>
-      <button class="btn btn--arrow">
-        <i class="fa fa-angle-right"></i>
-      </button>
-    </div>
-  </div>
-
 </div>
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~
      CTA Base 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="cta-base">
+<div class="integrator-cta-base">
   <div class="container">
-    <div class="cta-base__wrapper border-bottom-dark">
-      <div class="row align-items-center justify-content-center justify-content-md-between gutter-y-20">
-        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
-          <div class="cta-base__text-block">
-            <h2 class="heading-md text-white">Хотите так же?</h2>
-          </div>
-        </div>
-        <div class="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
-          <div class="cta-base__button">
-            <a href="./contact.html" class="btn-masco rounded-pill btn-fill--up">
-              <span>Заполнить заявку</span></a>
-            <div class="cta-base__button-shape">
-              <img src="{% static '/image/home-1/cta-shape.svg' %}" alt="image alt" />
-            </div>
-          </div>
-        </div>
+    <div class="integrator-cta-base__wrapper">
+      <div class="integrator-cta-base__text-block">
+        <h2 class="heading-md">Готовы к таким же результатам?</h2>
+      </div>
+      <div class="cta-base__button">
+        <a href="#" class="integrator-btn btn-fill--up">
+          <span>Начать внедрение</span></a>
       </div>
     </div>
   </div>
+  <div class="integrator-cta-base_over">
+    <img src="{% static '/image/cta/bubble.png' %}" alt="Bubbles" />
+  </div>
 </div>
-
-
 {% endblock %}
