@@ -1113,8 +1113,54 @@ span.primary {
     margin-top: 80px;
 }
 
+.integrator-top {
+    margin-top: 60px;
+}
+
 .integrator-top .integrator-row {
     gap: 20px;
+}
+
+.integrator-top-row {
+    gap: 60px !important;
+}
+
+.integrator-top__images {
+    max-width: 751px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    background-color: var(--btn-light-primary);
+}
+
+.integrator-top__images-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.integrator-top__images-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.integrator-top__images-right img,
+.integrator-top__images-left img {
+    width: 289px;
+    border-radius: 12px;
+    height: 304px;
+}
+
+img.img-top-large {
+    width: 327px;
+    height: 232px;
 }
 
 .integrator-top__image {
@@ -1133,6 +1179,24 @@ span.primary {
 .integrator-top__info {
     max-width: 679px;
     width: 100%;
+}
+
+.integrator-top__points {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 489px;
+}
+
+.integrator-top__points .integrator-feature-list {
+    border-left: 0;
+}
+
+.integrator-top__points .integrator-feature-list h5 {
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
 }
 
 .integrator-top-qoute {
@@ -1215,6 +1279,85 @@ span.primary {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/*REVIEW*/
+
+.integrator-review-section .integrator-line {
+    margin: 60px 0;
+}
+
+.integrator-reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.integrator-review-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: var(--bg-fon-gray);
+}
+
+.review-item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review__image-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__image-block .icon-brand {
+    max-width: 107px;
+    object-fit: contain;
+}
+
+.review__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.integrator-review .integrator-row {
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.integrator-review__image {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.integrator-review__image img {
+    width: 100%;
+    height: auto;
+}
+
+.integrator-review-quote {
+    width: 100%;
+    max-width: 640px;
+    padding: 27px 40px;
+    position: relative;
+    border-radius: 12px;
+    background-color: var(--bg-fon-gray);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.integrator-review-quote .qoute-autor {
+    margin-top: 130px;
 }
 
 /*FEATURE*/
@@ -2122,7 +2265,16 @@ span.hash {
         width: 376px;
     }
 
-    .integrator-team .integrator-row {
+    .integrator-top__points {
+        max-width: 100%;
+    }
+
+    .integrator-top__images {
+        margin: 0 auto;
+    }
+
+    .integrator-team .integrator-row,
+    .integrator-top-row {
         flex-direction: column;
     }
 
@@ -2148,6 +2300,10 @@ span.hash {
     .integrator-team-button {
         margin-top: 40px;
         text-align: center;
+    }
+
+    .integrator-review-quote .qoute-autor {
+        margin-top: 40px;
     }
 }
 
@@ -2181,6 +2337,10 @@ span.hash {
 
     .integrator-row {
         flex-direction: column;
+    }
+
+    .integrator-review .integrator-row {
+        align-items: center;
     }
 
     .integrator-check-point-large {
@@ -2233,7 +2393,8 @@ span.hash {
 
     .integrator-extention-points,
     .integrator-interesting-points,
-    .integrator-capacity {
+    .integrator-capacity,
+    .integrator-reviews {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -2291,8 +2452,14 @@ span.hash {
 @media screen and (max-width: 768px) {
 
     .integrator-footer-menu,
-    .integrator-copyright-block {
+    .integrator-copyright-block,
+    .integrator-top__images {
         flex-direction: column;
+    }
+
+    .integrator-top__images-left {
+        gap: 30px;
+        align-items: center;
     }
 
     .integrator-banner {
@@ -2441,5 +2608,10 @@ span.hash {
                 }
             }
         }
+    }
+
+    img.img-top-large {
+        width: 100%;
+        height: auto;
     }
 }
