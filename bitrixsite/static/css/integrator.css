@@ -178,6 +178,10 @@
             rgba(207, 212, 245, 0) 100%);
 }
 
+.integrator-cta-inner__home {
+    margin-top: 0;
+}
+
 .integrator-cta-inner .container {
     max-width: 70%;
 }
@@ -235,6 +239,7 @@
         font-weight: 700;
         color: var(--btn-hover-primary);
         margin-bottom: 0;
+        font-family: "Exo 2", sans-serif;
     }
 
     .integrator-subheading {
@@ -243,6 +248,7 @@
         color: var(--btn-hover-primary);
         margin-bottom: 0;
         letter-spacing: -1.5px;
+        font-family: "Exo 2", sans-serif;
     }
 }
 
@@ -297,6 +303,7 @@
     line-height: 1.2;
     color: var(--btn-hover-primary);
     opacity: 0.7;
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-line {
@@ -657,6 +664,7 @@ span.primary-yellow {
     font-weight: 500;
     font-size: 25px !important;
     line-height: 1.2;
+    font-family: "Exo 2", sans-serif;
 }
 
 .task-point__image {
@@ -829,6 +837,7 @@ span.primary-yellow {
     opacity: 0.7;
     margin: 20px auto 0;
     max-width: 780px;
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-help-points {
@@ -1002,6 +1011,7 @@ span.primary-yellow {
     line-height: 1.2;
     color: var(--btn-hover-primary);
     margin-bottom: 20px;
+    font-family: "Exo 2", sans-serif;
 }
 
 .plan-short .service-card__title {
@@ -1114,6 +1124,7 @@ span.primary-yellow {
     line-height: 1.2;
     color: var(--btn-hover-primary);
     margin-bottom: 60px;
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-technologies-item {
@@ -1128,6 +1139,7 @@ span.primary-yellow {
     line-height: 1.2;
     color: var(--btn-dark-primary);
     width: 40%;
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-technologies-list {
@@ -1541,6 +1553,7 @@ img.img-top-large {
     line-height: 1.2;
     color: var(--btn-hover-primary);
     margin-bottom: 60px;
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-feature-item {
@@ -1555,6 +1568,7 @@ img.img-top-large {
     line-height: 1.2;
     color: var(--btn-dark-primary);
     padding-right: 20px;
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-feature-list {
@@ -1586,6 +1600,7 @@ img.img-top-large {
     font-size: 25px !important;
     line-height: 1.2;
     color: var(--btn-hover-primary);
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-feature-list p {
@@ -1617,7 +1632,8 @@ img.img-top-large {
 }
 
 .integrator-portfolio-page .navigation-list,
-.integrator-feature-section .navigation-list {
+.integrator-feature-section .navigation-list,
+.integrator-webinar-page .navigation-list {
     width: fit-content;
     background-color: var(--bg-fon-gray);
     border-radius: 12px;
@@ -1627,20 +1643,25 @@ img.img-top-large {
     margin: 65px auto;
 }
 
+.integrator-webinar-page .navigation-list {
+    margin: 65px 0;
+}
 
 .integrator-feature-section .navigation-list {
     background-color: var(--bg-fon-old);
 }
 
 .integrator-portfolio-page .navigation-list--inline li.active,
-.integrator-feature-section .navigation-list--inline li.active {
+.integrator-feature-section .navigation-list--inline li.active,
+.integrator-webinar-page .navigation-list--inline li.active {
     background-color: var(--btn-hover-primary);
     color: var(--bg-fon-text);
     border-radius: 12px;
 }
 
 .integrator-portfolio-page .navigation-list .btn,
-.integrator-feature-section .navigation-list .btn {
+.integrator-feature-section .navigation-list .btn,
+.integrator-webinar-page .navigation-list .btn {
     padding: 15px 25px;
     font-weight: 300;
     font-size: 18px;
@@ -1715,6 +1736,7 @@ img.img-top-large {
     font-size: 25px;
     line-height: 1.2;
     color: var(--btn-hover-primary);
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-portfolio-item .portfolio-widget__info {
@@ -1728,6 +1750,74 @@ img.img-top-large {
 .integrator-portfolio-more {
     margin: 60px auto 0;
 }
+
+/*WEBINAR*/
+
+.integrator-webinar-materials:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.integrator-webinar-materials__title {
+    margin-bottom: 20px;
+}
+
+.integrator-webinar-materials__title .integrator-subheading {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.integrator-webinar-materials__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.integrator-webinar-materials__wrapper .integrator-material {
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.integrator-webinar-materials__wrapper .integrator-material__image {
+    max-width: 214px;
+    height: 100%;
+}
+
+.integrator-webinar-materials__wrapper .integrator-material__text div.date {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.integrator-webinar-materials__wrapper .integrator-material__text div.date img {
+    object-fit: contain;
+}
+
+.integrator-webinar-materials__wrapper .integrator-material__text span.date {
+    color: var(--btn-dark-primary);
+    font-weight: 500;
+    opacity: 1;
+}
+
+.integrator-material__images {
+    margin-top: 20px;
+    display: flex;
+}
+
+.integrator-material__images img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 500px;
+    overflow: hidden;
+    background-color: var(--bg-fon-gray);
+}
+
+.integrator-material__images img:not(:first-child) {
+    margin-left: -24px;
+}
+
+
 
 /*TEAM*/
 
@@ -1940,6 +2030,7 @@ img.img-top-large {
     color: var(--btn-hover-primary);
     position: relative;
     z-index: 10;
+    font-family: "Exo 2", sans-serif;
 }
 
 .interesting-point p.integrator-text {
@@ -1978,6 +2069,7 @@ img.img-top-large {
     font-size: 25px;
     line-height: 1.2;
     color: var(--btn-dark-primary);
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-extention-points {
@@ -2011,6 +2103,7 @@ img.img-top-large {
     margin-bottom: 30px;
     position: relative;
     z-index: 10;
+    font-family: "Exo 2", sans-serif;
 }
 
 .extention-subtitle {
@@ -2021,6 +2114,7 @@ img.img-top-large {
     margin-top: 20px;
     position: relative;
     z-index: 10;
+    font-family: "Exo 2", sans-serif;
 }
 
 .extention-point a {
@@ -2143,6 +2237,7 @@ img.img-top-large {
     line-height: 1.2;
     color: var(--btn-hover-primary);
     margin: 5px 0 20px;
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-material__description {
@@ -2203,6 +2298,7 @@ span.hash {
     line-height: 1.2;
     letter-spacing: -1px;
     color: var(--btn-hover-primary);
+    font-family: "Exo 2", sans-serif;
 }
 
 .accordion-button__icon {
@@ -2296,11 +2392,13 @@ span.hash {
     font-size: 34px;
     line-height: 1.2;
     color: var(--btn-hover-primary);
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-widget-item p.integrator-contact-adress {
     font-weight: 500;
     font-size: 25px;
+    font-family: "Exo 2", sans-serif;
 }
 
 .widget-item__last {
@@ -2318,7 +2416,7 @@ span.hash {
 .integrator-contact__form textarea {
     border: 1px solid var(--bg-line-text) !important;
     border-radius: 12px !important;
-    color: var(--bg-fon-text) !important;
+    color: var(--btn-hover-primary) !important;
     background-color: var(--bg-fon-text) !important;
     padding: 16px 24px !important;
 }
@@ -2391,6 +2489,7 @@ span.hash {
     line-height: 1;
     text-decoration: none;
     color: var(--bg-line-text);
+    font-family: "Exo 2", sans-serif;
 }
 
 .integrator-list-social,
@@ -2635,7 +2734,8 @@ span.hash {
     .integrator-interesting-points,
     .integrator-capacity,
     .integrator-reviews,
-    .integrator-help-points-double {
+    .integrator-help-points-double,
+    .integrator-webinar-materials__wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
 

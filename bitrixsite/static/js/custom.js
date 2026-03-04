@@ -197,6 +197,45 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function () {
+  function updateWebinars(filter) {
+
+    $('[data-webinar-container]')
+      .find('[data-status]')
+      .each(function () {
+
+        var status = $(this).attr('data-status');
+
+        if (filter === 'all') {
+          $(this).show();
+        } else if (status === filter) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+
+      });
+  }
+
+  // клик по фильтру
+  $('.navigation-list .btn').on('click', function () {
+
+    var filter = $(this).attr('data-filter');
+
+    $(this).closest('li')
+      .addClass('active')
+      .siblings()
+      .removeClass('active');
+
+    updateWebinars(filter);
+
+  });
+
+  // инициализация
+  updateWebinars('all');
+});
+
+
 $(window).on('load', function () {
   $('#clock').countdown('2024/10/10', function (event) {
     var $this = $(this).html(event.strftime(''

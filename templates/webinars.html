@@ -2,24 +2,190 @@
 {% load static %}
 {% block content %}
 
-<div class="inner_banner-section">
-  <img class="inner_banner-background-image" src="{% static '/image/common/inner-bg.png' %}" alt="image alt">
+
+<div class="integrator-section">
   <div class="container">
-    <div class="inner_banner-content-block">
-      <h3 class="inner_banner-title"> Вебинары </h3>
-      <ul class="banner__page-navigator">
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li class="active">
-          <a href="/blog">
-            Блог
-          </a>
-        </li>
-      </ul>
+    <div class="content">
+      <div class="content-text-block">
+        <h1 class="integrator-heading heading-xxl">Вебинары</h1>
+      </div>
+    </div>
+    <div class="integrator-webinar-page padding-bottom-150">
+      <div class="container">
+        <ul class="navigation-list navigation-list--inline">
+          <li class="active">
+            <button class="btn" data-filter="all">Все</button>
+          </li>
+          <li>
+            <button class="btn" data-filter="upcoming">Ближайшие</button>
+          </li>
+          <li>
+            <button class="btn" data-filter="past">Прошедшие</button>
+          </li>
+        </ul>
+
+        <div class="integrator-webinar-materials" data-webinar-container>
+          <div class="integrator-webinar-materials__title">
+            <h2 class="integrator-subheading">Ближайшие</h2>
+          </div>
+          <div class="integrator-webinar-materials__wrapper">
+            <div class="integrator-material" data-status="{% if webinar.is_past_due %}past{% else %}upcoming{% endif %}">
+              <div class="integrator-material__image">
+                <img src="{% static '/image/blog/material.png' %}" alt="">
+              </div>
+              <div class="integrator-material__info">
+                <div class="integrator-material__text">
+                  <div class="date"><img src="{% static '/image/icons/calender.png' %}" alt="calender"><span
+                      class="date">25.01.2026 / 20:30</span></div>
+                  <h3 class="integrator-material__title">Название вебинара 1
+                  </h3>
+                  <p class="integrator-material__description">SDF-файлы используются для хранения баз данных в
+                    структурированном виде. Это - базовое, стандартное расширение файлов, которое не связано с
+                    определенной програ</p>
+                </div>
+                <div class="integrator-material__images">
+                  <img src="" alt="">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="integrator-material" data-status="{% if webinar.is_past_due %}past{% else %}upcoming{% endif %}">
+              <div class="integrator-material__image">
+                <img src="{% static '/image/blog/material.png' %}" alt="">
+              </div>
+              <div class="integrator-material__info">
+                <div class="integrator-material__text">
+                  <div class="date"><img src="{% static '/image/icons/calender.png' %}" alt="calender"><span
+                      class="date">25.01.2026 / 20:30</span></div>
+                  <h3 class="integrator-material__title">Название вебинара 1
+                  </h3>
+                  <p class="integrator-material__description">SDF-файлы используются для хранения баз данных в
+                    структурированном виде. Это - базовое, стандартное расширение файлов, которое не связано с
+                    определенной програ</p>
+                </div>
+                <div class="integrator-material__images">
+                  <img src="" alt="">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="integrator-webinar-materials" data-webinar-container>
+          <div class="integrator-webinar-materials__title">
+            <h2 class="integrator-subheading">Прошедшие</h2>
+          </div>
+          <div class="integrator-webinar-materials__wrapper">
+            <div class="integrator-material" data-status="{% if webinar.is_past_due %}past{% else %}upcoming{% endif %}">
+              <div class="integrator-material__image">
+                <img src="{% static '/image/blog/material.png' %}" alt="">
+              </div>
+              <div class="integrator-material__info">
+                <div class="integrator-material__text">
+                  <div class="date"><img src="{% static '/image/icons/calender.png' %}" alt="calender"><span
+                      class="date">25.01.2026 / 20:30</span></div>
+                  <h3 class="integrator-material__title">Название вебинара 1
+                  </h3>
+                  <p class="integrator-material__description">SDF-файлы используются для хранения баз данных в
+                    структурированном виде. Это - базовое, стандартное расширение файлов, которое не связано с
+                    определенной програ</p>
+                </div>
+                <div class="integrator-material__images">
+                  <img src="" alt="">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="integrator-material" data-status="{% if webinar.is_past_due %}past{% else %}upcoming{% endif %}">
+              <div class="integrator-material__image">
+                <img src="{% static '/image/blog/material.png' %}" alt="">
+              </div>
+              <div class="integrator-material__info">
+                <div class="integrator-material__text">
+                  <div class="date"><img src="{% static '/image/icons/calender.png' %}" alt="calender"><span
+                      class="date">25.01.2026 / 20:30</span></div>
+                  <h3 class="integrator-material__title">Название вебинара 1
+                  </h3>
+                  <p class="integrator-material__description">SDF-файлы используются для хранения баз данных в
+                    структурированном виде. Это - базовое, стандартное расширение файлов, которое не связано с
+                    определенной програ</p>
+                </div>
+                <div class="integrator-material__images">
+                  <img src="" alt="">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="integrator-material" data-status="{% if webinar.is_past_due %}past{% else %}upcoming{% endif %}">
+              <div class="integrator-material__image">
+                <img src="{% static '/image/blog/material.png' %}" alt="">
+              </div>
+              <div class="integrator-material__info">
+                <div class="integrator-material__text">
+                  <div class="date"><img src="{% static '/image/icons/calender.png' %}" alt="calender"><span
+                      class="date">25.01.2026 / 20:30</span></div>
+                  <h3 class="integrator-material__title">Название вебинара 1
+                  </h3>
+                  <p class="integrator-material__description">SDF-файлы используются для хранения баз данных в
+                    структурированном виде. Это - базовое, стандартное расширение файлов, которое не связано с
+                    определенной програ</p>
+                </div>
+                <div class="integrator-material__images">
+                  <img src="" alt="">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="integrator-material" data-status="{% if webinar.is_past_due %}past{% else %}upcoming{% endif %}">
+              <div class="integrator-material__image">
+                <img src="{% static '/image/blog/material.png' %}" alt="">
+              </div>
+              <div class="integrator-material__info">
+                <div class="integrator-material__text">
+                  <div class="date"><img src="{% static '/image/icons/calender.png' %}" alt="calender"><span
+                      class="date">25.01.2026 / 20:30</span></div>
+                  <h3 class="integrator-material__title">Название вебинара 1
+                  </h3>
+                  <p class="integrator-material__description">SDF-файлы используются для хранения баз данных в
+                    структурированном виде. Это - базовое, стандартное расширение файлов, которое не связано с
+                    определенной програ</p>
+                </div>
+                <div class="integrator-material__images">
+                  <img src="" alt="">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~
+     CTA Base 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="integrator-cta-base">
+  <div class="container">
+    <div class="integrator-cta-base__wrapper">
+      <div class="integrator-cta-base__text-block">
+        <h2 class="heading-md">Информация - это хорошо, но может стоит применить ее на практике?</h2>
+      </div>
+      <div class="cta-base__button">
+        <a href="#" class="integrator-btn btn-fill--up">
+          <span>Начать использовать Битрикс24</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="integrator-cta-base_over">
+    <img src="{% static '/image/cta/bubble.png' %}" alt="Bubbles" />
+  </div>
+</div>
+
+{% endblock %}
 
 
 <div class="career_main-section section-padding-120">
@@ -28,31 +194,32 @@
       <div class="col-xl-6 col-lg-7 col-md-9">
         <h2 class="heading-md text-black career_main-title">Ближайшие вебинары</h2>
       </div>
-      
-{% for webinar in actwebs %}
-{% if not webinar.is_past_due %}
-<div class="col-lg-12 grid-item {%for class in webinar.category_web.all %}{{class.cat_slug}} {%endfor%}">
-<div class="career-card mb-20">
-  <div class="career-card__body">
 
-    <h3 class="career-card__title">{{ webinar.webinar_name }}</h3>
-    <p>{{ webinar.webinar_short_desc | safe }}</p>
-  </div>
-  <div class="career-card__job-info">
-    <span style="font-size:15px"><img src={% static "/image/icons/clock.svg" %} alt="clock">{{ webinar.pub_date | date:'d-m-Y H:i' }}</span>
-    <span>
-      {% for person in webinar.persons_web.all %}
-      <span class="blog-card-large__user"><img src="{{ person.person_image.url }}" alt="user image"
-          style="clip-path: circle();"></span>
-      {% endfor %}
-    </span>
+      {% for webinar in actwebs %}
+      {% if not webinar.is_past_due %}
+      <div class="col-lg-12 grid-item {%for class in webinar.category_web.all %}{{class.cat_slug}} {%endfor%}">
+        <div class="career-card mb-20">
+          <div class="career-card__body">
 
-  </div>
-  <a class="btn-link btn-arrow career-card__link" href="/career-details">Подробнее</a>
-</div>
-</div>
-    {% endif %} {% endfor %}
-</div>
+            <h3 class="career-card__title">{{ webinar.webinar_name }}</h3>
+            <p>{{ webinar.webinar_short_desc | safe }}</p>
+          </div>
+          <div class="career-card__job-info">
+            <span style="font-size:15px"><img src={% static "/image/icons/clock.svg" %} alt="clock">{{ webinar.pub_date
+              | date:'d-m-Y H:i' }}</span>
+            <span>
+              {% for person in webinar.persons_web.all %}
+              <span class="blog-card-large__user"><img src="{{ person.person_image.url }}" alt="user image"
+                  style="clip-path: circle();"></span>
+              {% endfor %}
+            </span>
+
+          </div>
+          <a class="btn-link btn-arrow career-card__link" href="/career-details">Подробнее</a>
+        </div>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
 
 
 
@@ -95,7 +262,8 @@
             <p>{{ webinar.webinar_short_desc | safe }}</p>
           </div>
           <div class="career-card__job-info">
-            <span style="font-size:15px"><img src={% static "/image/icons/clock.svg" %} alt="clock">{{ webinar.pub_date | date:'d-m-Y H:i' }}</span>
+            <span style="font-size:15px"><img src={% static "/image/icons/clock.svg" %} alt="clock">{{ webinar.pub_date
+              | date:'d-m-Y H:i' }}</span>
             <span>
               {% for person in webinar.persons_web.all %}
               <span class="blog-card-large__user"><img src="{{ person.person_image.url }}" alt="user image"
@@ -107,15 +275,8 @@
           <a class="btn-link btn-arrow career-card__link" href="/career-details">Подробнее</a>
         </div>
       </div>
-     {% endif %}
+      {% endif %}
       {% endfor %}
-    </div>
-   
-
-
-    <div class="section-button">
-      <a href="#" class="btn-masco rounded-pill btn-fill--up"><span>Can’t find your role? Contact us</span></a>
     </div>
   </div>
 </div>
-{% endblock %}
