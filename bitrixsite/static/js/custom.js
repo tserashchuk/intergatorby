@@ -100,100 +100,297 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-  // Функция обновления цены
-  function updatePrice(planBlock) {
-    var planType = planBlock.attr('data-plan-active-obl'); // oblako / korobka
 
-    planBlock.find('.plan').each(function () {
-      var $plan = $(this);
-      var $dynamic = $plan.find('.dynamic-value, .plan__title'); // ищем все цены
-      var $activeUser = $plan.find('.price__counts a.white-active');
+  function updatePricing(planBlock) {
 
-      if ($activeUser.length) {
-        var users = $activeUser.data('users'); // получаем выбранное количество пользователей
-        var attrName = 'data-' + planType + '-' + users; // формируем атрибут
-        var value = $dynamic.attr(attrName);
+    var period = planBlock.attr('data-plan-active');      // monthly / yearly
+    var type = planBlock.attr('data-plan-active-obl');    // oblako / korobka
 
-        if (!value) value = $dynamic.text(); // fallback на существующую цену
-        $dynamic.text(value);
+    planBlock.find('.dynamic-value, .plan__title').each(function () {
+
+      var $price = $(this);
+      var value = null;
+
+      // ОБЛАКО
+      if (type === 'oblako') {
+
+        var attrName = 'data-' + period + '-oblako';
+        value = $price.attr(attrName);
+
       }
+
+      // КОРОБКА
+      if (type === 'korobka') {
+
+        var plan = $price.closest('.plan');
+        var activeUser = plan.find('.price__counts a.white-active');
+
+        if (activeUser.length) {
+
+          var users = activeUser.data('users');
+          var attrName = 'data-korobka-' + users;
+          value = $price.attr(attrName);
+
+        }
+
+      }
+
+      if (value) {
+        $price.text(value);
+      }
+
     });
+
   }
 
-  // Инициализация блоков при загрузке
+  function updatePlanBlocks(planBlock) {
+
+    var type = planBlock.attr('data-plan-active-obl');
+    var container = planBlock.closest('.integrator-price');
+
+    if (type === 'oblako') {
+
+      container.find('.plans-4').show();
+      container.find('.plans-3').hide();
+      container.find('.pricing-period').show();
+
+    } else {
+
+      container.find('.plans-4').hide();
+      container.find('.plans-3').show();
+      container.find('.pricing-period').hide();
+
+    }
+
+  }
+
+  // ИНИЦИАЛИЗАЦИЯ
   $('[data-plan-id]').each(function () {
+
     var $planBlock = $(this);
-    if (!$planBlock.attr('data-plan-active-obl')) $planBlock.attr('data-plan-active-obl', 'oblako');
-    updatePrice($planBlock);
+
+    if (!$planBlock.attr('data-plan-active')) {
+      $planBlock.attr('data-plan-active', 'monthly');
+    }
+
+    if (!$planBlock.attr('data-plan-active-obl')) {
+      $planBlock.attr('data-plan-active-obl', 'oblako');
+    }
+
+    updatePricing($planBlock);
+    updatePlanBlocks($planBlock);
+
   });
 
-  // Переключатель Облако / Коробка
+  // ПЕРЕКЛЮЧАТЕЛИ
   $('[data-pricing-trigger]').on('click', function () {
-    var target = $(this).attr('data-target'); // oblako / korobka
-    var planBlock = $('[data-plan-id="' + $(this).attr('data-pricing-trigger') + '"]');
-    planBlock.attr('data-plan-active-obl', target);
 
-    // меняем активный класс на переключателе
-    $(this).addClass('active').siblings().removeClass('active');
+    var trigger = $(this).attr('data-pricing-trigger');
+    var target = $(this).attr('data-target');
+    var planBlock = $('[data-plan-id="' + trigger + '"]');
 
-    updatePrice(planBlock);
+    // месяц / год
+    if (target === 'monthly' || target === 'yearly') {
+
+      planBlock.attr('data-plan-active', target);
+      $(this).addClass('active').siblings().removeClass('active');
+
+    }
+
+    // облако / коробка
+    if (target === 'oblako' || target === 'korobka') {
+
+      planBlock.attr('data-plan-active-obl', target);
+      $(this).addClass('active').siblings().removeClass('active');
+
+      updatePlanBlocks(planBlock);
+
+    }
+
+    updatePricing(planBlock);
+
   });
 
-  // Переключение количества пользователей
+  // КОЛИЧЕСТВО ПОЛЬЗОВАТЕЛЕЙ
   $('.price__counts a').on('click', function (e) {
+
     e.preventDefault();
-    var $this = $(this);
-    var planBlock = $this.closest('[data-plan-id]');
 
-    // меняем активный класс у кнопок
-    $this.addClass('white-active').siblings().removeClass('white-active');
+    var $btn = $(this);
+    var planBlock = $btn.closest('[data-plan-id]');
 
-    updatePrice(planBlock);
+    $btn.addClass('white-active')
+      .siblings()
+      .removeClass('white-active');
+
+    updatePricing(planBlock);
+
   });
+
 });
 
+
+/*MARKET*/ 
 $(document).ready(function () {
-  function updateFeatures(container) {
-    var activePackage = container.attr('data-active-package');
 
-    container.find('.integrator-feature-item').each(function () {
-      var $item = $(this);
+  /* ---------------------------
+     ОБНОВЛЕНИЕ ЦЕН ОБЛАКА
+  --------------------------- */
 
-      // Проверяем есть ли нужный data-атрибут
-      if ($item.is('[data-' + activePackage + ']')) {
-        $item.show();
-      } else {
-        $item.hide();
+  function updateCloudPrices() {
+
+    var period = $('.plans-3[data-market-type="oblako"]').attr('data-market-period') || 'monthly';
+
+    $('.plans-3[data-market-type="oblako"] .plan__title').each(function () {
+
+      var price = $(this).attr('data-' + period);
+
+      if (price) {
+        $(this).text(price);
       }
+
     });
+
   }
 
-  // Инициализация
-  var $featureContainer = $('.integrator-row');
 
-  if (!$featureContainer.attr('data-active-package')) {
-    $featureContainer.attr('data-active-package', 'base');
+  /* ---------------------------
+     ОБНОВЛЕНИЕ ЦЕН КОРОБКИ
+  --------------------------- */
+
+  function updateBoxPrice(plan) {
+
+    var activeUser = plan.find('.price__counts a.white-active');
+
+    if (!activeUser.length) return;
+
+    var users = activeUser.data('users');
+
+    var priceElement = plan.find('.plan__title');
+
+    var price = priceElement.attr('data-korobka-' + users);
+
+    if (price) {
+      priceElement.text(price);
+    }
+
   }
 
-  updateFeatures($featureContainer);
 
-  // Клик по кнопкам
+  /* ---------------------------
+     ОБЛАКО / КОРОБКА
+  --------------------------- */
+
+  $('[data-market-target]').on('click', function () {
+
+    var target = $(this).data('market-target');
+
+    $(this)
+      .addClass('active')
+      .siblings()
+      .removeClass('active');
+
+
+    if (target === 'oblako') {
+
+      $('[data-market-type="oblako"]').show();
+      $('[data-market-type="korobka"]').hide();
+
+      $('.pricing-period').show();
+
+    }
+
+    if (target === 'korobka') {
+
+      $('[data-market-type="oblako"]').hide();
+      $('[data-market-type="korobka"]').show();
+
+      $('.pricing-period').hide();
+
+    }
+
+
+    /* ---------------------------
+       МЕСЯЦ / ГОД
+    --------------------------- */
+
+    if (target === 'monthly' || target === 'yearly') {
+
+      $('.plans-3[data-market-type="oblako"]').attr('data-market-period', target);
+
+      updateCloudPrices();
+
+    }
+
+  });
+
+
+  /* ---------------------------
+     ПЕРЕКЛЮЧЕНИЕ ПОЛЬЗОВАТЕЛЕЙ
+  --------------------------- */
+
+  $('.price__counts a').on('click', function (e) {
+
+    e.preventDefault();
+
+    var btn = $(this);
+    var plan = btn.closest('.plan');
+
+    btn
+      .addClass('white-active')
+      .siblings()
+      .removeClass('white-active');
+
+    updateBoxPrice(plan);
+
+  });
+
+
+  /* ---------------------------
+     ИНИЦИАЛИЗАЦИЯ
+  --------------------------- */
+
+  updateCloudPrices();
+
+  $('.plans-3[data-market-type="korobka"] .plan').each(function () {
+    updateBoxPrice($(this));
+  });
+
+});
+
+
+
+$(document).ready(function () {
+
+  function switchPackage(packageName) {
+
+    $('[data-package-content]').each(function () {
+
+      if ($(this).attr('data-package-content') === packageName) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+
+    });
+
+  }
+
+  switchPackage('base');
+
   $('.navigation-list .btn').on('click', function () {
 
-    var selectedPackage = $(this).attr('data-package');
+    var selectedPackage = $(this).data('package');
 
-    // Меняем активный класс
     $(this).closest('li')
       .addClass('active')
       .siblings()
       .removeClass('active');
 
-    // Обновляем атрибут контейнера
-    $featureContainer.attr('data-active-package', selectedPackage);
+    switchPackage(selectedPackage);
 
-    // Обновляем список
-    updateFeatures($featureContainer);
   });
+
 });
 
 

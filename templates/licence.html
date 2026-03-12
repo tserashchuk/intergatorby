@@ -343,7 +343,7 @@
 
 <div class="integrator-price-section padding-bottom-150 integrator-subsection" id="price">
   <div class="container">
-    <div class="integrator-section-heading">
+    <div class="section-heading">
       <h2 class="integrator-subheading heading-md text-center">
         Битрикс24 — это полный набор инструментов для работы вашего бизнеса
       </h2>
@@ -355,12 +355,12 @@
           <span data-pricing-trigger="pricing-1" data-target="oblako" class="active">Облачная версия</span>
           <span data-pricing-trigger="pricing-1" data-target="korobka">Коробочная версия</span>
         </div>
-        <div class="pricing-control">
+        <div class="pricing-control pricing-period">
           <span data-pricing-trigger="pricing-1" data-target="monthly" class="active">Купить на месяц</span>
           <span data-pricing-trigger="pricing-1" data-target="yearly">Купить на год</span>
         </div>
       </div>
-      <div class="plans-4 mt-5" data-plan-id="pricing-1" data-plan-active="monthly" data-plan-active="oblako">
+      <div class="plans-4 mt-5" data-plan-id="pricing-1" data-plan-active="monthly" data-plan-active="oblako" data-plan-type="oblako">
         <div class="plan plan-base">
           <div class="plan__header">
             <div class="service-card__title">Бесплатный</div>
@@ -446,11 +446,8 @@
           </div>
           <div class="plan__content">
             <div class="plan-description">
-              <h3 class="plan__title dynamic-value"
-            data-monthly-oblako="80 byn"
-            data-yearly-oblako="64 byn"
-            data-monthly-korobka="100 byn"
-            data-yearly-korobka="85 byn">80 byn</h3>
+              <h3 class="plan__title dynamic-value" data-monthly-oblako="80 byn" data-yearly-oblako="64 byn"
+                data-monthly-korobka="100 byn" data-yearly-korobka="85 byn">80 byn</h3>
               <p><b>24 ГБ</b> диск</p>
               <p>5 пользователей</p>
               <a href="#" class="integrator-btn btn-fill--up">
@@ -534,11 +531,8 @@
           </div>
           <div class="plan__content">
             <div class="plan-description">
-                      <h3 class="plan__title dynamic-value"
-            data-monthly-oblako="219 byn"
-            data-yearly-oblako="176 byn"
-            data-monthly-korobka="250 byn"
-            data-yearly-korobka="200 byn">219 byn</h3>
+              <h3 class="plan__title dynamic-value" data-monthly-oblako="219 byn" data-yearly-oblako="176 byn"
+                data-monthly-korobka="250 byn" data-yearly-korobka="200 byn">219 byn</h3>
               <p><b>100 ГБ</b> диск</p>
               <p>50 пользователей</p>
               <a href="#" class="integrator-btn btn-fill--up">
@@ -631,11 +625,8 @@
           </div>
           <div class="plan__content">
             <div class="plan-description">
-                      <h3 class="plan__title dynamic-value"
-            data-monthly-oblako="439 byn"
-            data-yearly-oblako="352 byn"
-            data-monthly-korobka="500 byn"
-            data-yearly-korobka="400 byn">439 byn</h3>
+              <h3 class="plan__title dynamic-value" data-monthly-oblako="439 byn" data-yearly-oblako="352 byn"
+                data-monthly-korobka="500 byn" data-yearly-korobka="400 byn">439 byn</h3>
               <p><b>1024 ГБ</b> диск</p>
               <p>100 пользователей</p>
               <a href="#" class="integrator-btn integrator-btn-purple btn-fill--up">
@@ -729,6 +720,119 @@
               </div>
               <div class="plan__subtitle plan__subtitle-blue">
                 Администрирование
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plans-3 mt-5" data-plan-id="pricing-1" data-plan-type="korobka"
+     style="display:none;">
+        <div class="plan plan-short plan-base">
+          <div class="plan__header">
+            <div class="service-card__title">Интернет-магазин+CRM</div>
+          </div>
+          <div class="plan__content">
+            <div class="plan-description">
+              <h3 class="plan__title" data-oblako-12="2089.20 byn" data-korobka-12="2200 byn">2 089, 20 byn</h3>
+              <p>Количество пользователей</p>
+              <div class="price__counts">
+                <a href="#" class="integrator-btn integrator-btn-white white-active btn-fill--up" data-users="12">
+                  <span>12</span>
+                </a>
+              </div>
+              <a href="#" class="integrator-btn btn-fill--up">
+                <span>Купить</span>
+              </a>
+              <div class="plan__info">
+                <div class="plan__subtitle">
+                  Экстранет
+                </div>
+                <div class="plan__subtitle">
+                  eCommerce-платформа
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan-short plan-base">
+          <div class="plan__header">
+            <div class="service-card__title">Корпоративный портал-500</div>
+          </div>
+          <div class="plan__content">
+            <div class="plan-description">
+              <h3 class="plan__title" data-oblako-50="2089.20 byn" data-oblako-100="4197.60 byn"
+                data-oblako-250="5000 byn" data-oblako-500="6500 byn" data-korobka-50="2200 byn"
+                data-korobka-100="4300 byn" data-korobka-250="5100 byn" data-korobka-500="5600 byn">4 197, 60 byn</h3>
+              <p>Количество пользователей</p>
+              <div class="price__counts">
+                <a href="#" class="integrator-btn integrator-btn-white btn-fill--up" data-users="50">
+                  <span>50</span>
+                </a>
+                <a href="#" class="integrator-btn integrator-btn-white btn-fill--up" data-users="100">
+                  <span>100</span>
+                </a>
+                <a href="#" class="integrator-btn integrator-btn-white btn-fill--up" data-users="250">
+                  <span>250</span>
+                </a>
+                <a href="#" class="integrator-btn integrator-btn-white white-active btn-fill--up" data-users="500">
+                  <span>500</span>
+                </a>
+              </div>
+              <a href="#" class="integrator-btn btn-fill--up">
+                <span>Купить</span>
+              </a>
+              <div class="plan__info">
+                <div class="plan__subtitle">
+                  Экстранет
+                </div>
+                <div class="plan__subtitle">
+                  eCommerce-платформа
+                </div>
+                <div class="plan__subtitle plan__subtitle-blue">
+                  Документы Онлайн
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan-short plan-purple">
+          <div class="plan__header">
+            <div class="service-card__title">Энтерпрайз</div>
+          </div>
+          <div class="plan__content">
+            <div class="plan-description">
+              <h3 class="plan__title dynamic-value" data-oblako-1000="4 197, 60 byn" data-korobka-1000="5100 byn">4 197,
+                60 byn
+              </h3>
+              <p>Количество пользователей</p>
+              <div class="price__counts">
+                <a href="#" class="integrator-btn integrator-btn-white white-active btn-fill--up" data-users="1000">
+                  <span>1000</span>
+                </a>
+              </div>
+              <a href="#" class="integrator-btn integrator-btn-purple btn-fill--up">
+                <span>Купить</span>
+              </a>
+              <div class="plan__info">
+                <div class="plan__subtitle">
+                  Экстранет
+                </div>
+                <div class="plan__subtitle">
+                  eCommerce-платформа
+                </div>
+                <div class="plan__subtitle">
+                  Документы Онлайн
+                </div>
+                <div class="plan__subtitle plan__subtitle-blue">
+                  Многодепартаментность
+                </div>
+                <div class="plan__subtitle plan__subtitle-blue">
+                  Веб-кластер
+                </div>
+                <div class="plan__subtitle plan__subtitle-blue">
+                  VIP поддержка 24/7
+                </div>
               </div>
             </div>
           </div>

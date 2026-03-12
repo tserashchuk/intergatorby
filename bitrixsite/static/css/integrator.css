@@ -1005,6 +1005,14 @@ span.primary-yellow {
     height: auto;
 }
 
+.plan-short .plan__info {
+    margin-top: 30px;
+}
+
+.plan-short .plan__info .plan__subtitle:first-child {
+    padding-top: 30px;
+}
+
 .integrator-price .plan .plan__header .service-card__title {
     font-weight: 500;
     font-size: 25px;
@@ -1047,6 +1055,7 @@ span.primary-yellow {
     margin-top: 8px;
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .integrator-price .plan-description a:not(.integrator-btn-white) {
@@ -1857,7 +1866,7 @@ img.img-top-large {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .integrator-team-quote {
@@ -1882,7 +1891,12 @@ img.img-top-large {
 }
 
 .integrator-team-button {
-    text-align: right;
+    text-align: center;
+    width: 100%;
+}
+
+.integrator-team-button .integrator-btn {
+    width: 100%;
 }
 
 .integrator-team-second-section .content-text-block {
