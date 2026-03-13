@@ -1,180 +1,125 @@
-
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="inner_banner-section">
-  <img class="inner_banner-background-image" src="{% static '/image/common/inner-bg.png' %}" alt="image alt">
+
+<div class="integrator-section ">
   <div class="container">
-    <div class="inner_banner-content-block">
-      <h3 class="inner_banner-title">{{article.article_name}}</h3>
-      <ul class="banner__page-navigator">
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li class="active">
-          <a href="/blog-details">
-            Blog Details
-          </a>
-        </li>
-      </ul>
+    <div class="content-text-block article-block">
+      <div class="article-link-back">
+        <a href="/blog"> <img src="{% static '/image/icons/arrow-article.png' %}" alt="back"></a>
+      </div>
+      <h1 class="integrator-heading heading-md">Статья</h1>
+    </div>
+    <div class="article__info">
+      <span class="date">25.01.2026</span>
+      <div class="article__info-tags">
+        <span class="hash">#Битрикс24</span>
+        <span class="hash">#Битрикс24</span>
+      </div>
+    </div>
+
+    <div class="article__preview-text">
+      <p>Мы начали бизнес на картинах по номерам в Covid-19. Предложений было мало, поэтому люди покупали картины по
+        цене x5-6 от закупочной. Потом пришли конкуренты, обрушили цены, и я понял, что нужно было делать свои
+        картины, с оригинальными сюжетами
+      </p>
+    </div>
+
+    <div class="article__image">
+      <img src="{% static '/image/blog/material.png' %}" alt="">
+    </div>
+
+    <div class="article__content">
+      <h3>Подзаголовок</h3>
+      <p>Мы начали бизнес на картинах по номерам в Covid-19. Предложений было  мало, поэтому люди покупали картины по цене x5-6 от закупочной. Потом  пришли конкуренты, обрушили цены, и я понял, что нужно было делать свои  картины, с оригинальными сюжетами</p>
+      <p>Мы начали бизнес на картинах по номерам в Covid-19. Предложений было  мало, поэтому люди покупали картины по цене x5-6 от закупочной. Потом  пришли конкуренты, обрушили цены, и я понял, что нужно было делать свои  картины, с оригинальными сюжетами</p>
+    </div>
+
+    <div class="article__content">
+      <h3>Подзаголовок</h3>
+      <p>Мы начали бизнес на картинах по номерам в Covid-19. Предложений было  мало, поэтому люди покупали картины по цене x5-6 от закупочной. Потом  пришли конкуренты, обрушили цены, и я понял, что нужно было делать свои  картины, с оригинальными сюжетами</p>
+      <p>Мы начали бизнес на картинах по номерам в Covid-19. Предложений было  мало, поэтому люди покупали картины по цене x5-6 от закупочной. Потом  пришли конкуренты, обрушили цены, и я понял, что нужно было делать свои  картины, с оригинальными сюжетами</p>
     </div>
   </div>
 </div>
 
 
-
-<div class="container">
-  <div class="blog-details_main-wrapper section-padding-120">
-    <div class="row">
-      <div class="col-xl-8">
-        <div class="blog-content">
-          <img src="{{ article.article_image.url }}" alt="blog image" class="mb-30 w-100">
-          <div class="blog-content-meta">
-            
-            <a href="#">
-              <span class="blog-content__time">{{ article.pub_date |date:'d-m-Y H:i' }}</span></a>
-              {% for cat in article.category_article.all %}
-              <a href="#">
-              <span class="blog-card-large__category">{{cat}}</span></a>
-                {% endfor %}
+<div class="integrator-material-page padding-bottom-150 padding-top-150 ">
+  <div class="container">
+    <h1 class="integrator-heading-article heading-md">Читайте далее</h1>
+    <div class="integrator-row">
+      <div class="integrator-materials">
+        <div class="integrator-material">
+          <div class="integrator-material__image">
+            <img src="{% static '/image/blog/material.png' %}" alt="">
           </div>
-          <div class="blog-content-wrapper">
-            {{ article.article_text | safe }}
+          <div class="integrator-material__info">
+            <div class="integrator-material__text">
+              <span class="date">25.01.2026</span>
+              <h3 class="integrator-material__title">если "Упал, поднялся" — значит будет выдумка, нытьё и привирание
+              </h3>
+              <p class="integrator-material__description">Мы начали бизнес на картинах по номерам в Covid-19.
+                Предложений
+                было мало, поэтому люди покупали картины по цене x5-6 от закупочной. Потом пришли конкуренты, обрушили
+                цены, и я понял, что нужно было делать свои картины, с оригинальными сюжетами</p>
+            </div>
+            <span class="hash">#Битрикс24</span>
           </div>
         </div>
+        <div class="integrator-material">
+          <div class="integrator-material__image">
+            <img src="{% static '/image/blog/material.png' %}" alt="">
+          </div>
+          <div class="integrator-material__info">
+            <div class="integrator-material__text">
+              <span class="date">25.01.2026</span>
+              <h3 class="integrator-material__title">Новый Битрикс24 Космос: обзор новинок</h3>
+              <p class="integrator-material__description">Битрикс24 обновился: работать стало ещё проще, удобнее
+                и продуктивнее. Какие новинки вас ждут?</p>
+            </div>
+            <span class="hash">#Битрикс24</span>
+          </div>
+        </div>
+        <div class="integrator-material">
+          <div class="integrator-material__image">
+            <img src="{% static '/image/blog/material.png' %}" alt="">
+          </div>
+          <div class="integrator-material__info">
+            <div class="integrator-material__text">
+              <span class="date">25.01.2026</span>
+              <h3 class="integrator-material__title">если "Упал, поднялся" — значит будет выдумка, нытьё и привирание
+              </h3>
+              <p class="integrator-material__description">Мы начали бизнес на картинах по номерам в Covid-19.
+                Предложений
+                было мало, поэтому люди покупали картины по цене x5-6 от закупочной. Потом пришли конкуренты, обрушили
+                цены, и я понял, что нужно было делать свои картины, с оригинальными сюжетами</p>
+            </div>
+            <span class="hash">#Битрикс24</span>
+          </div>
+        </div>
+      </div>
 
-      </div>
-      <div class="col-xl-4">
-        <aside class="sidebar-wrapper">
-          <div class="sidebar-search-input">
-            <form action="#" class="input-wrapper">
-              <span class="input-icon ">
-          <i class="fa-solid fa-magnifying-glass"></i>
-      </span>
-              <input class="form-control" type="text" placeholder="Type to search...">
-            </form>
-          </div>
-          <div class="sidebar-single">
-            <div class="sidebar-list">
-              <div class="sidebar-title-block">
-                <h3 class="sidebar-title">Blog Categories</h3>
-              </div>
-              <ul class="sidebar-category-list">
-                <li class="sidebar-category-list-item">
-                  <a href="#" class="sidebar-category">
-                    Business &amp; Marketing (18)
-                  </a>
-                </li>
-                <li class="sidebar-category-list-item">
-                  <a href="#" class="sidebar-category">
-                    Technology (05)
-                  </a>
-                </li>
-                <li class="sidebar-category-list-item">
-                  <a href="#" class="sidebar-category">
-                    Art &amp; Beauty (23)
-                  </a>
-                </li>
-                <li class="sidebar-category-list-item">
-                  <a href="#" class="sidebar-category">
-                    Digital Agency (10)
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="sidebar-single">
-            <div class="sidebar-blog-suggestion">
-              <div class="sidebar-title-block">
-                <h3 class="sidebar-title ">Recent posts</h3>
-              </div>
-              <div class="sidebar-blog-widget-wrapper">
-                <div class="sidebar-blog-widget">
-                  <a class="sidebar-blog-widget__image" href="/blog-details">
-                    <img src="./image/blog/recent-1.png" alt="blog image">
-                  </a>
-                  <div class="sidebar-blog-widget__body">
-                    <a class="sidebar-blog-widget__date" href="/blog-details">
-                      <img src="./image/blog/calendar.svg" alt="calender">Jan 20, 2023
-                    </a>
-                    <h3 class="sidebar-blog-widget__title">
-                      <a href="/blog-details">
-                        Six ‘what ifs’ that could transformdigital agency
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="sidebar-blog-widget">
-                  <a class="sidebar-blog-widget__image" href="/blog-details">
-                    <img src="./image/blog/recent-2.png" alt="blog image">
-                  </a>
-                  <div class="sidebar-blog-widget__body">
-                    <a class="sidebar-blog-widget__date" href="/blog-details">
-                      <img src="./image/blog/calendar.svg" alt="calender">Jan 18, 2023
-                    </a>
-                    <h3 class="sidebar-blog-widget__title">
-                      <a href="/blog-details">
-                        Case story: How to the design avatar generator
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="sidebar-blog-widget">
-                  <a class="sidebar-blog-widget__image" href="/blog-details">
-                    <img src="./image/blog/recent-3.png" alt="blog image">
-                  </a>
-                  <div class="sidebar-blog-widget__body">
-                    <a class="sidebar-blog-widget__date" href="/blog-details">
-                      <img src="./image/blog/calendar.svg" alt="calender">Jan 05, 2023
-                    </a>
-                    <h3 class="sidebar-blog-widget__title">
-                      <a href="/blog-details">
-                        Build a digital agency website in 4 easy steps
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="sidebar-single">
-            <div class="sidebar-title-block">
-              <h3 class="sidebar-title ">Tags</h3>
-            </div>
-            <ul class="sidebar-tag-list">
-              <li class="sidebar-tag-list-item"><a href="#">Artical</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">Business</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">Digital</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">Technology</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">UI/UX</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">Design</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">NFT</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">Crypto</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">Finence</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">Trends</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">Web</a></li>
-              <li class="sidebar-tag-list-item"><a href="#">Asset</a></li>
-            </ul>
-          </div>
-          <div class="sidebar-single">
-            <div class="sidebar-title-block">
-              <h3 class="sidebar-title">Tags</h3>
-            </div>
-            <div class="sidebar-newsletter">
-              <p>
-                Subscribe to our newsletter and get the latest news updates lifetime
-              </p>
-              <form action="#" class="input-wrapper">
-                <input class="form-control" type="text" placeholder="Enter your email address">
-              </form>
-              <div class="sidebar-button">
-                <a href="#" class="btn-masco btn-primary rounded-pill w-100">Subscribe Now</a>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </div>
     </div>
   </div>
 </div>
-    {% endblock %}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~
+     CTA Base 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="integrator-cta-base">
+  <div class="container">
+    <div class="integrator-cta-base__wrapper">
+      <div class="integrator-cta-base__text-block">
+        <h2 class="heading-md">Информация - это хорошо, но может стоит применить ее на практике?</h2>
+      </div>
+      <div class="cta-base__button">
+        <a href="#" class="integrator-btn btn-fill--up">
+          <span>Начать использовать Битрикс24</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="integrator-cta-base_over">
+    <img src="{% static '/image/cta/bubble.png' %}" alt="Bubbles" />
+  </div>
+</div>
+{% endblock %}
