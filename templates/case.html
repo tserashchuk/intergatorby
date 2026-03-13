@@ -1,576 +1,398 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="inner_banner-section">
-  <img class="inner_banner-background-image" src={% static '/image/common/inner-bg.png' %} alt="image alt">
+
+<div class="integrator-section integrator-article-page">
   <div class="container">
-    <div class="inner_banner-content-block">
-      <h3 class="inner_banner-title">{{case.case_name}}</h3>
-      <ul class="banner__page-navigator">
-        <li>
-          <a href="/">Главная</a>
-        </li>
-        <li>
-          <a href="/cases">
-            Кейсы
-          </a>
-        </li>
-        <li>
-          <a href="/cases">{% for cat in case.category_case.all %} {{cat}} {% endfor %}{{ case.cat_slug }}
-          </a>
-        </li>
-        <li class="active">
-          <a href="/portfolio-details">
-            {{case.case_name}}
-          </a>
-        </li>
+    <div class="content-text-block article-block">
+      <div class="article-link-back">
+        <a href="/cases"> <img src="{% static '/image/icons/arrow-article.png' %}" alt="back"></a>
+      </div>
+      <h1 class="integrator-heading heading-md">Продвижение интернет-магазина мужской брендовой одежды в топ-10 по
+        ключевым запросам</h1>
+    </div>
+    <div class="article__info">
+      <span class="date">25.01.2026</span>
+      <div class="article__info-tags">
+        <span class="portfolio-widget__category">Комплексное внедрение</span>
+        <span class="portfolio-widget__category">Комплексное внедрение</span>
+      </div>
+    </div>
+
+    <div class="article__preview-text">
+      <p>Мы начали бизнес на картинах по номерам в Covid-19. Предложений было мало, поэтому люди покупали картины по
+        цене x5-6 от закупочной. Потом пришли конкуренты, обрушили цены, и я понял, что нужно было делать свои
+        картины, с оригинальными сюжетами
+      </p>
+    </div>
+
+    <div class="article__image">
+      <img src="{% static '/image/blog/material.png' %}" alt="">
+    </div>
+
+    <div class="article__content">
+      <h3>Подзаголовок</h3>
+      <p>Мы начали бизнес на картинах по номерам в Covid-19. Предложений было мало, поэтому люди покупали картины по
+        цене x5-6 от закупочной. Потом пришли конкуренты, обрушили цены, и я понял, что нужно было делать свои картины,
+        с оригинальными сюжетами</p>
+      <p>Мы начали бизнес на картинах по номерам в Covid-19. Предложений было мало, поэтому люди покупали картины по
+        цене x5-6 от закупочной. Потом пришли конкуренты, обрушили цены, и я понял, что нужно было делать свои картины,
+        с оригинальными сюжетами</p>
+    </div>
+
+    <div class="portfolio-case__three">
+      <div class="portfolio-case">
+        <div>Клиент</div>
+        <p>ООО «РесайклПро»</p>
+      </div>
+      <div class="portfolio-case">
+        <div>Клиент</div>
+        <p>ООО «РесайклПро»</p>
+      </div>
+      <div class="portfolio-case">
+        <div>Клиент</div>
+        <p>ООО «РесайклПро»</p>
+      </div>
+    </div>
+
+    <div class="article__content">
+      <h3>Подзаголовок</h3>
+      <ul>
+        <li>В компании «РесайклПро» была внедрена CRM-система, однако отсутствовала автоматизированная воронка продаж:
+          лиды из разных источников "падали в кучу", распределялись колл-центром вручную, что приводило к путанице и
+          потерям клиентов.</li>
+        <li>Полностью отсутствовала система контроля прохождения клиентов по этапам воронки продаж, не было системы
+          отслеживания конверсии лидов в сделки.</li>
+        <li>Не было возможности отслеживать причины неисполнения сделок и потери клиентов.</li>
+        <li>Непрозрачная система мотивации: ответственность за создание лидов и сделок не была четко определена, не было
+          системы отслеживания эффективности работы сотрудников.</li>
+        <li>Неэффективная система мотивации: мотивация сотрудников не была напрямую связана с их результатами работы, не
+          было системы поощрения лучших сотрудников.</li>
       </ul>
     </div>
+
+    <div class="article__content">
+      <h3>Подзаголовок</h3>
+      <ul>
+        <li>В компании «РесайклПро» была внедрена CRM-система, однако отсутствовала автоматизированная воронка продаж:
+          лиды из разных источников "падали в кучу", распределялись колл-центром вручную, что приводило к путанице и
+          потерям клиентов.</li>
+        <li>Полностью отсутствовала система контроля прохождения клиентов по этапам воронки продаж, не было системы
+          отслеживания конверсии лидов в сделки.</li>
+        <li>Не было возможности отслеживать причины неисполнения сделок и потери клиентов.</li>
+        <li>Непрозрачная система мотивации: ответственность за создание лидов и сделок не была четко определена, не было
+          системы отслеживания эффективности работы сотрудников.</li>
+        <li>Неэффективная система мотивации: мотивация сотрудников не была напрямую связана с их результатами работы, не
+          было системы поощрения лучших сотрудников.</li>
+      </ul>
+    </div>
+
+    <div class="article__content">
+      <h3>Подзаголовок</h3>
+      <ul>
+        <li>В компании «РесайклПро» была внедрена CRM-система, однако отсутствовала автоматизированная воронка продаж:
+          лиды из разных источников "падали в кучу", распределялись колл-центром вручную, что приводило к путанице и
+          потерям клиентов.</li>
+        <li>Полностью отсутствовала система контроля прохождения клиентов по этапам воронки продаж, не было системы
+          отслеживания конверсии лидов в сделки.</li>
+        <li>Не было возможности отслеживать причины неисполнения сделок и потери клиентов.</li>
+        <li>Непрозрачная система мотивации: ответственность за создание лидов и сделок не была четко определена, не было
+          системы отслеживания эффективности работы сотрудников.</li>
+        <li>Неэффективная система мотивации: мотивация сотрудников не была напрямую связана с их результатами работы, не
+          было системы поощрения лучших сотрудников.</li>
+      </ul>
+    </div>
+
+    <div class="portfolio-case__list">
+      <h3 class="text-center">Эффективная воронка продаж в Битрикс24</h3>
+      <p class="integrator-text text-center">В рамках направления деятельности скупка драгметаллов была настроена
+        воронка лидов и сделок со следующими этапами:</p>
+      <div class="integrator-row row--custom" bis_skin_checked="1">
+        <div class="integrator-feature-item" bis_skin_checked="1">
+          <h4 class="integrator-feature__title">01</h4>
+          <div class="integrator-feature-list">
+            <h5>Увеличение продаж</h5>
+            <p>Результат правильного внедрения Битрикс24 — увеличение выручки и прибыли компании</p>
+          </div>
+        </div>
+        <div class="integrator-feature-item" bis_skin_checked="1">
+          <h4 class="integrator-feature__title">02</h4>
+          <div class="integrator-feature-list">
+            <h5>Эффективное управление бизнесом</h5>
+            <p>Аналитика и отчётность позволяет принимать управленческие решения, опираясь на данные</p>
+          </div>
+        </div>
+        <div class="integrator-feature-item" bis_skin_checked="1">
+          <h4 class="integrator-feature__title">03</h4>
+          <div class="integrator-feature-list">
+            <h5>Сокращение издержек</h5>
+            <p>Автоматизация бизнес-процессов, эффективная коммуникация между отделами помогает эффективно использовать
+              рабочее время</p>
+          </div>
+        </div>
+        <div class="integrator-feature-item" bis_skin_checked="1">
+          <h4 class="integrator-feature__title">04</h4>
+          <div class="integrator-feature-list">
+            <h5>Оптимизация расходов на маркетинг</h5>
+            <p>Сквозная аналитика и отчёты помогут оптимизировать рекламные расходы</p>
+          </div>
+        </div>
+        <div class="integrator-feature-item" bis_skin_checked="1">
+          <h4 class="integrator-feature__title">05</h4>
+          <div class="integrator-feature-list">
+            <h5>Повышение лояльности клиентов</h5>
+            <p>Хранение и анализ данных о клиентах позволяет настроить персонализированную коммуникацию с клиентами</p>
+          </div>
+        </div>
+        <div class="integrator-feature-item" bis_skin_checked="1">
+          <h4 class="integrator-feature__title">06</h4>
+          <div class="integrator-feature-list">
+            <h5>Защита персональных данных</h5>
+            <p>Битрикс24 предлагает все необходимые инструменты для соблюдения законодательства о защите персональных
+              данных</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="article__content">
+      <h3>Подзаголовок</h3>
+      <ul>
+        <li>В компании «РесайклПро» была внедрена CRM-система, однако отсутствовала автоматизированная воронка продаж:
+          лиды из разных источников "падали в кучу", распределялись колл-центром вручную, что приводило к путанице и
+          потерям клиентов.</li>
+        <li>Полностью отсутствовала система контроля прохождения клиентов по этапам воронки продаж, не было системы
+          отслеживания конверсии лидов в сделки.</li>
+        <li>Не было возможности отслеживать причины неисполнения сделок и потери клиентов.</li>
+        <li>Непрозрачная система мотивации: ответственность за создание лидов и сделок не была четко определена, не было
+          системы отслеживания эффективности работы сотрудников.</li>
+        <li>Неэффективная система мотивации: мотивация сотрудников не была напрямую связана с их результатами работы, не
+          было системы поощрения лучших сотрудников.</li>
+      </ul>
+    </div>
+
+    <div class="portfolio-case__grid">
+      <h3>Эффективная воронка продаж в Битрикс24</h3>
+      <div class="integrator-interesting-points">
+        <div class="interesting-point point-obuch">
+          <span class="poin-number">
+            01
+          </span>
+          <h3 class="interesting-title">Быстрое освоение интерфейса и инструментов</h3>
+        </div>
+        <div class="interesting-point point-obuch">
+          <span class="poin-number">
+            02
+          </span>
+          <h3 class="interesting-title">Снижение ошибок и сопротивления изменениям</h3>
+        </div>
+        <div class="interesting-point point-obuch">
+          <span class="poin-number">
+            03
+          </span>
+          <h3 class="interesting-title">Быстрое освоение интерфейса и инструментов</h3>
+        </div>
+        <div class="interesting-point point-obuch">
+          <span class="poin-number">
+            04
+          </span>
+          <h3 class="interesting-title">Снижение ошибок и сопротивления изменениям</h3>
+        </div>
+      </div>
+      <div class="interesting-point point-obuch point-img">
+        <div class="interesting-point-img">
+          <img src="{% static '/image/service/analitik-3.png' %}" alt="Analitik" />
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-case__list margin">
+      <h3 class="text-center">Эффективная система мотивации сотрудников</h3>
+      <div class="integrator-row row--custom" bis_skin_checked="1">
+        <div class="integrator-feature-item" bis_skin_checked="1">
+          <h4 class="integrator-feature__title">01</h4>
+          <div class="integrator-feature-list">
+            <h5>Увеличение продаж</h5>
+            <p>Результат правильного внедрения Битрикс24 — увеличение выручки и прибыли компании</p>
+          </div>
+        </div>
+        <div class="integrator-feature-item" bis_skin_checked="1">
+          <h4 class="integrator-feature__title">02</h4>
+          <div class="integrator-feature-list">
+            <h5>Эффективное управление бизнесом</h5>
+            <p>Аналитика и отчётность позволяет принимать управленческие решения, опираясь на данные</p>
+          </div>
+        </div>
+        <div class="integrator-feature-item" bis_skin_checked="1">
+          <h4 class="integrator-feature__title">03</h4>
+          <div class="integrator-feature-list">
+            <h5>Сокращение издержек</h5>
+            <p>Автоматизация бизнес-процессов, эффективная коммуникация между отделами помогает эффективно использовать
+              рабочее время</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-case__grid">
+      <h3>Результат</h3>
+      <div class="integrator-interesting-points">
+        <div class="interesting-point point-obuch">
+          <span class="poin-number">
+            01
+          </span>
+          <h3 class="interesting-title">Быстрое освоение интерфейса и инструментов</h3>
+        </div>
+        <div class="interesting-point point-obuch">
+          <span class="poin-number">
+            02
+          </span>
+          <h3 class="interesting-title">Снижение ошибок и сопротивления изменениям</h3>
+        </div>
+      </div>
+      <div class="interesting-point point-obuch point-img">
+        <div class="interesting-point-img">
+          <img src="{% static '/image/service/analitik-3.png' %}" alt="Analitik" />
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-case__list margin">
+      <h3 class="text-center">Сегментация клиентов</h3>
+      <div class="integrator-row row--custom" bis_skin_checked="1">
+        <div class="integrator-feature-item" bis_skin_checked="1">
+          <h4 class="integrator-feature__title">01</h4>
+          <div class="integrator-feature-list">
+            <h5>Увеличение продаж</h5>
+            <p>Результат правильного внедрения Битрикс24 — увеличение выручки и прибыли компании</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="article__content">
+      <h3>Подзаголовок</h3>
+      <ul>
+        <li>В компании «РесайклПро» была внедрена CRM-система, однако отсутствовала автоматизированная воронка продаж:
+          лиды из разных источников "падали в кучу", распределялись колл-центром вручную, что приводило к путанице и
+          потерям клиентов.</li>
+        <li>Полностью отсутствовала система контроля прохождения клиентов по этапам воронки продаж, не было системы
+          отслеживания конверсии лидов в сделки.</li>
+        <li>Не было возможности отслеживать причины неисполнения сделок и потери клиентов.</li>
+        <li>Непрозрачная система мотивации: ответственность за создание лидов и сделок не была четко определена, не было
+          системы отслеживания эффективности работы сотрудников.</li>
+        <li>Неэффективная система мотивации: мотивация сотрудников не была напрямую связана с их результатами работы, не
+          было системы поощрения лучших сотрудников.</li>
+      </ul>
+    </div>
+
+    <div class="portfolio-case__grid">
+      <h3>Результат</h3>
+      <div class="integrator-interesting-points integrator-interesting-points__one">
+        <div class="interesting-point point-obuch">
+          <span class="poin-number">
+            01
+          </span>
+          <h3 class="interesting-title">Быстрое освоение интерфейса и инструментов</h3>
+        </div>
+      </div>
+      <div class="interesting-point point-obuch point-img">
+        <div class="interesting-point-img">
+          <img src="{% static '/image/service/analitik-3.png' %}" alt="Analitik" />
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 
-
-
-<div class="portfolio-details_article">
+<div class="integrator-article-page padding-bottom-150 padding-top-150 ">
   <div class="container">
-    <article class="portfolio-details_article-block">
-      <div class="portfolio-details_thumbnail-block">
-        <img class="portfolio-details_thumbnail-image" src={{case.case_image.url}} alt="image alt">
-        <div class="portfolio-details_thumbnail-list">
-          {% if case.case_client %}
-          <div class="">
-            <h3>Клиент:</h3>
-            <p>{{case.case_client}}</p>
-          </div> {% endif %}
+    <h2 class="integrator-heading-article heading-md">Смотрите также</h2>
+    <div class="integrator-portfolio row--portfolio-gutter">
 
-          {% if case.category_case.all.0 %}
-          <div>
-            <h3>Категория:</h3>
-            <p>
-              {% for cat in case.category_case.all %} {{cat}} {% endfor %}</p>
-          </div> {% endif %}
-
-          {% if case.case_duration %}
-          <div>
-            <h3>Сроки:</h3>
-            <p>{{ case.case_duration }}</p>
-          </div> {% endif %}
-
-        </div>
-      </div>
-      <div class="portfolio-details_article-body">
-        <div>
-          <p>По оценке руководства компании, в сезон в CRM-системе могло накапливаться до 2500 необработанных лидов и
-            лидов с неуточненным статусом.
-            <br /><br />
-            <b>Ключевая задача, которая стояла перед "Правильными интеграторами"</b> - оптимизировать работу колл-центра
-            и менеджеров по продажам, а также минимизировать потери клиентов на всех этапах воронки.
-          </p>
-        </div>
-
-      </div>
-    </article>
-  </div>
-</div>
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1  : Content Section 1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="home-1_content-section-1 section-padding-120" id="about">
-  <div class="container">
-    <div class="row row--custom">
-      <div class="offset-xl-1 col-lg-5 col-auto" data-aos-duration="1000" data-aos="fade-left">
-        <div class="home-1_content-image-1 content-image--mobile-width">
-          <img src="{% static '/image/portfolio/1.png' %}" alt="alternative text" />
-          <div class="home-1_content-image-1-shape">
-            <img src="{% static '/image/home-1/content-image-1-shape.svg' %}" alt="alternative text" />
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-6 col-lg-7 col-md-10 col-auto" data-aos-duration="1000" data-aos="fade-right">
-        <div class="content">
-          <div class="content-text-block">
-            <ul class="list-style-bullet">
-              <li>В компании «РесайклПро» была внедрена CRM-система, однако отсутствовала автоматизированная воронка
-                продаж: лиды из разных источников "падали в кучу", распределялись колл-центром вручную, что приводило к
-                путанице и потерям клиентов.
-              </li>
-              <li>Полностью отсутствовала система контроля прохождения клиентов по этапам воронки продаж, не было
-                системы отслеживания конверсии лидов в сделки.
-              </li>
-              <li>Не было возможности отслеживать причины неисполнения сделок и потери клиентов.
-              </li>
-              <li>Непрозрачная система мотивации: ответственность за создание лидов и сделок не была четко определена,
-                не было системы отслеживания эффективности работы сотрудников.
-              </li>
-              <li>Неэффективная система мотивации: мотивация сотрудников не была напрямую связана с их результатами
-                работы, не было системы поощрения лучших сотрудников.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1  : Content Section 2
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="home-1_content-section-2 padding-bottom-120">
-  <div class="container">
-    <div class="row row--custom">
-      <div class="col-xl-5 col-lg-5 col-auto" data-aos-duration="1000" data-aos="fade-right">
-        <div class="home-1_content-image-2 content-image--mobile-width">
-          <img src="{% static '/image/portfolio/2.png' %}" alt="alternative text" />
-          <div class="home-1_content-image-2-shape">
-            <img src="{% static '/image/home-1/content-image-2-shape.svg' %}" alt="alternative text" />
-          </div>
-        </div>
-      </div>
-      <div class="offset-xl-1 col-xl-6 col-lg-7 col-md-11" data-aos-duration="1000" data-aos="fade-left">
-        <div class="content">
-          <div class="content-text-block">
-            <ul class="list-style-bullet">
-              <li>Автоматизировать распределение лидов по этапам воронки.
-              </li>
-              <li>Настроить систему контроля прохождения сделок систему выбраковки клиентов.
-              </li>
-              <li>Сегментировать клиентов.
-              </li>
-              <li>Внедрить отчетность.
-              </li>
-              <li>Планировать и оценивать эффективность работы менеджеров и колл-центра при помощи задач и
-                бизнес-процессов.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1  : Content Section 1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="home-1_content-section-1 padding-bottom-120" id="about">
-  <div class="container">
-    <div class="row row--custom">
-      <div class="offset-xl-1 col-lg-5 col-auto" data-aos-duration="1000" data-aos="fade-left">
-        <div class="home-1_content-image-1 content-image--mobile-width">
-          <img src="{% static '/image/portfolio/3.png' %}" alt="alternative text" />
-          <div class="home-1_content-image-1-shape">
-            <img src="{% static '/image/home-1/content-image-1-shape.svg' %}" alt="alternative text" />
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-6 col-lg-7 col-md-10 col-auto" data-aos-duration="1000" data-aos="fade-right">
-        <div class="content">
-          <div class="content-text-block">
-            <ul class="list-style-bullet">
-              <li>Настройка модуля CRM в Битрикс24.
-              </li>
-              <li>Создание воронки сделок для работы по 3 ключевым направлениям сделок (сбор радиодеталей и плат у
-                физических лиц; вывоз бытовой техники у физических лиц; прием техники на переработку от юридических
-                лиц).
-              </li>
-              <li>Настройка автоматизации распределения лидов.
-              </li>
-              <li>Настройка системы контроля прохождения клиентов по этапам воронки.
-              </li>
-              <li>Настройка системы отслеживания причин невыполнения сделок.
-              </li>
-              <li>Автоматизация системы мотивации сотрудников с помощью BI-инструментов.
-              </li>
-              <li>Настройка инструментов сегментации клиентской базы по методике RFM.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="ticker-01_section" bis_skin_checked="1">
-  <div class="ticker-01_wrapper" bis_skin_checked="1">
-    <div class="ticker-01_content" bis_skin_checked="1">
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-    </div>
-    <div class="ticker-01_content" bis_skin_checked="1">
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-    </div>
-    <div class="ticker-01_content" bis_skin_checked="1">
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-    </div>
-    <div class="ticker-01_content" bis_skin_checked="1">
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-    </div>
-    <div class="ticker-01_content" bis_skin_checked="1">
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-    </div>
-    <div class="ticker-01_content" bis_skin_checked="1">
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-      <div class="ticker-item" bis_skin_checked="1">
-        <p>РЕЗУЛЬТАТЫ</p>
-        <p>🔥</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="section-padding-120">
-  <div class="container">
-
-    <div class="portfolio-details_article-body">
-      <div>
-        <h2>Эффективная воронка продаж в Битрикс24</h2>
-        <p>В рамках направления деятельности скупка драгметаллов была настроена воронка лидов и сделок со следующими
-          этапами:<br><br><span style="font-weight: bold;">Обращение клиента:
-          </span><br>Лид попадает в воронку. На этом этапе колл-центр обрабатывает клиента и назначает ему действие,
-          например, визит в приемный пункт.
-          <br><br><span style="font-weight: bold;">Клиент сдает детали в приемный пункт.
-          </span><br>Клиент сдает детали в приемный пункт. Сотрудник приемного пункта фиксирует прием деталей в
-          Битрикс24. Колл-центр получает подтверждение и переводит сделку на следующий этап.
-          <br><br><span style="font-weight: bold;">Оплата клиенту.
-          </span><br>Колл-центр дозванивается клиенту, чтобы подтвердить оплату и перевести сделку на следующую стадию.
-          <br><br><span style="font-weight: bold;">Закрытие сделки.
-          </span><br>Сделка считается закрытой, когда клиент получает оплату за свои детали.<br>
-        </p>
-      </div>
-
-      <div>
-        <h3>ДОПОЛНИТЕЛЬНЫЙ ФУНКЦИОНАЛ ВОРОНКИ ПРОДАЖ, РЕАЛИЗОВАННЫЙ В БИТРИКС24:</h3>
-        <ul class="list-style-bullet">
-          <li>В случае, если сделка не была закрыта на каком-либо этапе, она автоматически возвращается на предыдущий
-            этап.
-          </li>
-          <li>Система выбраковки клиентов: сделка помечается как провальная, если клиент явно говорит, что ничего не
-            хочет.
-          </li>
-          <li>Система позволяет отслеживать причины невыполнения сделок, что помогает оптимизировать процесс работы с
-            клиентами.
-          </li>
-          <li>Все клиенты проходят по всем этапам воронки, что гарантирует 100% сдачу деталей.</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-<div class="results">
-  <div class="ticker-01_section" bis_skin_checked="1">
-    <div class="container">
-      <div class="ticker-01_wrapper" bis_skin_checked="1">
-        <div class="ticker-01_content no-anim" bis_skin_checked="1">
-          <div class="ticker-item" bis_skin_checked="1">
-            <p>Сотрудники стали работать более результативно</p>
-            <p>🔥</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ticker-01_section" bis_skin_checked="1">
-    <div class="container">
-      <div class="ticker-01_wrapper" bis_skin_checked="1">
-        <div class="ticker-01_content no-anim" bis_skin_checked="1">
-          <div class="ticker-item" bis_skin_checked="1">
-            <p>Увеличилось количество закрытых сделок</p>
-            <p>🔥</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ticker-01_section" bis_skin_checked="1">
-    <div class="container">
-      <div class="ticker-01_wrapper" bis_skin_checked="1">
-        <div class="ticker-01_content no-anim" bis_skin_checked="1">
-          <div class="ticker-item" bis_skin_checked="1">
-            <p>Снизилось количество потерянных клиентов</p>
-            <p>🔥</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ticker-01_section" bis_skin_checked="1">
-    <div class="container">
-      <div class="ticker-01_wrapper" bis_skin_checked="1">
-        <div class="ticker-01_content no-anim" bis_skin_checked="1">
-          <div class="ticker-item" bis_skin_checked="1">
-            <p>Значительно выросла прибыль компании.</p>
-            <p>🔥</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section-padding-120">
-  <div class="container">
-
-    <div class="portfolio-details_article-body">
-      <div>
-        <h2>Эффективная система мотивации сотрудников</h2>
-        <p><span style="font-weight: bold;">Внедрение BI-инструментов:
-          </span><br>Была внедрена система BI, которая позволила собирать и анализировать данные о работе
-          сотрудников.<br>Были разработаны отчеты, которые отображают конверсию лидов в сделки, эффективность работы
-          каждого сотрудника, объем выполненных работ и т.д.
-          <br><br><span style="font-weight: bold;">Автоматизация системы мотивации:
-          </span><br>Мотивация сотрудников была напрямую связана с их результатами работы.
-          <br>Была введена система поощрения лучших сотрудников.
-          <br><br><span style="font-weight: bold;">Автоматизация работы колл-центра:
-          </span><br>В колл-центре компании используются BI-инструменты для оптимизации работы сотрудников. Сотрудникам
-          колл-центра поставлены KPI (Key Performance Indicators) по конверсии лидов в сделки, количеству звонков в день
-          и другим показателям.<br>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="results">
-  <div class="ticker-01_section" bis_skin_checked="1">
-    <div class="container">
-      <div class="ticker-01_wrapper" bis_skin_checked="1">
-        <div class="ticker-01_content no-anim" bis_skin_checked="1">
-          <div class="ticker-item" bis_skin_checked="1">
-            <p>Повышение прозрачности системы мотивации</p>
-            <p>🔥</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ticker-01_section" bis_skin_checked="1">
-    <div class="container">
-      <div class="ticker-01_wrapper" bis_skin_checked="1">
-        <div class="ticker-01_content no-anim" bis_skin_checked="1">
-          <div class="ticker-item" bis_skin_checked="1">
-            <p>Повышение эффективности работы сотрудников</p>
-            <p>🔥</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section-padding-120">
-  <div class="container">
-
-    <div class="portfolio-details_article-body">
-      <div>
-        <h2>Сегментация клиентов</h2>
-        <p><span style="font-weight: bold;">Сегментация клиентской базы: </span><br>клиентская база компании была
-          сегментирована по методике RFM-анализа (Recent Frequency Monetary).
-          <br><br>Благодаря сегментации была настроена многоканальная коммуникация. Для каждого сегмента клиентов были
-          разработаны свои маркетинговые активности с использованием различных каналов: телефон, SMS, email, социальные
-          сети и проч.<br>
-        </p>
-      </div>
-
-      <div>
-        <h3>ДОПОЛНИТЕЛЬНЫЙ ФУНКЦИОНАЛ ВОРОНКИ ПРОДАЖ, РЕАЛИЗОВАННЫЙ В БИТРИКС24:</h3>
-        <ul class="list-style-bullet ">
-          <li>В случае, если сделка не была закрыта на каком-либо этапе, она автоматически возвращается на предыдущий
-            этап.
-          </li>
-          <li>Система выбраковки клиентов: сделка помечается как провальная, если клиент явно говорит, что ничего не
-            хочет.
-          </li>
-          <li>Система позволяет отслеживать причины невыполнения сделок, что помогает оптимизировать процесс работы с
-            клиентами.
-          </li>
-          <li>Все клиенты проходят по всем этапам воронки, что гарантирует 100% сдачу деталей.</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-<div class="results">
-  <div class="ticker-01_section" bis_skin_checked="1">
-    <div class="container">
-      <div class="ticker-01_wrapper" bis_skin_checked="1">
-        <div class="ticker-01_content no-anim" bis_skin_checked="1">
-          <div class="ticker-item" bis_skin_checked="1">
-            <p>Повышение LTV (Lifetime Value) клиентов</p>
-            <p>🔥</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Home 1 : Portfolio Section
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="home-1_portfolio-section section-padding-120" id="portfolio">
-  <div class="portfolio-shape">
-    <img src="{% static '/image/home-1/portfolio-shape.png' %}" alt="image alt" />
-  </div>
-
-  <div class="container">
-    <div class="section-heading section-heading--row text-center text-md-initial">
-      <div class="row">
-        <div class="col-xl-6 col-md-8">
-          <h2 class="section-heading__title heading-md text-black">
-            Похожие кейсы
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div class="row row--portfolio-gutter">
-      <div class="col-md-6 col-xs-10" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
         <a href="portfolio-details.html" class="portfolio-widget">
-          <div class="portfolio-widget_image-block hover-fill--up">
-            <img src="{% static '/image/home-1/portf1.png' %}" alt="portfolio image" class="portfolio-image" />
-            <div class="hover-fill--up__text">
-              <ul class="portfolio-thesis-list">
-                <li>
-                  <h3>Снижение отходов на 40%</h3>
-                </li>
-                <li>
-                  <h3>Интеграция ИИ-сортировки</h3>
-                </li>
-                <li>
-                  <h3>Экономия ресурсов</h3>
-                </li>
-              </ul>
-            </div>
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
           </div>
           <div class="portfolio-widget__title-block">
-            <h3 class="portfolio-widget__title">«РесайклПро»</h3>
             <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
           </div>
-          <div class="portfolio-widget__link">
-            <span class="btn-link btn-arrow">Подробнее</span>
+        </a>
+      </div>
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
           </div>
         </a>
       </div>
 
 
-      <div class="col-md-6 col-xs-10" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
         <a href="portfolio-details.html" class="portfolio-widget">
-          <div class="portfolio-widget_image-block hover-fill--up">
+          <div class="portfolio-widget_image-block">
             <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
-            <div class="hover-fill--up__text">
-              <ul class="portfolio-thesis-list">
-                <li>
-                  <h3>Снижение отходов на 40%</h3>
-                </li>
-                <li>
-                  <h3>Интеграция ИИ-сортировки</h3>
-                </li>
-                <li>
-                  <h3>Экономия ресурсов</h3>
-                </li>
-              </ul>
-            </div>
           </div>
           <div class="portfolio-widget__title-block">
-            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
             <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
           </div>
-          <div class="portfolio-widget__link">
-            <span class="btn-link btn-arrow">Подробнее</span>
+        </a>
+      </div>
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="integrator-portfolio-item" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio-details.html" class="portfolio-widget">
+          <div class="portfolio-widget_image-block">
+            <img src="{% static '/image/home-1/portf2.png' %}" alt="portfolio image" class="portfolio-image" />
+          </div>
+          <div class="portfolio-widget__title-block">
+            <span class="portfolio-widget__category">Комплексное внедрение</span>
+            <h3 class="portfolio-widget__title">«МагКомпозит»</h3>
+            <div class="integrator-line"></div>
+            <p class="portfolio-widget__info">Текст о том как данная услуга сделала пользу в данной компании</p>
           </div>
         </a>
       </div>
@@ -581,27 +403,20 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~
      CTA Base 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="cta-base">
+<div class="integrator-cta-base">
   <div class="container">
-    <div class="cta-base__wrapper border-bottom-dark">
-      <div class="row align-items-center justify-content-center justify-content-md-between gutter-y-20">
-        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
-          <div class="cta-base__text-block">
-            <h2 class="heading-md text-white">Хотите так же?</h2>
-          </div>
-        </div>
-        <div class="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
-          <div class="cta-base__button">
-            <a href="./contact.html" class="btn-masco rounded-pill btn-fill--up">
-              <span>Заполнить заявку</span></a>
-            <div class="cta-base__button-shape">
-              <img src="{% static '/image/home-1/cta-shape.svg' %}" alt="image alt" />
-            </div>
-          </div>
-        </div>
+    <div class="integrator-cta-base__wrapper">
+      <div class="integrator-cta-base__text-block">
+        <h2 class="heading-md">Информация - это хорошо, но может стоит применить ее на практике?</h2>
+      </div>
+      <div class="cta-base__button">
+        <a href="#" class="integrator-btn btn-fill--up">
+          <span>Начать использовать Битрикс24</span></a>
       </div>
     </div>
   </div>
+  <div class="integrator-cta-base_over">
+    <img src="{% static '/image/cta/bubble.png' %}" alt="Bubbles" />
+  </div>
 </div>
-
 {% endblock %}
