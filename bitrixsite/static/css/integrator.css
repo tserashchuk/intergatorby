@@ -1536,7 +1536,7 @@ img.img-top-large {
     align-items: center;
 }
 
-.review-logo-item img  {
+.review-logo-item img {
     object-fit: contain;
 }
 
@@ -1826,7 +1826,79 @@ img.img-top-large {
     margin-left: -24px;
 }
 
+.team-list-webinars .integrator-team__image {
+    max-height: 310px;
+}
 
+.team-list-webinars .integrator-team__image img {
+    height: 100%;
+}
+
+.wedinar-team-descr {
+    padding: 10px 0 20px;
+    border-bottom: 1px solid var(--bg-line-text);
+}
+
+.wedinar-team-descr p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+}
+
+.integrator-heading-webinar {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--btn-hover-primary);
+    margin-bottom: 15px;
+}
+
+.integrator-webinar-section {
+    padding-top: 80px;
+}
+
+.integrator-webinar-section .integrator-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.integrator-webinar__slot {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.time-slot {
+    max-width: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-slot p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+    opacity: 0.7;
+}
+
+.info-slot {
+    padding: 20px;
+    background-color: var(--bg-fon-gray);
+    border-radius: 12px;
+    width: 100%;
+}
+
+.info-slot p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--btn-hover-primary);
+}
 
 /*TEAM*/
 
@@ -3025,6 +3097,10 @@ span.hash {
         max-width: 100%;
         height: 200px;
     }
+
+    .integrator-webinar-section {
+        padding-top: 0;
+    }
 }
 
 
@@ -3095,6 +3171,16 @@ span.hash {
         flex-direction: column;
         align-items: start;
         gap: 20px;
+    }
+
+    .integrator-webinar__slot {
+        flex-direction: column;
+    }
+
+    .time-slot {
+        max-width: 100%;
+        align-items: start;
+        justify-content: flex-start;
     }
 }
 

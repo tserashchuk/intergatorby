@@ -2,103 +2,115 @@
 {% load static %}
 {% block content %}
 
-
-<div class="inner_banner-section">
-  <img class="inner_banner-background-image" src="{% static '/image/common/inner-bg.png' %}" alt="image alt">
+<div class="integrator-section ">
   <div class="container">
-    <div class="inner_banner-content-block">
-      <h3 class="inner_banner-title"> {{webinar.webinar_name}} </h3>
-      <ul class="banner__page-navigator">
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li class="active">
-          <a href="/blog">
-            Блог
-          </a>
-        </li>
-      </ul>
+    <div class="content-text-block article-block">
+      <div class="article-link-back">
+        <a href="/blog"> <img src="{% static '/image/icons/arrow-article.png' %}" alt="back"></a>
+      </div>
+      <h1 class="integrator-heading heading-md">Статья</h1>
     </div>
-  </div>
-</div>
+    <div class="article__info">
+      <span class="date">25.01.2026</span>
+      <img src="{% static '/image/icons/online.png' %}" alt="Online">
+    </div>
 
-
-<div class="team-section section-padding-100 ">
-  <div class="container">
-
-    <h2 class="heading-md text-black career_main-title">Спикеры</h2>
-    <div class="row">
-      {% for person in webinar.persons_web.all %}
-      <div class="col-lg-3 col-sm-6 col-8">
-        <div class="team-card-2">
-          <img src="{{ person.person_image.url }}" alt="Team Member Image">
-          <div class="team-card-2__body">
-            <h4 class="team-card-2__name">{{ person.person_name }}</h4>
-            <span class="team-card-2__position">{{person.person_short_desc}}</span>
-            <div class="team-card-2__social-links hvr-blue">
-              <a href="#">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fa-brands fa-github"></i>
-              </a>
+    <h2 class="integrator-heading-article heading-md">Спикеры</h2>
+    <div class="integrator-row integrator-team-list team-list-webinars">
+        <div class="integrator-team__images">
+          <div class="integrator-team__image">
+            <img src="{% static '/image/team/alina.png' %}" alt="Roman">
+            <div class="qoute-autor">
+              <p class="name">Алина Сытько</p>
+              <p class="business-name">Специалист по настройке Битрикс24</p>
+            </div>
+            <div class="wedinar-team-descr">
+              <p>О чем будет говорить спикер</p>
+            </div>
+          </div>
+          <div class="integrator-team__image">
+            <img src="" alt="Ekatetyna">
+            <div class="qoute-autor">
+              <p class="name">Екатерина Ребковец</p>
+              <p class="business-name">Проектный менеджер</p>
+            </div>
+            <div class="wedinar-team-descr">
+              <p>О чем будет говорить спикер</p>
+            </div>
+          </div>
+        </div>
+        <div class="integrator-team__images">
+          <div class="integrator-team__image">
+            <img src="" alt="Anastasija">
+            <div class="qoute-autor">
+              <p class="name">Анастасия Оксенюк</p>
+              <p class="business-name">Бизнес-аналитик</p>
+            </div>
+            <div class="wedinar-team-descr">
+              <p>О чем будет говорить спикер</p>
+            </div>
+          </div>
+          <div class="integrator-team__image">
+            <img src="" alt="Maxim">
+            <div class="qoute-autor">
+              <p class="name">Максим Лютиков</p>
+              <p class="business-name">Разработчик</p>
+            </div>
+            <div class="wedinar-team-descr">
+              <p>О чем будет говорить спикер</p>
             </div>
           </div>
         </div>
       </div>
-      {% endfor %}
+  </div>
+</div>
+
+
+<div class="integrator-webinar-section padding-bottom-150">
+  <div class="container">
+    <h2 class="integrator-heading-webinar heading-md">Расписание</h2>
+    <div class="integrator-row">
+      <div class="integrator-webinar__slot">
+        <div class="time-slot"><p>09:00 - 10:00</p></div>
+        <div class="info-slot"><p>Регистрация</p></div>
+      </div>
+
+      <div class="integrator-webinar__slot">
+        <div class="time-slot"><p>09:00 - 10:00</p></div>
+        <div class="info-slot"><p>Регистрация</p></div>
+      </div>
+
+      <div class="integrator-webinar__slot">
+        <div class="time-slot"><p>09:00 - 10:00</p></div>
+        <div class="info-slot"><p>Регистрация</p></div>
+      </div>
+
+      <div class="integrator-webinar__slot">
+        <div class="time-slot"><p>09:00 - 10:00</p></div>
+        <div class="info-slot"><p>Регистрация</p></div>
+      </div>
 
     </div>
   </div>
 </div>
 
-
-
-<div class="team-section pb-100">
+<!--~~~~~~~~~~~~~~~~~~~~~~~~
+     CTA Base 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="integrator-cta-base">
   <div class="container">
-
-    <h2 class="heading-md text-black career_main-title">Расписание вебинара</h2>
-    <div class="row">
-
-      <div class="col-lg-12 col-sm-12 col-12">
-        <div class="team-card-2">
-          <div class="team-card-2__body alininging-items">
-            <span class="team-card-2__position">{{ webinar.webinar_desc | safe }}</span>
-          </div>
-        </div>
+    <div class="integrator-cta-base__wrapper">
+      <div class="integrator-cta-base__text-block">
+        <h2 class="heading-md">Информация - это хорошо, но может стоит применить ее на практике?</h2>
       </div>
-
-
+      <div class="cta-base__button">
+        <a href="#" class="integrator-btn btn-fill--up">
+          <span>Начать использовать Битрикс24</span></a>
+      </div>
     </div>
   </div>
-</div>
-
-<div class="cta-base">
-  <div class="container">
-    <div class="cta-base__wrapper border-bottom-dark">
-      <div class="row align-items-center justify-content-center justify-content-md-between gutter-y-20">
-        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
-          <div class="cta-base__text-block">
-            <h2 class="heading-md text-white">Ready to grow your business digitally?</h2>
-          </div>
-        </div>
-        <div class="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
-          <div class="cta-base__button">
-            <a class="btn-masco rounded-pill btn-fill--up" href="/contact">
-              <span>Let's start the project</span></a>
-            <div class="cta-base__button-shape">
-              <img src="./image/home-1/cta-shape.svg" alt="image alt">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="integrator-cta-base_over">
+    <img src="{% static '/image/cta/bubble.png' %}" alt="Bubbles" />
   </div>
 </div>
 
